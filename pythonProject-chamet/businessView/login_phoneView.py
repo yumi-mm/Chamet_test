@@ -121,7 +121,7 @@ class LoginView(Common):
     def password_input(self):
         if self.find_pass_ele():
             # code_item = self.driver.find_element(*self.input_password)
-            # code_item.send_keys(self.password)
+            # code_item.send_keys(self.password) #这里用来测试推送
             logging.info('---输入的账号没有同设备，走输入密码方式')
             return True
         else:
