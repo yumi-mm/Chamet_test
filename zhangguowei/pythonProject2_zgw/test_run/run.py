@@ -21,7 +21,7 @@ with open(report_name,'w',encoding='utf-8') as f:
     runner=BSTestRunner(stream=f,title='Chamet Test Report',description='Chamet Android app Test Report')
     logging.info('start run testcase.....')
     runner.run(discover)
-#
-# if __name__ == '__main__':
-#     pytest.main(['-s', 'test_login.py', '--alluredir', '../reports'])
-#     os.system('allure generate ../reports -o ./reports --clean')
+
+if __name__ == '__main__':
+    pytest.main(['-s', 'test_login.py', '--alluredir', '../reports'])
+    os.system('allure generate ../reports -o ./reports --clean')
