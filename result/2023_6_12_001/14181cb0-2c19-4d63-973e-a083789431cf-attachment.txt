@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:329 ===用例14：打开交友房背景浮窗===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:335 ===断言成功===

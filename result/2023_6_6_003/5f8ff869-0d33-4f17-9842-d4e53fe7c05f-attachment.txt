@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_lianxu.py:747 ===用例31：群聊页面发送文字===
+[32mINFO    [0m root:party_ten.py:412 ===准备发送文字消息===
+[32mINFO    [0m root:party_ten.py:418 ===发送成功===
+[32mINFO    [0m root:test_10party_lianxu.py:753 ===断言成功===

@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:65 ===用例3：创建10人交友房===
+[32mINFO    [0m root:party_ten.py:155 ===进入10人交友房===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:70 ===断言成功===

@@ -1,0 +1,11 @@
+[32mINFO    [0m root:myunittest.py:10 ===setUp===
+[32mINFO    [0m root:desired_caps.py:34 start app......
+[32mINFO    [0m root:party_ten.py:40 ===登录===
+[32mINFO    [0m root:common_fun.py:23 ================check_perB=====================
+[32mINFO    [0m root:common_fun.py:28 no perbtn
+[32mINFO    [0m root:login_phoneView.py:24 ================点击更多=====================
+[32mINFO    [0m root:login_phoneView.py:29 no more_btn
+[32mINFO    [0m root:login_phoneView.py:35 ================点击手机号登录=====================
+[32mINFO    [0m root:login_phoneView.py:40 no phonenumber_btn
+[32mINFO    [0m root:login_phoneView.py:46 ================输入手机号码=====================
+[32mINFO    [0m root:login_phoneView.py:48 手机号码是：1839174

@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:301 ===用例13：观众端交友房警告消息检查===
+[32mINFO    [0m root:party_ten_audience.py:202 ===进入交友房===
+[32mINFO    [0m root:party_ten_audience.py:262 ===消息区内容===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:310 ===断言成功，存在警告消息===

@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:695 ===用例29：私聊页面打开个人主页浮窗===
+[32mINFO    [0m root:party_ten.py:415 ===打开个人主页浮层===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:701 ===断言成功===

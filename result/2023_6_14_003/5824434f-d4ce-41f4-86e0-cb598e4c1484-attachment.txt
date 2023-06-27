@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:1319 ===用例58：观众端群聊页面领取钻石包===
+[32mINFO    [0m root:party_ten_audience.py:931 ===领取钻石包===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:1332 ===执行失败===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:1334 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-14 16_43_07.png

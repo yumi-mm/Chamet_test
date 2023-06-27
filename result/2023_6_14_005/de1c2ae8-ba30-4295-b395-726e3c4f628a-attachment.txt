@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:1459 ===用例64：10人交友房观众端打开banner===
+[32mINFO    [0m root:party_ten_audience.py:1040 ===未成功进入活动页===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:1472 ===执行失败===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:1474 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-14 18_06_30.png

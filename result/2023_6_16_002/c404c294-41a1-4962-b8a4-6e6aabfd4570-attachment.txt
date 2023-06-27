@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:376 ===用例16：观众端消息区聊天消息可下滑===
+[32mINFO    [0m root:party_ten_audience.py:239 ===观众端发言===
+[32mINFO    [0m root:party_ten_audience.py:253 ===消息区文字内容===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:381 ===断言成功，可成功下滑消息区===

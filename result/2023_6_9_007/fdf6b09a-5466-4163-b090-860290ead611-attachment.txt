@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:247 ===用例11：主播不可给自己送礼===
+[32mINFO    [0m root:party_ten.py:206 ===打开送礼弹窗===
+[32mINFO    [0m root:party_ten.py:212 ===获取礼物列表===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:261 ===执行失败===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:263 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-09 12_03_46.png

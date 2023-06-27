@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:841 ===用例37：进入私聊页面===
+[32mINFO    [0m root:party_ten_audience.py:529 ===点击更多按钮===
+[32mINFO    [0m root:party_ten_audience.py:538 ===打开留言浮窗===
+[32mINFO    [0m root:party_ten_audience.py:544 ===查看私聊列表===
+[32mINFO    [0m root:party_ten_audience.py:557 ===进入私聊页面===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:847 ===断言成功===

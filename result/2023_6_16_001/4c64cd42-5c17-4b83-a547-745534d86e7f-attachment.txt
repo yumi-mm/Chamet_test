@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:185 ===用例8：交友房封面包含内容--国旗===
+[32mINFO    [0m root:party_ten_audience.py:127 ===查找交由房列表出错===
+[32mINFO    [0m root:party_ten_audience.py:127 ===查找交由房列表出错===
+[32mINFO    [0m root:party_ten_audience.py:186 ===有交友房===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:194 ===断言失败===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:196 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-16 14_15_12.png

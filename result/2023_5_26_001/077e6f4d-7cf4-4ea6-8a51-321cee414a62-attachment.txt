@@ -1,0 +1,7 @@
+[32mINFO    [0m root:party_Start.py:22 ===启动app===
+[32mINFO    [0m root:desired_caps.py:34 start app......
+[32mINFO    [0m root:party_ten.py:53 ===进入交友房页签===
+[32mINFO    [0m root:test_10party.py:51 ===用例3：创建10人交友房===
+[32mINFO    [0m root:party_ten.py:58 ===进入交友房预览页===
+[32mINFO    [0m root:party_ten.py:68 ===进入10人交友房===
+[32mINFO    [0m root:test_10party.py:57 ===断言成功===

@@ -1,0 +1,12 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:1072 ===用例47：观众端私聊页面送礼===
+[32mINFO    [0m root:party_ten_audience.py:529 ===点击更多按钮===
+[32mINFO    [0m root:party_ten_audience.py:538 ===打开留言浮窗===
+[32mINFO    [0m root:party_ten_audience.py:544 ===查看私聊列表===
+[32mINFO    [0m root:party_ten_audience.py:557 ===进入私聊页面===
+[32mINFO    [0m root:party_ten_audience.py:748 ===打开私聊送礼页面===
+[32mINFO    [0m root:party_ten_audience.py:791 #####################
+[32mINFO    [0m root:party_ten_audience.py:793 ===送礼物===
+[32mINFO    [0m root:party_ten_audience.py:770 ===判断有无充值优惠券===
+[32mINFO    [0m root:party_ten_audience.py:785 ===无优惠券===
+[32mINFO    [0m root:party_ten_audience.py:583 1
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:1077 ===断言成功，成功发送礼物===

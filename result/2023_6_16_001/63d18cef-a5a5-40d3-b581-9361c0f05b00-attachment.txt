@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:572 ===用例25：观众端申请上麦(通过点击交友位)===
+[32mINFO    [0m root:party_ten_audience.py:389 ===点击交友位===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:585 ===执行失败===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:587 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-16 14_17_54.png

@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:961 ===用例40：群聊页面送礼===
+[32mINFO    [0m root:party_ten.py:533 ===打开礼物页面===
+[32mINFO    [0m root:party_ten.py:522 ===判断有无夺宝弹窗===
+[32mINFO    [0m root:party_ten.py:528 ===无夺宝弹窗===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:966 ===断言成功===

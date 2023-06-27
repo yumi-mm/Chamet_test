@@ -1,0 +1,12 @@
+[32mINFO    [0m root:partyaudience_Start.py:26 ===启动app===
+[32mINFO    [0m root:desired_caps.py:33 start app......
+[32mINFO    [0m root:test_10party_audience.py:1268 ===用例50：观众端群聊页面发送文字===
+[32mINFO    [0m root:party_ten_audience.py:115 ===进入交友房页签===
+[32mINFO    [0m root:party_ten_audience.py:197 ===进入交友房===
+[32mINFO    [0m root:party_ten_audience.py:517 ===点击更多按钮===
+[32mINFO    [0m root:party_ten_audience.py:526 ===打开留言浮窗===
+[32mINFO    [0m root:party_ten_audience.py:766 ===查看群聊列表===
+[32mINFO    [0m root:party_ten_audience.py:779 ===进入群聊页面===
+[32mINFO    [0m root:party_ten_audience.py:791 ===准备发送文字消息===
+[32mINFO    [0m root:party_ten_audience.py:797 ===发送成功===
+[32mINFO    [0m root:test_10party_audience.py:1278 ===断言成功，成功发送文字===

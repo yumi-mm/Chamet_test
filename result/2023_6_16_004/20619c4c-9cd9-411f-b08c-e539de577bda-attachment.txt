@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:223 ===用例10：打开送礼物弹窗===
+[32mINFO    [0m root:party_ten.py:221 ===打开送礼弹窗===
+[32mINFO    [0m root:party_ten.py:227 ===获取礼物列表===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:228 ===断言成功===

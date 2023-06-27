@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:818 ===用例36：观众端打开消息列表===
+[32mINFO    [0m root:party_ten_audience.py:529 ===点击更多按钮===
+[32mINFO    [0m root:party_ten_audience.py:538 ===打开留言浮窗===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:823 ===断言成功===

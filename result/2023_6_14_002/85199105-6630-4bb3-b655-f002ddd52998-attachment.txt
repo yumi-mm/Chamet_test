@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:250 ===用例11：观众进入交友房进场标签===
+[32mINFO    [0m root:party_ten_audience.py:202 ===进入交友房===
+[32mINFO    [0m root:party_ten_audience.py:225 ===有进场标签===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:257 ===断言成功，存在进场标签===

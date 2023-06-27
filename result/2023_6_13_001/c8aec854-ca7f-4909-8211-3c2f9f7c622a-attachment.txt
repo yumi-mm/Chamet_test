@@ -1,0 +1,10 @@
+[32mINFO    [0m root:partyaudience_Start.py:26 ===启动app===
+[32mINFO    [0m root:desired_caps.py:33 start app......
+[32mINFO    [0m root:test_10party_audience.py:721 ===用例29：通过半屏浮窗给主播送礼物===
+[32mINFO    [0m root:party_ten_audience.py:115 ===进入交友房页签===
+[32mINFO    [0m root:party_ten_audience.py:197 ===进入交友房===
+[32mINFO    [0m root:party_ten_audience.py:392 ===点击展开主播个人主页半屏浮窗===
+[32mINFO    [0m root:party_ten_audience.py:282 ===送礼===
+[32mINFO    [0m root:party_ten_audience.py:275 ===获取礼物列表===
+[32mINFO    [0m root:test_10party_audience.py:739 ===执行失败===
+[32mINFO    [0m root:test_10party_audience.py:741 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-13 18_26_03.png

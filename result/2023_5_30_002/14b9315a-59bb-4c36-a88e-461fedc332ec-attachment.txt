@@ -1,0 +1,14 @@
+[32mINFO    [0m root:party_Start.py:24 ===启动app===
+[32mINFO    [0m root:desired_caps.py:33 start app......
+[32mINFO    [0m root:party_ten.py:79 ===进入交友房页签===
+[32mINFO    [0m root:test_10party.py:313 ===用例13：右滑动送礼弹窗===
+[32mINFO    [0m root:party_ten.py:84 ===进入交友房预览页===
+[32mINFO    [0m root:party_ten.py:92 ===无权限弹窗===
+[32mINFO    [0m root:party_ten.py:101 ===进入10人交友房===
+[32mINFO    [0m root:party_ten.py:148 ===打开送礼弹窗===
+[32mINFO    [0m root:party_ten.py:154 ===获取礼物列表===
+[32mINFO    [0m root:party_ten.py:138 ===滑动===
+[32mINFO    [0m root:party_ten.py:138 ===滑动===
+[32mINFO    [0m root:party_ten.py:154 ===获取礼物列表===
+[32mINFO    [0m root:test_10party.py:330 ===执行失败===
+[32mINFO    [0m root:test_10party.py:332 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_open_2023-05-30 17_07_18.png

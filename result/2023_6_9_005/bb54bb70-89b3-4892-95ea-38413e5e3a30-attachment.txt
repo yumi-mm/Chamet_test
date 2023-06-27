@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:602 ===用例25：私聊界面发送相机照===
+[32mINFO    [0m root:party_ten.py:327 ===打开相机===
+[32mINFO    [0m root:party_ten.py:330 ===拍照发送===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:615 ===执行失败===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:617 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-09 11_33_10.png
