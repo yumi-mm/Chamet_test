@@ -4,6 +4,8 @@ import logging
 import logging.config
 import os
 
+1111
+
 log_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), '../../config/partytenconfig/log_conf.py')
 logging.config.fileConfig(log_file_path)
 logging = logging.getLogger()
