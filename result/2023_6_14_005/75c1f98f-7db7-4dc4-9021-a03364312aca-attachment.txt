@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1344 ===用例59：观众端群聊页面送礼===
-[32mINFO    [0m root:party_ten_audience.py:532 ===不存在更多按钮===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1356 ===执行失败===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1358 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-14 18_05_37.png

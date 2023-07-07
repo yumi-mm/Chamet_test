@@ -1,9 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1349 ===用例59：观众端群聊页面送礼===
-[32mINFO    [0m root:party_ten_audience.py:529 ===点击更多按钮===
-[32mINFO    [0m root:party_ten_audience.py:538 ===打开留言浮窗===
-[32mINFO    [0m root:party_ten_audience.py:813 ===查看群聊列表===
-[32mINFO    [0m root:party_ten_audience.py:826 ===进入群聊页面===
-[32mINFO    [0m root:party_ten_audience.py:980 ===打开礼物页面===
-[32mINFO    [0m root:party_ten_audience.py:983 ##############
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1361 ===执行失败===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1363 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-15 12_07_58.png

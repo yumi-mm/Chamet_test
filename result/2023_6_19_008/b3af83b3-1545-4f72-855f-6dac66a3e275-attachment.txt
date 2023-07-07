@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:132 ===用例6：观众端查看主播端发言===
-[32mINFO    [0m root:test_10party_mult.py:143 ===执行失败===

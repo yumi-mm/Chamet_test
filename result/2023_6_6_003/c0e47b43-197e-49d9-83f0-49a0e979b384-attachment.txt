@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_lianxu.py:356 ===用例15：更换交友房背景===
-[32mINFO    [0m root:test_10party_lianxu.py:362 ===断言成功===
-[32mINFO    [0m root:test_10party_lianxu.py:364 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-06 17_58_40.png

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:371 ===用例17：观众进入交友房进场消息提醒===
-[32mINFO    [0m root:multparty_ten_audience.py:160 ===进入交友房===
-[32mINFO    [0m root:multparty_ten_audience.py:316 ===获取消息区最后一条文本消息===
-[32mINFO    [0m root:test_10party_mult.py:379 ===断言成功，存在进场消息提醒===

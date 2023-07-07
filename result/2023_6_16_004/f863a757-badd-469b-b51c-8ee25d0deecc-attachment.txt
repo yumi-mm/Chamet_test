@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:482 ===用例20：私聊页面发送表情===
-[32mINFO    [0m root:party_ten.py:302 ===准备发送表情===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:487 ===断言成功===

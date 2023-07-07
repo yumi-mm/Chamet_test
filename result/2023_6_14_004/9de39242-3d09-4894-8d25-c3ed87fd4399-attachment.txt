@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:672 ===用例30：通过半屏浮窗给主播打视频通话===
-[32mINFO    [0m root:party_ten_audience.py:401 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:party_ten_audience.py:465 ===给主播拨打视频通话===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:676 ===断言成功，成功拨打===

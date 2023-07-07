@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:196 ===用例9：主播移除嘉宾===
-[32mINFO    [0m root:multparty_ten_anchor.py:147 ===消息内容===

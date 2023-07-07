@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:984 ===用例41：10人交友房主播端打开充值页面===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:996 ===执行失败===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:998 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-09 15_44_36.png

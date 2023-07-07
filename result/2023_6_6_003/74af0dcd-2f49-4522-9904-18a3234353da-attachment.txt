@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_lianxu.py:896 ===用例37：群聊页面上麦===
-[32mINFO    [0m root:party_ten.py:469 ===主播端上麦===
-[32mINFO    [0m root:test_10party_lianxu.py:901 ===断言成功===

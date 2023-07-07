@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1231 ===用例54：观众端群聊页面上麦===
-[32mINFO    [0m root:party_ten_audience.py:529 ===点击更多按钮===
-[32mINFO    [0m root:party_ten_audience.py:538 ===打开留言浮窗===
-[32mINFO    [0m root:party_ten_audience.py:784 ===查看群聊列表===
-[32mINFO    [0m root:party_ten_audience.py:797 ===进入群聊页面===
-[32mINFO    [0m root:party_ten_audience.py:876 ===观众端上麦===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1236 ===断言成功===

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:459 ===用例20：观众端给所有嘉宾送礼===
-[32mINFO    [0m root:party_ten_audience.py:268 ===获取礼物按钮===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:474 ===执行失败===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:476 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-16 14_17_21.png

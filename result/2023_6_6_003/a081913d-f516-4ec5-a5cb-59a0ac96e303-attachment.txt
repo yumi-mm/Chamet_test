@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_lianxu.py:771 ===用例32：群聊页面发送表情===
-[32mINFO    [0m root:party_ten.py:287 ===准备发送表情===
-[32mINFO    [0m root:test_10party_lianxu.py:776 ===断言成功===

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:672 ===用例28：私聊页面送礼===
-[32mINFO    [0m root:party_ten.py:384 ===送礼物===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:684 ===执行失败===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:686 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-09 11_33_29.png

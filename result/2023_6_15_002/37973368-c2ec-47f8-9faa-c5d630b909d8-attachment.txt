@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:233 ===用例10：观众进入交友房进场座驾===
-[32mINFO    [0m root:party_ten_audience.py:202 ===进入交友房===
-[32mINFO    [0m root:party_ten_audience.py:215 ===有进场座驾===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:240 ===断言成功，存在进场座驾===

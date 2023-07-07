@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:604 ===用例25：私聊界面发送相机照===
-[32mINFO    [0m root:party_ten.py:329 ===打开相机===
-[32mINFO    [0m root:party_ten.py:332 ===拍照发送===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:607 ===断言成功===

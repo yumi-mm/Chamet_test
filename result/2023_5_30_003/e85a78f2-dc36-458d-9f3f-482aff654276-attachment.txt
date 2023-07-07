@@ -1,6 +1,0 @@
-[32mINFO    [0m root:party_Start.py:24 ===启动app===
-[32mINFO    [0m root:desired_caps.py:33 start app......
-[32mINFO    [0m root:party_ten.py:80 ===进入交友房页签===
-[32mINFO    [0m root:test_10party.py:23 ===用例1：进入创建交友房页面===
-[32mINFO    [0m root:test_10party.py:29 ===断言失败===
-[32mINFO    [0m root:test_10party.py:31 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-05-30 19_19_17.png

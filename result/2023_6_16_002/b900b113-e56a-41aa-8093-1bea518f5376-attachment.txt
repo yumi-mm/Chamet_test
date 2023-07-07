@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1323 ===用例58：观众端群聊页面领取钻石包===
-[32mINFO    [0m root:party_ten_audience.py:988 ===领取钻石包===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1328 ===断言成功===

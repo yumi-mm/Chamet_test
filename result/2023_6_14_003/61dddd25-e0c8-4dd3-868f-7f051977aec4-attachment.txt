@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:429 ===用例19：观众端给主播送礼===
-[32mINFO    [0m root:party_ten_audience.py:289 ===送礼===
-[32mINFO    [0m root:party_ten_audience.py:282 ===获取礼物列表===
-[32mINFO    [0m root:party_ten_audience.py:309 ===判断有无夺宝弹窗===
-[32mINFO    [0m root:party_ten_audience.py:315 ===无夺宝弹窗===
-[32mINFO    [0m root:party_ten_audience.py:233 ===获取消息区最后一条文本消息===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:435 ===断言成功，成功送礼===

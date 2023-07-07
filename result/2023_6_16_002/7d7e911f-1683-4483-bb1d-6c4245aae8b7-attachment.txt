@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:397 ===用例17：消息区聊天消息可上滑===
-[32mINFO    [0m root:party_ten_audience.py:253 ===消息区文字内容===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:401 ===断言成功，可成功上滑消息区===

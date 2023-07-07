@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:704 ===用例31：通过半屏浮窗@主播===
-[32mINFO    [0m root:party_ten_audience.py:401 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:716 ===执行失败===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:718 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-16 14_18_43.png

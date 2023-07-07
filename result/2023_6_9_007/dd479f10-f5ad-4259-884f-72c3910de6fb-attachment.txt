@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:875 ===用例36：群聊页面发送拍摄图片===
-[32mINFO    [0m root:party_ten.py:452 ===发送照片===
-[32mINFO    [0m root:party_ten.py:457 ===发送拍摄照片===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:878 ===断言成功===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:882 ===断言成功===

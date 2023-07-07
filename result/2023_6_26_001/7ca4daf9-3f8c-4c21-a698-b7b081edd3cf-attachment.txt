@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:235 ===用例11：主播移除嘉宾===
-[32mINFO    [0m root:test_10party_mult.py:248 ===执行失败===

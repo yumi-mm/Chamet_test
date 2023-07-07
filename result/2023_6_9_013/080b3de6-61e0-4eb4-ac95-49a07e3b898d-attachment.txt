@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:823 ===用例34：群聊页面发送语音===
-[32mINFO    [0m root:party_ten.py:414 ===查看群聊列表===
-[32mINFO    [0m root:party_ten.py:414 ===查看群聊列表===
-[32mINFO    [0m root:party_ten.py:423 ===进入群聊页面===
-[32mINFO    [0m root:party_ten.py:438 ===准备发送语音===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:834 ===断言成功===

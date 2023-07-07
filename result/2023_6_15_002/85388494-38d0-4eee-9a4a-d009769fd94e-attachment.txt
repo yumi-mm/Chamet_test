@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:506 ===用例22：观众端打开赛车游戏===
-[32mINFO    [0m root:party_ten_audience.py:336 ===进入游戏页面===
-[32mINFO    [0m root:party_ten_audience.py:347 ===进入赛车游戏===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:510 ===断言成功，打开Chamet赛车游戏===

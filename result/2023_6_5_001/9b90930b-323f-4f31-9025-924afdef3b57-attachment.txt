@@ -1,3 +1,0 @@
-[32mINFO    [0m root:party_Start.py:26 ===启动app===
-[32mINFO    [0m root:desired_caps.py:33 start app......
-[32mINFO    [0m root:party_ten.py:131 ===进入交友房页签===

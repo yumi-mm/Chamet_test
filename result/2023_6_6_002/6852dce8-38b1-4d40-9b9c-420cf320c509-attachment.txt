@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_lianxu.py:1127 ===用例47：10人交友房主播端打开幸运数字游戏===
-[32mINFO    [0m root:party_ten.py:581 ===进入游戏页面===
-[32mINFO    [0m root:party_ten.py:590 ===进入幸运数字===

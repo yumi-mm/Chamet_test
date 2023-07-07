@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1483 ===用例65：观众端退出交友房===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1493 ===执行失败===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1495 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-14 18_06_37.png
-[32mINFO    [0m root:party_Start_audiencecontinuous.py:18 ===tearDown===

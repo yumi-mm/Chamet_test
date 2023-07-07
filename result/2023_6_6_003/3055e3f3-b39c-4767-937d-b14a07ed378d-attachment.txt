@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_lianxu.py:938 ===用例39：群聊页面领取钻石包===
-[32mINFO    [0m root:party_ten.py:475 ===发送钻石包===
-[32mINFO    [0m root:party_ten.py:489 ===领取钻石包===
-[32mINFO    [0m root:test_10party_lianxu.py:944 ===断言成功===

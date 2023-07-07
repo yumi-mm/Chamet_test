@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:749 ===用例33：通过半屏浮窗查看主播动态===
-[32mINFO    [0m root:party_ten_audience.py:401 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:party_ten_audience.py:483 ===有动态===
-[32mINFO    [0m root:party_ten_audience.py:494 ===点击查看动态===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:754 ===断言成功，进入动态页面===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:766 ===执行啦===
