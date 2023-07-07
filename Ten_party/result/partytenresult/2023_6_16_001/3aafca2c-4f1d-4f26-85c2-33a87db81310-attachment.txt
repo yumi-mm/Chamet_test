@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:483 ===用例21：观众端滑动送礼弹窗===
+[32mINFO    [0m root:party_ten_audience.py:268 ===获取礼物按钮===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:495 ===执行失败===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:497 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-16 14_17_27.png

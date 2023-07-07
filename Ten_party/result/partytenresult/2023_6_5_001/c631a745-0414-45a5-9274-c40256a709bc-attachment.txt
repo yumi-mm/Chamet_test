@@ -1,0 +1,7 @@
+[32mINFO    [0m root:party_Start.py:26 ===启动app===
+[32mINFO    [0m root:desired_caps.py:33 start app......
+[32mINFO    [0m root:party_ten.py:131 ===进入交友房页签===
+[32mINFO    [0m root:test_10party.py:43 ===用例2：默认交友房预览页为10人房===
+[32mINFO    [0m root:party_ten.py:137 ===进入交友房预览页===
+[32mINFO    [0m root:party_ten.py:146 ===无权限弹窗===
+[32mINFO    [0m root:test_10party.py:50 ===断言成功===

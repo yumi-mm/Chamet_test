@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:561 ===用例23：开启私聊界面翻译功能===
+[32mINFO    [0m root:party_ten.py:326 ===开启翻译功能===

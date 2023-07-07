@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_lianxu.py:606 ===用例25：私聊界面发送相机照===
+[32mINFO    [0m root:party_ten.py:326 ===打开相机===
+[32mINFO    [0m root:party_ten.py:329 ===拍照发送===
+[32mINFO    [0m root:test_10party_lianxu.py:609 ===断言成功===

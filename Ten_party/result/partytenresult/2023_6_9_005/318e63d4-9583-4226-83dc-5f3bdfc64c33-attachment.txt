@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:88 ===用例4：交友房警告消息是否存在===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:92 ===断言成功===

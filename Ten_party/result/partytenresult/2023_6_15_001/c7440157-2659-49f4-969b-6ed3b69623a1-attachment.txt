@@ -1,0 +1,25 @@
+[32mINFO    [0m root:party_Start_audiencecontinuous.py:9 ===setUp===
+[32mINFO    [0m root:desired_caps.py:33 start app......
+[32mINFO    [0m root:party_ten_audience.py:103 ===登录===
+[32mINFO    [0m root:common_fun.py:23 ================check_perB=====================
+[32mINFO    [0m root:common_fun.py:28 no perbtn
+[32mINFO    [0m root:login_phoneView.py:24 ================点击更多=====================
+[32mINFO    [0m root:login_phoneView.py:32 click 更多 already
+[32mINFO    [0m root:login_phoneView.py:35 ================点击手机号登录=====================
+[32mINFO    [0m root:login_phoneView.py:43 click 手机号按钮 already
+[32mINFO    [0m root:login_phoneView.py:46 ================输入手机号码=====================
+[32mINFO    [0m root:login_phoneView.py:48 手机号码是：1839172
+[32mINFO    [0m root:login_phoneView.py:71 已输入账号，开始点击下一步
+[32mINFO    [0m root:party_ten_audience.py:115 ===进入交友房页签===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:865 ===用例38：私聊页面发送文字===
+[32mINFO    [0m root:party_ten_audience.py:115 ===进入交友房页签===
+[32mINFO    [0m root:party_ten_audience.py:202 ===进入交友房===
+[32mINFO    [0m root:party_ten_audience.py:529 ===点击更多按钮===
+[32mINFO    [0m root:party_ten_audience.py:538 ===打开留言浮窗===
+[32mINFO    [0m root:party_ten_audience.py:544 ===查看私聊列表===
+[32mINFO    [0m root:party_ten_audience.py:557 ===进入私聊页面===
+[32mINFO    [0m root:party_ten_audience.py:569 ===准备发送文字消息===
+[32mINFO    [0m root:party_ten_audience.py:575 ===发送成功===
+[32mINFO    [0m root:party_ten_audience.py:583 2
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:882 ===执行失败===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:884 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-15 10_55_19.png

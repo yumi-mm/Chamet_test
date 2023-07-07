@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:434 ===用例18：进入私聊页面===
+[32mINFO    [0m root:party_ten.py:267 ===查看私聊列表===
+[32mINFO    [0m root:party_ten.py:267 ===查看私聊列表===
+[32mINFO    [0m root:party_ten.py:276 ===进入私聊页面===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:442 ===断言成功===

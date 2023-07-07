@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:149 ===用例7：交友房观众端发言===
+[32mINFO    [0m root:multparty_ten_audience.py:199 ===观众端发言===
+[32mINFO    [0m root:multparty_ten_audience.py:213 ===消息内容===
+[32mINFO    [0m root:test_10party_mult.py:155 ===断言成功，观众端成功发言===

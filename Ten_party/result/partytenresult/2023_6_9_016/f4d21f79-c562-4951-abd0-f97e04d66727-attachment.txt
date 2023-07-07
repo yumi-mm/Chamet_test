@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:382 ===用例16：更换交友房背景(等级限制背景)===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:391 ===断言成功===

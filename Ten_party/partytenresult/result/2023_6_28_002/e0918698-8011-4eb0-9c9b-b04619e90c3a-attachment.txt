@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_mult.py:714 ===用例33：观众端打开送礼弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:328 ===获取礼物按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:335 ===打开礼物弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:337 #####################
+[32mINFO    [0m root:multparty_ten_audience.py:346 ===获取礼物列表===
+[32mINFO    [0m root:test_10party_mult.py:718 ===断言成功，可成功打开送礼弹窗===

@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:1548 ===用例71：通过半屏浮窗给主播打视频通话===
+[32mINFO    [0m root:test_10party_mult.py:1561 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:1563 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-04 09_17_20.png

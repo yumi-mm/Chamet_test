@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:1004 ===用例42：10人交友房主播端充值===
+[32mINFO    [0m root:party_ten.py:550 ===进行充值===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:1009 ===断言成功===

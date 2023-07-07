@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:1199 ===用例53：观众端群聊页面发送语音===
+[32mINFO    [0m root:party_ten_audience.py:529 ===点击更多按钮===
+[32mINFO    [0m root:party_ten_audience.py:538 ===打开留言浮窗===
+[32mINFO    [0m root:party_ten_audience.py:784 ===查看群聊列表===
+[32mINFO    [0m root:party_ten_audience.py:789 ===寻找私聊列表时出错===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:1212 ===执行失败===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:1214 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-14 16_42_23.png

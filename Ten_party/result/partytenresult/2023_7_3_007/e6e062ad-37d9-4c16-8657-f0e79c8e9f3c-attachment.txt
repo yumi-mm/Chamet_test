@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:938 ===用例43：嘉宾端打开个人主页浮窗===
+[32mINFO    [0m root:multparty_ten_audience.py:431 ===点击展开嘉宾个人主页半屏浮窗===
+[32mINFO    [0m root:test_10party_mult.py:942 ===断言成功，成功打开个人主页浮窗===

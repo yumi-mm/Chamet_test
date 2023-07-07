@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:626 ===用例26：私聊界面发拨打语音聊天===
+[32mINFO    [0m root:party_ten.py:358 ===拨打语音聊天===

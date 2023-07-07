@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_mult.py:1289 ===用例59：主播邀请观众上麦，观众关闭上麦邀请===
+[32mINFO    [0m root:multparty_ten_anchor.py:402 ===打开观众列表===
+[32mINFO    [0m root:multparty_ten_anchor.py:381 ===获取所有观众name===
+[32mINFO    [0m root:multparty_ten_anchor.py:371 ===指定观众在1位===
+[32mINFO    [0m root:multparty_ten_anchor.py:372 ===点击观众后的邀请按钮===
+[32mINFO    [0m root:test_10party_mult.py:1295 ===断言成功，观众成功关闭上麦邀请===

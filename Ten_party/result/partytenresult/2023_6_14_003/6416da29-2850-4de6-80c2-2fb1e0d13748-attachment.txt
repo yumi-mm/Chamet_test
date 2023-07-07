@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:326 ===用例14：观众端发消息===
+[32mINFO    [0m root:party_ten_audience.py:239 ===观众端发言===
+[32mINFO    [0m root:party_ten_audience.py:253 ===消息区文字内容===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:331 ===断言成功，观众成功发言===

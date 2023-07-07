@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:1125 ===用例47：10人交友房主播端打开幸运数字游戏===
+[32mINFO    [0m root:party_ten.py:598 ===进入游戏页面===
+[32mINFO    [0m root:party_ten.py:608 ===进入幸运数字===

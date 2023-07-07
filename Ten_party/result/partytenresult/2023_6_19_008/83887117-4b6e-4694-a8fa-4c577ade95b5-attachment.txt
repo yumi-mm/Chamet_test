@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:136 ===用例6：观众端发消息===
+[32mINFO    [0m root:test_10party_mult.py:147 ===执行失败===

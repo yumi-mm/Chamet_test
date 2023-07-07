@@ -1,0 +1,16 @@
+[32mINFO    [0m root:myunittest.py:10 ===setUp===
+[32mINFO    [0m root:desired_caps.py:34 start app......
+[32mINFO    [0m root:party_ten.py:40 ===登录===
+[32mINFO    [0m root:common_fun.py:23 ================check_perB=====================
+[32mINFO    [0m root:common_fun.py:28 no perbtn
+[32mINFO    [0m root:login_phoneView.py:24 ================点击更多=====================
+[32mINFO    [0m root:login_phoneView.py:32 click 更多 already
+[32mINFO    [0m root:login_phoneView.py:35 ================点击手机号登录=====================
+[32mINFO    [0m root:login_phoneView.py:43 click 手机号按钮 already
+[32mINFO    [0m root:login_phoneView.py:46 ================输入手机号码=====================
+[32mINFO    [0m root:login_phoneView.py:48 手机号码是：1839174
+[32mINFO    [0m root:login_phoneView.py:71 已输入账号，开始点击下一步
+[32mINFO    [0m root:party_ten.py:42 ===进入交友房页签===
+[32mINFO    [0m root:test_10party.py:14 ===用例1：进入创建交友房页面==
+[32mINFO    [0m root:myunittest.py:16 ===tearDown===
+[32mINFO    [0m root:party_ten.py:30 ===退出===

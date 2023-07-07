@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_10party_mult.py:736 ===用例34：观众端给主播送礼===
+[32mINFO    [0m root:multparty_ten_audience.py:366 ===送礼===
+[32mINFO    [0m root:multparty_ten_audience.py:347 ===获取礼物列表===
+[32mINFO    [0m root:multparty_ten_audience.py:355 ===判断有无夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:358 ===获得夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:317 ===获取消息区最后一条文本消息===
+[32mINFO    [0m root:test_10party_mult.py:742 ===断言成功，成功送礼===

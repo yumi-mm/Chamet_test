@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:1206 ===用例55：主播邀请嘉宾上麦===
+[32mINFO    [0m root:test_10party_mult.py:1220 ===执行失败===

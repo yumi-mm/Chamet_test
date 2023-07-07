@@ -1,0 +1,13 @@
+[32mINFO    [0m root:partyaudience_Start.py:26 ===启动app===
+[32mINFO    [0m root:desired_caps.py:33 start app......
+[32mINFO    [0m root:test_10party_audience.py:1320 ===用例52：观众端群聊页面发送谷歌表情===
+[32mINFO    [0m root:party_ten_audience.py:115 ===进入交友房页签===
+[32mINFO    [0m root:party_ten_audience.py:197 ===进入交友房===
+[32mINFO    [0m root:party_ten_audience.py:522 ===点击更多按钮===
+[32mINFO    [0m root:party_ten_audience.py:531 ===打开留言浮窗===
+[32mINFO    [0m root:party_ten_audience.py:777 ===查看群聊列表===
+[32mINFO    [0m root:party_ten_audience.py:790 ===进入群聊页面===
+[32mINFO    [0m root:party_ten_audience.py:820 ===准备发送表情===
+[32mINFO    [0m root:party_ten_audience.py:827 ===发送google表情===
+[32mINFO    [0m root:party_ten_audience.py:841 ===发送成功===
+[32mINFO    [0m root:test_10party_audience.py:1330 ===断言成功，成功发送谷歌表情===

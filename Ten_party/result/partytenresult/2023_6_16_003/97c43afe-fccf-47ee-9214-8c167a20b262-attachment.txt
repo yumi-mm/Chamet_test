@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:1080 ===用例45：打开观众列表===
+[32mINFO    [0m root:party_ten.py:595 ===进入邀请页面===

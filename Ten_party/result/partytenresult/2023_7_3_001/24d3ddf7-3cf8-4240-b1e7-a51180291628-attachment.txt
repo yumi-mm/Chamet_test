@@ -1,0 +1,3 @@
+[32mINFO    [0m root:multparty_star_end.py:10 ===主播端启动app===
+[32mINFO    [0m root:anchor_desired_caps.py:32 start app......
+[32mINFO    [0m root:multparty_ten_anchor.py:55 ===进入交友房页签===

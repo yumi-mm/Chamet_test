@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_lianxu.py:1031 ===用例43：10人交友房主播端关闭麦克风===
+[32mINFO    [0m root:party_ten.py:541 ===进入设置页面===
+[32mINFO    [0m root:party_ten.py:547 ===打开/关闭麦克风===
+[32mINFO    [0m root:party_ten.py:549 ===主播端关闭麦克风===
+[32mINFO    [0m root:test_10party_lianxu.py:1037 ===断言成功===

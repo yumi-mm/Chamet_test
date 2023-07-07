@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:550 ===用例24：观众端申请上麦(通过加入按钮)===
+[32mINFO    [0m root:party_ten_audience.py:363 ===点击展开更多===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:563 ===执行失败===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:565 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-16 14_17_48.png

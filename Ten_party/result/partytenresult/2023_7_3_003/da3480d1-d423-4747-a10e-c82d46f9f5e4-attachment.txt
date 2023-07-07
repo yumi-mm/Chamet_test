@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_mult.py:980 ===用例45：嘉宾在交友位关闭麦克风===
+[32mINFO    [0m root:multparty_ten_audience.py:463 ===不存在更多按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:472 ===不存在设置按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:479 ===不存在关闭麦克风按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:491 ===嘉宾位无关闭麦克风标识===
+[32mINFO    [0m root:test_10party_mult.py:988 ===断言失败===

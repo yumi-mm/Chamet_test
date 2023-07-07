@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:247 ===用例11：主播不可给自己送礼===
+[32mINFO    [0m root:party_ten.py:222 ===打开送礼弹窗===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:252 ===断言成功===

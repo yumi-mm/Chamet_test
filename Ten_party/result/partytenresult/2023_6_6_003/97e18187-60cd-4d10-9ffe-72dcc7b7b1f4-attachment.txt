@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_lianxu.py:331 ===用例14：打开交友房背景浮窗===
+[32mINFO    [0m root:test_10party_lianxu.py:337 ===断言成功===

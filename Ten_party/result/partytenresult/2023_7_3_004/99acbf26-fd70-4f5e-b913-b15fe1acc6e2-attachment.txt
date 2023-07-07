@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_10party_mult.py:1284 ===用例59：主播邀请观众上麦，观众关闭上麦邀请===
+[32mINFO    [0m root:multparty_ten_audience.py:465 ===不存在更多按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:474 ===不存在设置按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:503 ===离开嘉宾位失败===
+[32mINFO    [0m root:multparty_ten_anchor.py:381 ===右上角不存在观众列表按钮===
+[32mINFO    [0m root:test_10party_mult.py:1301 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:1303 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-03 12_02_05.png

@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:1483 ===用例68：主播检查是否收到观众的礼物===
+[32mINFO    [0m root:multparty_ten_anchor.py:205 ===获取消息区最后一条文本消息===
+[32mINFO    [0m root:test_10party_mult.py:1489 ===断言失败===
+[32mINFO    [0m root:test_10party_mult.py:1491 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-05 11_45_43.png

@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:162 ===用例7：交友房封面包含内容--用户名===
+[32mINFO    [0m root:party_ten_audience.py:173 ===有交友房===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:169 ===断言成功，交友房封面存在用户名===

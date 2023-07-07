@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_10party_mult.py:1287 ===用例59：主播邀请观众上麦，观众关闭上麦邀请===
+[32mINFO    [0m root:multparty_ten_audience.py:135 ===进入交友房页签===
+[32mINFO    [0m root:multparty_ten_audience.py:161 ===进入交友房===
+[32mINFO    [0m root:multparty_ten_anchor.py:402 ===打开观众列表===
+[32mINFO    [0m root:multparty_ten_anchor.py:381 ===获取所有观众name===
+[32mINFO    [0m root:multparty_ten_anchor.py:363 ===交友房有一个观众===
+[32mINFO    [0m root:test_10party_mult.py:1301 ===断言成功，观众成功关闭上麦邀请===

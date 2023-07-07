@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_10party_mult.py:40 ===用例2：默认交友房预览页为10人房===
+[32mINFO    [0m root:multparty_ten_anchor.py:95 ===进入交友房预览页===
+[32mINFO    [0m root:multparty_ten_anchor.py:116 ===有权限弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:131 ===权限执行失败===
+[32mINFO    [0m root:multparty_ten_anchor.py:131 ===权限执行失败===
+[32mINFO    [0m root:multparty_ten_anchor.py:131 ===权限执行失败===
+[32mINFO    [0m root:test_10party_mult.py:48 ===断言成功===

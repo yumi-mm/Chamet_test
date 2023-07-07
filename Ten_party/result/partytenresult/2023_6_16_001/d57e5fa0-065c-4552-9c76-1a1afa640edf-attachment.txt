@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:233 ===用例10：观众进入交友房进场座驾===
+[32mINFO    [0m root:party_ten_audience.py:127 ===查找交由房列表出错===
+[32mINFO    [0m root:party_ten_audience.py:202 ===进入交友房===
+[32mINFO    [0m root:party_ten_audience.py:218 ===无进场座驾===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:242 ===断言失败===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:244 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-16 14_15_48.png

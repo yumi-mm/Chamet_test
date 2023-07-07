@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:201 ===用例9：消息区聊天消息可上滑===
+[32mINFO    [0m root:party_ten.py:196 ===滑动===
+[32mINFO    [0m root:party_ten.py:187 ===消息内容===
+[32mINFO    [0m root:test_10party_anchorcontinuous.py:205 ===断言成功===

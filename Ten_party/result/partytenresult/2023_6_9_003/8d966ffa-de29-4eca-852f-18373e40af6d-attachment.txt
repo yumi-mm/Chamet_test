@@ -1,0 +1,14 @@
+[32mINFO    [0m root:partyaudience_Start.py:26 ===启动app===
+[32mINFO    [0m root:desired_caps.py:33 start app......
+[32mINFO    [0m root:test_10party_audience.py:487 ===用例20：观众端给所有嘉宾送礼===
+[32mINFO    [0m root:party_ten_audience.py:115 ===进入交友房页签===
+[32mINFO    [0m root:party_ten_audience.py:197 ===进入交友房===
+[32mINFO    [0m root:party_ten_audience.py:263 ===获取礼物按钮===
+[32mINFO    [0m root:party_ten_audience.py:270 ===打开礼物弹窗===
+[32mINFO    [0m root:party_ten_audience.py:272 #####################
+[32mINFO    [0m root:party_ten_audience.py:284 ===送礼===
+[32mINFO    [0m root:party_ten_audience.py:277 ===获取礼物列表===
+[32mINFO    [0m root:party_ten_audience.py:304 ===判断有无夺宝弹窗===
+[32mINFO    [0m root:party_ten_audience.py:310 ===无夺宝弹窗===
+[32mINFO    [0m root:party_ten_audience.py:228 ===获取消息区最后一条文本消息===
+[32mINFO    [0m root:test_10party_audience.py:500 ===断言成功，成功送礼===

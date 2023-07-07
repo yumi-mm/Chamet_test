@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:607 ===用例28：主播端消息区聊天消息可下滑===
+[32mINFO    [0m root:multparty_ten_anchor.py:157 ===消息内容===
+[32mINFO    [0m root:test_10party_mult.py:613 ===断言失败===
+[32mINFO    [0m root:test_10party_mult.py:615 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-06-28 11_10_39.png

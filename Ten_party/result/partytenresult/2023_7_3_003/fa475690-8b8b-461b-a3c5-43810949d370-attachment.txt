@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:958 ===用例44：嘉宾在交友位发送表情===
+[32mINFO    [0m root:multparty_ten_audience.py:434 ===交友位不存在嘉宾===
+[32mINFO    [0m root:test_10party_mult.py:971 ===执行失败===

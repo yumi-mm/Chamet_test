@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:1338 ===用例61：观众打开主播个人主页半屏浮窗===
+[32mINFO    [0m root:multparty_ten_audience.py:517 ===获取交友房主播名称===
+[32mINFO    [0m root:test_10party_mult.py:1349 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:1351 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-03 14_23_48.png

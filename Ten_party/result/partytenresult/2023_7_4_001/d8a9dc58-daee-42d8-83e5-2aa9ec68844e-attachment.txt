@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:1592 ===用例73：主播在交友房接听电话===
+[32mINFO    [0m root:multparty_ten_anchor.py:417 ===主播接听电话失败===
+[32mINFO    [0m root:test_10party_mult.py:1606 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:1608 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-04 09_17_53.png

@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:275 ===用例13：交友房封面包含内容--国旗===
+[32mINFO    [0m root:multparty_ten_audience.py:281 ===有交友房===
+[32mINFO    [0m root:test_10party_mult.py:282 ===断言成功，交友房封面存在国旗===

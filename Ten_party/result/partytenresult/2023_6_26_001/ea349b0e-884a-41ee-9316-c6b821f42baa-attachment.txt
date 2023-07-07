@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:149 ===用例7：交友房观众端发言===
+[32mINFO    [0m root:multparty_ten_audience.py:199 ===观众端发言===
+[32mINFO    [0m root:test_10party_mult.py:162 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:164 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-06-26 13_41_33.png

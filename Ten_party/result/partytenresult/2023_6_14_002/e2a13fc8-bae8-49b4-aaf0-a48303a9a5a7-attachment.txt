@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:349 ===用例15：观众端发送文字正常向前滚动===
+[32mINFO    [0m root:party_ten_audience.py:239 ===观众端发言===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:361 ===执行失败===
+[32mINFO    [0m root:test_10party_audiencecontinuous.py:363 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-14 16_27_26.png
