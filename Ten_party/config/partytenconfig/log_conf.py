@@ -23,7 +23,8 @@ args=(sys.stdout,)
 class=FileHandler
 level=INFO
 formatter=form01
-args=('C:/Users/pgk bqt/PycharmProjects/Chamet_project/logs/runlog.log','a')
+# args=('C:/Users/pgk bqt/PycharmProjects/Chamet_project/logs/runlog.log','a')
+args=('../../logs/runlog.log','a')
 
 
 [formatters]

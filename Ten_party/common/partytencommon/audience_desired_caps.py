@@ -9,7 +9,8 @@ logging.config.fileConfig(log_file_path)
 logging = logging.getLogger()
 
 def audience_appium_desired():
-    with open('C:\\Users\pgk bqt\PycharmProjects\Chamet_project\config\partytenconfig\mult_config_audience.py', 'r', encoding='utf-8') as file:
+    # with open('C:\\Users\pgk bqt\PycharmProjects\Chamet_project\config\partytenconfig\mult_config_audience.py', 'r', encoding='utf-8') as file:
+    with open('..\..\config\partytenconfig\mult_config_audience.py', 'r', encoding='utf-8') as file:
         data=yaml.load(file, Loader=yaml.FullLoader)
     print(data)
     desired_caps2 = {}
