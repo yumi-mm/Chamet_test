@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:40 ===用例2：默认交友房预览页为10人房===
+[32mINFO    [0m root:multparty_ten_anchor.py:96 ===进入交友房预览页===
+[32mINFO    [0m root:multparty_ten_anchor.py:106 ===无权限弹窗===
+[32mINFO    [0m root:test_10party_mult.py:50 ===断言失败===
+[32mINFO    [0m root:test_10party_mult.py:52 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-11 17_30_02.png

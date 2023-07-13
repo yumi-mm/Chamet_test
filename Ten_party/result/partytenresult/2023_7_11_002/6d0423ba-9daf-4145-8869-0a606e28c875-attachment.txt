@@ -1,0 +1,8 @@
+[32mINFO    [0m root:test_10party_mult.py:2652 ===用例122：观众端群聊页面送礼===
+[32mINFO    [0m root:multparty_ten_audience.py:1163 ===打开礼物页面===
+[32mINFO    [0m root:multparty_ten_audience.py:1166 ##############
+[32mINFO    [0m root:multparty_ten_audience.py:364 ===判断有无夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:370 ===无夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:1203 ===断言失败，自己未发消息===
+[32mINFO    [0m root:test_10party_mult.py:2659 ===断言失败===
+[32mINFO    [0m root:test_10party_mult.py:2661 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-11 09_11_03.png

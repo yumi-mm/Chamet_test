@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:1811 ===用例83：主播查看是否收到google表情===
+[32mINFO    [0m root:test_10party_mult.py:1816 ===断言成功，主播成功收到google表情===

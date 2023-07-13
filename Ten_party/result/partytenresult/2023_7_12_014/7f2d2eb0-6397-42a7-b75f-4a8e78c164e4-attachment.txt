@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:1261 ===用例58：主播端检查观众是否成功上麦===
+[32mINFO    [0m root:multparty_ten_anchor.py:310 ===未成功上麦===
+[32mINFO    [0m root:test_10party_mult.py:1266 ===断言失败===

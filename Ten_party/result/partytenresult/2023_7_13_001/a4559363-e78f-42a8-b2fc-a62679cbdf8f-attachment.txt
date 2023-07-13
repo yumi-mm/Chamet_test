@@ -1,0 +1,10 @@
+[32mINFO    [0m root:test_10party_mult.py:2688 ===用例124：主播端群聊页面送礼===
+[32mINFO    [0m root:multparty_ten_anchor.py:775 ===打开礼物页面===
+[32mINFO    [0m root:multparty_ten_anchor.py:778 ##############
+[32mINFO    [0m root:multparty_ten_anchor.py:927 ===判断有无充值优惠券===
+[32mINFO    [0m root:multparty_ten_anchor.py:941 ===无优惠券===
+[32mINFO    [0m root:multparty_ten_anchor.py:764 ===判断有无夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:767 ===获得夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:813 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_10party_mult.py:2700 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:2702 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-13 09_46_07.png

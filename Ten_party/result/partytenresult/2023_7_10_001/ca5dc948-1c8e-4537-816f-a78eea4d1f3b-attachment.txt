@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:1867 ===用例84：主播私聊页面发送google表情===
+[32mINFO    [0m root:multparty_ten_anchor.py:508 ===准备发送表情===
+[32mINFO    [0m root:multparty_ten_anchor.py:497 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_10party_mult.py:1872 ===断言成功，主播发送google表情成功===

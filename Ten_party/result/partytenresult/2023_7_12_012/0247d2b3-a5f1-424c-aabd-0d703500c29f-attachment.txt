@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_mult.py:324 ===用例15：观众进入交友房进场座驾===
+[32mINFO    [0m root:multparty_ten_audience.py:143 ===进入交友房中的关注页签===
+[32mINFO    [0m root:multparty_ten_audience.py:163 ===进入交友房===
+[32mINFO    [0m root:multparty_ten_audience.py:305 ===无进场座驾===
+[32mINFO    [0m root:test_10party_mult.py:333 ===断言失败===
+[32mINFO    [0m root:test_10party_mult.py:335 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 14_55_12.png

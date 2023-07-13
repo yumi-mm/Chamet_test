@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:1951 ===用例88：观众私聊界面发送相册照片===
+[32mINFO    [0m root:test_10party_mult.py:1964 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:1966 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-07 16_21_33.png

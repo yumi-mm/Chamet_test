@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:2563 ===用例118：观众端群聊页面发送钻石包===
+[32mINFO    [0m root:multparty_ten_audience.py:1121 ===发送钻石包===
+[32mINFO    [0m root:multparty_ten_audience.py:827 ===判断有无充值优惠券===
+[32mINFO    [0m root:multparty_ten_audience.py:1137 ===无优惠券===
+[32mINFO    [0m root:test_10party_mult.py:2568 ===断言成功，成功发送钻石包===

@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:2607 ===用例120：主播端群聊页面领取钻石包===
+[32mINFO    [0m root:multparty_ten_anchor.py:749 ===领取钻石包===
+[32mINFO    [0m root:test_10party_mult.py:2619 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:2621 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 11_57_47.png

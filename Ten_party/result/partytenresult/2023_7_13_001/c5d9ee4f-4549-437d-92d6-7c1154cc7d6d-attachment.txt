@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:2711 ===用例125：观众端群聊页面检查送礼消息===
+[32mINFO    [0m root:test_10party_mult.py:2716 ===断言成功，观众收到送礼消息===

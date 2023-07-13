@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:210 ===用例10：交友房封面包含内容--人数===
+[32mINFO    [0m root:multparty_ten_audience.py:143 ===进入交友房中的关注页签===
+[32mINFO    [0m root:multparty_ten_audience.py:143 ===进入交友房中的关注页签===
+[32mINFO    [0m root:multparty_ten_audience.py:246 ===有交友房===
+[32mINFO    [0m root:test_10party_mult.py:217 ===断言成功，交友房封面存在人数===

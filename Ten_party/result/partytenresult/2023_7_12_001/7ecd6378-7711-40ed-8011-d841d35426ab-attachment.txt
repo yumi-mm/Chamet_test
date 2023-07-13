@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:3121 ===用例142：观众端退出交友房===
+[32mINFO    [0m root:test_10party_mult.py:3133 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:3135 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 09_41_20.png

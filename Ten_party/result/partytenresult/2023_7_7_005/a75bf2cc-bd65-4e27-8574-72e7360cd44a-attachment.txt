@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:1951 ===用例88：观众私聊界面发送相册照片===
+[32mINFO    [0m root:multparty_ten_audience.py:731 ===打开相册===
+[32mINFO    [0m root:multparty_ten_audience.py:737 ===发送相册照片===
+[32mINFO    [0m root:test_10party_mult.py:1955 ===断言成功===

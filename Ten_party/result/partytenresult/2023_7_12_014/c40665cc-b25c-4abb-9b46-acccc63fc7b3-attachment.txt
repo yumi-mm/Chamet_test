@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:1124 ===用例52：主播在交友位禁言嘉宾===
+[32mINFO    [0m root:multparty_ten_audience.py:191 ===点击交友位===
+[32mINFO    [0m root:multparty_ten_anchor.py:284 ===下方无申请列表按钮===
+[32mINFO    [0m root:multparty_ten_anchor.py:291 ===同意观众上麦===
+[32mINFO    [0m root:test_10party_mult.py:1141 ===执行失败===

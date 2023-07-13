@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:2112 ===用例96：主播端检查私聊页面送礼===
+[32mINFO    [0m root:test_10party_mult.py:2117 ===断言成功，主播收到私聊礼物===

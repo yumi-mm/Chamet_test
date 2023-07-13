@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:1455 ===用例67：观众通过半屏浮窗@主播===
+[32mINFO    [0m root:multparty_ten_audience.py:533 ===点击展开主播个人主页半屏浮窗===
+[32mINFO    [0m root:test_10party_mult.py:1469 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:1471 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 15_50_33.png

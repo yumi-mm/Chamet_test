@@ -106,9 +106,11 @@ class Multanchor(object):
             logging.info('===无权限弹窗===')
 
 
+
     # 判断有无权限弹窗
     def permission_window(self):
-        permission_windows = (MobileBy.ID, "com.android.permissioncontroller:id/permission_message")
+        # permission_windows = (MobileBy.ID, "com.android.permissioncontroller:id/permission_message")
+        permission_windows = (MobileBy.ID, "com.android.permissioncontroller:id/grant_dialog_container")
         try:
             window = self.driver.find_element(*permission_windows)
         except:
@@ -120,13 +122,21 @@ class Multanchor(object):
 
     # 同意权限弹窗
     def choic_permission_window(self):
-        permission_allow_foreground_only_button = (MobileBy.ID, "com.android.permissioncontroller:id/permission_allow_foreground_only_button")
+        # permission_allow_foreground_only_button = (MobileBy.ID, "com.android.permissioncontroller:id/permission_allow_foreground_only_button")
+        # permission_allow_button = (MobileBy.ID, "com.android.permissioncontroller:id/permission_allow_button")
+        # try:
+        #     if self.driver.find_element(*permission_allow_foreground_only_button):
+        #         self.driver.find_element(*permission_allow_foreground_only_button).click()
+        #     else:
+        #         self.driver.find_element(*permission_allow_button).click()
+        # except:
+        #     logging.info('===权限执行失败===')
         permission_allow_button = (MobileBy.ID, "com.android.permissioncontroller:id/permission_allow_button")
         try:
-            if self.driver.find_element(*permission_allow_foreground_only_button):
-                self.driver.find_element(*permission_allow_foreground_only_button).click()
-            else:
+            if self.driver.find_element(*permission_allow_button):
                 self.driver.find_element(*permission_allow_button).click()
+            else:
+                logging.info('===权限开启失败===')
         except:
             logging.info('===权限执行失败===')
 
@@ -280,7 +290,7 @@ class Multanchor(object):
         self.open_applylist()
         logging.info('===同意观众上麦===')
         self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/live_queue_invite").click()
-        self.driver.back()
+        self.back(1)
 
     # 主播同意观众上麦(右上角)
     def agree_applyright(self):
@@ -302,8 +312,9 @@ class Multanchor(object):
 
     # 第二个交友位嘉宾检查
     def guest_watch(self):
-        two_site = (MobileBy.XPATH,"//android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.FrameLayout[1]")
-        return self.driver.find_element(*two_site)
+        two_site_ele = (MobileBy.XPATH,"//android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.FrameLayout[1]")
+        two_site = self.driver.find_element(*two_site_ele)
+        return two_site
 
     # 点击展开嘉宾个人主页半屏弹窗
     def open_guesthalfwin(self):
@@ -367,7 +378,9 @@ class Multanchor(object):
             raise
         elif len(audience_list) == 1:
             logging.info('===交友房有一个观众===')
-            self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/live_queue_invite").click()
+            invite_butele_1 = (MobileBy.ID,"com.hkfuliao.chamet:id/live_queue_invite")
+            self.driver.find_element(*invite_butele_1).click()
+            return invite_butele_1
         else:
             num = 1
             for i in audience_list:
@@ -376,10 +389,10 @@ class Multanchor(object):
                 num += 1
             logging.info('===指定观众在%d位===' %num)
             logging.info('===点击观众后的邀请按钮===')
-            a = (MobileBy.XPATH,"//android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.ImageView" %num)
-            print(a)
-            self.driver.find_element(*a).click()
-            return a
+            invite_butele_2 = (MobileBy.XPATH,"//android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.ImageView" %num)
+            print(invite_butele_2)
+            self.driver.find_element(*invite_butele_2).click()
+            return invite_butele_2
 
 
     # 获取观众列表name
@@ -502,6 +515,8 @@ class Multanchor(object):
         expression = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.view.ViewGroup/android.widget.ImageView[2]" %message_num)
         return expression
 
+
+    # 发送表情
     def usermessage_send_expression(self,index):
         logging.info('===准备发送表情===')
         usermessage_expression_but = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_face_gif")
@@ -521,7 +536,7 @@ class Multanchor(object):
             google_expression_list[0].click()
         else:
             self.driver.find_elements(*usermessage_expression)[index].click()
-            self.touch_tap(350, 800)
+            self.touch_tap(550, 1650)
 
     # 点击空白处
     def touch_tap(self, x, y, duration=2000):  # 点击坐标  ,x1,x2,y1,y2,duration
@@ -533,6 +548,402 @@ class Multanchor(object):
         b = (float(y) / screen_height) * screen_height
         y1 = int(b)
         self.driver.tap([(x1, y1), (x1, y1)], duration)
+
+    # 发送相机照片
+    def usermessage_send_cameraphoto(self):
+        logging.info('===打开相机===')
+        usermessage_drop_down_list = (MobileBy.XPATH,
+                                      "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout")
+        self.driver.find_elements(*usermessage_drop_down_list)[2].click()
+        logging.info('===拍照发送===')
+        self.driver.find_element(MobileBy.XPATH,"//android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]").click()
+        self.driver.find_element(MobileBy.ID,"com.huawei.camera:id/done_button").click()
+        time.sleep(2)
+
+    # 私聊页面拨打语音聊天
+    def usermessage_Voice_chat(self):
+        logging.info('===拨打语音聊天===')
+        usermessage_drop_down_list = (MobileBy.XPATH,
+                                      "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout")
+        self.driver.find_elements(*usermessage_drop_down_list)[3].click()
+
+    # 获取toast消息
+    def toast_message(self, message):
+        return WebDriverWait(self.driver, 10, 0.05).until(
+            EC.presence_of_element_located((MobileBy.XPATH, '//*[contains(@text, "%s")]' % message)))
+
+    # 点击展开交友房私聊页面下拉列
+    def usermessage_drop_down(self):
+        logging.info('===展开下拉列表===')
+        iv_more_bottom = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/iv_more_bottom")
+        iv_more_bottom.click()
+
+    # 查看私聊界面对方发送礼物
+    def watch_othersendgift(self):
+        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        message_num = len(message_list)
+        head_frame = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.FrameLayout" %message_num)
+        gift_content = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[1]/android.widget.TextView" %message_num).text
+        return head_frame,gift_content
+
+    # 主播点击展开观众个人主页
+    def enter_audiencehaldwin(self,invite_guest):
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("%s")' % invite_guest).click()
+
+    # 主播给观众发送私聊消息
+    def sendmessage_toaudience(self,text):
+        logging.info('===进入私聊页面===')
+        self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/rl_send_message").click()
+        self.usermessage_send_text(text)
+
+    # 获取消息区内容
+    def get_messageregion(self):
+        usermessage_region_text = (MobileBy.XPATH,
+                                   "//android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView")
+        message_region = self.driver.find_elements(*usermessage_region_text)
+        return message_region
+
+    # 主播点击更多按钮
+    def anchorclick_more(self):
+        more_but = (MobileBy.ID, "com.hkfuliao.chamet:id/vc_setting")
+        self.driver.find_element(*more_but).click()
+
+    # 主播进入留言页面
+    def anchorenter_messagewin(self):
+        partymessage = (MobileBy.ANDROID_UIAUTOMATOR, 'text("留言")')
+        self.driver.find_element(*partymessage).click()
+
+    # 判断有无群聊消息
+    def message_group_list(self):
+        try:
+            party_message_group_lists = (MobileBy.XPATH,
+                                         "//androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.RelativeLayout")
+            logging.info('===查看群聊列表===')
+            message_group_list = self.driver.find_elements(*party_message_group_lists)
+            return message_group_list
+        except:
+            logging.info('===寻找群聊列表时出错===')
+
+    # 有用户消息，进入用户消息
+    def message_group_enter(self):
+        message_grouplist = self.message_group_list()
+        logging.info('===进入群聊页面===')
+        message_grouplist[0].click()
+
+    # 群聊界面发送文字
+    def groupmessage_send_text(self,message_text):
+        logging.info('===准备发送文字消息===')
+        groupmessage_edit_frame = (MobileBy.ID,"com.hkfuliao.chamet:id/et_edit_chat_info")
+        groupmessage_edit_sendbut = (MobileBy.ID,"com.hkfuliao.chamet:id/iv_send_message")
+        self.driver.find_element(*groupmessage_edit_frame).click()
+        self.driver.find_element(*groupmessage_edit_frame).send_keys(message_text)
+        self.driver.find_element(*groupmessage_edit_sendbut).click()
+        logging.info('===发送成功===')
+
+    # 获取群聊文本消息
+    def groupmessage_text(self,num):
+        grouptext_message = self.driver.find_elements(MobileBy.ID,"com.hkfuliao.chamet:id/tv_content")
+        return grouptext_message[num].text
+
+    # 群聊界面发送表情
+    def groupmessage_send_expression(self,index):
+        logging.info('===准备发送表情===')
+        groupmessage_expression_but = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_face_gif")
+        groupmessage_expression = (MobileBy.XPATH,"//android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout/android.widget.ImageView")
+        self.driver.find_element(*groupmessage_expression_but).click()
+        time.sleep(3)
+        if index == 0:
+            logging.info('===发送google表情===')
+            self.driver.find_elements(*groupmessage_expression)[index].click()
+            google_expression_searchframe = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/et_search_id")
+            google_expression_searchframe.send_keys("wow")
+            google_expression_searchbut = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/iv_search")
+            google_expression_searchbut.click()
+            time.sleep(1)
+            # google_expression_list = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout")
+            # time.sleep(0.5)
+            # google_expression_list[0].click()
+            self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout")[0].click()
+            self.touch_tap(550, 1200)
+        else:
+            logging.info('===发送Chamet表情===')
+            self.driver.find_elements(*groupmessage_expression)[index].click()
+            self.touch_tap(550, 1200)
+        logging.info('===发送成功===')
+
+    # 查看群聊界面对方发送表情(Chamet表情)
+    def watchgroup_othersendexpression(self):
+        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        message_num = len(message_list)
+        head_frame = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout" %message_num)
+        expression = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.ImageView[2]" %message_num)
+        return head_frame,expression
+
+    # 查看私聊界面自己发送表情(Chamet表情)
+    def watchgroup_selfsendexpression(self):
+        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        message_num = len(message_list)
+        try:
+            user_name = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout" %message_num)
+        except NoSuchElementException as e:
+            logging.info('===断言成功，为自己发的消息===')
+            assert True
+        else:
+            logging.info('===断言失败，自己未发消息===')
+            assert False
+        expression = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.ImageView[2]" %message_num)
+        return expression
+
+    # 查看群聊界面对方发送表情(谷歌表情)
+    def watchgroup_othersendgoogleexpression(self):
+        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        message_num = len(message_list)
+        head_frame = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout" % message_num)
+        expression = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.ImageView[3]" % message_num)
+        return head_frame, expression
+
+    # 查看群聊界面自己发送表情(谷歌表情)
+    def watchgroup_selfsendgooglexpression(self):
+        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        message_num = len(message_list)
+        try:
+            head_frame = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout" % message_num)
+        except NoSuchElementException as e:
+            logging.info('===断言成功，为自己发的消息===')
+            assert True
+        else:
+            logging.info('===断言失败，自己未发消息===')
+            assert False
+        expression = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.ImageView[3]" % message_num)
+        return expression
+
+    # 观众端获取群聊中语音文本
+    def audience_voice_text(self):
+        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        message_num = len(message_list)
+        user_name = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[1]/android.widget.TextView" % message_num)
+        voice_ele = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[2]/android.widget.TextView[2]" % message_num)
+        voice_time = voice_ele.text
+        voice_ele.click()
+        return user_name, voice_time
+
+    # 群聊页面上麦
+    def up_microphone(self):
+        logging.info('===主播端上麦===')
+        microphone = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/iv_bottom_up_mic")
+        microphone.click()
+
+    # 群聊中发送相册图片
+    def groupmessage_send_photo(self,num):
+        logging.info('===发送照片===')
+        photo_camera_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/iv_more_pic")
+        photo_camera_but.click()
+        photo_choicebut = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("从相册挑选")')
+        photo_choicebut.click()
+        logging.info('===发送相册照片===')
+        try:
+            self.driver.find_elements(MobileBy.XPATH,"//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.ImageView")[num].click()
+            time.sleep(1)
+            return True
+        except:
+            return False
+
+    # 群聊页面领取钻石包
+    def get_diamond_envelope(self):
+        logging.info('===领取钻石包===')
+        envelope = self.driver.find_elements(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运红包")')
+        envelope[-1].click()
+        open_envelope = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/iv_open_diamond_packet")
+        open_envelope.click()
+
+    # 领红包标识（用户头像）
+    def getenvelope_userhead(self):
+        user_head = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/civ_user_head")
+        return user_head
+
+    # 夺宝礼物弹窗
+    def lucky_window(self):
+        logging.info('===判断有无夺宝弹窗===')
+        try:
+            lucky_window = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/ll_lucky_content")
+            logging.info('===获得夺宝弹窗===')
+            return True
+        except:
+            logging.info('===无夺宝弹窗===')
+            return False
+
+    # 群聊页面送礼
+    def groupmessage_send_gift(self,gift_name):
+        logging.info('===打开礼物页面===')
+        gift_but = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ImageView[4]")
+        gift_but.click()
+        logging.info('##############')
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("简体中文chinese simplified")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("%s")' % gift_name).click()
+        # gift_listimage = (MobileBy.XPATH,"//androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ImageView")
+        # gift_list = self.driver.find_elements(*gift_listimage)
+        # gift_list[num].click()
+        # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("77")').click()
+        usermessage_gift_but = (MobileBy.XPATH,"//android.widget.LinearLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.ImageView")
+        send_gift = self.driver.find_element(*usermessage_gift_but)
+        send_gift.click()
+        lucky_window = self.lucky_window()
+        if lucky_window:
+            time.sleep(1)
+            finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("真棒！")')
+            finish.click()
+            self.driver.back()
+        else:
+            self.driver.back()
+        self.anchor_cancel_enrich_window()
+
+    # 查看群聊界面对方发送礼物
+    def watchgroup_othersendgift(self):
+        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        message_num = len(message_list)
+        user_name = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[1]/android.widget.TextView" % message_num)
+        gift_text = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[2]/android.view.ViewGroup/android.widget.TextView[1]" % message_num)
+        return user_name, gift_text.text
+
+    # 查看群聊界面自己发送礼物
+    def watchgroup_selfsendgift(self):
+        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        message_num = len(message_list)
+        try:
+            user_name = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[1]/android.widget.TextView" % message_num)
+        except NoSuchElementException as e:
+            logging.info('===断言成功，为自己发的消息===')
+            assert True
+        else:
+            logging.info('===断言失败，自己未发消息===')
+            assert False
+        gift_text = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView[1]" % message_num)
+        return gift_text.text
+
+    # 点击更多按钮
+    def click_morebut(self):
+        more_but = (MobileBy.ID, "com.hkfuliao.chamet:id/vc_setting")
+        self.driver.find_element(*more_but).click()
+
+    # 点击背景按钮
+    def click_backgroundbut(self):
+        background = (MobileBy.ANDROID_UIAUTOMATOR, 'text("背景")')
+        self.driver.find_element(*background).click()
+
+    # 进入游戏页面
+    def enter_game_window(self,game_type):
+        logging.info('===进入游戏页面===')
+        game_but = (MobileBy.ID, "com.hkfuliao.chamet:id/vc_box")
+        game_race = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_game")
+        game_LuckyNumber = (MobileBy.ID, "com.hkfuliao.chamet:id/ivLuckyNumber")
+        game_but = self.driver.find_element(*game_but)
+        game_but.click()
+        game_race = self.driver.find_element(*game_race)
+        game_LuckyNumber = self.driver.find_element(*game_LuckyNumber)
+        if game_type == "Chamet赛车":
+            logging.info('===进入赛车游戏===')
+            game_race.click()
+            time.sleep(5)
+        elif game_type == "幸运数字":
+            logging.info('===进入幸运数字===')
+            game_LuckyNumber.click()
+            time.sleep(3)
+        else:
+            logging.info('===游戏类型输入错误===')
+            raise
+
+    # 进入10人交友房设置页面
+    def enter_setting_page(self):
+        logging.info('===进入设置页面===')
+        settings = (MobileBy.ANDROID_UIAUTOMATOR, 'text("设置")')
+        setting_page = self.driver.find_element(*settings)
+        setting_page.click()
+
+    # 10人交友房主播端关闭麦克风
+    def close_voice(self):
+        logging.info('===打开/关闭麦克风===')
+        try:
+            logging.info('===主播端关闭麦克风===')
+            voice_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/switch_microphone")
+            voice_but.click()
+            time.sleep(1)
+            return True
+        except:
+            return False
+
+    # 查看有无任务按钮
+    def haveno_task_but(self):
+        logging.info('===查看有无任务按钮===')
+        try:
+            task_but = (MobileBy.ANDROID_UIAUTOMATOR, 'text("任务")')
+            task_but = self.driver.find_element(*task_but)
+            logging.info('===有任务按钮===')
+            return True
+        except:
+            logging.info('===无任务按钮===')
+            return False
+
+    # 进入任务页面
+    def enter_task_page(self):
+        logging.info('===进入任务页面===')
+        task_but = (MobileBy.ANDROID_UIAUTOMATOR, 'text("任务")')
+        task_but = self.driver.find_element(*task_but)
+        task_but.click()
+
+    # 退出交友房
+    def quit_party(self):
+        logging.info('===退出交友房===')
+        vc_closes = self.driver.find_elements(MobileBy.ID, "com.hkfuliao.chamet:id/vc_close")
+        vc_closes[-1].click()
+        positive_btn = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/positive_btn")
+        positive_btn.click()
+        # closeTv = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/closeTv")
+        # closeTv.click()
+
+    # 进入10人交友房充值页面
+    def recharge_diamond(self):
+        logging.info('===进行充值===')
+        recharge_level = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup")
+        recharge_level[0].click()
+        time.sleep(2)
+        buy_but = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("一键购买")')
+        buy_but.click()
+        time.sleep(2)
+
+    # 进入10人交友房充值页面
+    def enter_recharge_page(self):
+        logging.info('===进入充值页面===')
+        recharge = (MobileBy.ANDROID_UIAUTOMATOR, 'text("充值")')
+        recharge = self.driver.find_element(*recharge)
+        recharge.click()
+
+    # 交友房预览页交友位
+    def tenparty_sitenum(self):
+        site_onerow = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout")
+        site_tworow = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout[1]/android.widget.LinearLayout[2]/android.widget.LinearLayout")
+        sitenum = len(site_onerow)+len(site_tworow)
+        return sitenum
+
+    # 主播端充值优惠卷
+    def anchor_enrich_window(self):
+        logging.info("===判断有无充值优惠券===")
+        try:
+            enrich_window = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("去使用")')
+            return True
+        except:
+            return False
+
+    # 主播端取消充值优惠券
+    def anchor_cancel_enrich_window(self):
+        enrich_window = self.anchor_enrich_window()
+        if enrich_window:
+            logging.info("===有优惠券===")
+            self.driver.back()
+        else:
+            logging.info("===无优惠券===")
+
+
+
 
 
 
