@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import logging
-from Six_party.common.common_fun import Common, NoSuchElementException
-from Six_party.common.desired_caps import spectator_appium_desired
+from ChametProject_UI.Six_party.common.common_fun import Common, NoSuchElementException
+from ChametProject_UI.Six_party.common.desired_caps import spectator_appium_desired
 from selenium.webdriver.common.by import By
 
 

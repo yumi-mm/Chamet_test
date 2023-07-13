@@ -14184,3 +14184,5 @@
 2023-07-11 11:23:40,991 six_party_anchor.py [line:872] INFO =点击交友房结束界面的主播头像=
 2023-07-11 11:24:12,824 six_party_anchor.py [line:2175] INFO =判断是否进入主播个人主页=
 2023-07-11 11:24:20,920 six_party_anchor.py [line:2179] INFO =未进入主播个人主页=
+2023-07-13 17:16:18,822 myunittest.py [line:11] INFO ===主播端启动app===
+2023-07-13 17:16:18,824 desired_caps_anchor.py [line:35] INFO start app......

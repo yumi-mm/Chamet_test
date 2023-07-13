@@ -1,10 +1,10 @@
 import unittest
-from Six_party.businessView.six_party_anchor import Six_partyView_anchor
-from Six_party.businessView.six_party_spectator import Six_partyView_spectator
-from Six_party.common.desired_caps_anchor import anchor_appium_desired
-from Six_party.common.desired_caps_spectatpr import spectator_appium_desired
+from ChametProject_UI.Six_party.businessView.six_party_anchor import Six_partyView_anchor
+from ChametProject_UI.Six_party.businessView.six_party_spectator import Six_partyView_spectator
+from ChametProject_UI.Six_party.common.desired_caps_anchor import anchor_appium_desired
+from ChametProject_UI.Six_party.common.desired_caps_spectatpr import spectator_appium_desired
 import logging
-from Six_party.common.common_fun import Common
+from ChametProject_UI.Six_party.common.common_fun import Common
 
 class StartEnd(Common,unittest.TestCase):
     def setup_class(self):

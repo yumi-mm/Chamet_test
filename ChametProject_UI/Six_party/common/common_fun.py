@@ -1,7 +1,7 @@
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 import requests
-from Six_party.baseView.baseView import BaseView
+from ChametProject_UI.Six_party.baseView.baseView import BaseView
 from selenium.common.exceptions import NoSuchElementException
 import logging
 from selenium.webdriver.common.by import By

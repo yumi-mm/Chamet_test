@@ -1,6 +1,6 @@
 # coding=gb2312
 import time
-from Six_party.common.myunittest import StartEnd
+from ChametProject_UI.Six_party.common.myunittest import StartEnd
 import allure
 import unittest
 import pytest
