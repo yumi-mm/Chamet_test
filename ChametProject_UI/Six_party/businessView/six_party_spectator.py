@@ -109,7 +109,7 @@ class Six_partyView_spectator(Common):
                                                    '/android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup')
     partytab_one_partyroom = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.ImageView')
     partytab_follow_one_partyroom = (By.ID, 'com.hkfuliao.chamet:id/iv_bigHead')
-    six_party_anchor_head = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.FrameLayout/android.widget.FrameLayout/android.view.View')
+    six_party_anchor_head = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]')
     six_party_follow_anchor = (By.ID, 'com.hkfuliao.chamet:id/iv_follow')
     six_party_report_anchor = (By.ID, 'com.hkfuliao.chamet:id/tv_report')
     six_party_gift = (By.ID, 'com.hkfuliao.chamet:id/vc_gift')
@@ -166,7 +166,7 @@ class Six_partyView_spectator(Common):
     supernatant_message_setting_photo_twoconfirm = (By.ID, 'com.android.camera:id/done_button')
     supernatant_message_face_gif = (By.ID, 'com.hkfuliao.chamet:id/iv_face_gif')
     supernatant_message_face_gif_one = (By.XPATH,
-                                        '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[2]/android.widget.ImageView')
+                                        '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[3]')
     group_more = (By.ID, 'com.hkfuliao.chamet:id/tv_group_detail')
     group_more_two_people = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageView[2]')
     supernatant_message_group = (By.XPATH, '//android.widget.TextView[contains(@text, "创建群里咳咳")]')
@@ -270,11 +270,11 @@ class Six_partyView_spectator(Common):
                       '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]')
     test_expect096 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level]  Hello123456 : @User20111243 ")]')
     test_expect097 = (By.ID, 'com.hkfuliao.chamet:id/vc_box')
-    test_expect102 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level]  测试账号男 加入了房间")]')
+    test_expect102 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] 测试账号男 加入了房间")]')
     test_expect103 = (By.ID, 'com.hkfuliao.chamet:id/img_love')
     test_expect116 = (By.XPATH,
                       '//android.widget.TextView[contains(@text, "欢迎来到Chamet 交友房！警告：直播期间严禁出现色情、粗俗、暴力、未成年人等相关情况。人工智能系统每天24 小时对其进行审查。一旦违反规定，将受到严惩！")]')
-    test_expect117 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level]  测试账号男 : 1234")]')
+    test_expect117 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] 测试账号男 : 1234")]')
 
     test_expect120 = (By.XPATH,
                       '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.TextView')
@@ -2626,7 +2626,7 @@ class Six_partyView_spectator(Common):
     def Test_X162(self):
         logging.info('=判断是否离开交友房=')
         try:
-            self.driver.find_element(*self.tab_party)
+            self.driver.find_element(*self.group_more_two_people)
         except NoSuchElementException:
             logging.info('=未离开交友房=')
             return False
@@ -2702,7 +2702,7 @@ class Six_partyView_spectator(Common):
     def Test_8(self):
         logging.info('=判断是否进入成功=')
         try:
-            self.driver.find_element(*self.my_group)
+            self.driver.find_element(*self.close_six_party)
         except NoSuchElementException:
             logging.info('=没有进入成功=')
             return False
@@ -2743,6 +2743,17 @@ class Six_partyView_spectator(Common):
         else:
             logging.info('=收到了邀请=')
             return False
+
+    def Test_129(self):
+        logging.info('=判断是否进入了交友房=')
+        try:
+            self.driver.find_element(*self.close_six_party)
+        except NoSuchElementException:
+            logging.info('=未进入交友房=')
+            return False
+        else:
+            logging.info('=进入了交友房=')
+            return True
 
 
 if __name__ == '__main__':
