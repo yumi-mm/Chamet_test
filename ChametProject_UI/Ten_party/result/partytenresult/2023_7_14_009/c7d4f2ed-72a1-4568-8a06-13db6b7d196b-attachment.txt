@@ -1,0 +1,20 @@
+[32mINFO    [0m root:test_10party_mult.py:745 ===用例34：观众端给主播送礼===
+[32mINFO    [0m root:multparty_ten_audience.py:418 ===送礼===
+[32mINFO    [0m root:multparty_ten_audience.py:375 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:378 ===送礼失败，余额不足，有充值弹窗。===
+[32mINFO    [0m root:multparty_ten_audience.py:387 ===判断设备是否可进行google充值===
+[32mINFO    [0m root:multparty_ten_audience.py:390 ===设备可进行google充值===
+[32mINFO    [0m root:multparty_ten_audience.py:398 ===充值===
+[32mINFO    [0m root:multparty_ten_audience.py:400 ===进行充值===
+[32mINFO    [0m root:multparty_ten_audience.py:409 ===充值成功===
+[32mINFO    [0m root:multparty_ten_audience.py:418 ===送礼===
+[32mINFO    [0m root:multparty_ten_audience.py:375 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:381 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multparty_ten_audience.py:382 ===判断夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:375 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:381 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multparty_ten_audience.py:382 ===判断夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:364 ===判断有无夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:370 ===无夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:320 ===获取消息区最后一条文本消息===
+[32mINFO    [0m root:test_10party_mult.py:754 ===断言成功，成功送礼===

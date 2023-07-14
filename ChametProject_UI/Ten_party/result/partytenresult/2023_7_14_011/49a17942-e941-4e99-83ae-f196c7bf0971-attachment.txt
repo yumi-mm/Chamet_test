@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:1249 ===用例56：观众收到上麦邀请检查===
+[32mINFO    [0m root:test_10party_mult.py:1253 ===断言成功，观众收到上麦邀请===

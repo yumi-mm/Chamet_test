@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:1645 ===用例74：观众给主播在交友房发送私聊文本消息===
+[32mINFO    [0m root:multparty_ten_audience.py:619 ===获取半屏交友房主播名称===
+[32mINFO    [0m root:test_10party_mult.py:1660 ===执行失败===

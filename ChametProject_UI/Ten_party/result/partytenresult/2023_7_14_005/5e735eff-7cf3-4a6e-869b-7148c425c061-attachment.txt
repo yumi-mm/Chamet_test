@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:609 ===用例28：主播端消息区聊天消息可下滑===
+[32mINFO    [0m root:multparty_ten_anchor.py:168 ===消息内容===
+[32mINFO    [0m root:test_10party_mult.py:613 ===断言成功===

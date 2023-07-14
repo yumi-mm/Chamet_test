@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:1129 ===用例51：嘉宾查看是否被移出嘉宾位===
+[32mINFO    [0m root:multparty_ten_audience.py:217 ===消息内容===
+[32mINFO    [0m root:test_10party_mult.py:1133 ===断言成功，主播端成功移除嘉宾===

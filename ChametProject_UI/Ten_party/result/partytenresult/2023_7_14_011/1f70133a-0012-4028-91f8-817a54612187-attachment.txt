@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:1739 ===用例78：观众私聊页面发送chamet表情===
+[32mINFO    [0m root:multparty_ten_audience.py:747 ===准备发送表情===
+[32mINFO    [0m root:test_10party_mult.py:1751 ===执行失败===

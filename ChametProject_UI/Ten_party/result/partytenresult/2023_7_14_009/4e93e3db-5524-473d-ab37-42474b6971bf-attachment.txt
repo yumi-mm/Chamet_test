@@ -1,0 +1,13 @@
+[32mINFO    [0m root:test_10party_mult.py:1433 ===用例65：通过半屏浮窗给主播送礼物===
+[32mINFO    [0m root:multparty_ten_audience.py:599 ===点击展开主播个人主页半屏浮窗===
+[32mINFO    [0m root:multparty_ten_audience.py:642 点击展开礼物浮窗
+[32mINFO    [0m root:multparty_ten_audience.py:418 ===送礼===
+[32mINFO    [0m root:multparty_ten_audience.py:375 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:378 ===送礼失败，余额不足，有充值弹窗。===
+[32mINFO    [0m root:multparty_ten_audience.py:387 ===判断设备是否可进行google充值===
+[32mINFO    [0m root:multparty_ten_audience.py:390 ===设备可进行google充值===
+[32mINFO    [0m root:multparty_ten_audience.py:398 ===充值===
+[32mINFO    [0m root:multparty_ten_audience.py:400 ===进行充值===
+[32mINFO    [0m root:multparty_ten_audience.py:413 ===充值失败===
+[32mINFO    [0m root:multparty_ten_audience.py:418 ===送礼===
+[32mINFO    [0m root:test_10party_mult.py:1450 ===执行失败===

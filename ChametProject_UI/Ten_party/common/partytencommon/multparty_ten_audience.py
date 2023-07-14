@@ -146,7 +146,7 @@ class Multaudience(object):
     # 获取交友房卡片页列表
     def party_list(self):
         try:
-            self.go_carepage()
+            # self.go_carepage()
             party_list = self.driver.find_elements(MobileBy.XPATH,
                                                    "//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.FrameLayout")
             party_list_num = len(party_list)
@@ -345,7 +345,7 @@ class Multaudience(object):
         logging.info('===打开礼物弹窗===')
         audience_gift_but.click()
         logging.info('#####################')
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("简体中文chinese simplified")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("热门")').click()
 
     # 礼物窗送礼all按钮
     def giftwin_allbut(self):
@@ -370,21 +370,98 @@ class Multaudience(object):
             logging.info('===无夺宝弹窗===')
             return False
 
+    # 观众端判断送礼时是否余额不足
+    def rechargewindow_bysendgift(self):
+        logging.info('===判断是否余额不足，有无充值弹窗===')
+        try:
+            rechargewindow = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/tv_my_diamonds")
+            logging.info('===送礼失败，余额不足，有充值弹窗。===')
+            return True
+        except:
+            logging.info('===送礼成功，无充值弹窗。===')
+            return False
+
+    # 观众端判断设备是否可进行google充值
+    def rechargewindow_able(self):
+        logging.info('===判断设备是否可进行google充值===')
+        try:
+            rechargewindow = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/recycler_top_up_list")
+            logging.info('===设备可进行google充值===')
+            return True
+        except:
+            logging.info('===设备不可进行google充值===')
+            return False
+
+    # 观众端设备进行充值
+    def rechargewindow_recharge(self):
+        logging.info('===充值===')
+        try:
+            logging.info('===进行充值===')
+            recharge_level = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup")
+            recharge_level[0].click()
+            time.sleep(2)
+            buy_but = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("一键购买")')
+            buy_but.click()
+            time.sleep(3)
+            buy_success_page = self.audience_buysuccess_page()
+            assert buy_success_page
+            logging.info('===充值成功===')
+            self.back(2)
+            return True
+        except:
+            logging.info('===充值失败===')
+            return False
+
     # 观众端送礼
-    def audience_sendgift(self,gift_name):
+    def audience_sendgift(self,gift_tab,gift_name):
         logging.info('===送礼===')
-        audience_giftwin_list = self.audience_giftwin_textlist()
-        # audience_giftwin_list[num].click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
         audience_sendgift_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/sendTv")
         audience_sendgift_but.click()
-        lucky_window = self.audience_lucky_window()
-        if lucky_window:
-            finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("真棒！")')
-            finish.click()
-            self.driver.back()
+        if self.rechargewindow_bysendgift() and self.rechargewindow_able():
+            self.rechargewindow_recharge()
+            # self.audience_sendgift("简体中文chinese simplified","Moon sighting")
+            self.audience_sendgift("热门", "幸运之吻")
+        elif self.rechargewindow_bysendgift() and self.rechargewindow_able() == False:
+            self.back(2)
+            logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
+            return 0
         else:
-            self.driver.back()
+            lucky_window = self.audience_lucky_window()
+            if lucky_window:
+                finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("真棒！")')
+                finish.click()
+                self.driver.back()
+            else:
+                self.driver.back()
+            return 1
+
+    # 观众端送礼
+    def audience_sendgift_bymessage(self, gift_tab, gift_name):
+        logging.info('===送礼===')
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
+        audience_sendgift_but = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/sendTv")
+        audience_sendgift_but.click()
+        if self.rechargewindow_bysendgift() and self.rechargewindow_able():
+            self.rechargewindow_recharge()
+            self.audience_sendgift_bymessage("热门", "棒棒糖")
+        elif self.rechargewindow_bysendgift() and self.rechargewindow_able() == False:
+            self.back(2)
+            logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
+            return 0
+        else:
+            lucky_window = self.audience_lucky_window()
+            if lucky_window:
+                finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("真棒！")')
+                finish.click()
+                self.driver.back()
+            else:
+                self.driver.back()
+            return 1
 
     # 观众左右滑动礼物弹窗
     def left_right_swipegiftwin(self):
@@ -418,6 +495,11 @@ class Multaudience(object):
             apply_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/apply")
             apply_but.click()
             time.sleep(1)
+            pw = self.permission_window()
+            if pw:
+                self.choic_permission_window()
+            else:
+                logging.info('===无权限弹窗===')
             return True
         except:
             return False
@@ -448,7 +530,8 @@ class Multaudience(object):
     def audience_sendexpression(self,num):
         try:
             logging.info('===获取表情列表===')
-            sitexpression = (MobileBy.XPATH,"//android.view.ViewGroup/android.widget.LinearLayout[2]/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.ImageView")
+            # sitexpression = (MobileBy.XPATH,"//android.view.ViewGroup/android.widget.LinearLayout[2]/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.ImageView")
+            sitexpression = (MobileBy.ID,"com.hkfuliao.chamet:id/img_expression")
             logging.info('===发送表情===')
             self.driver.find_elements(*sitexpression)[num].click()
             return True
@@ -515,10 +598,11 @@ class Multaudience(object):
             agree_but = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("确认")')
             agree_but.click()
             logging.info('===嘉宾离开嘉宾位===')
+            time.sleep(1)
 
     # 第二个交友位嘉宾检查
     def guest_watch(self):
-        two_site_ele = (MobileBy.XPATH,"//android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.FrameLayout[1]")
+        two_site_ele = (MobileBy.XPATH,"//android.widget.FrameLayout[2]/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.FrameLayout")
         two_site = self.driver.find_element(*two_site_ele)
         return two_site
 
@@ -573,12 +657,10 @@ class Multaudience(object):
         return getparty_title
 
     # 个人主页浮层送礼
-    def HalfScreen_sendgift(self,gift_name):
+    def HalfScreen_sendgift(self,gift_tab,gift_name):
         logging.info('点击展开礼物浮窗')
         self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/profile_gift").click()
-        logging.info('进入简体中文chinese simplified栏目')
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("简体中文chinese simplified")').click()
-        self.audience_sendgift(gift_name)
+        self.audience_sendgift(gift_tab,gift_name)
 
     # 个人主页浮层@主播
     def HalfScreen_aiteanchor(self):
@@ -846,7 +928,8 @@ class Multaudience(object):
     # 观众端私聊礼物按钮中送礼
     def audience_usermessage_sendgift(self):
         logging.info('#####################')
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("简体中文chinese simplified")').click()
+        # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("简体中文chinese simplified")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("热门")').click()
         logging.info("===送礼物===")
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("Halloween")').click()
         usermessage_gift_but = (MobileBy.XPATH,
@@ -1174,30 +1257,37 @@ class Multaudience(object):
         else:
             logging.info("===无优惠券===")
 
-    # 观众端群聊页面送礼
-    def audience_groupmessage_sendgift(self,gift_name):
+    # 观众端群聊页面打开送礼窗口
+    def group_opengiftwin(self):
         logging.info('===打开礼物页面===')
         gift_but = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ImageView[4]")
         gift_but.click()
-        logging.info('##############')
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("简体中文chinese simplified")').click()
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("%s")' % gift_name).click()
-        # gift_listimage = (MobileBy.XPATH,
-        #                   "//androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ImageView")
-        # gift_list = self.driver.find_elements(*gift_listimage)
-        # gift_list[num].click()
-        groupmessage_gift_but = (MobileBy.XPATH,
-                                "//android.widget.LinearLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.ImageView")
-        send_gift = self.driver.find_element(*groupmessage_gift_but)
-        send_gift.click()
-        self.groupaudience_cancel_enrich_window()
-        lucky_window = self.audience_lucky_window()
-        if lucky_window:
-            finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("真棒！")')
-            finish.click()
-            self.driver.back()
+
+    # 观众端群聊页面送礼
+    def audience_groupmessage_sendgift(self,gift_tab,gift_name):
+        logging.info('===送礼===')
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
+        audience_sendgift_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/sendTv")
+        audience_sendgift_but.click()
+        if self.rechargewindow_bysendgift() and self.rechargewindow_able():
+            self.rechargewindow_recharge()
+            # self.audience_sendgift("简体中文chinese simplified","Fox")
+            self.audience_sendgift("热门","幸运之吻")
+        elif self.rechargewindow_bysendgift() and self.rechargewindow_able() == False:
+            self.back(2)
+            logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
+            return 0
         else:
-            self.driver.back()
+            lucky_window = self.audience_lucky_window()
+            if lucky_window:
+                finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("真棒！")')
+                finish.click()
+                self.driver.back()
+            else:
+                self.driver.back()
+            return 1
+
 
     # 查看群聊界面对方发送礼物
     def watchgroup_othersendgift(self):
@@ -1313,6 +1403,24 @@ class Multaudience(object):
         except:
             logging.info('===未成功进入活动页===')
             return False
+
+    # 通过ID查找用户进入10人交友房
+    def enterparty_userbyid(self, ID):
+        # 点击筛选按钮
+        self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/ll_select_country").click()
+        # 上滑
+        self.swipe_xy(350, 500, 350, 250)
+        # 点击更多进入二级页签
+        self.driver.find_elements(MobileBy.ANDROID_UIAUTOMATOR, 'text("更多")')[0].click()
+        # 定位搜索框
+        self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/et_search_id").click()
+        self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/et_search_id").send_keys(ID)
+        # 点击搜索按钮
+        self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/iv_search").click()
+        party_username = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/tv_user_name").text
+        # 进入10人交友房
+        self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/iv_party_status").click()
+        return party_username
 
 
 

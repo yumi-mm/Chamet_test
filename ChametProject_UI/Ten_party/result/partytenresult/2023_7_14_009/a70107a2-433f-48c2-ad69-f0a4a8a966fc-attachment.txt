@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:1481 ===用例67：观众通过半屏浮窗@主播===
+[32mINFO    [0m root:test_10party_mult.py:1495 ===执行失败===

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:347 ===用例16：观众进入交友房进场标签===
-[32mINFO    [0m root:multparty_ten_audience.py:160 ===进入交友房===
-[32mINFO    [0m root:multparty_ten_audience.py:308 ===有进场标签===
-[32mINFO    [0m root:test_10party_mult.py:354 ===断言成功，存在进场标签===

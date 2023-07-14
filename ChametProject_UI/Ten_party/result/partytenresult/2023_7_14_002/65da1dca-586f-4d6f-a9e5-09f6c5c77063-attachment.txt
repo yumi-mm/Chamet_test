@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:891 ===用例41：主播端同意观众上麦申请===
+[32mINFO    [0m root:multparty_ten_anchor.py:291 ===同意观众上麦===
+[32mINFO    [0m root:multparty_ten_anchor.py:310 ===未成功上麦===
+[32mINFO    [0m root:test_10party_mult.py:897 ===断言失败===
+[32mINFO    [0m root:test_10party_mult.py:899 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-14 10_20_10.png

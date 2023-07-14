@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_mult.py:995 ===用例46：嘉宾离开交友位===
+[32mINFO    [0m root:multparty_ten_audience.py:477 ===点击更多按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:486 ===点击设置按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:522 ===嘉宾离开嘉宾位===
+[32mINFO    [0m root:test_10party_mult.py:1010 ===断言失败===
+[32mINFO    [0m root:test_10party_mult.py:1012 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-14 10_34_20.png

@@ -23,7 +23,7 @@ args=(sys.stdout,)
 class=FileHandler
 level=INFO
 formatter=form01
-# args=('C:/Users/pgk bqt/PycharmProjects/Chamet_project/logs/runlog.log','a')
+# args=('C:/Users/pgk bqt/PycharmProjects/github_Chamet/ChametProject_UI/logs/runlog.log','a')
 args=('../../Ten_party/logs/runlog.log','a')
 
 

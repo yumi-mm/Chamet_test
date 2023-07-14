@@ -1,6 +1,6 @@
 # coding=gb2312
 import time
-from ChametProject_UI.Six_party.common.myunittest import StartEnd
+from Six_party.common.myunittest import StartEnd
 import allure
 import unittest
 import pytest
@@ -59,24 +59,24 @@ class Test_six_party_interaction(StartEnd):
         self.assertIs(A.Test_X005(), True)
 
 
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例6：观众交友房页签房间显示')
-    # def test_Six_Party_006(self):
-    #     S = self.multspectator
-    #     S.driver.tap([(734, 2211), (735, 2212)], 200)
-    #     S.Tab_party()
-    #     S.driver.swipe(600, 1800, 600, 800)
-    #     S.driver.swipe(600, 800, 600, 1800)
-    #     S.driver.swipe(600, 800, 600, 1800)
-    #     self.assertIs(S.Test_X089(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例7：观众从交友房页签进入交友房')
-    # def test_Six_Party_007(self):
-    #     S = self.multspectator
-    #     S.Partytab_one_partyroom()
-    #     self.assertIs(S.Test_X090(), True)
-    #     S.Close_six_party()
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例6：观众交友房页签房间显示')
+    def test_Six_Party_006(self):
+        S = self.multspectator
+        S.driver.tap([(734, 2211), (735, 2212)], 200)
+        S.Tab_party()
+        S.driver.swipe(600, 1800, 600, 800)
+        S.driver.swipe(600, 800, 600, 1800)
+        S.driver.swipe(600, 800, 600, 1800)
+        self.assertIs(S.Test_X089(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例7：观众从交友房页签进入交友房')
+    def test_Six_Party_007(self):
+        S = self.multspectator
+        S.Partytab_one_partyroom()
+        self.assertIs(S.Test_X090(), True)
+        S.Close_six_party()
 
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例8：观众创建群聊场景,并从群聊进入主播交友房')
@@ -94,326 +94,326 @@ class Test_six_party_interaction(StartEnd):
         S.Homepage_video()
         self.assertIs(S.Test_8(), True)
 
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例9：主播查看观众进入交友房的特效展示')
-    # def test_Six_Party_009(self):
-    #     A = self.multanchor
-    #     self.assertIs(A.Test_X066(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例10：主播查看观众进入交友房消息区提示')
-    # def test_Six_Party_010(self):
-    #     A = self.multanchor
-    #     time.sleep(3)
-    #     self.assertIs(A.Test_X067(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例11：主播交友房警告消息检查')
-    # def test_Six_Party_011(self):
-    #     A = self.multanchor
-    #     A.driver.swipe(363, 1478, 363, 2040)
-    #     self.assertIs(A.Test_X059(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例12：交友房该场送礼为0，观众查看送礼榜入口')
-    # def test_Six_Party_012(self):
-    #     S = self.multspectator
-    #     self.assertIs(S.Test_X133(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例13：观众在交友房中送礼时余额不足')
-    # def test_Six_Party_013(self):
-    #     S = self.multspectator
-    #     A = self.multanchor
-    #     S.Six_party_gift()
-    #     time.sleep(1)
-    #     S.Six_party_four_gift()
-    #     S.More_message_people_sendgift()
-    #     self.assertIs(A.Test_X13(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例14：观众在交友房中点击主播头像')
-    # def test_Six_Party_014(self):
-    #     S = self.multspectator
-    #     S.driver.tap([(213, 213), (214, 214)], 200)
-    #     time.sleep(2)
-    #     S.driver.tap([(213, 213), (214, 214)], 200)
-    #     S.Six_party_anchor_head()
-    #     self.assertIs(S.Test_X091(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例15：观众在交友房中关注主播')
-    # def test_Six_Party_015(self):
-    #     S = self.multspectator
-    #     S.Six_party_follow_anchor()
-    #     self.assertIs(S.Test_X092(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例16：信息浮层中举报功能校验')
-    # def test_Six_Party_016(self):
-    #     S = self.multspectator
-    #     S.Six_party_report_anchor()
-    #     self.assertIs(S.Test_X093(), True)
-    #     S.driver.tap([(213, 213), (214, 214)], 200)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例17：观众在交友房中通过主播个人主页浮窗给主播送礼物')
-    # def test_Six_Party_017(self):
-    #     S = self.multspectator
-    #     A = self.multanchor
-    #     S.Six_party_anchor_head()
-    #     S.Six_party_supernatant_gift()
-    #     S.Six_party_one_gift()
-    #     S.Six_party_gift_single()
-    #     S.Six_party_send_gift()
-    #     S.driver.tap([(213, 213), (214, 214)], 200)
-    #     self.assertIs(A.Test_X16(), True)
-    #
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例18：交友房该场送礼不为0，观众查看送礼榜入口')
-    # def test_Six_Party_018(self):
-    #     S = self.multspectator
-    #     self.assertIs(S.Test_X135(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例19：观众在交友房中给主播发起视频通话')
-    # def test_Six_Party_019(self):
-    #     A = self.multanchor
-    #     S = self.multspectator
-    #     S.Six_party_anchor_head()
-    #     S.Six_party_call_anchor()
-    #     self.assertIs(S.Test_56(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例20：观众在交友房@主播')
-    # def test_Six_Party_020(self):
-    #     A = self.multanchor
-    #     S = self.multspectator
-    #     time.sleep(5)
-    #     S.Six_party_at_anchor()
-    #     S.Six_party_room_message_send()
-    #     S.driver.tap([(552, 189), (553, 190)], 200)
-    #     self.assertIs(A.Test_X096(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例21：观众从主播个人主页进入交友房')
-    # def test_Six_Party_021(self):
-    #     S = self.multspectator
-    #     S.Six_party_anchor_head()
-    #     S.Six_party_supernatant_anchor_head()
-    #     S.Homepage_video()
-    #     self.assertIs(S.Test_X097(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例22：观众进入交友房消息区提示')
-    # def test_Six_Party_022(self):
-    #     S = self.multspectator
-    #     time.sleep(3)
-    #     self.assertIs(S.Test_X102(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例23：交友房中观众打开观众列表')
-    # def test_Six_Party_023(self):
-    #     S = self.multspectator
-    #     S.Six_party_more_people()
-    #     self.assertIs(S.Test_X098(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例24：交友房中观众上下滑动观众列表')
-    # def test_Six_Party_024(self):
-    #     S = self.multspectator
-    #     S.driver.swipe(837, 410, 837, 1800)
-    #     S.driver.swipe(837, 1800, 837, 410)
-    #     self.assertIs(S.Test_X098(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例25：交友房中观众点击查看观众头像')
-    # def test_Six_Party_025(self):
-    #     S = self.multspectator
-    #     S.Six_party_more_people_list_one()
-    #     self.assertIs(S.Test_X101(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例26：交友房警告消息检查')
-    # def test_Six_Party_026(self):
-    #     S = self.multspectator
-    #     S.driver.tap([(200, 189), (201, 190)], 200)
-    #     time.sleep(1)
-    #     S.driver.tap([(200, 189), (201, 190)], 200)
-    #     self.assertIs(S.Test_X116(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例27：交友房观众端端发言')
-    # def test_Six_Party_027(self):
-    #     S = self.multspectator
-    #     S.Six_party_room_message_button()
-    #     S.Six_party_room_message()
-    #     S.Six_party_room_message_send()
-    #     S.driver.tap([(200, 201), (201, 202)], 200)
-    #     self.assertIs(S.Test_X117(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例28：交友房消息区消息滚动')
-    # def test_Six_Party_028(self):
-    #     S = self.multspectator
-    #     S.Six_party_gift()
-    #     S.Six_party_one_gift()
-    #     S.Six_party_gift_single()
-    #     S.More_message_people_sendgift()
-    #     S.Confirmation_winning()
-    #     S.More_message_people_sendgift()
-    #     S.Confirmation_winning()
-    #     S.More_message_people_sendgift()
-    #     S.Confirmation_winning()
-    #     S.More_message_people_sendgift()
-    #     S.Confirmation_winning()
-    #     S.More_message_people_sendgift()
-    #     S.Confirmation_winning()
-    #     S.driver.tap([(200, 201), (201, 202)], 200)
-    #     self.assertIs(S.Test_X118(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例29：交友房消息区上滑消息')
-    # def test_Six_Party_029(self):
-    #     S = self.multspectator
-    #     S.driver.swipe(357, 1519, 357, 2030)
-    #     self.assertIs(S.Test_X119(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例30：观众在交友房中打开送礼浮窗')
-    # def test_Six_Party_030(self):
-    #     S = self.multspectator
-    #     S.Six_party_gift()
-    #     time.sleep(1)
-    #     self.assertIs(S.Test_X128(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例31：观众在交友房中给所有人送礼')
-    # def test_Six_Party_031(self):
-    #     S = self.multspectator
-    #     A = self.multanchor
-    #     S.Six_party_send_all_gift()
-    #     S.Six_party_one_gift()
-    #     S.Six_party_gift_single()
-    #     S.Six_party_send_gift()
-    #     S.driver.tap([(200, 201), (201, 202)], 200)
-    #     self.assertIs(A.Test_X13(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例32：观众在交友房中送礼时余额不足')
-    # def test_Six_Party_032(self):
-    #     S = self.multspectator
-    #     S.Six_party_gift()
-    #     S.Six_party_send_all_gift()
-    #     S.Six_party_four_gift()
-    #     S.More_message_people_sendgift()
-    #     self.assertIs(S.Test_32(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例33：交友房中点击进入banner页')
-    # def test_Six_Party_033(self):
-    #     S = self.multspectator
-    #     S.driver.tap([(200, 201), (201, 202)], 200)
-    #     time.sleep(1)
-    #     S.driver.tap([(200, 201), (201, 202)], 200)
-    #     time.sleep(1)
-    #     S.driver.tap([(936, 2013), (937, 2014)], 200)
-    #     time.sleep(5)
-    #     self.assertIs(S.Test_X072(), True)
-    #     S.driver.tap([(200, 201), (201, 202)], 200)
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例34：交友房中观众点击加入按钮')
-    # def test_Six_Party_034(self):
-    #     S = self.multspectator
-    #     S.More_Setting()
-    #     S.More_join()
-    #     self.assertIs(S.Test_X138(), True)
-    #     S.Six_party_twice_apply()
-    #     S.check_perBtn()
-    #     S.check_perBtn()
-    #     S.check_perBtn()
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例9：主播查看观众进入交友房的特效展示')
+    def test_Six_Party_009(self):
+        A = self.multanchor
+        self.assertIs(A.Test_X066(), True)
 
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例35：交友房中观众打开消息列表')
-    # def test_Six_Party_035(self):
-    #     S = self.multspectator
-    #     S.More_Setting()
-    #     S.More_Message()
-    #     self.assertIs(S.Test_X137(), True)
-    #
-    # @allure.severity(allure.severity_level.CRITICAL)
-    # @allure.title('用例36：群聊界面发拍照图片')
-    # def test_Six_Party_036(self):
-    #     S = self.multspectator
-    #     S.Supernatant_message_group()
-    #     S.Supernatant_message_group_pic()
-    #     S.Supernatant_message_group_pic_photo()
-    #     S.Supernatant_message_setiing_photo_confirm()
-    #     S.Supernatant_message_setiing_photo_twoconfirm()
-    #     self.assertIs(S.Test_X032(), True)
-    #
-    # @allure.severity(allure.severity_level.CRITICAL)
-    # @allure.title('用例37：群聊界面发相册图片')
-    # def test_Six_Party_037(self):
-    #     S = self.multspectator
-    #     S.Supernatant_message_group_pic()
-    #     S.Supernatant_message_group_pic_camera()
-    #     time.sleep(2)
-    #     S.Myphoto_one()
-    #     self.assertIs(S.Test_X140(), True)
-    #
-    # @allure.severity(allure.severity_level.CRITICAL)
-    # @allure.title('用例38：群聊界面发消息')
-    # def test_Six_Party_038(self):
-    #     S = self.multspectator
-    #     S.Supernatant_message_group_chat()
-    #     S.Supernatant_message_group_chat_send()
-    #     self.assertIs(S.Test_X034(), True)
-    #
-    # @allure.severity(allure.severity_level.CRITICAL)
-    # @allure.title('用例39：群聊界面发表情')
-    # def test_Six_Party_039(self):
-    #     S = self.multspectator
-    #     S.Supernatant_message_face_gif()
-    #     S.Supernatant_message_group_gif_one()
-    #     self.assertIs(S.Test_X035(), True)
-    #
-    # @allure.severity(allure.severity_level.CRITICAL)
-    # @allure.title('用例40：群聊界面发语音')
-    # def test_Six_Party_040(self):
-    #     S = self.multspectator
-    #     S.Supernatant_message_group_voice()
-    #     S.driver.tap([(500, 2010), (510, 2020)], 3000)
-    #     self.assertIs(S.Test_X036(), True)
-    #
-    # @allure.severity(allure.severity_level.CRITICAL)
-    # @allure.title('用例41：群聊界面上麦')
-    # def test_Six_Party_041(self):
-    #     S = self.multspectator
-    #     S.Supernatant_message_group_upmic()
-    #     self.assertIs(S.Test_X037(), True)
-    #
-    # @allure.severity(allure.severity_level.CRITICAL)
-    # @allure.title('用例42：群聊界面发红包')
-    # def test_Six_Party_042(self):
-    #     S = self.multspectator
-    #     S.Supernatant_message_group_packet()
-    #     S.Supernatant_message_group_packet_number()
-    #     S.Supernatant_message_group_packet_diamond()
-    #     S.Supernatant_message_group_packet_send()
-    #     self.assertIs(S.Test_X038(), True)
-    #
-    # @allure.severity(allure.severity_level.CRITICAL)
-    # @allure.title('用例43：群聊界面送礼')
-    # def test_Six_Party_043(self):
-    #     S = self.multspectator
-    #     S.Supernatant_message_group_gift()
-    #     S.Six_party_one_gift()
-    #     S.Six_party_gift_single()
-    #     S.More_message_people_sendgift()
-    #     S.driver.tap([(500, 500), (501, 501)], 200)
-    #     self.assertIs(S.Test_X040(), True)
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例10：主播查看观众进入交友房消息区提示')
+    def test_Six_Party_010(self):
+        A = self.multanchor
+        time.sleep(3)
+        self.assertIs(A.Test_X067(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例11：主播交友房警告消息检查')
+    def test_Six_Party_011(self):
+        A = self.multanchor
+        A.driver.swipe(363, 1478, 363, 2040)
+        self.assertIs(A.Test_X059(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例12：交友房该场送礼为0，观众查看送礼榜入口')
+    def test_Six_Party_012(self):
+        S = self.multspectator
+        self.assertIs(S.Test_X133(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例13：观众在交友房中送礼时余额不足')
+    def test_Six_Party_013(self):
+        S = self.multspectator
+        A = self.multanchor
+        S.Six_party_gift()
+        time.sleep(1)
+        S.Six_party_four_gift()
+        S.More_message_people_sendgift()
+        self.assertIs(A.Test_X13(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例14：观众在交友房中点击主播头像')
+    def test_Six_Party_014(self):
+        S = self.multspectator
+        S.driver.tap([(213, 213), (214, 214)], 200)
+        time.sleep(2)
+        S.driver.tap([(213, 213), (214, 214)], 200)
+        S.Six_party_anchor_head()
+        self.assertIs(S.Test_X091(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例15：观众在交友房中关注主播')
+    def test_Six_Party_015(self):
+        S = self.multspectator
+        S.Six_party_follow_anchor()
+        self.assertIs(S.Test_X092(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例16：信息浮层中举报功能校验')
+    def test_Six_Party_016(self):
+        S = self.multspectator
+        S.Six_party_report_anchor()
+        self.assertIs(S.Test_X093(), True)
+        S.driver.tap([(213, 213), (214, 214)], 200)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例17：观众在交友房中通过主播个人主页浮窗给主播送礼物')
+    def test_Six_Party_017(self):
+        S = self.multspectator
+        A = self.multanchor
+        S.Six_party_anchor_head()
+        S.Six_party_supernatant_gift()
+        S.Six_party_one_gift()
+        S.Six_party_gift_single()
+        S.More_message_people_sendgift()
+        self.assertIs(A.Test_X16(), True)
+        S.driver.tap([(213, 213), (214, 214)], 200)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例18：交友房该场送礼不为0，观众查看送礼榜入口')
+    def test_Six_Party_018(self):
+        S = self.multspectator
+        self.assertIs(S.Test_X135(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例19：观众在交友房中给主播发起视频通话')
+    def test_Six_Party_019(self):
+        A = self.multanchor
+        S = self.multspectator
+        S.Six_party_anchor_head()
+        S.Six_party_call_anchor()
+        self.assertIs(S.Test_56(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例20：观众在交友房@主播')
+    def test_Six_Party_020(self):
+        A = self.multanchor
+        S = self.multspectator
+        time.sleep(5)
+        S.Six_party_at_anchor()
+        S.Six_party_room_message_send()
+        S.driver.tap([(552, 189), (553, 190)], 200)
+        self.assertIs(A.Test_X096(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例21：观众从主播个人主页进入交友房')
+    def test_Six_Party_021(self):
+        S = self.multspectator
+        S.Six_party_anchor_head()
+        S.Six_party_supernatant_anchor_head()
+        time.sleep(2)
+        S.Homepage_video()
+        self.assertIs(S.Test_X097(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例22：观众进入交友房消息区提示')
+    def test_Six_Party_022(self):
+        S = self.multspectator
+        time.sleep(3)
+        self.assertIs(S.Test_X102(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例23：交友房中观众打开观众列表')
+    def test_Six_Party_023(self):
+        S = self.multspectator
+        S.Six_party_more_people()
+        self.assertIs(S.Test_X098(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例24：交友房中观众上下滑动观众列表')
+    def test_Six_Party_024(self):
+        S = self.multspectator
+        S.driver.swipe(837, 410, 837, 1800)
+        S.driver.swipe(837, 1800, 837, 410)
+        self.assertIs(S.Test_X098(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例25：交友房中观众点击查看观众头像')
+    def test_Six_Party_025(self):
+        S = self.multspectator
+        S.Six_party_more_people_list_one()
+        self.assertIs(S.Test_X101(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例26：交友房警告消息检查')
+    def test_Six_Party_026(self):
+        S = self.multspectator
+        S.driver.tap([(200, 189), (201, 190)], 200)
+        time.sleep(1)
+        S.driver.tap([(200, 189), (201, 190)], 200)
+        self.assertIs(S.Test_X116(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例27：交友房观众端端发言')
+    def test_Six_Party_027(self):
+        S = self.multspectator
+        S.Six_party_room_message_button()
+        S.Six_party_room_message()
+        S.Six_party_room_message_send()
+        S.driver.tap([(200, 201), (201, 202)], 200)
+        self.assertIs(S.Test_X117(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例28：交友房消息区消息滚动')
+    def test_Six_Party_028(self):
+        S = self.multspectator
+        S.Six_party_gift()
+        S.Six_party_one_gift()
+        S.Six_party_gift_single()
+        S.More_message_people_sendgift()
+        S.Confirmation_winning()
+        S.More_message_people_sendgift()
+        S.Confirmation_winning()
+        S.More_message_people_sendgift()
+        S.Confirmation_winning()
+        S.More_message_people_sendgift()
+        S.Confirmation_winning()
+        S.More_message_people_sendgift()
+        S.Confirmation_winning()
+        S.driver.tap([(200, 201), (201, 202)], 200)
+        self.assertIs(S.Test_X118(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例29：交友房消息区上滑消息')
+    def test_Six_Party_029(self):
+        S = self.multspectator
+        S.driver.swipe(357, 1519, 357, 2030)
+        self.assertIs(S.Test_X119(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例30：观众在交友房中打开送礼浮窗')
+    def test_Six_Party_030(self):
+        S = self.multspectator
+        S.Six_party_gift()
+        time.sleep(1)
+        self.assertIs(S.Test_X128(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例31：观众在交友房中给所有人送礼')
+    def test_Six_Party_031(self):
+        S = self.multspectator
+        A = self.multanchor
+        S.Six_party_send_all_gift()
+        S.Six_party_one_gift()
+        S.Six_party_gift_single()
+        S.Six_party_send_gift()
+        S.driver.tap([(200, 201), (201, 202)], 200)
+        self.assertIs(A.Test_X13(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例32：观众在交友房中送礼时余额不足')
+    def test_Six_Party_032(self):
+        S = self.multspectator
+        S.Six_party_gift()
+        S.Six_party_send_all_gift()
+        S.Six_party_four_gift()
+        S.More_message_people_sendgift()
+        self.assertIs(S.Test_32(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例33：交友房中点击进入banner页')
+    def test_Six_Party_033(self):
+        S = self.multspectator
+        S.driver.tap([(200, 201), (201, 202)], 200)
+        time.sleep(1)
+        S.driver.tap([(200, 201), (201, 202)], 200)
+        time.sleep(1)
+        S.driver.tap([(936, 2013), (937, 2014)], 200)
+        time.sleep(5)
+        self.assertIs(S.Test_X072(), True)
+        S.driver.tap([(200, 201), (201, 202)], 200)
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例34：交友房中观众点击加入按钮')
+    def test_Six_Party_034(self):
+        S = self.multspectator
+        S.More_Setting()
+        S.More_join()
+        self.assertIs(S.Test_X138(), True)
+        S.Six_party_twice_apply()
+        S.check_perBtn()
+        S.check_perBtn()
+        S.check_perBtn()
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例35：交友房中观众打开消息列表')
+    def test_Six_Party_035(self):
+        S = self.multspectator
+        S.More_Setting()
+        S.More_Message()
+        self.assertIs(S.Test_X137(), True)
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.title('用例36：群聊界面发拍照图片')
+    def test_Six_Party_036(self):
+        S = self.multspectator
+        S.Supernatant_message_group()
+        S.Supernatant_message_group_pic()
+        S.Supernatant_message_group_pic_photo()
+        S.Supernatant_message_setiing_photo_confirm()
+        S.Supernatant_message_setiing_photo_twoconfirm()
+        self.assertIs(S.Test_X032(), True)
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.title('用例37：群聊界面发相册图片')
+    def test_Six_Party_037(self):
+        S = self.multspectator
+        S.Supernatant_message_group_pic()
+        S.Supernatant_message_group_pic_camera()
+        time.sleep(2)
+        S.Myphoto_one()
+        self.assertIs(S.Test_X140(), True)
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.title('用例38：群聊界面发消息')
+    def test_Six_Party_038(self):
+        S = self.multspectator
+        S.Supernatant_message_group_chat()
+        S.Supernatant_message_group_chat_send()
+        self.assertIs(S.Test_X034(), True)
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.title('用例39：群聊界面发表情')
+    def test_Six_Party_039(self):
+        S = self.multspectator
+        S.Supernatant_message_face_gif()
+        S.Supernatant_message_group_gif_one()
+        self.assertIs(S.Test_X035(), True)
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.title('用例40：群聊界面发语音')
+    def test_Six_Party_040(self):
+        S = self.multspectator
+        S.Supernatant_message_group_voice()
+        S.driver.tap([(500, 2010), (510, 2020)], 3000)
+        self.assertIs(S.Test_X036(), True)
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.title('用例41：群聊界面上麦')
+    def test_Six_Party_041(self):
+        S = self.multspectator
+        S.Supernatant_message_group_upmic()
+        self.assertIs(S.Test_X037(), True)
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.title('用例42：群聊界面发红包')
+    def test_Six_Party_042(self):
+        S = self.multspectator
+        S.Supernatant_message_group_packet()
+        S.Supernatant_message_group_packet_number()
+        S.Supernatant_message_group_packet_diamond()
+        S.Supernatant_message_group_packet_send()
+        self.assertIs(S.Test_X038(), True)
+
+    @allure.severity(allure.severity_level.CRITICAL)
+    @allure.title('用例43：群聊界面送礼')
+    def test_Six_Party_043(self):
+        S = self.multspectator
+        S.Supernatant_message_group_gift()
+        S.Six_party_one_gift()
+        S.Six_party_gift_single()
+        S.More_message_people_sendgift()
+        S.driver.tap([(500, 500), (501, 501)], 200)
+        self.assertIs(S.Test_X040(), True)
 
     # @allure.severity(allure.severity_level.CRITICAL)
     # @allure.title('用例44：群聊界面进入活动')
@@ -424,147 +424,152 @@ class Test_six_party_interaction(StartEnd):
     #     time.sleep(10)
     #     self.assertIs(S.Test_X041(), True)
 
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例45：交友房中进行充值')
-    # def test_Six_Party_045(self):
-    #     S = self.multspectator
-    #     S.driver.tap([(200, 420), (201, 421)], 200)
-    #     S.More_Setting()
-    #     S.More_top_up()
-    #     time.sleep(2)
-    #     S.More_top_up_4500()
-    #     time.sleep(5)
-    #     S.More_top_up_pay()
-    #     time.sleep(5)
-    #     self.assertIs(S.Test_X078(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例46：申请进入嘉宾位')
-    # def test_Six_Party_046(self):
-    #     S = self.multspectator
-    #     S.More_top_up_confirm()
-    #     S.driver.tap([(200, 420), (201, 421)], 200)
-    #     S.More_Setting()
-    #     S.More_join()
-    #     S.Six_party_twice_apply()
-    #     time.sleep(5)
-    #     self.assertIs(S.Test_X139(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例47：房主同意连麦申请')
-    # def test_Six_Party_047(self):
-    #     S = self.multspectator
-    #     A = self.multanchor
-    #     A.Six_party_invite()
-    #     A.Six_party_agree_list_one()
-    #     A.driver.tap([(200, 420), (201, 421)], 200)
-    #     time.sleep(1)
-    #     self.assertIs(A.Test_45(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例48：交友房中关闭麦克风')
-    # def test_Six_Party_048(self):
-    #     S = self.multspectator
-    #     time.sleep(5)
-    #     S.More_Setting()
-    #     S.More_Setting_setting()
-    #     S.More_setting_switch_microphone()
-    #     S.More_setting_switch_microphone()
-    #     self.assertIs(S.Test_X079(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例49：交友房中设置贴纸')
-    # def test_Six_Party_049(self):
-    #     S = self.multspectator
-    #     S.More_setting_sticker()
-    #     S.More_setting_sticker_1()
-    #     time.sleep(6)
-    #     S.More_setting_sticker_1()
-    #     self.assertIs(S.Test_X080(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例50：交友房中开启美颜')
-    # def test_Six_Party_050(self):
-    #     S = self.multspectator
-    #     S.driver.tap([(200, 420), (201, 421)], 200)
-    #     S.More_Setting()
-    #     S.More_Setting_setting()
-    #     S.More_setting_beauty()
-    #     S.More_setting_beauty_reset()
-    #     S.More_setting_beauty_confirmreset()
-    #     self.assertIs(S.Test_X081(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例51：交友房中开启镜像模式')
-    # def test_Six_Party_051(self):
-    #     S = self.multspectator
-    #     S.driver.tap([(200, 420), (201, 421)], 200)
-    #     S.More_Setting()
-    #     S.More_Setting_setting()
-    #     S.More_setting_turn_off_camera()
-    #     S.More_setting_mirror_mode()
-    #     self.assertIs(S.Test_X082(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例52：交友房中关闭摄像头')
-    # def test_Six_Party_052(self):
-    #     S = self.multspectator
-    #     S.More_setting_turn_off_camera()
-    #     S.More_setting_turn_off_camera()
-    #     S.More_setting_turn_off_camera()
-    #     S.driver.tap([(213, 213), (214, 214)], 200)
-    #     self.assertIs(S.Test_X155(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例53：交友房中切换摄像头')
-    # def test_Six_Party_053(self):
-    #     S = self.multspectator
-    #     S.More_Setting()
-    #     S.More_Setting_setting()
-    #     S.More_setting_turn_off_camera()
-    #     S.More_setting_switch_camera()
-    #     S.More_setting_switch_camera()
-    #     self.assertIs(S.Test_X084(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例54：交友房中观众点击离开嘉宾位')
-    # def test_Six_Party_054(self):
-    #     S = self.multspectator
-    #     S.Six_party_off_mic()
-    #     self.assertIs(S.Test_X157(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例55：交友房中观众取消离开嘉宾位')
-    # def test_Six_Party_055(self):
-    #     S = self.multspectator
-    #     S.Close_six_party_two_cancle()
-    #     self.assertIs(S.Test_X158(), True)
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例45：交友房中进行充值')
+    def test_Six_Party_045(self):
+        S = self.multspectator
+        S.driver.tap([(200, 420), (201, 421)], 200)
+        S.More_Setting()
+        S.More_top_up()
+        time.sleep(2)
+        S.More_top_up_4500()
+        time.sleep(5)
+        S.More_top_up_pay()
+        time.sleep(5)
+        self.assertIs(S.Test_X078(), True)
 
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例56：交友房中观众确认离开嘉宾位')
-    # def test_Six_Party_056(self):
-    #     S = self.multspectator
-    #     S.More_Setting()
-    #     S.More_Setting_setting()
-    #     S.Six_party_off_mic()
-    #     S.Close_six_party_two_confirm()
-    #     self.assertIs(S.Test_X159(), True)
-    #
-    # @allure.severity(allure.severity_level.BLOCKER)
-    # @allure.title('用例57：交友房中观众给房主拨打约聊')
-    # def test_Six_Party_057(self):
-    #     S = self.multspectator
-    #     S.Six_party_anchor()
-    #     S.Six_party_call_anchor()
-    #     self.assertIs(S.Test_56(), True)
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例46：申请进入嘉宾位')
+    def test_Six_Party_046(self):
+        S = self.multspectator
+        S.More_top_up_confirm()
+        S.driver.tap([(200, 420), (201, 421)], 200)
+        S.More_Setting()
+        S.More_join()
+        S.Six_party_twice_apply()
+        time.sleep(5)
+        self.assertIs(S.Test_X139(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例47：房主同意连麦申请')
+    def test_Six_Party_047(self):
+        S = self.multspectator
+        A = self.multanchor
+        A.Six_party_invite()
+        A.Six_party_agree_list_one()
+        A.driver.tap([(200, 420), (201, 421)], 200)
+        time.sleep(1)
+        self.assertIs(A.Test_45(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例48：交友房中关闭麦克风')
+    def test_Six_Party_048(self):
+        S = self.multspectator
+        time.sleep(5)
+        S.More_Setting()
+        S.More_Setting_setting()
+        S.More_setting_switch_microphone()
+        S.More_setting_switch_microphone()
+        self.assertIs(S.Test_X079(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例49：交友房中设置贴纸')
+    def test_Six_Party_049(self):
+        S = self.multspectator
+        S.More_setting_sticker()
+        S.More_setting_sticker_1()
+        time.sleep(6)
+        S.More_setting_sticker_1()
+        self.assertIs(S.Test_X080(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例50：交友房中开启美颜')
+    def test_Six_Party_050(self):
+        S = self.multspectator
+        S.driver.tap([(200, 420), (201, 421)], 200)
+        S.More_Setting()
+        S.More_Setting_setting()
+        S.More_setting_beauty()
+        S.More_setting_beauty_reset()
+        S.More_setting_beauty_confirmreset()
+        self.assertIs(S.Test_X081(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例51：交友房中开启镜像模式')
+    def test_Six_Party_051(self):
+        S = self.multspectator
+        S.driver.tap([(200, 420), (201, 421)], 200)
+        S.More_Setting()
+        S.More_Setting_setting()
+        S.More_setting_turn_off_camera()
+        S.More_setting_mirror_mode()
+        self.assertIs(S.Test_X082(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例52：交友房中关闭摄像头')
+    def test_Six_Party_052(self):
+        S = self.multspectator
+        S.More_setting_turn_off_camera()
+        S.More_setting_turn_off_camera()
+        S.More_setting_turn_off_camera()
+        S.driver.tap([(213, 213), (214, 214)], 200)
+        self.assertIs(S.Test_X155(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例53：交友房中切换摄像头')
+    def test_Six_Party_053(self):
+        S = self.multspectator
+        S.More_Setting()
+        S.More_Setting_setting()
+        S.More_setting_turn_off_camera()
+        S.More_setting_switch_camera()
+        S.More_setting_switch_camera()
+        self.assertIs(S.Test_X084(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例54：交友房中观众点击离开嘉宾位')
+    def test_Six_Party_054(self):
+        S = self.multspectator
+        S.Six_party_off_mic()
+        self.assertIs(S.Test_X157(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例55：交友房中观众取消离开嘉宾位')
+    def test_Six_Party_055(self):
+        S = self.multspectator
+        S.Close_six_party_two_cancle()
+        self.assertIs(S.Test_X158(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例56：交友房中观众确认离开嘉宾位')
+    def test_Six_Party_056(self):
+        S = self.multspectator
+        S.More_Setting()
+        S.More_Setting_setting()
+        S.Six_party_off_mic()
+        S.Close_six_party_two_confirm()
+        self.assertIs(S.Test_X159(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例57：交友房中观众给房主拨打约聊')
+    def test_Six_Party_057(self):
+        S = self.multspectator
+        S.Six_party_anchor()
+        S.Six_party_call_anchor()
+        self.assertIs(S.Test_56(), True)
 
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例58：观众离开交友房')
     def test_Six_Party_058(self):
         S = self.multspectator
-################## S.driver.tap([(213, 213), (214, 214)], 200)
+        S.driver.tap([(213, 213), (214, 214)], 200)
         S.Close_six_party()
         self.assertIs(S.Test_X162(), True)
+        S.Tab_group()
+        S.Tab_group_group()
+        S.My_group()
+        S.My_group_one()
+        S.Group_more()
         S.Group_more_two_people()
         S.Six_party_supernatant_anchor_head()
         S.Homepage_video()
@@ -623,7 +628,6 @@ class Test_six_party_interaction(StartEnd):
         A = self.multanchor
         A.Homepage_back()
         A.Six_party_more_people_list_one()
-        A.Six_party_supernatant_follow()
         self.assertIs(A.Test_X012(), True)
 
     @allure.severity(allure.severity_level.BLOCKER)
@@ -641,7 +645,6 @@ class Test_six_party_interaction(StartEnd):
         A.Six_party_gift_single()
         A.More_message_people_sendgift()
         A.Confirmation_winning()
-        time.sleep(1)
         A.driver.tap([(200, 400), (201, 401)], 200)
         A.driver.tap([(200, 400), (201, 401)], 200)
         self.assertIs(A.Test_31(), True)
@@ -740,9 +743,8 @@ class Test_six_party_interaction(StartEnd):
     def test_Six_Party_079(self):
         A = self.multanchor
         A.More_message_people_gift()
-        A.Six_party_one_gift()
+        A.six_party_one_gift()
         A.More_message_people_sendgift()
-        time.sleep(1)
         A.driver.tap([(528, 528), (529, 529)], 200)
         A.driver.tap([(528, 528), (529, 529)], 200)
         self.assertIs(A.Test_X031(), True)
@@ -852,7 +854,7 @@ class Test_six_party_interaction(StartEnd):
         A.Six_party_more_people_list_one()
         A.Supernatant_mute()
         A.driver.tap([(200, 400), (201, 401)], 200)
-        self.assertIs(A.Test_106(), True)
+        self.assertIs(A.Test_X042(), True)
 
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.title('用例91：观众被禁言后上麦功能校验')
@@ -1032,9 +1034,9 @@ class Test_six_party_interaction(StartEnd):
     @allure.title('用例109：交友房主播端发言')
     def test_Six_Party_109(self):
         A = self.multanchor
-        A.Six_party_room_message_button()
-        A.Six_party_room_message()
-        A.Six_party_room_message_send()
+        A.Room_message_button()
+        A.Room_message_button_input()
+        A.Room_message_button_send()
         A.driver.tap([(200, 420), (201, 421)], 200)
         self.assertIs(A.Test_109(), True)
 
@@ -1185,46 +1187,49 @@ class Test_six_party_interaction(StartEnd):
         self.assertIs(A.Test_X085(), True)
 
     @allure.severity(allure.severity_level.BLOCKER)
-    @allure.title('用例125：主播进入结束页校验')
+    @allure.title('用例125：观众进入结束页校验')
     def test_Six_Party_125(self):
-        A = self.multanchor
-        self.assertIs(A.Test_X163(), True)
-
-    @allure.severity(allure.severity_level.BLOCKER)
-    @allure.title('用例126：观众进入结束页校验')
-    def test_Six_Party_126(self):
         S = self.multspectator
         self.assertIs(S.Test_X163(), True)
 
     @allure.severity(allure.severity_level.BLOCKER)
-    @allure.title('用例127：房主结束页显示内容')
+    @allure.title('用例126：观众结束页校验-进入个人主页')
+    def test_Six_Party_126(self):
+        S = self.multspectator
+        S.Six_party_endpage_profile()
+        self.assertIs(S.Test_X011(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例127：结束页校验-结束页标题')
     def test_Six_Party_127(self):
+        S = self.multspectator
+        self.assertIs(S.Test_X165(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例128：结束页校验-结束页派对时长/观众')
+    def test_Six_Party_128(self):
+        S = self.multspectator
+        self.assertIs(S.Test_X166(), True)
+
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例129：房主结束页显示内容')
+    def test_Six_Party_129(self):
         A = self.multanchor
         self.assertIs(A.Test_X087(), True)
 
     @allure.severity(allure.severity_level.BLOCKER)
-    @allure.title('用例128：主播在结束页进入个人主页')
-    def test_Six_Party_128(self):
+    @allure.title('用例130：结束页进入主播个人主页')
+    def test_Six_Party_130(self):
         A = self.multanchor
         A.Six_party_endpage_profile()
         self.assertIs(A.Test_X086(), True)
 
     @allure.severity(allure.severity_level.BLOCKER)
-    @allure.title('用例129：主播在结束页进入其他交友房')
-    def test_Six_Party_129(self):
-        A = self.multanchor
-        A.Homepage_back()
-        A.End_party_two()
-        self.assertIs(A.Test_129(), True)
-
-    @allure.severity(allure.severity_level.BLOCKER)
-    @allure.title('用例130：观众自动跳转其他交友房校验')
+    @allure.title('用例130：结束页进入主播个人主页')
     def test_Six_Party_130(self):
-        S = self.multspectator
-        self.assertIs(S.Test_129(), True)
-
-
-
+        A = self.multanchor
+        A.Six_party_endpage_profile()
+        self.assertIs(A.Test_X086(), True)
 
     if __name__ == '__main__':
         pytest.main()

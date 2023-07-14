@@ -19,9 +19,10 @@ class anchorparty_Start_End:
         self.multaudience = Multaudience(self.audiencedriver)
         self.multaudience.audience_sign_in()
 
+
 # class anchorparty_Start_End:
     # def setup_class(self):
-    #     logging.info('===setUp===')
+    #     logging.info('===setup===')
     #     self.anchordriver=anchor_appium_desired()
     #     self.anchordriver.implicitly_wait(5)
     #     self.multanchor = Multanchor(self.anchordriver)

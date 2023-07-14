@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:756 ===用例35：主播端查看观众端送礼===
-[32mINFO    [0m root:multparty_ten_anchor.py:205 ===获取消息区最后一条文本消息===
-[32mINFO    [0m root:test_10party_mult.py:761 ===断言成功，成功送礼===

@@ -1,0 +1,22 @@
+[32mINFO    [0m root:test_10party_mult.py:748 ===用例34：观众端给主播送礼===
+[32mINFO    [0m root:multparty_ten_audience.py:417 ===送礼===
+[32mINFO    [0m root:multparty_ten_audience.py:375 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:378 ===送礼失败，余额不足，有充值弹窗。===
+[32mINFO    [0m root:multparty_ten_audience.py:386 ===判断设备是否可进行google充值===
+[32mINFO    [0m root:multparty_ten_audience.py:389 ===设备可进行google充值===
+[32mINFO    [0m root:multparty_ten_audience.py:397 ===充值===
+[32mINFO    [0m root:multparty_ten_audience.py:399 ===进行充值===
+[32mINFO    [0m root:multparty_ten_audience.py:408 ===充值成功===
+[32mINFO    [0m root:multparty_ten_audience.py:417 ===送礼===
+[32mINFO    [0m root:multparty_ten_audience.py:375 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:378 ===送礼失败，余额不足，有充值弹窗。===
+[32mINFO    [0m root:multparty_ten_audience.py:386 ===判断设备是否可进行google充值===
+[32mINFO    [0m root:multparty_ten_audience.py:392 ===设备不可进行google充值===
+[32mINFO    [0m root:multparty_ten_audience.py:375 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:378 ===送礼失败，余额不足，有充值弹窗。===
+[32mINFO    [0m root:multparty_ten_audience.py:386 ===判断设备是否可进行google充值===
+[32mINFO    [0m root:multparty_ten_audience.py:392 ===设备不可进行google充值===
+[32mINFO    [0m root:multparty_ten_audience.py:429 ===余额不足，设备无法充值，跳过下方送礼断言用例。===
+[32mINFO    [0m root:multparty_ten_audience.py:320 ===获取消息区最后一条文本消息===
+[32mINFO    [0m root:test_10party_mult.py:760 ===断言失败===
+[32mINFO    [0m root:test_10party_mult.py:762 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-14 16_52_14.png

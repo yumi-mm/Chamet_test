@@ -3,9 +3,9 @@ import time
 from appium.webdriver.common.touch_action import TouchAction
 from uiautomator2.webview import driver
 from appium import webdriver
-from ChametProject_UI.Six_party.common.myunittest import StartEnd
-from ChametProject_UI.Six_party.businessView.six_party_anchor import Six_partyView_anchor
-from ChametProject_UI.Six_party.businessView.login_phoneView import LoginView
+from Six_party.common.myunittest import StartEnd
+from Six_party.businessView.six_party_anchor import Six_partyView_anchor
+from Six_party.businessView.login_phoneView import LoginView
 import unittest
 import logging
 import allure
@@ -13,7 +13,7 @@ import pytest
 import os
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from ChametProject_UI.Six_party.common.desired_caps import anchor_appium_desired
+from Six_party.common.desired_caps import anchor_appium_desired
 
 @allure.epic("项目名称：6人交友房")
 @allure.issue("BUG链接：http://zentao.floa.vip/index.php?m=project&f=build&projectID=243")

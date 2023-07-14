@@ -230,7 +230,7 @@ class Multanchor(object):
         send_gift_but = self.driver.find_element(*room_gift_but)
         send_gift_but.click()
         logging.info('#####################')
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("简体中文chinese simplified")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("热门")').click()
 
     # 获取礼物弹窗中礼物列表
     def gift_lst(self):
@@ -371,6 +371,8 @@ class Multanchor(object):
     def invite_guest(self, ele_text):
         # 嘉宾name
         element_text = ele_text
+        self.open_audiencelist()
+        self.back(1)
         self.open_audiencelist()
         audience_list = self.get_audience_list()
         if len(audience_list) == 0:
@@ -562,10 +564,24 @@ class Multanchor(object):
 
     # 私聊页面拨打语音聊天
     def usermessage_Voice_chat(self):
-        logging.info('===拨打语音聊天===')
+        logging.info('===拨打视频聊天===')
         usermessage_drop_down_list = (MobileBy.XPATH,
                                       "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout")
         self.driver.find_elements(*usermessage_drop_down_list)[3].click()
+
+    # 私聊页面拨打语音聊天余额不足
+    def usermessage_Voicechat_nomoney(self):
+        logging.info('===查看是否余额不足===')
+        try:
+            Voicechat_nomoneywin = (MobileBy.ANDROID_UIAUTOMATOR,'text("余额不足")')
+        except:
+            logging.info('===余额足够===')
+            usermessage_Voice_chat_toast = self.toast_message('交友房房主无法视频聊天')
+            assert usermessage_Voice_chat_toast.text == "交友房房主无法视频聊天"
+        else:
+            logging.info('===余额不足===')
+            self.back(1)
+            assert True
 
     # 获取toast消息
     def toast_message(self, message):
@@ -772,30 +788,85 @@ class Multanchor(object):
             logging.info('===无夺宝弹窗===')
             return False
 
-    # 群聊页面送礼
-    def groupmessage_send_gift(self,gift_name):
+    # 观众端群聊页面打开送礼窗口
+    def group_opengiftwin(self):
         logging.info('===打开礼物页面===')
         gift_but = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ImageView[4]")
         gift_but.click()
-        logging.info('##############')
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("简体中文chinese simplified")').click()
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("%s")' % gift_name).click()
-        # gift_listimage = (MobileBy.XPATH,"//androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.FrameLayout/android.widget.ImageView")
-        # gift_list = self.driver.find_elements(*gift_listimage)
-        # gift_list[num].click()
-        # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("77")').click()
-        usermessage_gift_but = (MobileBy.XPATH,"//android.widget.LinearLayout/android.view.ViewGroup/android.widget.RelativeLayout/android.widget.ImageView")
-        send_gift = self.driver.find_element(*usermessage_gift_but)
-        send_gift.click()
-        lucky_window = self.lucky_window()
-        if lucky_window:
-            time.sleep(1)
-            finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("真棒！")')
-            finish.click()
-            self.driver.back()
+
+    # 观众端判断送礼时是否余额不足
+    def rechargewindow_bysendgift(self):
+        logging.info('===判断是否余额不足，有无充值弹窗===')
+        try:
+            rechargewindow = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/tv_my_diamonds")
+            logging.info('===送礼失败，余额不足，有充值弹窗。===')
+            return True
+        except:
+            logging.info('===送礼成功，无充值弹窗。===')
+            logging.info('===判断夺宝弹窗===')
+            return False
+
+    # 观众端判断设备是否可进行google充值
+    def rechargewindow_able(self):
+        logging.info('===判断设备是否可进行google充值===')
+        try:
+            rechargewindow = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/recycler_top_up_list")
+            logging.info('===设备可进行google充值===')
+            return True
+        except:
+            logging.info('===设备不可进行google充值===')
+            return False
+
+    # 观众端设备进行充值
+    def rechargewindow_recharge(self):
+        logging.info('===充值===')
+        try:
+            logging.info('===进行充值===')
+            recharge_level = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup")
+            recharge_level[0].click()
+            time.sleep(2)
+            buy_but = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("一键购买")')
+            buy_but.click()
+            time.sleep(3)
+            buy_success_page = self.anchor_buysuccess_page()
+            assert buy_success_page
+            logging.info('===充值成功===')
+            self.back(2)
+            return True
+        except:
+            logging.info('===充值失败===')
+            return False
+
+    # 获取钻石弹窗
+    def anchor_buysuccess_page(self):
+        buy_success_page = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_card_icon")
+        return self.driver.find_element(*buy_success_page)
+
+    # 群聊页面送礼
+    def groupmessage_send_gift(self,gift_tab,gift_name):
+        logging.info('===送礼===')
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
+        audience_sendgift_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/sendTv")
+        audience_sendgift_but.click()
+        if self.rechargewindow_bysendgift() and self.rechargewindow_able():
+            self.rechargewindow_recharge()
+            # self.groupmessage_send_gift("简体中文chinese simplified","Fox")
+            self.groupmessage_send_gift("热门","幸运之吻")
+        elif self.rechargewindow_bysendgift() and self.rechargewindow_able() == False:
+            self.back(2)
+            logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
+            return 0
         else:
-            self.driver.back()
-        self.anchor_cancel_enrich_window()
+            self.anchor_cancel_enrich_window()
+            lucky_window = self.lucky_window()
+            if lucky_window:
+                finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("真棒！")')
+                finish.click()
+                self.driver.back()
+            else:
+                self.driver.back()
+            return 1
 
     # 查看群聊界面对方发送礼物
     def watchgroup_othersendgift(self):
