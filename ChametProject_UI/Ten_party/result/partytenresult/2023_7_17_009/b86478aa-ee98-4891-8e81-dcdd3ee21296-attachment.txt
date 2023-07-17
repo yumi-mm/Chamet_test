@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:2968 ===用例133：10人交友观众播端打开充值页面===
+[32mINFO    [0m root:multparty_ten_audience.py:568 ===不存在更多按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:1378 ===进入充值页面===
+[32mINFO    [0m root:test_10party_mult.py:2980 ===执行失败===

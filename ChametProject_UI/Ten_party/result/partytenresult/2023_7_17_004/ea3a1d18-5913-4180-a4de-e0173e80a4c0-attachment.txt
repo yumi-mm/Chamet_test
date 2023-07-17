@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:2074 ===用例94：观众端左右滑动私聊礼物页面===
+[32mINFO    [0m root:multparty_ten_audience.py:889 ===打开私聊送礼页面===
+[32mINFO    [0m root:multparty_ten_audience.py:898 #####################
+[32mINFO    [0m root:test_10party_mult.py:2085 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:2087 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 12_18_20.png

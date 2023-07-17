@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:3064 ===用例137：10人交友房主播端关闭麦克风===
+[32mINFO    [0m root:multparty_ten_anchor.py:947 ===进入设置页面===
+[32mINFO    [0m root:multparty_ten_anchor.py:954 ===打开/关闭麦克风===
+[32mINFO    [0m root:multparty_ten_anchor.py:956 ===主播端关闭麦克风===
+[32mINFO    [0m root:test_10party_mult.py:3070 ===断言成功===

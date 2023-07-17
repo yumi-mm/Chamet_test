@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_mult.py:2359 ===用例106：观众端群聊页面发送chamet表情===
+[32mINFO    [0m root:multparty_ten_audience.py:1102 ===准备发送表情===
+[32mINFO    [0m root:multparty_ten_audience.py:1120 ===发送Chamet表情===
+[32mINFO    [0m root:multparty_ten_audience.py:989 ===点击空白处===
+[32mINFO    [0m root:multparty_ten_audience.py:1123 ===发送成功===
+[32mINFO    [0m root:test_10party_mult.py:2371 ===执行失败===

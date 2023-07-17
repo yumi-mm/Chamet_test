@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:2878 ===用例129：主播端打开赛车游戏===
+[32mINFO    [0m root:multparty_ten_anchor.py:925 ===进入游戏页面===
+[32mINFO    [0m root:multparty_ten_anchor.py:934 ===进入赛车游戏===

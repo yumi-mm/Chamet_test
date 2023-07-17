@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:2464 ===用例111：主播端群聊页面检查并播放语音消息===
+[32mINFO    [0m root:test_10party_mult.py:2469 ===断言成功，成功收到语音并播放===

@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:2749 ===用例124：主播端群聊页面送礼===
+[32mINFO    [0m root:multparty_ten_anchor.py:809 ===打开礼物页面===
+[32mINFO    [0m root:test_10party_mult.py:2767 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:2769 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 16_50_03.png

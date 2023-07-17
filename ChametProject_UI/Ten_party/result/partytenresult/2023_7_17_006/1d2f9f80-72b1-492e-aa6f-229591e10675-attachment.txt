@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_mult.py:2225 ===用例100：观众端进入群聊页面===
+[32mINFO    [0m root:multparty_ten_audience.py:565 ===点击更多按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:1035 ===打开留言浮窗===
+[32mINFO    [0m root:multparty_ten_audience.py:1041 ===查看群聊列表===
+[32mINFO    [0m root:multparty_ten_audience.py:1054 ===进入群聊页面===
+[32mINFO    [0m root:test_10party_mult.py:2230 ===断言成功，观众成功进入群聊页面===

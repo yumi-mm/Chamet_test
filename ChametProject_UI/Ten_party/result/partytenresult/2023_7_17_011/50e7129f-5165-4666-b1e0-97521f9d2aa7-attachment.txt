@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_mult.py:1322 ===用例59：主播邀请观众上麦，观众关闭上麦邀请===
+[32mINFO    [0m root:multparty_ten_anchor.py:435 ===右上角不存在观众列表按钮===
+[32mINFO    [0m root:multparty_ten_anchor.py:559 ===点击空白处===
+[32mINFO    [0m root:multparty_ten_anchor.py:435 ===右上角不存在观众列表按钮===
+[32mINFO    [0m root:multparty_ten_anchor.py:416 ===获取所有观众name===
+[32mINFO    [0m root:multparty_ten_anchor.py:390 ===交友房无观众===

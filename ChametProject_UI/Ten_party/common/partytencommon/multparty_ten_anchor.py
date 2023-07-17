@@ -217,6 +217,15 @@ class Multanchor(object):
         party_textmessage = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")
         return party_textmessage[num].text
 
+    # 获取消息区文本消息
+    def party_textmessage_all(self):
+        logging.info('===获取消息区最后一条文本消息===')
+        str = ''
+        party_textmessage_all = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")
+        for i in party_textmessage_all:
+            str = str + i.text
+        return str
+
     # 获取消息区@消息
     def party_textmessage_aite(self,num):
         logging.info('===获取消息区最后一条文本消息===')
@@ -372,7 +381,9 @@ class Multanchor(object):
         # 嘉宾name
         element_text = ele_text
         self.open_audiencelist()
-        self.back(1)
+        # self.back(1)
+        self.touch_tap(350,980)
+        time.sleep(1)
         self.open_audiencelist()
         audience_list = self.get_audience_list()
         if len(audience_list) == 0:
@@ -382,7 +393,9 @@ class Multanchor(object):
             logging.info('===交友房有一个观众===')
             invite_butele_1 = (MobileBy.ID,"com.hkfuliao.chamet:id/live_queue_invite")
             self.driver.find_element(*invite_butele_1).click()
-            return invite_butele_1
+            invite_butele_2 = (MobileBy.ID, "com.hkfuliao.chamet:id/live_queue_invite")
+            time.sleep(1)
+            return invite_butele_2
         else:
             num = 1
             for i in audience_list:
@@ -391,10 +404,11 @@ class Multanchor(object):
                 num += 1
             logging.info('===指定观众在%d位===' %num)
             logging.info('===点击观众后的邀请按钮===')
-            invite_butele_2 = (MobileBy.XPATH,"//android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.ImageView" %num)
-            print(invite_butele_2)
-            self.driver.find_element(*invite_butele_2).click()
-            return invite_butele_2
+            invite_butele_3 = (MobileBy.XPATH,"//android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.ImageView" %num)
+            self.driver.find_element(*invite_butele_3).click()
+            invite_butele_4 = (MobileBy.XPATH,"//android.view.ViewGroup/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.ImageView" %num)
+            time.sleep(1)
+            return invite_butele_4
 
 
     # 获取观众列表name
@@ -420,7 +434,7 @@ class Multanchor(object):
         except:
             logging.info('===右上角不存在观众列表按钮===')
         else:
-            logging.info('===打开观众列表===')
+            logging.info('===右上角存在观众列表按钮,打开观众列表===')
             audiencelist_but.click()
 
     # 获取某个元素的属性
@@ -534,7 +548,7 @@ class Multanchor(object):
             google_expression_searchbut.click()
             time.sleep(0.5)
             google_expression_list = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout")
-            time.sleep(0.5)
+            time.sleep(1)
             google_expression_list[0].click()
         else:
             self.driver.find_elements(*usermessage_expression)[index].click()
@@ -573,7 +587,7 @@ class Multanchor(object):
     def usermessage_Voicechat_nomoney(self):
         logging.info('===查看是否余额不足===')
         try:
-            Voicechat_nomoneywin = (MobileBy.ANDROID_UIAUTOMATOR,'text("余额不足")')
+            Voicechat_nomoneywin = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("余额不足")')
         except:
             logging.info('===余额足够===')
             usermessage_Voice_chat_toast = self.toast_message('交友房房主无法视频聊天')
@@ -680,11 +694,13 @@ class Multanchor(object):
             # time.sleep(0.5)
             # google_expression_list[0].click()
             self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout")[0].click()
-            self.touch_tap(550, 1200)
+            time.sleep(1)
+            self.touch_tap(330, 1100)
         else:
             logging.info('===发送Chamet表情===')
             self.driver.find_elements(*groupmessage_expression)[index].click()
-            self.touch_tap(550, 1200)
+            time.sleep(1)
+            self.touch_tap(330, 1100)
         logging.info('===发送成功===')
 
     # 查看群聊界面对方发送表情(Chamet表情)
@@ -846,7 +862,10 @@ class Multanchor(object):
     def groupmessage_send_gift(self,gift_tab,gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
+        # self.driver.find_elements(MobileBy.ID,"com.hkfuliao.chamet:id/item_group_count_text")[0].click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
         audience_sendgift_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/sendTv")
         audience_sendgift_but.click()
         if self.rechargewindow_bysendgift() and self.rechargewindow_able():

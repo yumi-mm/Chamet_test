@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:748 ===用例34：观众端给主播送礼===
+[32mINFO    [0m root:multparty_ten_audience.py:426 ===送礼===
+[32mINFO    [0m root:test_10party_mult.py:768 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:770 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 16_17_34.png

@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:1131 ===用例51：嘉宾查看是否被移出嘉宾位===
+[32mINFO    [0m root:multparty_ten_audience.py:217 ===消息内容===
+[32mINFO    [0m root:test_10party_mult.py:1137 ===断言失败===
+[32mINFO    [0m root:test_10party_mult.py:1139 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 12_04_33.png

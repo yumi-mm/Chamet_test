@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:3167 ===用例141：10人交友房观众端打开banner===
+[32mINFO    [0m root:multparty_ten_audience.py:1437 ===未成功进入活动页===
+[32mINFO    [0m root:test_10party_mult.py:3180 ===执行失败===

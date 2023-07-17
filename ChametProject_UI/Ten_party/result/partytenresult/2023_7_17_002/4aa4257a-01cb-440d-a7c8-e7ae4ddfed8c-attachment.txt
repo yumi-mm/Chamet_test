@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:937 ===用例42：观众端查看是否成功上麦===
+[32mINFO    [0m root:test_10party_mult.py:940 ===断言成功，主播端查看观众成功上麦===

@@ -321,11 +321,20 @@ class Multaudience(object):
         party_textmessage = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")
         return party_textmessage[-1].text
 
+    # 获取消息区文本消息
+    def party_textmessage_all(self):
+        logging.info('===获取消息区最后一条文本消息===')
+        str = ''
+        party_textmessage_all = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")
+        for i in party_textmessage_all:
+            str = str+i.text
+        return str
+
     # 获取消息区@消息
     def party_textmessage_aite(self):
         logging.info('===获取消息区最后一条文本消息===')
-        party_textmessage = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView")
-        return party_textmessage[-1].text
+        party_textmessage_aite = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.TextView")
+        return party_textmessage_aite[-1].text
 
     # 观众端消息区内容
     def audience_chat_area(self):
@@ -416,6 +425,7 @@ class Multaudience(object):
     def audience_sendgift(self,gift_tab,gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
         audience_sendgift_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/sendTv")
@@ -438,7 +448,7 @@ class Multaudience(object):
                 self.driver.back()
             return 1
 
-    # 观众端送礼
+    # 观众端送礼(私聊)
     def audience_sendgift_bymessage(self, gift_tab, gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
@@ -556,6 +566,30 @@ class Multaudience(object):
             more_but.click()
         except:
             logging.info('===不存在更多按钮===')
+
+    # 嘉宾点击更多按钮
+    def audienceclick_more(self):
+        more_but = (MobileBy.ID, "com.hkfuliao.chamet:id/vc_setting")
+        self.driver.find_element(*more_but).click()
+
+    # 查看有无任务按钮
+    def haveno_task_but(self):
+        logging.info('===查看有无任务按钮===')
+        try:
+            task_but = (MobileBy.ANDROID_UIAUTOMATOR, 'text("任务")')
+            task_but = self.driver.find_element(*task_but)
+            logging.info('===有任务按钮===')
+            return True
+        except:
+            logging.info('===无任务按钮===')
+            return False
+
+    # 进入任务页面
+    def enter_task_page(self):
+        logging.info('===进入任务页面===')
+        task_but = (MobileBy.ANDROID_UIAUTOMATOR, 'text("任务")')
+        task_but = self.driver.find_element(*task_but)
+        task_but.click()
 
     # 嘉宾端点击设置按钮
     def audienceopen_set(self):
@@ -896,7 +930,7 @@ class Multaudience(object):
     def audience_usermessage_scroll_gift(self):
         self.audience_usermessage_open_giftpage()
         logging.info('#####################')
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("设计走查")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("幸运")').click()
         gift_list_text = self.driver.find_elements(MobileBy.XPATH,"//androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")
         gift_list_text[0].click()
         self.swipe_xy(600, 1200, 100, 1200)
@@ -1036,13 +1070,14 @@ class Multaudience(object):
             logging.info('===寻找私聊列表时出错===')
 
     # 观众端进入群聊页面
-    def audienceenter_groupmessage(self):
+    def audienceenter_groupmessage(self,group_name):
         self.audienceopen_message()
         audience_groupmessagelists = self.audience_groupmessagelist()
         if len(audience_groupmessagelists) == 0:
             pytest.skip("聊天列表中没有群聊记录，跳过该测试用例")
         logging.info('===进入群聊页面===')
-        audience_groupmessagelists[0].click()
+        # audience_groupmessagelists[0].click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("{}")'.format(group_name)).click()
 
     # 观众端群聊页面查看标题
     def audience_groupmessage_name(self):
@@ -1083,7 +1118,7 @@ class Multaudience(object):
             google_expression_searchbut.click()
             time.sleep(0.5)
             google_expression_list = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout")
-            time.sleep(0.5)
+            time.sleep(1)
             google_expression_list[0].click()
             self.touch_tap(350, 900)
         else:
@@ -1267,7 +1302,10 @@ class Multaudience(object):
     def audience_groupmessage_sendgift(self,gift_tab,gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
+        self.driver.find_elements(MobileBy.ID, "com.hkfuliao.chamet:id/item_group_count_text")[0].click()
+        # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
         audience_sendgift_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/sendTv")
         audience_sendgift_but.click()
         if self.rechargewindow_bysendgift() and self.rechargewindow_able():

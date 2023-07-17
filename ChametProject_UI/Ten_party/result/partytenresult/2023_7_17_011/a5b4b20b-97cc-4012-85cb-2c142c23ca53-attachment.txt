@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_mult.py:1205 ===用例54：主播给嘉宾解除禁言===
+[32mINFO    [0m root:test_10party_mult.py:1207 ===被禁言的嘉宾名字：markd7fdeaqq===
+[32mINFO    [0m root:test_10party_mult.py:1222 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:1224 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 17_44_30.png
+[32mINFO    [0m root:test_10party_mult.py:1227 ===111111111111111111===
+[32mINFO    [0m root:test_10party_mult.py:1230 ===222222222222222222===

@@ -749,12 +749,15 @@ class Test_multchamet(anchorparty_Start_End):
         try:
             global sendgift_assertcondition_1
             # sendgift_assertcondition_1 = self.multaudience.audience_sendgift("简体中文chinese simplified","Blessed Ramadan")
-            sendgift_assertcondition_1 = self.multaudience.audience_sendgift("热门", "Lucky Fortune")
+            # sendgift_assertcondition_1 = self.multaudience.audience_sendgift("热门", "Lucky Fortune")
+            sendgift_assertcondition_1 = self.multaudience.audience_sendgift("热门", "幸运之吻")
             if sendgift_assertcondition_1 == 0:
                 pytest.skip("观众端未送礼")
             # 只要最后一条消息中存在送出两字即断言成功
-            sendgift_message = self.multaudience.party_textmessage()
-            assert "送出" in sendgift_message
+            sendgift_message = self.multaudience.party_textmessage_all()
+            count = sendgift_message.count('送出')
+            assert count == 1
+            # assert "送出" in sendgift_message
             logging.info('===断言成功，成功送礼===')
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -776,8 +779,10 @@ class Test_multchamet(anchorparty_Start_End):
             if sendgift_assertcondition_1 == 0:
                 pytest.skip("观众端未送礼")
             # 只要最后一条消息中存在送出两字即断言成功
-            sendgift_message = self.multanchor.party_textmessage(-1)
-            assert "送出" in sendgift_message
+            sendgift_message = self.multanchor.party_textmessage_all()
+            count = sendgift_message.count('送出')
+            assert count == 1
+            # assert "送出" in sendgift_message
             logging.info('===断言成功，成功送礼===')
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -800,12 +805,15 @@ class Test_multchamet(anchorparty_Start_End):
             self.multaudience.giftwin_allbut()
             global sendgift_assertcondition_2
             # sendgift_assertcondition_2 = self.multaudience.audience_sendgift("简体中文chinese simplified","Blessed Ramadan")
-            sendgift_assertcondition_2 = self.multaudience.audience_sendgift("热门", "Lucky Fortune")
+            # sendgift_assertcondition_2 = self.multaudience.audience_sendgift("热门", "Lucky Fortune")
+            sendgift_assertcondition_2 = self.multaudience.audience_sendgift("热门", "幸运之吻")
             if sendgift_assertcondition_2 == 0:
                 pytest.skip("观众端未送礼")
             # 只要最后一条消息中存在送出两字即断言成功
-            sendgift_message = self.multaudience.party_textmessage()
-            assert "送出" in sendgift_message
+            sendgift_message = self.multaudience.party_textmessage_all()
+            count = sendgift_message.count('送出')
+            assert count == 2
+            # assert "送出" in sendgift_message
             logging.info('===断言成功，成功送礼===')
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -827,8 +835,10 @@ class Test_multchamet(anchorparty_Start_End):
             if sendgift_assertcondition_2 == 0:
                 pytest.skip("观众端未送礼")
             # 只要最后一条消息中存在送出两字即断言成功
-            sendgift_message = self.multanchor.party_textmessage(-2)
-            assert "送出" in sendgift_message
+            sendgift_message = self.multanchor.party_textmessage_all()
+            count = sendgift_message.count('送出')
+            assert count == 2
+            # assert "送出" in sendgift_message
             logging.info('===断言成功，成功送礼===')
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -1442,11 +1452,12 @@ class Test_multchamet(anchorparty_Start_End):
             self.multaudience.enteranchor_HalfScreen()
             global sendgift_assertcondition_3
             # sendgift_assertcondition_3 = self.multaudience.HalfScreen_sendgift("简体中文chinese simplified","Blessed Ramadan")
-            sendgift_assertcondition_3 = self.multaudience.HalfScreen_sendgift("热门", "Lucky Fortune")
+            # sendgift_assertcondition_3 = self.multaudience.HalfScreen_sendgift("热门", "Lucky Fortune")
+            sendgift_assertcondition_3 = self.multaudience.HalfScreen_sendgift("热门", "幸运之吻")
             if sendgift_assertcondition_3 == 0:
                 pytest.skip("观众端未送礼")
             # 只要最后一条消息中存在送出两字即断言成功
-            sendgift_message = self.multaudience.party_textmessage()
+            sendgift_message = self.multaudience.party_textmessage_all()
             assert "送出" in sendgift_message
             logging.info('===断言成功，成功送礼===')
         except AssertionError as e:
@@ -1468,7 +1479,7 @@ class Test_multchamet(anchorparty_Start_End):
         try:
             if sendgift_assertcondition_3 == 0:
                 pytest.skip("观众端未送礼")
-            sendgift_message = self.multanchor.party_textmessage(-1)
+            sendgift_message = self.multanchor.party_textmessage_all()
             assert "送出" in sendgift_message
             logging.info('===断言成功，主播收到观众礼物===')
         except AssertionError as e:
@@ -2093,7 +2104,8 @@ class Test_multchamet(anchorparty_Start_End):
             # self.multaudience.audience_usermessage_sendgift()
             global sendgift_assertcondition_4
             # sendgift_assertcondition_4 = self.multaudience.audience_sendgift("简体中文chinese simplified","Blessed Ramadan")
-            sendgift_assertcondition_4 = self.multaudience.audience_sendgift_bymessage("热门", "Bouquet")
+            # sendgift_assertcondition_4 = self.multaudience.audience_sendgift_bymessage("热门", "Bouquet")
+            sendgift_assertcondition_4 = self.multaudience.audience_sendgift_bymessage("热门", "棒棒糖")
             if sendgift_assertcondition_4 == 0:
                 pytest.skip("观众端未送礼")
             last_text = self.multaudience.get_usermessage_textcontent(-1)
@@ -2124,12 +2136,12 @@ class Test_multchamet(anchorparty_Start_End):
             logging.info('===断言成功，主播收到私聊礼物===')
         except AssertionError as e:
             logging.info('===断言失败===')
-            screen_name = self.multaudience.screenshot('party_ten')
+            screen_name = self.multanchor.screenshot('party_ten')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
         except:
             logging.info('===执行失败===')
-            screen_name = self.multaudience.screenshot('party_ten')
+            screen_name = self.multanchor.screenshot('party_ten')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
         finally:
@@ -2212,7 +2224,7 @@ class Test_multchamet(anchorparty_Start_End):
     def test_TenParty_100(self):
         logging.info('===用例100：观众端进入群聊页面===')
         try:
-            self.multaudience.audienceenter_groupmessage()
+            self.multaudience.audienceenter_groupmessage("哈哈aa")
             groupmessage_name = self.multaudience.audience_groupmessage_name()
             assert groupmessage_name[-1] == ')'
             logging.info('===断言成功，观众成功进入群聊页面===')
@@ -2689,7 +2701,8 @@ class Test_multchamet(anchorparty_Start_End):
             self.multaudience.group_opengiftwin()
             global sendgift_assertcondition_5
             # sendgift_assertcondition_5 = self.multaudience.audience_groupmessage_sendgift("简体中文chinese simplified","Blessed Ramadan")
-            sendgift_assertcondition_5 = self.multaudience.audience_groupmessage_sendgift("热门", "Lucky Fortune")
+            # sendgift_assertcondition_5 = self.multaudience.audience_groupmessage_sendgift("热门", "Lucky Fortune")
+            sendgift_assertcondition_5 = self.multaudience.audience_groupmessage_sendgift("热门","幸运之吻")
             if sendgift_assertcondition_5 == 0:
                 pytest.skip("观众端未送礼")
             gift_text = self.multaudience.watchgroup_selfsendgift()
@@ -2738,7 +2751,8 @@ class Test_multchamet(anchorparty_Start_End):
             self.multanchor.group_opengiftwin()
             global sendgift_assertcondition_6
             # sendgift_assertcondition_6 = self.multanchor.groupmessage_send_gift("简体中文chinese simplified","Blessed Ramadan")
-            sendgift_assertcondition_6 = self.multanchor.groupmessage_send_gift("热门", "Lucky Fortune")
+            # sendgift_assertcondition_6 = self.multanchor.groupmessage_send_gift("热门", "Lucky Fortune")
+            sendgift_assertcondition_6 = self.multanchor.groupmessage_send_gift("热门","幸运之吻")
             if sendgift_assertcondition_6 == 0:
                 pytest.skip("观众端未送礼")
             gift_text = self.multanchor.watchgroup_selfsendgift()
@@ -3102,8 +3116,13 @@ class Test_multchamet(anchorparty_Start_End):
     def test_TenParty_139(self):
         logging.info('===用例139：10人交友房观众端打开任务页===')
         try:
-            self.multaudience.audience_entertaskpage()
-            task_page = self.multaudience.taskpage_title()
+            task_page_ele = (MobileBy.ID, "com.hkfuliao.chamet:id/tv_tab_tasks")
+            self.multaudience.audienceclick_more()
+            task = self.multaudience.haveno_task_but()
+            if task == False:
+                pytest.skip("无任务按钮，跳过该测试用例")
+            self.multaudience.enter_task_page()
+            task_page = self.audiencedriver.find_element(*task_page_ele)
             assert task_page == "任务"
             logging.info('===断言成功===')
         except AssertionError as e:
@@ -3187,6 +3206,7 @@ class Test_multchamet(anchorparty_Start_End):
             assert party_audience.text == "观众"
             assert party_earn.text == "礼物收入"
             assert gift_people.text == "送礼人"
+            logging.info('===断言成功===')
         except AssertionError as e:
             logging.info('===断言失败===')
             screen_name = self.multanchor.screenshot('party_ten')
@@ -3215,6 +3235,28 @@ class Test_multchamet(anchorparty_Start_End):
             assert party_audience.text == "观众"
             endpage_title = self.audiencedriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/title")
             assert endpage_title.text == "派对已结束"
+            logging.info('===断言成功===')
+        except AssertionError as e:
+            logging.info('===断言失败===')
+            screen_name = self.multaudience.screenshot('party_ten')
+            logging.info(f'截图成功，图片为{screen_name}')
+            raise
+        except:
+            logging.info('===执行失败===')
+            screen_name = self.multaudience.screenshot('party_ten')
+            logging.info(f'截图成功，图片为{screen_name}')
+            raise
+
+
+    @pytest.mark.skip("结束页会进入其他交友房，时间太短，无法找到元素")
+    @allure.severity(allure.severity_level.BLOCKER)
+    @allure.title('用例144：观众端进入其他交友房')
+    def test_TenParty_144(self):
+        logging.info('===用例144：观众端进入其他交友房===')
+        try:
+            new_anchorname = self.audiencedriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/live_titletv").text
+            assert new_anchorname != 'yumi680bc2'
+            logging.info('===断言成功===')
         except AssertionError as e:
             logging.info('===断言失败===')
             screen_name = self.multaudience.screenshot('party_ten')

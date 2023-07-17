@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:2168 ===用例98：主播在交友房给观众发私信消息===
+[32mINFO    [0m root:multparty_ten_anchor.py:426 ===右上角不存在观众列表按钮===
+[32mINFO    [0m root:test_10party_mult.py:2184 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:2186 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 12_20_23.png

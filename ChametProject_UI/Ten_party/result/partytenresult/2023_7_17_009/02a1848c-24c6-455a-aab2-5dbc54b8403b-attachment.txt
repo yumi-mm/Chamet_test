@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:3014 ===用例135：10人交友房主播端打开充值页面===
+[32mINFO    [0m root:multparty_ten_anchor.py:1005 ===进入充值页面===
+[32mINFO    [0m root:test_10party_mult.py:3019 ===断言成功，主播成功打开充值页面===
+[32mINFO    [0m root:test_10party_mult.py:3031 返回交友房

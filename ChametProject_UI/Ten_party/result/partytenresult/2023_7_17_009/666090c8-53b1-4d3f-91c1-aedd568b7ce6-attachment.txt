@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:2421 ===用例109：观众端群聊页面查看是否收到google表情===
+[32mINFO    [0m root:test_10party_mult.py:2433 ===执行失败===

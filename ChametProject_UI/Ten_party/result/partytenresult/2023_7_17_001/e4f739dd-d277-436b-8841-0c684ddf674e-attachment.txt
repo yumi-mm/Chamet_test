@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:1019 ===用例46：嘉宾离开交友位===
+[32mINFO    [0m root:multparty_ten_audience.py:555 ===点击更多按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:564 ===点击设置按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:600 ===嘉宾离开嘉宾位===
+[32mINFO    [0m root:test_10party_mult.py:1026 ===断言成功，嘉宾离开交友位===

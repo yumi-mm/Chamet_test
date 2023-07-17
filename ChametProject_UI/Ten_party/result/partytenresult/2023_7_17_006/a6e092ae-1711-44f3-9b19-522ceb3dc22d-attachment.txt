@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:2339 ===用例105：群成员查看群聊消息===
+[32mINFO    [0m root:test_10party_mult.py:2343 ===断言成功，群成员收到主播发的群聊消息===

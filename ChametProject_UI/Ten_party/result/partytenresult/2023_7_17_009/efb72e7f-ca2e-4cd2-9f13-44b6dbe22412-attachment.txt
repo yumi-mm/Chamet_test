@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:2611 ===用例118：观众端群聊页面发送钻石包===
+[32mINFO    [0m root:multparty_ten_audience.py:1235 ===发送钻石包===
+[32mINFO    [0m root:test_10party_mult.py:2623 ===执行失败===
