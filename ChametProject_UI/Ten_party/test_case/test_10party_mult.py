@@ -1,5 +1,5 @@
 import time
-from common.partytencommon.multparty_star_end import anchorparty_Start_End
+from ChametProject_UI.Ten_party.common.partytencommon.multparty_star_end import anchorparty_Start_End
 # from common.partytencommon.multparty_star_end import audienceeparty_Start_End
 from appium.webdriver.common.mobileby import MobileBy
 from selenium.common.exceptions import NoSuchElementException

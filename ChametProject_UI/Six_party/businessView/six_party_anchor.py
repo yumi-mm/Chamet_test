@@ -205,8 +205,8 @@ class Six_partyView_anchor(Common):
     test_xx = (By.XPATH, '//android.widget.TextView[contains(@text, "交友房")]')
     homepage_video = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.view.ViewGroup')
     six_message_user = (By.XPATH,
-                        '//android.widget.TextView[contains(@text, "[level]  测试账号男 送出1 Lucky Kiss给测试账号女 [gift] ")]')
-    six_message_inuser = (By.XPATH, '//android.widget.TextView[contains(@text, "[level]  测试账号男 加入了房间")]')
+                        '//android.widget.TextView[contains(@text, "[level]  goodbay1 送出1 Lucky Kiss给lisa1111 [gift] ")]')
+    six_message_inuser = (By.XPATH, '//android.widget.TextView[contains(@text, "[level]  goodbay1 加入了房间")]')
     close_end_page = (By.ID, 'com.hkfuliao.chamet:id/closeTv')
     six_party_send_all_gift = (By.ID, 'com.hkfuliao.chamet:id/switchBtn')
     more_join = (By.XPATH,
@@ -252,8 +252,8 @@ class Six_partyView_anchor(Common):
     test_expect041 = (By.XPATH,
                       '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View')
     test_expect042 = (By.XPATH,
-                      '//android.widget.TextView[contains(@text, "[level] 测试账号男 加入了房间")]')
-    test_expect044 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] 测试账号女 : @测试账号男 ")]')
+                      '//android.widget.TextView[contains(@text, "[level] goodbay1 加入了房间")]')
+    test_expect044 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] lisa1111 : @goodbay1 ")]')
 
     test_expect059 = (By.XPATH,
                       '//android.widget.TextView[contains(@text, "欢迎来到Chamet 交友房！警告：直播期间严禁出现色情、粗俗、暴力、未成年人等相关情况。人工智能系统每天24 小时对其进行审查。一旦违反规定，将受到严惩！")]')
@@ -276,7 +276,7 @@ class Six_partyView_anchor(Common):
                       '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]')
     test_expect094 = (By.XPATH,
                       '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]')
-    test_expect096 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] 测试账号男 : @测试账号女 ")]')
+    test_expect096 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] goodbay1 : @lisa1111 ")]')
     test_expect097 = (By.ID, 'com.hkfuliao.chamet:id/vc_box')
     test_expect102 = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]')
     test_expect103 = (By.ID, 'com.hkfuliao.chamet:id/img_love')
@@ -300,12 +300,12 @@ class Six_partyView_anchor(Common):
     test_expect166 = (By.ID, 'com.hkfuliao.chamet:id/live_duration')
     test_expect140 = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.ImageView[2]')
     test_expect018 = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[3]/android.widget.TextView')
-    test_expect31 = (By.ID, '//android.widget.TextView[contains(@text, "[level] 测试账号女 送出1 幸运之吻给测试账号男 [gift] ")]')
+    test_expect31 = (By.ID, '//android.widget.TextView[contains(@text, "[level] lisa1111 送出1 幸运之吻给goodbay1 [gift] ")]')
     per_btn = (By.ID, 'com.lbe.security.miui:id/permission_allow_foreground_only_button')
-    test_expect105 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] 测试账号男 已被主播移出房间")]')
-    test_expect_106 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] 测试账号男 被主播禁言")]')
-    test_expect109 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] 测试账号女 : 1234")]')
-    test_expect16 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] 测试账号男 送出1 Lucky Kiss给测试账号女 [gift] ")]')
+    test_expect105 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] goodbay1 已被主播移出房间")]')
+    test_expect_106 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] goodbay1 被主播禁言")]')
+    test_expect109 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] lisa1111 : 1234")]')
+    test_expect16 = (By.XPATH, '//android.widget.TextView[contains(@text, "[level] goodbay1 送出1 Lucky Kiss给lisa1111 [gift] ")]')
 
 
     def check_perBtn(self):
