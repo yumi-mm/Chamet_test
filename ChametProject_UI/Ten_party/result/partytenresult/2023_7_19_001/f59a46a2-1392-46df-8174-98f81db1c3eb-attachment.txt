@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_10party_mult.py:2227 ===用例100：观众端进入群聊页面===
+[32mINFO    [0m root:multparty_ten_audience.py:565 ===点击更多按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:1059 ===打开留言浮窗===
+[32mINFO    [0m root:multparty_ten_audience.py:1065 ===查看群聊列表===
+[32mINFO    [0m root:multparty_ten_audience.py:1078 ===进入群聊页面===
+[32mINFO    [0m root:test_10party_mult.py:2239 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:2241 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-19 15_40_12.png

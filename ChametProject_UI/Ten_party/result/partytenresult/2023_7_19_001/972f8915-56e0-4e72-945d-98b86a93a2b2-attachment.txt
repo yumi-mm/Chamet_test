@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_mult.py:2530 ===用例114：观众端群聊页面发送拍摄图片===
+[32mINFO    [0m root:multparty_ten_audience.py:1223 ===发送照片===
+[32mINFO    [0m root:multparty_ten_audience.py:1228 ===发送拍摄照片===
+[32mINFO    [0m root:multparty_ten_audience.py:1151 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_10party_mult.py:2542 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:2544 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-19 15_44_06.png

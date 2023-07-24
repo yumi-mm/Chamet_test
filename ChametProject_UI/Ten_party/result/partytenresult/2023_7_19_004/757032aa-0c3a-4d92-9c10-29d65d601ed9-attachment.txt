@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:2361 ===用例106：观众端群聊页面发送chamet表情===
+[32mINFO    [0m root:multparty_ten_audience.py:1107 ===准备发送表情===
+[32mINFO    [0m root:test_10party_mult.py:2373 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:2375 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-19 17_12_08.png

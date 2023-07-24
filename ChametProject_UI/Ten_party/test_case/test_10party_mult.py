@@ -16,6 +16,7 @@ class Test_multchamet(anchorparty_Start_End):
     # Anchor_ID = "20113007"
     # 线上环境ID
     Anchor_ID = "46565897"
+    audience_name = "markd7fdeaqq"
 
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例1：主播进入交友房预览页')
@@ -387,7 +388,7 @@ class Test_multchamet(anchorparty_Start_End):
             #     pytest.skip("没有交友房，跳过该测试用例")
             # self.multaudience.audience_enter_tenparty(self.which_party)
             enterparty_message = self.multaudience.party_textmessage()
-            assert "加入了房间" in enterparty_message
+            assert "{} 加入了房间".format(self.audience_name) in enterparty_message
             logging.info('===断言成功，存在进场消息提醒===')
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -434,7 +435,7 @@ class Test_multchamet(anchorparty_Start_End):
         logging.info('===用例19：主播检查观众进场消息提醒===')
         try:
             enterparty_message = self.multanchor.party_textmessage(-1)
-            assert "加入了房间" in enterparty_message
+            assert "{} 加入了房间".format(self.audience_name) in enterparty_message
             logging.info('===断言成功，存在进场消息提醒===')
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -551,6 +552,7 @@ class Test_multchamet(anchorparty_Start_End):
             screen_name = self.multaudience.screenshot('party_ten')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
+
 
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.title('用例25：主播端发送文字正常向前滚动')
@@ -749,13 +751,13 @@ class Test_multchamet(anchorparty_Start_End):
         try:
             global sendgift_assertcondition_1
             # sendgift_assertcondition_1 = self.multaudience.audience_sendgift("简体中文chinese simplified","Blessed Ramadan")
-            # sendgift_assertcondition_1 = self.multaudience.audience_sendgift("热门", "Lucky Fortune")
-            sendgift_assertcondition_1 = self.multaudience.audience_sendgift("热门", "幸运之吻")
+            sendgift_assertcondition_1 = self.multaudience.audience_sendgift("热门", "Lucky Fortune")
+            # sendgift_assertcondition_1 = self.multaudience.audience_sendgift("热门", "幸运之吻")
             if sendgift_assertcondition_1 == 0:
                 pytest.skip("观众端未送礼")
             # 只要最后一条消息中存在送出两字即断言成功
             sendgift_message = self.multaudience.party_textmessage_all()
-            count = sendgift_message.count('送出')
+            count = sendgift_message.count("{} 送出".format(self.audience_name))
             assert count == 1
             # assert "送出" in sendgift_message
             logging.info('===断言成功，成功送礼===')
@@ -780,7 +782,7 @@ class Test_multchamet(anchorparty_Start_End):
                 pytest.skip("观众端未送礼")
             # 只要最后一条消息中存在送出两字即断言成功
             sendgift_message = self.multanchor.party_textmessage_all()
-            count = sendgift_message.count('送出')
+            count = sendgift_message.count("{} 送出".format(self.audience_name))
             assert count == 1
             # assert "送出" in sendgift_message
             logging.info('===断言成功，成功送礼===')
@@ -811,7 +813,7 @@ class Test_multchamet(anchorparty_Start_End):
                 pytest.skip("观众端未送礼")
             # 只要最后一条消息中存在送出两字即断言成功
             sendgift_message = self.multaudience.party_textmessage_all()
-            count = sendgift_message.count('送出')
+            count = sendgift_message.count("{} 送出".format(self.audience_name))
             assert count == 2
             # assert "送出" in sendgift_message
             logging.info('===断言成功，成功送礼===')
@@ -836,7 +838,7 @@ class Test_multchamet(anchorparty_Start_End):
                 pytest.skip("观众端未送礼")
             # 只要最后一条消息中存在送出两字即断言成功
             sendgift_message = self.multanchor.party_textmessage_all()
-            count = sendgift_message.count('送出')
+            count = sendgift_message.count("{} 送出".format(self.audience_name))
             assert count == 2
             # assert "送出" in sendgift_message
             logging.info('===断言成功，成功送礼===')
@@ -1320,7 +1322,7 @@ class Test_multchamet(anchorparty_Start_End):
     @allure.title('用例59：主播邀请观众上麦，观众关闭上麦邀请')
     def test_TenParty_059(self):
         logging.info('===用例59：主播邀请观众上麦，观众关闭上麦邀请===')
-        # self.multanchor.invite_guest("qq20113835")
+        # self.multanchor.invite_guest("markd7fdeaqq")
         self.multanchor.invite_guest(guestname)
         time.sleep(1)
         self.audiencedriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/negative_btn").click()
@@ -1430,7 +1432,7 @@ class Test_multchamet(anchorparty_Start_End):
         logging.info('===用例64：主播判断观众是否进入交友房===')
         try:
             enterparty_message = self.multanchor.party_textmessage(-1)
-            assert "加入了房间" in enterparty_message
+            assert "{} 加入了房间".format(self.audience_name) in enterparty_message
             logging.info('===断言成功，观众成功从小窗进入交友房===')
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -1829,14 +1831,14 @@ class Test_multchamet(anchorparty_Start_End):
 
 
     @allure.severity(allure.severity_level.NORMAL)
-    @allure.title('用例82：观众私聊页面发送google表情')
+    @allure.title('用例82：观众私聊页面发送Facebook表情')
     def test_TenParty_082(self):
-        logging.info('===用例82：观众私聊页面发送google表情===')
+        logging.info('===用例82：观众私聊页面发送Facebook表情===')
         try:
             self.multaudience.audience_usermessage_sendexpression(0)
             expression = self.multaudience.watch_selfsendgooglexpression()
             assert expression
-            logging.info('===断言成功，观众发送google表情成功===')
+            logging.info('===断言成功，观众发送Facebook表情成功===')
         except AssertionError as e:
             logging.info('===断言失败===')
             screen_name = self.multaudience.screenshot('party_ten')
@@ -1850,14 +1852,14 @@ class Test_multchamet(anchorparty_Start_End):
 
 
     @allure.severity(allure.severity_level.NORMAL)
-    @allure.title('用例83：主播查看是否收到google表情')
+    @allure.title('用例83：主播查看是否收到Facebook表情')
     def test_TenParty_083(self):
-        logging.info('===用例83：主播查看是否收到google表情===')
+        logging.info('===用例83：主播查看是否收到Facebook表情===')
         try:
             head_frame, expression = self.multanchor.watch_othersendgoogleexpression()
             assert head_frame
             assert expression
-            logging.info('===断言成功，主播成功收到google表情===')
+            logging.info('===断言成功，主播成功收到Facebook表情===')
         except AssertionError as e:
             logging.info('===断言失败===')
             screen_name = self.multanchor.screenshot('party_ten')
@@ -1871,14 +1873,14 @@ class Test_multchamet(anchorparty_Start_End):
 
 
     @allure.severity(allure.severity_level.NORMAL)
-    @allure.title('用例84：主播私聊页面发送google表情')
+    @allure.title('用例84：主播私聊页面发送Facebook表情')
     def test_TenParty_084(self):
-        logging.info('===用例84：主播私聊页面发送google表情===')
+        logging.info('===用例84：主播私聊页面发送Facebook表情===')
         try:
             self.multanchor.usermessage_send_expression(0)
             expression = self.multanchor.watch_selfsendgooglexpression()
             assert expression
-            logging.info('===断言成功，主播发送google表情成功===')
+            logging.info('===断言成功，主播发送Facebook表情成功===')
         except AssertionError as e:
             logging.info('===断言失败===')
             screen_name = self.multanchor.screenshot('party_ten')
@@ -1892,14 +1894,14 @@ class Test_multchamet(anchorparty_Start_End):
 
 
     @allure.severity(allure.severity_level.NORMAL)
-    @allure.title('用例85：观众查看是否收到google表情')
+    @allure.title('用例85：观众查看是否收到Facebook表情')
     def test_TenParty_085(self):
-        logging.info('===用例85：观众查看是否收到google表情===')
+        logging.info('===用例85：观众查看是否收到Facebook表情===')
         try:
             head_frame, expression = self.multaudience.watch_othersendgoogleexpression()
             assert head_frame
             assert expression
-            logging.info('===断言成功，观众成功收到google表情===')
+            logging.info('===断言成功，观众成功收到Facebook表情===')
         except AssertionError as e:
             logging.info('===断言失败===')
             screen_name = self.multaudience.screenshot('party_ten')
@@ -2176,7 +2178,7 @@ class Test_multchamet(anchorparty_Start_End):
         logging.info('===用例98：主播在交友房给观众发私信消息===')
         try:
             self.multanchor.open_audiencelist()
-            # self.multanchor.enter_audiencehaldwin("qq20113835")
+            # self.multanchor.enter_audiencehaldwin("markd7fdeaqq")
             self.multanchor.enter_audiencehaldwin(guestname)
             self.multanchor.sendmessage_toaudience("hello")
             self.multaudience.enter_privatechatpage()
@@ -2271,7 +2273,7 @@ class Test_multchamet(anchorparty_Start_End):
             message_group_lists = self.multanchor.message_group_list()
             if len(message_group_lists) == 0:
                 pytest.skip("聊天列表中没有群聊记录，跳过该测试用例")
-            self.multanchor.message_group_enter()
+            self.multanchor.message_group_enter("哈哈aa")
             groupmessage_number = (MobileBy.ID, "com.hkfuliao.chamet:id/tv_group_number")
             groupmessage_pagenumber = self.anchordriver.find_element(*groupmessage_number)
             groupmessage_pagenumberlast = groupmessage_pagenumber.text[-1]
@@ -2414,6 +2416,7 @@ class Test_multchamet(anchorparty_Start_End):
             screen_name = self.multanchor.screenshot('party_ten')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
+
 
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例109：观众端群聊页面查看是否收到google表情')
@@ -2821,7 +2824,7 @@ class Test_multchamet(anchorparty_Start_End):
 
 
     @allure.severity(allure.severity_level.NORMAL)
-    @allure.title('用例127：主播端更换交友房背景(免费背景))')
+    @allure.title('用例127：主播端更换交友房背景(免费背景)')
     def test_TenParty_127(self):
         logging.info('===用例127：主播端更换交友房背景===')
         try:
@@ -3248,7 +3251,7 @@ class Test_multchamet(anchorparty_Start_End):
             raise
 
 
-    @pytest.mark.skip("结束页会进入其他交友房，时间太短，无法找到元素")
+    # @pytest.mark.skip("结束页会进入其他交友房，时间太短，无法找到元素")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例144：观众端进入其他交友房')
     def test_TenParty_144(self):

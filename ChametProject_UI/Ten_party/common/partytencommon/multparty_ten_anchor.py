@@ -590,6 +590,7 @@ class Multanchor(object):
             Voicechat_nomoneywin = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("余额不足")')
         except:
             logging.info('===余额足够===')
+            self.usermessage_Voice_chat()
             usermessage_Voice_chat_toast = self.toast_message('交友房房主无法视频聊天')
             assert usermessage_Voice_chat_toast.text == "交友房房主无法视频聊天"
         else:
@@ -655,10 +656,11 @@ class Multanchor(object):
             logging.info('===寻找群聊列表时出错===')
 
     # 有用户消息，进入用户消息
-    def message_group_enter(self):
-        message_grouplist = self.message_group_list()
+    def message_group_enter(self,group_name):
+        # message_grouplist = self.message_group_list()
         logging.info('===进入群聊页面===')
-        message_grouplist[0].click()
+        # message_grouplist[0].click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(group_name)).click()
 
     # 群聊界面发送文字
     def groupmessage_send_text(self,message_text):

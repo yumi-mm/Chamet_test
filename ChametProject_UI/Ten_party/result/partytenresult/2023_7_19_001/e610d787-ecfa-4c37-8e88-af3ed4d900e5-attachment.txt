@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:3120 ===用例139：10人交友房观众端打开任务页===
+[32mINFO    [0m root:multparty_ten_audience.py:577 ===查看有无任务按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:584 ===无任务按钮===
+[32mINFO    [0m root:test_10party_mult.py:3137 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:3139 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-19 15_50_50.png

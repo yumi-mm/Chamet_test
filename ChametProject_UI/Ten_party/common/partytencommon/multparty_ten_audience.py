@@ -411,6 +411,7 @@ class Multaudience(object):
             time.sleep(2)
             buy_but = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("一键购买")')
             buy_but.click()
+            # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("不用了")').click()
             time.sleep(3)
             buy_success_page = self.audience_buysuccess_page()
             assert buy_success_page
@@ -1228,7 +1229,7 @@ class Multaudience(object):
         logging.info('===发送拍摄照片===')
         try:
             self.driver.find_element(MobileBy.ID,"com.oppo.camera:id/shutter_button").click()
-            time.sleep(2)
+            time.sleep(0.5)
             self.driver.find_element(MobileBy.ID,"com.oppo.camera:id/done_button").click()
             time.sleep(2)
             return True

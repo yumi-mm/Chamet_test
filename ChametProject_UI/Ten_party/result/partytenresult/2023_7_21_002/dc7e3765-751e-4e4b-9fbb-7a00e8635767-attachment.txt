@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:1710 ===用例76：主播在私聊界面发送消息===
+[32mINFO    [0m root:multparty_ten_anchor.py:480 ===准备发送文字消息===
+[32mINFO    [0m root:multparty_ten_anchor.py:486 ===发送成功===
+[32mINFO    [0m root:multparty_ten_anchor.py:474 ===获取主播聊天区文本消息===
+[32mINFO    [0m root:test_10party_mult.py:1716 ===断言成功，成功发送文字===
