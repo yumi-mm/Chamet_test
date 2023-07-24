@@ -275,6 +275,33 @@ class Multanchor(object):
         print(last_first_gifttext)
         return next_first_gifttext,last_first_gifttext
 
+    # 主播端送礼
+    def anchor_sendgift(self, gift_tab, gift_name):
+        logging.info('===送礼===')
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
+        audience_sendgift_but = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/sendTv")
+        audience_sendgift_but.click()
+        if self.rechargewindow_bysendgift() and self.rechargewindow_able():
+            self.rechargewindow_recharge()
+            # self.audience_sendgift("简体中文chinese simplified","Moon sighting")
+            self.anchor_sendgift("热门", "幸运之吻")
+        elif self.rechargewindow_bysendgift() and self.rechargewindow_able() == False:
+            self.back(3)
+            logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
+            return 0
+        else:
+            lucky_window = self.lucky_window()
+            if lucky_window:
+                finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("真棒！")')
+                finish.click()
+                self.driver.back(2)
+            else:
+                self.driver.back(2)
+            return 1
+
     # 主播端申请上麦未读消息
     def applicants(self):
         applicants = (MobileBy.ID,"com.hkfuliao.chamet:id/applicantsCount")
@@ -565,6 +592,22 @@ class Multanchor(object):
         y1 = int(b)
         self.driver.tap([(x1, y1), (x1, y1)], duration)
 
+    # 主播端私聊界面打开相册
+    def usermessage_photo_but(self):
+        photo_butele = (MobileBy.ANDROID_UIAUTOMATOR,'text("相册")')
+        photo_but = self.driver.find_element(*photo_butele)
+        logging.info('===打开相册===')
+        photo_but.click()
+
+    # 主播端私聊页面发送相册照片
+    def anchor_usermessage_sendphoto(self,num):
+        self.usermessage_photo_but()
+        logging.info('===发送相册照片===')
+        for i in range(num):
+            self.driver.find_elements(MobileBy.XPATH,"//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.ImageView[2]")[i].click()
+        self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/menu_id_confirm").click()
+        time.sleep(2)
+
     # 发送相机照片
     def usermessage_send_cameraphoto(self):
         logging.info('===打开相机===')
@@ -782,6 +825,23 @@ class Multanchor(object):
         except:
             return False
 
+    # 主播端群聊中发送拍摄图片
+    def anchor_groupmessage_sendcameraphoto(self):
+        logging.info('===发送照片===')
+        photo_camera_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/iv_more_pic")
+        photo_camera_but.click()
+        cameraphoto_choicebut = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("拍照")')
+        cameraphoto_choicebut.click()
+        logging.info('===发送拍摄照片===')
+        try:
+            self.driver.find_element(MobileBy.ID,"com.huawei.camera:id/shutter_button").click()
+            time.sleep(0.5)
+            self.driver.find_element(MobileBy.ID,"com.huawei.camera:id/done_button").click()
+            time.sleep(2)
+            return True
+        except:
+            return False
+
     # 群聊页面领取钻石包
     def get_diamond_envelope(self):
         logging.info('===领取钻石包===')
@@ -923,13 +983,16 @@ class Multanchor(object):
         self.driver.find_element(*background).click()
 
     # 进入游戏页面
-    def enter_game_window(self,game_type):
+    def enter_game_list(self):
         logging.info('===进入游戏页面===')
         game_but = (MobileBy.ID, "com.hkfuliao.chamet:id/vc_box")
-        game_race = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_game")
-        game_LuckyNumber = (MobileBy.ID, "com.hkfuliao.chamet:id/ivLuckyNumber")
         game_but = self.driver.find_element(*game_but)
         game_but.click()
+
+    # 进入游戏页面
+    def enter_game_window(self,game_type):
+        game_race = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_game")
+        game_LuckyNumber = (MobileBy.ID, "com.hkfuliao.chamet:id/ivLuckyNumber")
         game_race = self.driver.find_element(*game_race)
         game_LuckyNumber = self.driver.find_element(*game_LuckyNumber)
         if game_type == "Chamet赛车":

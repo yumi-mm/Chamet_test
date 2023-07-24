@@ -1219,6 +1219,21 @@ class Multaudience(object):
     def audience_toast_message(self, message):
         return WebDriverWait(self.driver, 10, 0.05).until(EC.presence_of_element_located((MobileBy.XPATH, '//*[contains(@text, "%s")]' % message)))
 
+    # 群聊中发送相册图片
+    def groupmessage_send_photo(self,num):
+        logging.info('===发送照片===')
+        photo_camera_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/iv_more_pic")
+        photo_camera_but.click()
+        photo_choicebut = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("从相册挑选")')
+        photo_choicebut.click()
+        logging.info('===发送相册照片===')
+        try:
+            self.driver.find_elements(MobileBy.XPATH,"//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.ImageView")[num].click()
+            time.sleep(1)
+            return True
+        except:
+            return False
+
     # 观众端群聊中发送拍摄图片
     def audience_groupmessage_sendcameraphoto(self):
         logging.info('===发送照片===')
@@ -1351,17 +1366,19 @@ class Multaudience(object):
         gift_text = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.TextView[1]" % message_num)
         return gift_text.text
 
-        # 观众进入游戏页面
-
-    def audienceenter_game_window(self, game_type):
+    # 进入游戏页面
+    def enter_game_list(self):
         logging.info('===进入游戏页面===')
         game_but = (MobileBy.ID, "com.hkfuliao.chamet:id/vc_box")
+        game_but = self.driver.find_element(*game_but)
+        game_but.click()
+
+    # 观众进入游戏页面
+    def audienceenter_game_window(self, game_type):
         game_race = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_game")
         game_LuckyNumber = (MobileBy.ID, "com.hkfuliao.chamet:id/ivLuckyNumber")
         race_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_rank")
         LuckyNumber_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/rank")
-        game_but = self.driver.find_element(*game_but)
-        game_but.click()
         game_race = self.driver.find_element(*game_race)
         game_LuckyNumber = self.driver.find_element(*game_LuckyNumber)
         if game_type == "Chamet赛车":
