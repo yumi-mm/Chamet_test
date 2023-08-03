@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1804 ===用例81：观众查看是否收到chamet表情===
-[32mINFO    [0m root:test_10party_mult.py:1816 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:1818 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-07 16_19_51.png

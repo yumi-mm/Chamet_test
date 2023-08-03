@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:355 ===用例15：观众端发送文字正常向前滚动===
-[32mINFO    [0m root:party_ten_audience.py:239 ===观众端发言===
-[32mINFO    [0m root:party_ten_audience.py:253 ===消息区文字内容===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:360 ===断言成功，文字正常向前滚动===

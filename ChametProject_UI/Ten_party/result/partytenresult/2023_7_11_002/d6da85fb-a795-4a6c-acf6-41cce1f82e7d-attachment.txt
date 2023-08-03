@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2523 ===用例116：观众端群聊页面上麦===
-[32mINFO    [0m root:multparty_ten_audience.py:1097 ===观众端上麦===
-[32mINFO    [0m root:test_10party_mult.py:2528 ===断言成功===

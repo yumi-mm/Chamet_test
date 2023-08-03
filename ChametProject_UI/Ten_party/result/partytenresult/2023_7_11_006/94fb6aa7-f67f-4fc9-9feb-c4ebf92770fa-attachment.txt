@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2788 ===用例128：主播端更换交友房背景(等级限制背景)===
-[32mINFO    [0m root:test_10party_mult.py:2805 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2807 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-11 17_33_59.png

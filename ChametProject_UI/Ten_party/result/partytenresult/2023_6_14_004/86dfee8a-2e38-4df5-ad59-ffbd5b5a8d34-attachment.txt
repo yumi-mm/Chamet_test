@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:696 ===用例31：通过半屏浮窗@主播===
-[32mINFO    [0m root:party_ten_audience.py:401 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:party_ten_audience.py:475 ===观众@主播===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:701 ===断言成功，@主播成功===

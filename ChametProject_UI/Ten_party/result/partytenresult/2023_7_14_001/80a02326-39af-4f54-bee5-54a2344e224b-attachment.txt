@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:973 ===用例45：嘉宾在交友位关闭麦克风===
-[32mINFO    [0m root:multparty_ten_audience.py:475 ===不存在更多按钮===
-[32mINFO    [0m root:multparty_ten_audience.py:484 ===不存在设置按钮===
-[32mINFO    [0m root:multparty_ten_audience.py:491 ===不存在关闭麦克风按钮===
-[32mINFO    [0m root:multparty_ten_audience.py:503 ===嘉宾位无关闭麦克风标识===
-[32mINFO    [0m root:test_10party_mult.py:981 ===断言失败===
-[32mINFO    [0m root:test_10party_mult.py:983 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-14 09_42_40.png

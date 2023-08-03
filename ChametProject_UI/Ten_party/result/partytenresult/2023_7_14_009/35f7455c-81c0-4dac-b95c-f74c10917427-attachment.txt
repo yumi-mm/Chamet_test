@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1039 ===用例47：主播端查看嘉宾离开交友位===
-[32mINFO    [0m root:test_10party_mult.py:1043 ===断言成功，嘉宾离开交友位===

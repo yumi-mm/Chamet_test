@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1929 ===用例87：观众端开启私聊界面翻译功能===
-[32mINFO    [0m root:test_10party_mult.py:1942 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:1944 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-07 16_21_21.png

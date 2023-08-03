@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:890 ===用例41：主播端同意观众上麦申请===
-[32mINFO    [0m root:multparty_ten_anchor.py:284 ===下方无申请列表按钮===
-[32mINFO    [0m root:multparty_ten_anchor.py:291 ===同意观众上麦===
-[32mINFO    [0m root:test_10party_mult.py:901 ===执行失败===

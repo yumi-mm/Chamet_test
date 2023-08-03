@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2373 ===用例109：观众端群聊页面查看是否收到google表情===
-[32mINFO    [0m root:test_10party_mult.py:2385 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2387 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 11_51_06.png

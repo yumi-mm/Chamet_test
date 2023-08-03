@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:180 ===用例8：主播端同意上麦===
-[32mINFO    [0m root:test_10party_mult.py:192 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:194 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-19 18_00_13.png

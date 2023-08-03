@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:213 ===用例10：主播端同意上麦===
-[32mINFO    [0m root:test_10party_mult.py:226 ===执行失败===

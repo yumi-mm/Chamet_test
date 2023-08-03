@@ -1,8 +1,0 @@
-[32mINFO    [0m root:partyaudience_Start.py:26 ===启动app===
-[32mINFO    [0m root:desired_caps.py:33 start app......
-[32mINFO    [0m root:test_10party_audience.py:329 ===用例14：观众端发消息===
-[32mINFO    [0m root:party_ten_audience.py:115 ===进入交友房页签===
-[32mINFO    [0m root:party_ten_audience.py:197 ===进入交友房===
-[32mINFO    [0m root:party_ten_audience.py:234 ===观众端发言===
-[32mINFO    [0m root:party_ten_audience.py:248 ===消息区文字内容===
-[32mINFO    [0m root:test_10party_audience.py:339 ===断言成功，观众成功发言===

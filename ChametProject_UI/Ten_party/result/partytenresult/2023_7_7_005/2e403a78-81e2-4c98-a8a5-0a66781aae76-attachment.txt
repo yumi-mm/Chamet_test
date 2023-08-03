@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2092 ===用例95：观众端私聊页面送礼===
-[32mINFO    [0m root:multparty_ten_audience.py:851 #####################
-[32mINFO    [0m root:multparty_ten_audience.py:853 ===送礼物===
-[32mINFO    [0m root:multparty_ten_audience.py:831 ===判断有无充值优惠券===
-[32mINFO    [0m root:multparty_ten_audience.py:846 ===无优惠券===
-[32mINFO    [0m root:test_10party_mult.py:2097 ===断言成功，成功发送礼物===

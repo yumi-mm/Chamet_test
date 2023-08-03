@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_lianxu.py:1194 ===用例50：退出10人交友房===
-[32mINFO    [0m root:party_ten.py:161 ===退出交友房===
-[32mINFO    [0m root:test_10party_lianxu.py:1204 ===执行失败===
-[32mINFO    [0m root:test_10party_lianxu.py:1206 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-06 17_48_27.png
-[32mINFO    [0m root:party_Start_lianxu.py:18 ===tearDown===

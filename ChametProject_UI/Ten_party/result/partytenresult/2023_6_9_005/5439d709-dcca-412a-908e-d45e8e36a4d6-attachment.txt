@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:503 ===用例21：私聊页面发送谷歌表情===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:521 ===执行失败===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:523 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-09 11_32_46.png

@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:179 ===用例8：消息区聊天消息可下滑===
-[32mINFO    [0m root:party_ten.py:176 ===主播端发言===
-[32mINFO    [0m root:party_ten.py:199 ===滑动===
-[32mINFO    [0m root:party_ten.py:190 ===消息内容===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:184 ===断言成功===

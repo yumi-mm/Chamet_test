@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2563 ===用例118：观众端群聊页面发送钻石包===
-[32mINFO    [0m root:multparty_ten_audience.py:1121 ===发送钻石包===
-[32mINFO    [0m root:test_10party_mult.py:2575 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2577 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 11_57_23.png

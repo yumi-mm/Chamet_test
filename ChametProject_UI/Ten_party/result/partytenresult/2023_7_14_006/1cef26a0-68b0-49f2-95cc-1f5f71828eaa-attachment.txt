@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:327 ===用例15：观众进入交友房进场座驾===
-[32mINFO    [0m root:multparty_ten_audience.py:305 ===无进场座驾===
-[32mINFO    [0m root:test_10party_mult.py:336 ===断言失败===
-[32mINFO    [0m root:test_10party_mult.py:338 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-14 11_24_19.png

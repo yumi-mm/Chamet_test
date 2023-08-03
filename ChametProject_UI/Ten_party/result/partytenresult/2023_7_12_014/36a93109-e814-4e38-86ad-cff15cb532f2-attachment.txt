@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1831 ===用例84：主播私聊页面发送google表情===
-[32mINFO    [0m root:multparty_ten_anchor.py:520 ===准备发送表情===
-[32mINFO    [0m root:test_10party_mult.py:1843 ===执行失败===

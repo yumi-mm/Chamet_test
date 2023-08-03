@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:410 ===用例18：观众端交友房警告消息检查===
-[32mINFO    [0m root:multparty_ten_audience.py:341 ===消息区内容===
-[32mINFO    [0m root:test_10party_mult.py:426 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:428 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-19 16_42_55.png

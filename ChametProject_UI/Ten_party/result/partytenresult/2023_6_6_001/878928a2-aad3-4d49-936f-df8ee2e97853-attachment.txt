@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_lianxu.py:201 ===用例9：消息区聊天消息可上滑===
-[32mINFO    [0m root:party_ten.py:172 ===主播端发言===
-[32mINFO    [0m root:party_ten.py:195 ===滑动===
-[32mINFO    [0m root:party_ten.py:195 ===滑动===
-[32mINFO    [0m root:party_ten.py:186 ===消息内容===
-[32mINFO    [0m root:test_10party_lianxu.py:207 ===断言成功===

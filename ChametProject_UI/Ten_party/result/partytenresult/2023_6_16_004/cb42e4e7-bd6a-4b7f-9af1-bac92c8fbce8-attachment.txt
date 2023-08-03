@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:133 ===用例6：交友房主播端发言===
-[32mINFO    [0m root:party_ten.py:176 ===主播端发言===
-[32mINFO    [0m root:party_ten.py:190 ===消息内容===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:139 ===断言成功===

@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:903 ===用例40：主播端申请上麦未读消息检查===
-[32mINFO    [0m root:test_10party_mult.py:907 ===断言成功，主播收到上麦未读消息===

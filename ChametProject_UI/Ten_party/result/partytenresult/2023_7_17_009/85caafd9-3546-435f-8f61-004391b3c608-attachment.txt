@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1834 ===用例82：观众私聊页面发送google表情===
-[32mINFO    [0m root:multparty_ten_audience.py:776 ===准备发送表情===
-[32mINFO    [0m root:multparty_ten_audience.py:783 ===发送google表情===
-[32mINFO    [0m root:multparty_ten_audience.py:798 ===发送成功===
-[32mINFO    [0m root:multparty_ten_audience.py:1036 ===断言成功，为自己发的消息===
-[32mINFO    [0m root:test_10party_mult.py:1839 ===断言成功，观众发送google表情成功===

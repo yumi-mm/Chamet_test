@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1456 ===用例67：观众通过半屏浮窗@主播===
-[32mINFO    [0m root:multparty_ten_audience.py:533 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:multparty_ten_audience.py:584 ===观众@主播===
-[32mINFO    [0m root:multparty_ten_audience.py:587 ===发送消息===
-[32mINFO    [0m root:multparty_ten_audience.py:326 ===获取消息区最后一条文本消息===
-[32mINFO    [0m root:test_10party_mult.py:1461 aite_message:[level]  qq20113835 : @User20113007 
-[32mINFO    [0m root:test_10party_mult.py:1463 ===断言成功，@主播成功===

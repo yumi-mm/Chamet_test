@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3187 ===用例142：主播退出10人交友房===
-[32mINFO    [0m root:multparty_ten_anchor.py:982 ===退出交友房===

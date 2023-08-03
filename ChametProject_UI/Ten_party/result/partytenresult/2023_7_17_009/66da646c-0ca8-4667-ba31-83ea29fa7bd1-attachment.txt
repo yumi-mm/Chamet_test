@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2590 ===用例117：主播群聊页面上麦===
-[32mINFO    [0m root:multparty_ten_anchor.py:764 ===主播端上麦===
-[32mINFO    [0m root:test_10party_mult.py:2602 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2604 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 16_49_24.png

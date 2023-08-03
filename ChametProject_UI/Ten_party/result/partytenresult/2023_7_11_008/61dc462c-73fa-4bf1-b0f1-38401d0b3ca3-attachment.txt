@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3099 ===用例141：10人交友房观众端打开banner===
-[32mINFO    [0m root:multparty_ten_audience.py:1291 ===进入活动页===
-[32mINFO    [0m root:test_10party_mult.py:3105 ===断言成功===

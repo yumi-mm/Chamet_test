@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3142 ===用例143：主播退出10人交友房===
-[32mINFO    [0m root:multparty_ten_anchor.py:880 ===退出交友房===
-[32mINFO    [0m root:multparty_ten_anchor.py:883 ===有2个ID为这个的元素===
-[32mINFO    [0m root:test_10party_mult.py:3153 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:3155 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 09_41_53.png

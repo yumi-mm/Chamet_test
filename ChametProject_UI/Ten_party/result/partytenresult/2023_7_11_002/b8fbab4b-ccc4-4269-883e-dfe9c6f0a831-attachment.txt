@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2608 ===用例120：主播端群聊页面领取钻石包===
-[32mINFO    [0m root:multparty_ten_anchor.py:736 ===领取钻石包===
-[32mINFO    [0m root:test_10party_mult.py:2613 ===断言成功，主播成功领取钻石包===

@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:616 ===用例27：进入主播个人主页===
-[32mINFO    [0m root:party_ten_audience.py:412 ===获取交友房主播名称===
-[32mINFO    [0m root:party_ten_audience.py:401 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:party_ten_audience.py:430 ===点击进入主播个人主页===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:620 ===断言成功，主播名称与个人主页名称一致===

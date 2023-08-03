@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2248 ===用例101：观众端群聊页面发送文字===
-[32mINFO    [0m root:multparty_ten_audience.py:1090 ===准备发送文字消息===
-[32mINFO    [0m root:test_10party_mult.py:2260 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2262 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-19 15_40_29.png

@@ -1,9 +1,0 @@
-[32mINFO    [0m root:partyaudience_Start.py:26 ===启动app===
-[32mINFO    [0m root:desired_caps.py:33 start app......
-[32mINFO    [0m root:test_10party_audience.py:696 ===用例28：从主播个人主页小窗进入交友房===
-[32mINFO    [0m root:party_ten_audience.py:115 ===进入交友房页签===
-[32mINFO    [0m root:party_ten_audience.py:197 ===进入交友房===
-[32mINFO    [0m root:party_ten_audience.py:392 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:party_ten_audience.py:430 ===点击进入主播个人主页===
-[32mINFO    [0m root:test_10party_audience.py:712 ===执行失败===
-[32mINFO    [0m root:test_10party_audience.py:714 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-13 18_24_57.png

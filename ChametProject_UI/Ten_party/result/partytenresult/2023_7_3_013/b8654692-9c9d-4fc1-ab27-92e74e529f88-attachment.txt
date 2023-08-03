@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1127 ===用例52：主播在交友位禁言嘉宾===
-[32mINFO    [0m root:multparty_ten_audience.py:135 ===进入交友房页签===
-[32mINFO    [0m root:test_10party_mult.py:1149 ===执行失败===

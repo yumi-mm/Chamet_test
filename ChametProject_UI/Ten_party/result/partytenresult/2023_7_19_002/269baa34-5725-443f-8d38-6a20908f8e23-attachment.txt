@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:384 ===用例17：观众进入交友房进场消息提醒===
-[32mINFO    [0m root:multparty_ten_audience.py:320 ===获取消息区最后一条文本消息===
-[32mINFO    [0m root:test_10party_mult.py:394 ===断言失败===
-[32mINFO    [0m root:test_10party_mult.py:396 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-19 16_33_23.png

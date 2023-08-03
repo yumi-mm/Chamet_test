@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:348 ===用例16：观众进入交友房进场标签===
-[32mINFO    [0m root:multparty_ten_audience.py:143 ===进入交友房中的关注页签===
-[32mINFO    [0m root:multparty_ten_audience.py:163 ===进入交友房===
-[32mINFO    [0m root:multparty_ten_audience.py:315 ===无进场标签===
-[32mINFO    [0m root:test_10party_mult.py:357 ===断言失败===
-[32mINFO    [0m root:test_10party_mult.py:359 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 14_55_28.png

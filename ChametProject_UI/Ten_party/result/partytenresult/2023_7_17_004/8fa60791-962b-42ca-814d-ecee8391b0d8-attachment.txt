@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1722 ===用例77：观众查看是否收到消息===
-[32mINFO    [0m root:multparty_ten_audience.py:741 ===获取观众聊天区文本消息===
-[32mINFO    [0m root:test_10party_mult.py:1726 ===断言成功，成功发送文字===

@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1435 ===用例63：10人交友房观众端打开礼物冠名墙===
-[32mINFO    [0m root:party_ten_audience.py:1022 ===进入礼物荣誉墙===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1440 ===断言成功===

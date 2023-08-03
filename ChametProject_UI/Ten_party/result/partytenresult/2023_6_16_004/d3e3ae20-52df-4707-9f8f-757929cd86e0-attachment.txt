@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:1168 ===用例49：10人交友房主播端打开banner===
-[32mINFO    [0m root:party_ten.py:636 ===进入活动页===
-[32mINFO    [0m root:party_ten.py:209 ===点击空白处===

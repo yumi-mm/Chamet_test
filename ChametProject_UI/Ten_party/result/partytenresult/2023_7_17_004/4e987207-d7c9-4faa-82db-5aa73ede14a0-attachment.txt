@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:957 ===用例43：嘉宾端打开个人主页浮窗===
-[32mINFO    [0m root:multparty_ten_audience.py:522 ===点击展开嘉宾个人主页半屏浮窗===
-[32mINFO    [0m root:multparty_ten_audience.py:526 ===交友位不存在嘉宾===
-[32mINFO    [0m root:multparty_ten_audience.py:548 ===未打开个人主页浮窗===
-[32mINFO    [0m root:test_10party_mult.py:963 ===断言失败===
-[32mINFO    [0m root:test_10party_mult.py:965 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 12_02_40.png

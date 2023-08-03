@@ -1,9 +1,0 @@
-[32mINFO    [0m root:partyaudience_Start.py:26 ===启动app===
-[32mINFO    [0m root:desired_caps.py:33 start app......
-[32mINFO    [0m root:test_10party_audience.py:646 ===用例26：打开主播个人主页半屏浮窗===
-[32mINFO    [0m root:party_ten_audience.py:115 ===进入交友房页签===
-[32mINFO    [0m root:party_ten_audience.py:197 ===进入交友房===
-[32mINFO    [0m root:party_ten_audience.py:403 ===获取交友房主播名称===
-[32mINFO    [0m root:party_ten_audience.py:392 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:party_ten_audience.py:397 ===获取半屏浮层主播名字===
-[32mINFO    [0m root:test_10party_audience.py:655 ===断言成功，主播名称与半屏浮层名称一致===

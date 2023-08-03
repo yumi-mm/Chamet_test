@@ -1,1 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:158 ===用例7：观众端申请上麦(通过点击交友位)===

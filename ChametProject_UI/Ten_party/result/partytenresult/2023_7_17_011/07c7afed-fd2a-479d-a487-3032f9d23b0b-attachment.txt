@@ -1,8 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1236 ===用例55：主播邀请嘉宾上麦===
-[32mINFO    [0m root:multparty_ten_anchor.py:435 ===右上角不存在观众列表按钮===
-[32mINFO    [0m root:multparty_ten_anchor.py:559 ===点击空白处===
-[32mINFO    [0m root:multparty_ten_anchor.py:435 ===右上角不存在观众列表按钮===
-[32mINFO    [0m root:multparty_ten_anchor.py:416 ===获取所有观众name===
-[32mINFO    [0m root:multparty_ten_anchor.py:390 ===交友房无观众===
-[32mINFO    [0m root:test_10party_mult.py:1248 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:1250 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 17_45_09.png

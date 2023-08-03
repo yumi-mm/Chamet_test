@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2219 ===用例102：主播端进入群聊页面===
-[32mINFO    [0m root:multparty_ten_anchor.py:618 ===查看群聊列表===
-[32mINFO    [0m root:test_10party_mult.py:2238 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2240 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 11_47_46.png

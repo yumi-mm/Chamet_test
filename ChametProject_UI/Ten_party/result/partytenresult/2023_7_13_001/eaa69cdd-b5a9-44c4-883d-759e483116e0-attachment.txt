@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2101 ===用例97：观众端私聊页面打开个人主页浮窗===
-[32mINFO    [0m root:multparty_ten_audience.py:867 ===打开个人主页浮层===
-[32mINFO    [0m root:test_10party_mult.py:2105 ===断言成功，观众成功在私聊页面打开个人主页===

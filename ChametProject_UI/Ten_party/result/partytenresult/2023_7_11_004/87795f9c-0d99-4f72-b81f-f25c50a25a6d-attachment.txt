@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2673 ===用例123：主播端群聊页面检查送礼消息===
-[32mINFO    [0m root:test_10party_mult.py:2678 ===断言成功，主播收到送礼消息===

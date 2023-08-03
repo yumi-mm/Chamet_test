@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:958 ===用例44：嘉宾在交友位发送表情===
-[32mINFO    [0m root:multparty_ten_audience.py:440 ===获取表情列表===
-[32mINFO    [0m root:multparty_ten_audience.py:442 ===发送表情===
-[32mINFO    [0m root:multparty_ten_audience.py:446 ===发送失败===
-[32mINFO    [0m root:test_10party_mult.py:971 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:973 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-03 11_56_26.png

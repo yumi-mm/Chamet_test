@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:773 ===用例34：展开观众列表===
-[32mINFO    [0m root:party_ten_audience.py:503 ===展开观众列表浮窗===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:777 ===断言成功===

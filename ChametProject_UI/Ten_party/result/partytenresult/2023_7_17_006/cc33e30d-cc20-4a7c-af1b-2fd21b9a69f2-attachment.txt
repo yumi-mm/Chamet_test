@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2176 ===用例98：主播在交友房给观众发私信消息===
-[32mINFO    [0m root:multparty_ten_anchor.py:437 ===右上角存在观众列表按钮,打开观众列表===
-[32mINFO    [0m root:multparty_ten_anchor.py:625 ===进入私聊页面===
-[32mINFO    [0m root:multparty_ten_anchor.py:480 ===准备发送文字消息===
-[32mINFO    [0m root:multparty_ten_anchor.py:486 ===发送成功===
-[32mINFO    [0m root:multparty_ten_audience.py:1027 ===观众点击私信弹窗消息进入私聊页面===
-[32mINFO    [0m root:test_10party_mult.py:2185 ===断言成功,主播发私聊成功===

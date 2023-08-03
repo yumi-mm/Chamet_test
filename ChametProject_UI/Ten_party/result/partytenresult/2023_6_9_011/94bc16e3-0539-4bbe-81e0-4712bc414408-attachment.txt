@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:674 ===用例28：私聊页面送礼===
-[32mINFO    [0m root:party_ten.py:386 ===送礼物===
-[32mINFO    [0m root:party_ten.py:367 ===判断有无充值优惠券===
-[32mINFO    [0m root:party_ten.py:382 ===无优惠券===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:679 ===断言成功===

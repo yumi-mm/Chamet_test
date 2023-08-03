@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2477 ===用例112：主播端群聊页面发送相册图片===
-[32mINFO    [0m root:multparty_ten_anchor.py:759 ===发送照片===
-[32mINFO    [0m root:test_10party_mult.py:2489 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2491 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 12_23_54.png

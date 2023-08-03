@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1177 ===用例53：嘉宾查看是否被禁言===
-[32mINFO    [0m root:multparty_ten_audience.py:217 ===消息内容===
-[32mINFO    [0m root:test_10party_mult.py:1181 ===断言成功，主播端成功禁言嘉宾===

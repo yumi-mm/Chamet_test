@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:561 ===用例23：开启私聊界面翻译功能===
-[32mINFO    [0m root:party_ten.py:325 ===开启翻译功能===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:572 ===执行失败===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:574 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-09 15_25_50.png

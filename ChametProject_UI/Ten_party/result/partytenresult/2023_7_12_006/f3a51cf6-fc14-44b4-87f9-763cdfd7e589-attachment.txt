@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2950 ===用例135：10人交友房主播端打开充值页面===
-[32mINFO    [0m root:test_10party_mult.py:2962 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2964 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 12_01_22.png
-[32mINFO    [0m root:test_10party_mult.py:2967 返回交友房

@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1241 ===用例57：主播邀请观众上麦，观众同意上麦===
-[32mINFO    [0m root:test_10party_mult.py:1245 ===断言成功，观众成功上麦===

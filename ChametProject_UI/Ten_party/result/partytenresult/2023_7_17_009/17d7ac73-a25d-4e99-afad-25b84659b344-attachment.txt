@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2699 ===用例122：观众端群聊页面送礼===
-[32mINFO    [0m root:multparty_ten_audience.py:1292 ===打开礼物页面===
-[32mINFO    [0m root:test_10party_mult.py:2717 ===执行失败===

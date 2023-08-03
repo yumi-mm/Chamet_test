@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:661 ===用例30：主播端打开送礼物弹窗===
-[32mINFO    [0m root:multparty_ten_anchor.py:228 ===打开送礼弹窗===
-[32mINFO    [0m root:multparty_ten_anchor.py:232 #####################
-[32mINFO    [0m root:test_10party_mult.py:673 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:675 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-14 16_22_20.png

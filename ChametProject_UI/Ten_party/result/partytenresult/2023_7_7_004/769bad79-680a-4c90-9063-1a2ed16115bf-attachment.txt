@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1992 ===用例90：主播私聊界面发送相机照===
-[32mINFO    [0m root:multparty_ten_anchor.py:541 ===打开相机===
-[32mINFO    [0m root:test_10party_mult.py:2005 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2007 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-07 16_22_04.png

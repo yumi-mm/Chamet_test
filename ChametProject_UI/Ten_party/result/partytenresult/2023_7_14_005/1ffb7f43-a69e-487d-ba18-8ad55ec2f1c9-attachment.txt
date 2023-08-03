@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:349 ===用例16：观众进入交友房进场标签===
-[32mINFO    [0m root:multparty_ten_audience.py:143 ===进入交友房中的关注页签===
-[32mINFO    [0m root:multparty_ten_audience.py:163 ===进入交友房===
-[32mINFO    [0m root:multparty_ten_audience.py:312 ===有进场标签===
-[32mINFO    [0m root:test_10party_mult.py:356 ===断言成功，存在进场标签===

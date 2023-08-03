@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:84 ===用例4：观众进入10人交友房===
-[32mINFO    [0m root:test_10party_mult.py:86 ===启动app===
-[32mINFO    [0m root:audience_desired_caps.py:33 start app......
-[32mINFO    [0m root:multparty_ten_audience.py:45 ===进入交友房页签===
-[32mINFO    [0m root:multparty_ten_audience.py:134 ===进入交友房页签===
-[32mINFO    [0m root:test_10party_mult.py:104 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:106 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-19 16_59_27.png

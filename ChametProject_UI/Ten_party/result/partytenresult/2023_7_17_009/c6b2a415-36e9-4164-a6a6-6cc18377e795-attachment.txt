@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2527 ===用例114：观众端群聊页面发送拍摄图片===
-[32mINFO    [0m root:multparty_ten_audience.py:1218 ===发送照片===
-[32mINFO    [0m root:test_10party_mult.py:2539 ===执行失败===

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2317 ===用例104：主播在交友房群聊中发送消息===
-[32mINFO    [0m root:multparty_ten_anchor.py:665 ===准备发送文字消息===
-[32mINFO    [0m root:test_10party_mult.py:2332 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2334 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-19 15_41_30.png

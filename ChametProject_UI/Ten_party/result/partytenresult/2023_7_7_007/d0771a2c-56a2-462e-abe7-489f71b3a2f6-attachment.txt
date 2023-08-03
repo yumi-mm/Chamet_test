@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2112 ===用例96：主播端检查私聊页面送礼===
-[32mINFO    [0m root:test_10party_mult.py:2119 ===断言失败===
-[32mINFO    [0m root:test_10party_mult.py:2121 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-07 17_28_49.png

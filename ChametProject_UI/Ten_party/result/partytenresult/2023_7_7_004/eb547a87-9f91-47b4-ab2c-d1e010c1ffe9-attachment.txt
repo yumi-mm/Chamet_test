@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1972 ===用例89：主播检查是否收到相册照片===
-[32mINFO    [0m root:test_10party_mult.py:1984 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:1986 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-07 16_21_54.png

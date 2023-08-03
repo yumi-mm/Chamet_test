@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:972 ===用例44：嘉宾在交友位发送表情===
-[32mINFO    [0m root:multparty_ten_audience.py:516 ===获取表情列表===
-[32mINFO    [0m root:multparty_ten_audience.py:518 ===发送表情===
-[32mINFO    [0m root:multparty_ten_audience.py:522 ===发送失败===
-[32mINFO    [0m root:test_10party_mult.py:985 ===执行失败===

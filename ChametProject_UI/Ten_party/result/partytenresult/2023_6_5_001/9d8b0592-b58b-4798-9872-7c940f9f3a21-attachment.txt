@@ -1,9 +1,0 @@
-[32mINFO    [0m root:party_Start.py:26 ===启动app===
-[32mINFO    [0m root:desired_caps.py:33 start app......
-[32mINFO    [0m root:party_ten.py:131 ===进入交友房页签===
-[32mINFO    [0m root:test_10party.py:540 ===用例21：私聊页面发送谷歌表情===
-[32mINFO    [0m root:party_ten.py:137 ===进入交友房预览页===
-[32mINFO    [0m root:party_ten.py:146 ===无权限弹窗===
-[32mINFO    [0m root:party_ten.py:155 ===进入10人交友房===
-[32mINFO    [0m root:test_10party.py:560 ===执行失败===
-[32mINFO    [0m root:test_10party.py:562 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-05 18_04_45.png

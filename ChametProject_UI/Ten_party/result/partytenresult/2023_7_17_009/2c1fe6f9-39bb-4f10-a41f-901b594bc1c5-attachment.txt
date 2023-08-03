@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2464 ===用例111：主播端群聊页面检查并播放语音消息===
-[32mINFO    [0m root:test_10party_mult.py:2476 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2478 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 16_48_45.png

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1867 ===用例84：主播私聊页面发送google表情===
-[32mINFO    [0m root:multparty_ten_anchor.py:506 ===准备发送表情===
-[32mINFO    [0m root:test_10party_mult.py:1879 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:1881 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-07 15_47_10.png

@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:872 ===用例39：观众端申请上麦(通过加入按钮)===
-[32mINFO    [0m root:multparty_ten_audience.py:485 ===点击展开更多===
-[32mINFO    [0m root:multparty_ten_audience.py:493 ===点击加入按钮===
-[32mINFO    [0m root:multparty_ten_audience.py:502 ===无权限弹窗===
-[32mINFO    [0m root:test_10party_mult.py:876 ===断言成功，申请上麦成功===

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1521 ===用例70：通过半屏浮窗查看主播动态===
-[32mINFO    [0m root:multparty_ten_audience.py:533 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:test_10party_mult.py:1534 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:1536 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 15_51_00.png

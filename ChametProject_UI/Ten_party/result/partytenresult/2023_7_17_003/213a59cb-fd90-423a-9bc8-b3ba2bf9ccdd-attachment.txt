@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1291 ===用例58：主播端检查观众是否成功上麦===
-[32mINFO    [0m root:test_10party_mult.py:1294 ===断言成功，观众成功上麦===
-[32mINFO    [0m root:multparty_ten_audience.py:555 ===点击更多按钮===
-[32mINFO    [0m root:multparty_ten_audience.py:564 ===点击设置按钮===
-[32mINFO    [0m root:multparty_ten_audience.py:600 ===嘉宾离开嘉宾位===

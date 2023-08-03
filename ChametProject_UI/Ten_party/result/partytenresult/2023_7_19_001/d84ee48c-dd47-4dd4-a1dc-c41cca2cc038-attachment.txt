@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3195 ===用例142：主播退出10人交友房===
-[32mINFO    [0m root:multparty_ten_anchor.py:985 ===退出交友房===
-[32mINFO    [0m root:test_10party_mult.py:3212 ===断言成功===

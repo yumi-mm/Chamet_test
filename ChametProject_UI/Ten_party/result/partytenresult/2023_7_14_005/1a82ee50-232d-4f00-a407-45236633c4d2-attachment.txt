@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:995 ===用例46：嘉宾离开交友位===
-[32mINFO    [0m root:multparty_ten_audience.py:480 ===不存在更多按钮===
-[32mINFO    [0m root:multparty_ten_audience.py:489 ===不存在设置按钮===
-[32mINFO    [0m root:multparty_ten_audience.py:518 ===离开嘉宾位失败===
-[32mINFO    [0m root:test_10party_mult.py:1005 ===执行失败===

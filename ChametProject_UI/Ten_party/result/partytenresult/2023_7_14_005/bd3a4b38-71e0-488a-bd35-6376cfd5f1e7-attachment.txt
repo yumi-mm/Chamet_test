@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:931 ===用例43：嘉宾端打开个人主页浮窗===
-[32mINFO    [0m root:multparty_ten_audience.py:445 ===点击展开嘉宾个人主页半屏浮窗===
-[32mINFO    [0m root:multparty_ten_audience.py:449 ===交友位不存在嘉宾===
-[32mINFO    [0m root:multparty_ten_audience.py:470 ===未打开个人主页浮窗===
-[32mINFO    [0m root:test_10party_mult.py:937 ===断言失败===

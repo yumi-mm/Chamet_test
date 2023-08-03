@@ -297,9 +297,9 @@ class Multanchor(object):
             if lucky_window:
                 finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("真棒！")')
                 finish.click()
-                self.driver.back(2)
+                self.back(2)
             else:
-                self.driver.back(2)
+                self.back(2)
             return 1
 
     # 主播端申请上麦未读消息
@@ -408,8 +408,13 @@ class Multanchor(object):
         # 嘉宾name
         element_text = ele_text
         self.open_audiencelist()
-        # self.back(1)
         self.touch_tap(350,980)
+        time.sleep(1)
+        self.open_audiencelist()
+        self.touch_tap(350, 980)
+        time.sleep(1)
+        self.open_audiencelist()
+        self.touch_tap(350, 980)
         time.sleep(1)
         self.open_audiencelist()
         audience_list = self.get_audience_list()
@@ -573,7 +578,7 @@ class Multanchor(object):
             google_expression_searchframe.send_keys("wow")
             google_expression_searchbut = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/iv_search")
             google_expression_searchbut.click()
-            time.sleep(0.5)
+            time.sleep(1)
             google_expression_list = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout")
             time.sleep(1)
             google_expression_list[0].click()
@@ -663,6 +668,10 @@ class Multanchor(object):
     # 主播点击展开观众个人主页
     def enter_audiencehaldwin(self,invite_guest):
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("%s")' % invite_guest).click()
+
+    # 主播点击进入送礼物页面
+    def enter_giftpage(self):
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("送礼物")').click()
 
     # 主播给观众发送私聊消息
     def sendmessage_toaudience(self,text):

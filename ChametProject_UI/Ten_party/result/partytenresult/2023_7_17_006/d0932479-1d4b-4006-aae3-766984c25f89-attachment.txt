@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1543 ===用例69：通过半屏浮窗打开举报弹窗===
-[32mINFO    [0m root:multparty_ten_audience.py:628 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:multparty_ten_audience.py:687 ===点击举报按钮===
-[32mINFO    [0m root:test_10party_mult.py:1548 ===断言成功===

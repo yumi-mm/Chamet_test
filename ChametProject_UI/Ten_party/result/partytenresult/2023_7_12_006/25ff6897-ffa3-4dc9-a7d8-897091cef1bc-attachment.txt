@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2521 ===用例116：观众端群聊页面上麦===
-[32mINFO    [0m root:multparty_ten_audience.py:1094 ===观众端上麦===
-[32mINFO    [0m root:test_10party_mult.py:2533 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2535 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 11_57_00.png

@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2013 ===用例91：观众检查是否收到相机照片===
-[32mINFO    [0m root:test_10party_mult.py:2025 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2027 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-07 16_29_15.png

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:200 ===用例9：观众进入10人交友房===
-[32mINFO    [0m root:party_ten_audience.py:202 ===进入交友房===
-[32mINFO    [0m root:party_ten_audience.py:208 ===查看交友房房主用户名===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:207 ===断言成功，成功进入10人交友房===

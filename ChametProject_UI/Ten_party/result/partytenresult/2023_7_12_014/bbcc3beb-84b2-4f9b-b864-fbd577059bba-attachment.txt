@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:441 ===用例20：交友房主播端发言===
-[32mINFO    [0m root:multparty_ten_anchor.py:154 ===主播端发言===
-[32mINFO    [0m root:test_10party_mult.py:454 ===执行失败===

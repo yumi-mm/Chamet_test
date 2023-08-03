@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:65 ===用例3：创建10人交友房===
-[32mINFO    [0m root:party_ten.py:155 ===进入10人交友房===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:77 ===执行失败===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:79 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-09 11_28_30.png

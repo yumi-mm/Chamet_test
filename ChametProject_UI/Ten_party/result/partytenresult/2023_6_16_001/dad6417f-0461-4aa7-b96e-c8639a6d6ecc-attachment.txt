@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:334 ===用例14：观众端发消息===
-[32mINFO    [0m root:party_ten_audience.py:239 ===观众端发言===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:346 ===执行失败===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:348 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-16 14_16_43.png

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2927 ===用例131：观众端打开赛车游戏===
-[32mINFO    [0m root:multparty_ten_audience.py:1356 ===进入游戏页面===
-[32mINFO    [0m root:test_10party_mult.py:2938 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2940 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-19 17_17_38.png

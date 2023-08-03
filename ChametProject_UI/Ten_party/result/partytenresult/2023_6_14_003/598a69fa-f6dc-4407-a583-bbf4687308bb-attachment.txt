@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:877 ===用例39：私聊页面发送表情===
-[32mINFO    [0m root:party_ten_audience.py:532 ===不存在更多按钮===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:889 ===执行失败===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:891 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-14 16_37_48.png

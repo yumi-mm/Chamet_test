@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1420 ===用例64：主播判断观众是否进入交友房===
-[32mINFO    [0m root:multparty_ten_anchor.py:216 ===获取消息区最后一条文本消息===
-[32mINFO    [0m root:test_10party_mult.py:1424 ===断言成功，观众成功从小窗进入交友房===

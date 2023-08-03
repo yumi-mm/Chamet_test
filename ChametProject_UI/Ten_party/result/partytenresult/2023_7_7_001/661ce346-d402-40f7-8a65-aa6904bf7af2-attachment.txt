@@ -1,8 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1741 ===用例78：观众私聊页面发送chamet表情===
-[32mINFO    [0m root:multparty_ten_audience.py:664 ===准备发送表情===
-[32mINFO    [0m root:multparty_ten_audience.py:683 ===发送Chamet表情===
-[32mINFO    [0m root:multparty_ten_audience.py:879 ===点击空白处===
-[32mINFO    [0m root:multparty_ten_audience.py:686 ===发送成功===
-[32mINFO    [0m root:multparty_ten_audience.py:903 ===断言成功，为自己发的消息===
-[32mINFO    [0m root:test_10party_mult.py:1753 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:1755 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-07 15_18_57.png

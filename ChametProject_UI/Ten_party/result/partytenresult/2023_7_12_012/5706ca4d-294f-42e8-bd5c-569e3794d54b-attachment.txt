@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1412 ===用例65：通过半屏浮窗给主播送礼物===
-[32mINFO    [0m root:multparty_ten_audience.py:533 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:multparty_ten_audience.py:576 点击展开礼物浮窗
-[32mINFO    [0m root:multparty_ten_audience.py:578 进入简体中文chinese simplified栏目
-[32mINFO    [0m root:test_10party_mult.py:1426 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:1428 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 15_06_46.png

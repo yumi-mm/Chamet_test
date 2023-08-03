@@ -1,8 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1120 ===用例52：主播在交友位禁言嘉宾===
-[32mINFO    [0m root:multparty_ten_audience.py:189 ===点击交友位===
-[32mINFO    [0m root:multparty_ten_anchor.py:306 ===交友位不存在嘉宾===
-[32mINFO    [0m root:multparty_ten_anchor.py:326 ===获取嘉宾用户名失败===
-[32mINFO    [0m root:multparty_ten_anchor.py:337 ===不存在禁言按钮===
-[32mINFO    [0m root:multparty_ten_anchor.py:157 ===消息内容===
-[32mINFO    [0m root:test_10party_mult.py:1132 ===断言失败===
-[32mINFO    [0m root:test_10party_mult.py:1134 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-03 10_31_38.png

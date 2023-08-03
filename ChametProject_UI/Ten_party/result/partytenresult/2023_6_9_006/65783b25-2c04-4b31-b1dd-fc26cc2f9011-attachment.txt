@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:413 ===用例17：交友房中打开消息列表===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:419 ===断言成功===

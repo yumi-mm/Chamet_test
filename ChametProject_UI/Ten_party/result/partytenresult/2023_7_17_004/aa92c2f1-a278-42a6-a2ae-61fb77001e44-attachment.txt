@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2983 ===用例134：10人交友房观众端充值===
-[32mINFO    [0m root:multparty_ten_audience.py:558 ===不存在更多按钮===
-[32mINFO    [0m root:multparty_ten_audience.py:1345 ===进入充值页面===
-[32mINFO    [0m root:test_10party_mult.py:2995 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2997 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 12_28_35.png

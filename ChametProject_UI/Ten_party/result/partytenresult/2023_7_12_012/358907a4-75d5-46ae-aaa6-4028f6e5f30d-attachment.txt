@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:950 ===用例44：嘉宾在交友位发送表情===
-[32mINFO    [0m root:multparty_ten_audience.py:450 ===获取表情列表===
-[32mINFO    [0m root:multparty_ten_audience.py:452 ===发送表情===
-[32mINFO    [0m root:test_10party_mult.py:953 ===断言成功，嘉宾成功发送表情===

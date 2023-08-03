@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:787 ===用例35：展开观众个人主页半屏浮窗===
-[32mINFO    [0m root:party_ten_audience.py:503 ===展开观众列表浮窗===
-[32mINFO    [0m root:party_ten_audience.py:512 ===点击展开观众个人主页半屏浮窗===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:792 ===断言成功===

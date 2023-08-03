@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:113 ===用例5：交友房封面包含内容--人数===
-[32mINFO    [0m root:party_ten_audience.py:127 ===查找交由房列表出错===
-[32mINFO    [0m root:party_ten_audience.py:127 ===查找交由房列表出错===
-[32mINFO    [0m root:party_ten_audience.py:147 ===有交友房===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:122 ===断言失败===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:124 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-16 14_14_41.png

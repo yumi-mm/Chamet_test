@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1107 ===用例50：主播端从交友位移除嘉宾===
-[32mINFO    [0m root:multparty_ten_anchor.py:328 ===展开嘉宾个人主页半屏浮窗===
-[32mINFO    [0m root:multparty_ten_anchor.py:338 ===主播移除嘉宾===
-[32mINFO    [0m root:multparty_ten_anchor.py:168 ===消息内容===
-[32mINFO    [0m root:test_10party_mult.py:1113 ===断言成功，主播端成功移除嘉宾===

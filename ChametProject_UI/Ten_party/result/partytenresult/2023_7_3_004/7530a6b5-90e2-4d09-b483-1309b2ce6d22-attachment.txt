@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1173 ===用例54：主播给嘉宾解除禁言===
-[32mINFO    [0m root:multparty_ten_anchor.py:362 ===获取所有观众name===
-[32mINFO    [0m root:multparty_ten_anchor.py:371 ===不存在取消禁言按钮===
-[32mINFO    [0m root:test_10party_mult.py:1181 ===断言成功，主播端成功给观众解除禁言===

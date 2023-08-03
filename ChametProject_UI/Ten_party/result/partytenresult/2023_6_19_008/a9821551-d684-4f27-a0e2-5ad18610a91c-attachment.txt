@@ -1,8 +1,0 @@
-[32mINFO    [0m root:multparty_star_end.py:11 ===主播端启动app===
-[32mINFO    [0m root:anchor_desired_caps.py:33 start app......
-[32mINFO    [0m root:multparty_ten_anchor.py:45 ===进入交友房页签===
-[32mINFO    [0m root:multparty_star_end.py:16 ===观众端启动app===
-[32mINFO    [0m root:audience_desired_caps.py:33 start app......
-[32mINFO    [0m root:multparty_ten_audience.py:45 ===进入交友房页签===
-[32mINFO    [0m root:test_10party_mult.py:18 ===用例1：主播进入交友房预览页===
-[32mINFO    [0m root:test_10party_mult.py:23 ===断言成功===

@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:42 ===用例2：刷新交友房卡片页===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:47 ===断言成功，成功刷新页面===

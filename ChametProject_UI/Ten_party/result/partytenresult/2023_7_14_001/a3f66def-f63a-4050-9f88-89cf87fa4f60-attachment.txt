@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1083 ===用例50：主播端从交友位移除嘉宾===
-[32mINFO    [0m root:multparty_ten_anchor.py:326 ===交友位不存在嘉宾===
-[32mINFO    [0m root:multparty_ten_anchor.py:336 ===不存在移除按钮===
-[32mINFO    [0m root:multparty_ten_anchor.py:168 ===消息内容===
-[32mINFO    [0m root:test_10party_mult.py:1096 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:1098 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-14 09_44_23.png

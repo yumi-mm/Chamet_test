@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1089 ===用例49：主播端同意观众上麦申请(右上角列表)===
-[32mINFO    [0m root:multparty_ten_anchor.py:305 ===同意观众上麦===
-[32mINFO    [0m root:test_10party_mult.py:1093 ===断言成功，主播端查看观众成功上麦===

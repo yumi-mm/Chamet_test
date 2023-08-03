@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:476 ===用例21：观众端查看主播端发言===
-[32mINFO    [0m root:multparty_ten_audience.py:175 ===消息区文字内容===
-[32mINFO    [0m root:test_10party_mult.py:482 ===断言失败===
-[32mINFO    [0m root:test_10party_mult.py:484 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 16_15_45.png

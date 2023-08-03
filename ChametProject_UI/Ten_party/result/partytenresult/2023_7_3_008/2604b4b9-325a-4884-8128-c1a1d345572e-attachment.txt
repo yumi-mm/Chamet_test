@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:849 ===用例39：观众端申请上麦(通过加入按钮)===
-[32mINFO    [0m root:multparty_ten_audience.py:135 ===进入交友房页签===
-[32mINFO    [0m root:multparty_ten_audience.py:161 ===进入交友房===
-[32mINFO    [0m root:multparty_ten_audience.py:399 ===点击展开更多===
-[32mINFO    [0m root:multparty_ten_audience.py:407 ===点击加入按钮===
-[32mINFO    [0m root:test_10party_mult.py:858 ===断言成功，申请上麦成功===

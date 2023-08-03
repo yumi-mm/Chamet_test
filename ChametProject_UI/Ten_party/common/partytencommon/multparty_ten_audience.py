@@ -257,7 +257,7 @@ class Multaudience(object):
         try:
             if party_list_num != 0:
                 logging.info('===有交友房===')
-                partycard_language = self.driver.find_elements(MobileBy.ID, "com.hkfuliao.chamet:id/city_and_language_animation")
+                partycard_language = self.driver.find_elements(MobileBy.ID, "com.hkfuliao.chamet:id/city_and_language")
                 return partycard_language
             else:
                 raise
@@ -661,12 +661,12 @@ class Multaudience(object):
 
     # 观众打开主播个人主页半屏浮窗
     def openanchor_HalfScreen(self):
-        getparty_title = self.getparty_title()
-        logging.info(getparty_title)
+        party_title = self.getparty_title()
+        logging.info(party_title)
         self.enteranchor_HalfScreen()
-        getanchor_HalfScreenname = self.getanchor_HalfScreenname()
-        logging.info(getanchor_HalfScreenname)
-        return getparty_title,getanchor_HalfScreenname
+        anchor_HalfScreenname = self.getanchor_HalfScreenname()
+        logging.info(anchor_HalfScreenname)
+        return party_title,anchor_HalfScreenname
 
     # 获取半层浮屏主播名称
     def gethalfwin_name(self):

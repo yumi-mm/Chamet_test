@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1663 ===用例76：主播在私聊界面发送消息===
-[32mINFO    [0m root:multparty_ten_anchor.py:463 ===准备发送文字消息===
-[32mINFO    [0m root:test_10party_mult.py:1676 ===执行失败===

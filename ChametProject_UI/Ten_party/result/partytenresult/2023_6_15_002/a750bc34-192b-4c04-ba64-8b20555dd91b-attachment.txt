@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:594 ===用例26：打开主播个人主页半屏浮窗===
-[32mINFO    [0m root:party_ten_audience.py:412 ===获取交友房主播名称===
-[32mINFO    [0m root:party_ten_audience.py:419 eeee607b0e
-[32mINFO    [0m root:party_ten_audience.py:401 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:party_ten_audience.py:406 ===获取半屏浮层主播名字===
-[32mINFO    [0m root:party_ten_audience.py:422 eeee607b0e
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:598 ===断言成功，主播名称与半屏浮层名称一致===

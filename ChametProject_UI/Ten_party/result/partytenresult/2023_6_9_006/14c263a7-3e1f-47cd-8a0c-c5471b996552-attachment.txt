@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:1171 ===用例49：10人交友房主播端打开banner===
-[32mINFO    [0m root:party_ten.py:612 ===未成功进入活动页===
-[32mINFO    [0m root:test_10party_anchorcontinuous.py:1183 ===执行失败===

@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3118 ===用例142：主播退出10人交友房===
-[32mINFO    [0m root:multparty_ten_audience.py:136 ===进入交友房页签===
-[32mINFO    [0m root:multparty_ten_audience.py:143 ===进入交友房中的关注页签===
-[32mINFO    [0m root:multparty_ten_audience.py:163 ===进入交友房===
-[32mINFO    [0m root:multparty_ten_anchor.py:891 ===退出交友房===

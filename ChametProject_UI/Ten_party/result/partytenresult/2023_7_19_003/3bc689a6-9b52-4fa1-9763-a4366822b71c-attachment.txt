@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:582 ===用例26：观众端消息区聊天消息可下滑===
-[32mINFO    [0m root:multparty_ten_audience.py:203 ===观众端发言===
-[32mINFO    [0m root:test_10party_mult.py:594 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:596 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-19 16_44_01.png

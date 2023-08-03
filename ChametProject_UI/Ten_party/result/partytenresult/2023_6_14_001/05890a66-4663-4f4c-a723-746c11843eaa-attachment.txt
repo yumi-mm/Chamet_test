@@ -1,9 +1,0 @@
-[32mINFO    [0m root:partyaudience_Start.py:26 ===启动app===
-[32mINFO    [0m root:desired_caps.py:33 start app......
-[32mINFO    [0m root:test_10party_audience.py:1561 ===用例61：10人交友房观众端端充值===
-[32mINFO    [0m root:party_ten_audience.py:115 ===进入交友房页签===
-[32mINFO    [0m root:party_ten_audience.py:197 ===进入交友房===
-[32mINFO    [0m root:party_ten_audience.py:522 ===点击更多按钮===
-[32mINFO    [0m root:party_ten_audience.py:974 ===进入充值页面===
-[32mINFO    [0m root:party_ten_audience.py:987 ===进行充值===
-[32mINFO    [0m root:test_10party_audience.py:1571 ===断言成功===

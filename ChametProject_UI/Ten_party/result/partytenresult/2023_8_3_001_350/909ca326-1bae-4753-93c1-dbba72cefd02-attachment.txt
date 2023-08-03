@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:3480 ===用例154：观众端上滑动交友房===
+[32mINFO    [0m root:test_10party_mult.py:3486 ===断言成功，观众成功在交友房上滑===

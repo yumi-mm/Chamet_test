@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_lianxu.py:676 ===用例28：私聊页面送礼===
-[32mINFO    [0m root:party_ten.py:382 ===送礼物===
-[32mINFO    [0m root:party_ten.py:364 ===判断有无充值优惠券===
-[32mINFO    [0m root:party_ten.py:378 ===无优惠券===
-[32mINFO    [0m root:test_10party_lianxu.py:688 ===执行失败===
-[32mINFO    [0m root:test_10party_lianxu.py:690 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project/screenshots/party_ten/party_ten_2023-06-06 17_45_41.png

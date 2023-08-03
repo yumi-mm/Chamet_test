@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1302 ===用例57：观众端群聊页面发送钻石包===
-[32mINFO    [0m root:party_ten_audience.py:529 ===点击更多按钮===
-[32mINFO    [0m root:party_ten_audience.py:538 ===打开留言浮窗===
-[32mINFO    [0m root:party_ten_audience.py:841 ===查看群聊列表===
-[32mINFO    [0m root:party_ten_audience.py:854 ===进入群聊页面===
-[32mINFO    [0m root:party_ten_audience.py:974 ===发送钻石包===
-[32mINFO    [0m root:test_10party_audiencecontinuous.py:1307 ===断言成功，成功发送钻石包===

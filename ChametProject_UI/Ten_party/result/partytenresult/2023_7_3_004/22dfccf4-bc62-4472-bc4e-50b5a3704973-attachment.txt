@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1173 ===用例54：主播给嘉宾解除禁言===
-[32mINFO    [0m root:test_10party_mult.py:1191 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:1193 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-03 12_00_40.png

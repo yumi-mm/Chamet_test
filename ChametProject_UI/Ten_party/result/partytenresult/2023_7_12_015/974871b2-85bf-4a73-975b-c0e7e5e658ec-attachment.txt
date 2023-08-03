@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:62 ===用例3：主播创建10人交友房===
-[32mINFO    [0m root:multparty_ten_anchor.py:146 ===进入10人交友房===
-[32mINFO    [0m root:test_10party_mult.py:75 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:77 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-12 15_55_18.png

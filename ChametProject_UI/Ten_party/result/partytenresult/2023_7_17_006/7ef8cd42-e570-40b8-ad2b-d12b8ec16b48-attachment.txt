@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1566 ===用例70：通过半屏浮窗查看主播动态===
-[32mINFO    [0m root:multparty_ten_audience.py:628 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:multparty_ten_audience.py:696 ===有动态===
-[32mINFO    [0m root:multparty_ten_audience.py:706 ===点击查看动态===
-[32mINFO    [0m root:test_10party_mult.py:1572 ===断言成功，进入动态页面===

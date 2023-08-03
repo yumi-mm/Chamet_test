@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:506 ===用例23：主播端查看观众端发言===
-[32mINFO    [0m root:multparty_ten_anchor.py:168 ===消息内容===
-[32mINFO    [0m root:test_10party_mult.py:510 ===断言成功，主播端可看到观众端发言===

@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2297 ===用例103：主播查看群消息===
-[32mINFO    [0m root:test_10party_mult.py:2303 ===断言失败===
-[32mINFO    [0m root:test_10party_mult.py:2305 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-19 17_11_40.png

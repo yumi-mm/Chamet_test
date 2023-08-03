@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:601 ===用例27：消息区聊天消息可上滑===
-[32mINFO    [0m root:multparty_ten_audience.py:175 ===消息区文字内容===
-[32mINFO    [0m root:test_10party_mult.py:612 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:614 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-17 16_16_45.png

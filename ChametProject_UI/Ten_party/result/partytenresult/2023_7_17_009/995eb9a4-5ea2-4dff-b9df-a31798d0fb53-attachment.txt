@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1938 ===用例87：观众端开启私聊界面翻译功能===
-[32mINFO    [0m root:multparty_ten_audience.py:832 ===点击翻译按钮===
-[32mINFO    [0m root:test_10party_mult.py:1942 ===断言成功，成功打开翻译===

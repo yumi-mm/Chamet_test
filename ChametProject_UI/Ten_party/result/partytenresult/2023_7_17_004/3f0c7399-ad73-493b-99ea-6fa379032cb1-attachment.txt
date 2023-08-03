@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1763 ===用例79：主播查看是否收到chamet表情===
-[32mINFO    [0m root:test_10party_mult.py:1768 ===断言成功，主播成功收到chamet表情===

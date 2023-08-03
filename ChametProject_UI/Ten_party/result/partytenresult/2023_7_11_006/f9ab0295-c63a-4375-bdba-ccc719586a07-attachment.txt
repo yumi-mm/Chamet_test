@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2741 ===用例126：主播端打开交友房背景浮窗===
-[32mINFO    [0m root:test_10party_mult.py:2755 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2757 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\Chamet_project\common../../screenshots/party_ten/party_ten_2023-07-11 17_33_45.png

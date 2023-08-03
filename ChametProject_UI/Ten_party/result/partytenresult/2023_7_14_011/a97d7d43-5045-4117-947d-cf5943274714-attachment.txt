@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1653 ===用例74：观众给主播在交友房发送私聊文本消息===
-[32mINFO    [0m root:multparty_ten_audience.py:638 ===获取半屏交友房主播名称===
-[32mINFO    [0m root:multparty_ten_audience.py:646 ===点击进入主播个人主页===
-[32mINFO    [0m root:multparty_ten_audience.py:726 ===观众从主播个人主页进入与主播的私聊界面===
-[32mINFO    [0m root:test_10party_mult.py:1668 ===执行失败===
