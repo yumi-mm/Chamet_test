@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:170 ===用例8：上下滑动交友房卡片页===
+[32mINFO    [0m root:test_10party_mult.py:177 ===断言成功，上下滑动交友房页面===

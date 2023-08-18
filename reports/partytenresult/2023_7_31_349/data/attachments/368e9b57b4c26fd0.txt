@@ -1,0 +1,13 @@
+[32mINFO    [0m root:test_10party_mult.py:2265 ===用例102：主播在交友房给观众送礼物===
+[32mINFO    [0m root:multparty_ten_anchor.py:469 ===右上角存在观众列表按钮,打开观众列表===
+[32mINFO    [0m root:multparty_ten_anchor.py:280 ===送礼===
+[32mINFO    [0m root:multparty_ten_anchor.py:886 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:892 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multparty_ten_anchor.py:893 ===判断夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:886 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:892 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multparty_ten_anchor.py:893 ===判断夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:869 ===判断有无夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:875 ===无夺宝弹窗===
+[32mINFO    [0m root:test_10party_mult.py:2289 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:2291 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-31 15_39_50.png

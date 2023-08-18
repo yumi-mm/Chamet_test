@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:2462 ===用例110：主播在交友房群聊中发送消息===
+[32mINFO    [0m root:multparty_ten_anchor.py:719 ===准备发送文字消息===
+[32mINFO    [0m root:multparty_ten_anchor.py:725 ===发送成功===
+[32mINFO    [0m root:test_10party_mult.py:2470 ===断言成功，主播发送成功===
+[32mINFO    [0m root:multparty_ten_anchor.py:591 ===点击空白处===

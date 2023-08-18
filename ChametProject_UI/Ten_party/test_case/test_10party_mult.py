@@ -754,8 +754,8 @@ class Test_multchamet(anchorparty_Start_End):
         try:
             global sendgift_assertcondition_1
             # sendgift_assertcondition_1 = self.multaudience.audience_sendgift("简体中文chinese simplified","Blessed Ramadan")
-            # sendgift_assertcondition_1 = self.multaudience.audience_sendgift("热门", "Lucky Fortune")
-            sendgift_assertcondition_1 = self.multaudience.audience_sendgift("热门", "幸运之吻")
+            sendgift_assertcondition_1 = self.multaudience.audience_sendgift("热门", "Lucky Fortune")
+            # sendgift_assertcondition_1 = self.multaudience.audience_sendgift("热门", "幸运之吻")
             if sendgift_assertcondition_1 == 0:
                 pytest.skip("观众端未送礼")
             # 只要最后一条消息中存在送出两字即断言成功
@@ -3110,11 +3110,11 @@ class Test_multchamet(anchorparty_Start_End):
         logging.info('===用例139：主播端打开游戏页面查看游戏类型===')
         try:
             self.multanchor.enter_game_list()
-            race_game = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/iv_race_game")
-            threedD_game = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/iv_race_3d_game")
-            LuckyBox = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/ivLuckyBox")
-            luckyTurntable = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/luckyTurntable")
-            LuckyNumber = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/ivLuckyNumber")
+            race_game = self.anchordriver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("Chamet赛车")')
+            threedD_game = self.anchordriver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("顶级赛车")')
+            LuckyBox = self.anchordriver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("幸运盒子")')
+            luckyTurntable = self.anchordriver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("幸运转盘")')
+            LuckyNumber = self.anchordriver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("幸运数字")')
             assert race_game
             assert threedD_game
             assert LuckyBox
@@ -3137,9 +3137,9 @@ class Test_multchamet(anchorparty_Start_End):
     def test_TenParty_140(self):
         logging.info('===用例140：主播端打开赛车游戏===')
         try:
-            race_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_rank")
+            race_rank_ele = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_rank")
             self.multanchor.enter_game_window("Chamet赛车")
-            race_rank = self.anchordriver.find_element(*race_rank)
+            race_rank = self.anchordriver.find_element(*race_rank_ele)
             assert race_rank
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -3160,10 +3160,10 @@ class Test_multchamet(anchorparty_Start_End):
     def test_TenParty_141(self):
         logging.info('===用例141：主播端打开幸运数字游戏===')
         try:
-            LuckyNumber_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/rank")
+            LuckyNumber_rank_ele = (MobileBy.ID, "com.hkfuliao.chamet:id/rank")
             self.multanchor.enter_game_list()
             self.multanchor.enter_game_window("幸运数字")
-            LuckyNumber_rank = self.anchordriver.find_element(*LuckyNumber_rank)
+            LuckyNumber_rank = self.anchordriver.find_element(*LuckyNumber_rank_ele)
             assert LuckyNumber_rank
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -3185,11 +3185,11 @@ class Test_multchamet(anchorparty_Start_End):
         logging.info('===用例142：观众端打开游戏页面查看游戏类型===')
         try:
             self.multaudience.enter_game_list()
-            race_game = self.audiencedriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_game")
-            threedD_game = self.audiencedriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_3d_game")
-            LuckyBox = self.audiencedriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/ivLuckyBox")
-            luckyTurntable = self.audiencedriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/luckyTurntable")
-            LuckyNumber = self.audiencedriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/ivLuckyNumber")
+            race_game = self.audiencedriver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("Chamet赛车")')
+            threedD_game = self.audiencedriver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("顶级赛车")')
+            LuckyBox = self.audiencedriver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("幸运盒子")')
+            luckyTurntable = self.audiencedriver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("幸运转盘")')
+            LuckyNumber = self.audiencedriver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("幸运数字")')
             assert race_game
             assert threedD_game
             assert LuckyBox
@@ -3305,7 +3305,7 @@ class Test_multchamet(anchorparty_Start_End):
         try:
             self.multanchor.anchorclick_more()
             self.multanchor.enter_recharge_page()
-            assert self.anchordriver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("我的钻石")')
+            assert self.anchordriver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("余额")')
             logging.info('===断言成功，主播成功打开充值页面===')
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -3482,7 +3482,8 @@ class Test_multchamet(anchorparty_Start_End):
         logging.info('===用例154：观众端上滑动交友房===')
         try:
             self.multaudience.swipe_xy(350, 1400, 350, 200)
-            new_anchorname = self.audiencedriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/live_titletv").text
+            new_anchorname = self.multaudience.get_anchorname()
+            # new_anchorname = self.audiencedriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/live_titletv").text
             # new_anchorname = self.audiencedriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/profile_name").text
             assert new_anchorname != self.anchor_name
             logging.info('===断言成功，观众成功在交友房上滑===')
@@ -3533,6 +3534,9 @@ class Test_multchamet(anchorparty_Start_End):
             party_earn = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/tv_earn_title")
             gift_people = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/tv_game_tip")
             recommend_list = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/recyclerview")
+            party_audience_number = self.anchordriver.find_element(MobileBy.XPATH,"//android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.TextView[2]")
+            gift_people_number = self.anchordriver.find_element(MobileBy.XPATH,"//android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.TextView")
+            party_earn_number = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/tv_earn")
             assert head_ele
             assert username_ele
             assert endpage_title.text == "派对已结束"
@@ -3541,6 +3545,9 @@ class Test_multchamet(anchorparty_Start_End):
             assert party_earn.text == "礼物收入"
             assert gift_people.text == "送礼人"
             assert recommend_list
+            assert party_audience_number != 0
+            assert gift_people_number != 0
+            assert party_earn_number != 0
             logging.info('===断言成功===')
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -3614,5 +3621,6 @@ class Test_multchamet(anchorparty_Start_End):
     '''
     pytest .\test_10party_mult.py -v -s --alluredir=..\result\partytenresult\2023_8_3_001
     allure serve  ..\result\partytenresult\2023_8_3_001
+    allure generate ..\result\partytenresult\2023_7_21_001 -o ..\reports\partytenreports\2023_7_21
     pytest -s -v test_10party_mult.py::Test_multchamet::test_TenParty_001
     '''

@@ -1000,10 +1000,10 @@ class Multanchor(object):
 
     # 进入游戏页面
     def enter_game_window(self,game_type):
-        game_race = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_game")
-        game_LuckyNumber = (MobileBy.ID, "com.hkfuliao.chamet:id/ivLuckyNumber")
-        game_race = self.driver.find_element(*game_race)
-        game_LuckyNumber = self.driver.find_element(*game_LuckyNumber)
+        game_race_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("Chamet赛车")')
+        game_LuckyNumber_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("幸运数字")')
+        game_race = self.driver.find_element(*game_race_ele)
+        game_LuckyNumber = self.driver.find_element(*game_LuckyNumber_ele)
         if game_type == "Chamet赛车":
             logging.info('===进入赛车游戏===')
             game_race.click()

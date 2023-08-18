@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:2132 ===用例96：观众私聊界面发拨打视频聊天===
+[32mINFO    [0m root:multparty_ten_audience.py:917 ===拨打语言聊天===
+[32mINFO    [0m root:multparty_ten_audience.py:894 ===用户在线===
+[32mINFO    [0m root:multparty_ten_audience.py:911 ===断言成功，成功拨打电话===

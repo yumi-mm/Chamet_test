@@ -430,6 +430,12 @@ class Multaudience(object):
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
         audience_sendgift_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/sendTv")
+        # #************
+        # if gift_name == "Lucky Fortune":
+        #     gift_diamond = 77777
+        # else:
+        #     gift_diamond = 177
+        # diamond = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/diamondTv").text
         audience_sendgift_but.click()
         if self.rechargewindow_bysendgift() and self.rechargewindow_able():
             self.rechargewindow_recharge()
@@ -1375,12 +1381,12 @@ class Multaudience(object):
 
     # 观众进入游戏页面
     def audienceenter_game_window(self, game_type):
-        game_race = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_game")
-        game_LuckyNumber = (MobileBy.ID, "com.hkfuliao.chamet:id/ivLuckyNumber")
+        game_race_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("Chamet赛车")')
+        game_LuckyNumber_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("幸运数字")')
         race_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_rank")
         LuckyNumber_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/rank")
-        game_race = self.driver.find_element(*game_race)
-        game_LuckyNumber = self.driver.find_element(*game_LuckyNumber)
+        game_race = self.driver.find_element(*game_race_ele)
+        game_LuckyNumber = self.driver.find_element(*game_LuckyNumber_ele)
         if game_type == "Chamet赛车":
             logging.info('===进入赛车游戏===')
             game_race.click()
@@ -1405,7 +1411,7 @@ class Multaudience(object):
 
     # 充值页面标识
     def audience_rechargepage(self):
-        audience_rechargepage = (MobileBy.ANDROID_UIAUTOMATOR, 'text("我的钻石")')
+        audience_rechargepage = (MobileBy.ANDROID_UIAUTOMATOR, 'text("余额")')
         return self.driver.find_element(*audience_rechargepage)
 
     # 进入10人交友房充值页面
@@ -1477,6 +1483,26 @@ class Multaudience(object):
         # 进入10人交友房
         self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/iv_party_status").click()
         return party_username
+
+    # 获取上下滑动交友房房主用户名
+    def anchorname(self):
+        try:
+            anchorname = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/live_titletv")
+        except:
+            return False
+        else:
+            return True
+
+    def get_anchorname(self):
+        anchorname = self.anchorname()
+        if anchorname:
+            new_anchorname = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/live_titletv").text
+        else:
+            new_anchorname = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/profile_name").text
+        return new_anchorname
+
+
+
 
 
 

@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:2569 ===用例115：观众端群聊页面查看是否收到google表情===
+[32mINFO    [0m root:test_10party_mult.py:2574 ===断言成功，收到google表情消息===

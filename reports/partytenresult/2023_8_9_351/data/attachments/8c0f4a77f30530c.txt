@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:3407 ===用例151：10人交友房观众端打开任务页===
+[32mINFO    [0m root:multparty_ten_audience.py:578 ===查看有无任务按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:582 ===有任务按钮===
+[32mINFO    [0m root:multparty_ten_audience.py:590 ===进入任务页面===
+[32mINFO    [0m root:test_10party_mult.py:3417 ===断言成功===

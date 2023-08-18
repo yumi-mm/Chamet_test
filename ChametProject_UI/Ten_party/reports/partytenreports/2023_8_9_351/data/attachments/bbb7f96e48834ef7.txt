@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:3185 ===用例142：观众端打开游戏页面查看游戏类型===
+[32mINFO    [0m root:multparty_ten_audience.py:1371 ===进入游戏页面===
+[32mINFO    [0m root:test_10party_mult.py:3204 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:3206 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-08-10 09_52_32.png
