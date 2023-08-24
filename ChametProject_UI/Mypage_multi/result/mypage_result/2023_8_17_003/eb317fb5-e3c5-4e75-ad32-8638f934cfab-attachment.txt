@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_mypage_multi.py:736 ===留言-列表及消息未读数===
+[32mINFO    [0m root:multiMypage_man.py:1396 ===未读数元素有无===
+[32mINFO    [0m root:test_mypage_multi.py:748 ===留言-入口有消息未读数===
+[32mINFO    [0m root:multiMypage_man.py:1424 ===留言一级页面-未读数总和===
+[32mINFO    [0m root:test_mypage_multi.py:752 断言成功

@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_mypage_multi.py:2302 ===留言-群聊消息-更多按钮===
+[32mINFO    [0m root:test_mypage_multi.py:2308 ===更多跳转详情页成功===
+[32mINFO    [0m root:multiMypage_man.py:1693 ===群聊上麦人头像元素有无===
+[32mINFO    [0m root:test_mypage_multi.py:2313 ===头像跳转个人主页成功===
+[32mINFO    [0m root:test_mypage_multi.py:2327 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:2329 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/留言-群聊消息-更多按钮_2023-08-17 15_27_02.png

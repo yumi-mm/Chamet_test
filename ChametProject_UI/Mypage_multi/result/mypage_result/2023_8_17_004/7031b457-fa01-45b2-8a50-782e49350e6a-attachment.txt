@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:4118 ===我的简介-昵称===
+[32mINFO    [0m root:test_mypage_multi.py:4136 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:4138 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/我的简介-昵称_2023-08-17 17_07_04.png

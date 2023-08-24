@@ -1,0 +1,1290 @@
+2023-08-03 20:03:30,309 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:03:30,316 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:03:49,494 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:03:49,496 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:08:30,572 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:08:30,588 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:08:50,245 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:08:50,251 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:09:18,492 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:09:18,494 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:09:36,509 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:09:36,525 desired_caps_woman.py [line:37] INFO start app......
+bjkb
+clear
+
+2023-08-03 20:14:19,816 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:14:19,818 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:17:39,468 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:17:39,470 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:17:57,536 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:17:57,553 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:18:50,762 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:18:50,770 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:19:10,807 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:19:10,809 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:23:55,785 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:23:55,786 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:24:19,543 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:24:19,560 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:31:21,258 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:31:21,263 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:31:41,522 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:31:41,542 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:31:54,829 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-03 20:32:06,651 multiMypage_man.py [line:864] INFO no tab_mine_btn
+2023-08-03 20:32:16,970 multiMypage_man.py [line:873] INFO no tab_mine_head
+2023-08-03 20:32:27,011 multiMypage_man.py [line:1087] INFO no user_ownPage_selfIntroduction
+2023-08-03 20:32:35,141 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:32:35,145 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:32:53,974 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:32:53,991 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:33:07,524 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-03 20:33:12,879 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-03 20:33:24,364 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-03 20:33:24,511 test_mypage_multi.py [line:109] INFO ===我的页面-顶部空白区域===
+2023-08-03 20:33:29,279 test_mypage_multi.py [line:116] INFO 断言成功
+2023-08-03 20:33:29,282 test_mypage_multi.py [line:638] INFO ===我的页面-女-签到入口===
+2023-08-03 20:34:42,641 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:34:42,644 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:35:00,850 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:35:00,851 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:35:13,941 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-03 20:35:19,196 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-03 20:35:40,188 multiMypage_woman.py [line:1087] INFO no user_ownPage_selfIntroduction
+2023-08-03 20:35:50,306 test_mypage_multi.py [line:98] INFO ===执行失败===
+2023-08-03 20:35:51,260 test_mypage_multi.py [line:109] INFO ===我的页面-顶部空白区域===
+2023-08-03 20:37:20,706 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:37:20,708 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:37:38,954 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:37:38,971 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:37:53,739 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-03 20:37:59,265 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-03 20:38:09,621 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-03 20:38:09,763 test_mypage_multi.py [line:109] INFO ===我的页面-顶部空白区域===
+2023-08-03 20:38:14,258 test_mypage_multi.py [line:116] INFO 断言成功
+2023-08-03 20:38:14,261 test_mypage_multi.py [line:134] INFO ===我的页面-等级===
+2023-08-03 20:38:16,059 test_mypage_multi.py [line:142] INFO 有等级-点击确认
+2023-08-03 20:38:28,060 test_mypage_multi.py [line:163] INFO ===执行失败===
+2023-08-03 20:38:29,005 test_mypage_multi.py [line:173] INFO ===我的页面-头像框===
+2023-08-03 20:38:37,473 multiMypage_man.py [line:864] INFO no tab_mine_btn
+2023-08-03 20:38:37,473 test_mypage_multi.py [line:177] INFO 等级有,头像框-确认
+2023-08-03 20:40:23,279 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:40:23,281 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:40:42,649 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:40:42,651 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:40:55,626 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-03 20:41:00,921 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-03 20:41:11,713 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-03 20:43:39,787 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:43:39,789 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:43:57,949 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:43:57,955 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:44:10,988 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-03 20:44:16,510 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-03 20:44:26,238 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-03 20:46:18,410 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:46:18,412 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:46:36,499 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:46:36,517 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:46:49,654 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-03 20:46:55,440 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-03 20:47:06,759 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-03 20:47:57,880 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:47:57,882 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:48:15,684 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:48:15,685 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:48:28,793 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-03 20:48:33,630 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-03 20:48:44,293 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-03 20:53:22,853 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:53:22,854 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:53:39,735 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:53:39,736 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:53:53,344 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-03 20:54:06,185 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-03 20:54:24,991 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-03 20:55:12,539 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:55:12,541 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:55:30,643 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:55:30,664 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:55:43,686 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-03 20:55:48,244 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-03 20:55:59,172 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-03 20:56:14,257 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-03 20:56:14,259 desired_caps_man.py [line:37] INFO start app......
+2023-08-03 20:56:33,876 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-03 20:56:33,893 desired_caps_woman.py [line:37] INFO start app......
+2023-08-03 20:56:46,438 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-03 20:56:50,944 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-03 20:57:01,345 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 09:24:58,251 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 09:24:58,255 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 09:25:20,299 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 09:25:20,304 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 09:25:33,799 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 09:25:49,375 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 09:25:59,752 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 09:28:38,718 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 09:28:38,720 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 09:28:56,400 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 09:28:56,422 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 09:29:08,917 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 09:29:13,278 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 09:29:24,289 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 10:28:21,604 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 10:28:21,606 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 10:28:38,171 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 10:28:38,176 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 10:28:49,996 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 10:28:54,651 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 10:29:06,916 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 10:29:46,995 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 10:29:46,998 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 10:30:05,807 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 10:30:05,808 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 10:30:18,788 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 10:30:24,093 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 10:30:43,942 multiMypage_woman.py [line:1087] INFO no user_ownPage_selfIntroduction
+2023-08-04 10:30:54,554 test_mypage_multi.py [line:94] INFO ===执行失败===
+2023-08-04 10:30:55,642 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 10:30:57,462 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 10:31:34,343 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 10:31:34,348 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 10:31:51,869 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 10:31:51,886 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 10:32:04,638 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 10:32:09,871 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 10:32:20,753 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 10:32:20,878 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 10:32:22,610 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 10:32:59,518 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 10:32:59,520 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 10:33:17,015 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 10:33:17,032 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 10:33:29,690 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 10:33:34,249 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 10:33:44,397 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 10:33:44,521 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 10:33:49,162 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 10:33:49,164 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 10:33:50,983 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 10:34:31,037 test_mypage_multi.py [line:161] INFO ===执行失败===
+2023-08-04 10:34:31,719 test_mypage_multi.py [line:163] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 10_34_31.png
+2023-08-04 10:34:32,073 test_mypage_multi.py [line:171] INFO ===我的页面-头像框===
+2023-08-04 10:36:07,235 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 10:36:07,237 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 10:36:25,133 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 10:36:25,134 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 10:36:37,558 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 10:36:42,766 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 10:36:53,765 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 10:36:53,946 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 10:36:58,345 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 10:36:58,347 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 10:37:01,961 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 10:37:11,362 test_mypage_multi.py [line:160] INFO ===执行失败===
+2023-08-04 10:37:12,018 test_mypage_multi.py [line:162] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 10_37_11.png
+2023-08-04 10:37:12,330 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 10:37:20,593 multiMypage_man.py [line:864] INFO no tab_mine_btn
+2023-08-04 10:37:20,593 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 10:41:08,873 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 10:41:08,875 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 10:41:26,491 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 10:41:26,512 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 10:41:38,876 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 10:41:44,527 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 10:41:56,063 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 10:41:56,172 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 10:42:01,281 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 10:42:01,286 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 10:42:03,271 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 10:42:08,265 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 10:42:08,268 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 10:42:09,823 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 10:42:10,784 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 10:42:10,786 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 10:42:12,373 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 10:42:12,375 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 10:42:14,280 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 10:42:16,247 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 10:42:16,250 test_mypage_multi.py [line:385] INFO ===我的页面-关注列表===
+2023-08-04 10:42:16,250 test_mypage_multi.py [line:414] INFO ===执行失败===
+2023-08-04 10:42:16,772 test_mypage_multi.py [line:416] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-关注列表_2023-08-04 10_42_16.png
+2023-08-04 10:42:17,091 test_mypage_multi.py [line:324] INFO ===我的页面-粉丝头像===
+2023-08-04 10:42:17,091 test_mypage_multi.py [line:344] INFO ===执行失败===
+2023-08-04 10:42:17,672 test_mypage_multi.py [line:346] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 10_42_17.png
+2023-08-04 10:42:17,693 test_mypage_multi.py [line:356] INFO ===我的页面-关注===
+2023-08-04 10:52:42,864 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 10:52:42,866 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 10:53:00,539 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 10:53:00,560 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 10:53:13,464 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 10:53:18,273 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 10:53:29,466 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 10:53:29,637 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 10:53:33,173 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 10:53:33,179 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 10:53:35,678 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 10:53:40,794 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 10:53:40,797 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 10:53:41,805 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 10:53:42,777 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 10:53:42,779 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 10:53:44,588 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 10:53:44,595 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 10:53:46,184 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 10:53:48,626 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 10:53:48,629 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 10:53:52,673 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 10:53:52,675 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 10:54:00,863 test_mypage_multi.py [line:314] INFO ===执行失败===
+2023-08-04 10:54:01,728 test_mypage_multi.py [line:316] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-粉丝列表_2023-08-04 10_54_00.png
+2023-08-04 10:54:02,052 test_mypage_multi.py [line:324] INFO ===我的页面-粉丝头像===
+2023-08-04 10:54:02,053 test_mypage_multi.py [line:327] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 11:19:14,367 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 11:19:14,369 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 11:19:32,301 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 11:19:32,302 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 11:19:45,187 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 11:19:50,515 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 11:20:01,513 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 11:20:01,829 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 11:20:06,207 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 11:20:06,209 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 11:20:08,172 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 11:20:14,235 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 11:20:14,239 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 11:20:15,190 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 11:20:16,302 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 11:20:16,304 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 11:20:17,788 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 11:20:17,791 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 11:20:19,476 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 11:20:21,785 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 11:20:21,789 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 11:20:25,812 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 11:20:25,814 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 11:20:26,177 test_mypage_multi.py [line:314] INFO ===执行失败===
+2023-08-04 11:20:27,010 test_mypage_multi.py [line:316] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-粉丝列表_2023-08-04 11_20_26.png
+2023-08-04 11:20:27,296 test_mypage_multi.py [line:324] INFO ===我的页面-粉丝头像===
+2023-08-04 11:20:27,296 test_mypage_multi.py [line:327] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 11:20:31,462 test_mypage_multi.py [line:356] INFO ===我的页面-关注===
+2023-08-04 11:20:36,257 test_mypage_multi.py [line:367] INFO 有关注，断言成功
+2023-08-04 11:20:36,259 test_mypage_multi.py [line:385] INFO ===我的页面-关注列表===
+2023-08-04 11:20:36,982 test_mypage_multi.py [line:414] INFO ===执行失败===
+2023-08-04 11:20:37,834 test_mypage_multi.py [line:416] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-关注列表_2023-08-04 11_20_36.png
+2023-08-04 11:20:37,858 test_mypage_multi.py [line:425] INFO ===我的页面-关注头像===
+2023-08-04 11:20:37,858 test_mypage_multi.py [line:428] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 11:20:41,100 test_mypage_multi.py [line:442] INFO ===断言失败===
+2023-08-04 11:20:42,056 test_mypage_multi.py [line:444] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_20_41.png
+2023-08-04 11:20:42,076 test_mypage_multi.py [line:457] INFO ===我的页面-朋友===
+2023-08-04 11:20:50,683 multiMypage_man.py [line:872] INFO no tab_mine_btn
+2023-08-04 11:22:20,709 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 11:22:20,715 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 11:22:39,541 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 11:22:39,543 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 11:22:54,424 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 11:22:59,666 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 11:23:11,779 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 11:23:11,961 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 11:23:17,403 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 11:23:17,405 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 11:23:19,278 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 11:23:24,274 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 11:23:24,276 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 11:23:25,761 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 11:23:26,744 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 11:23:26,747 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 11:23:28,228 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 11:23:28,230 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 11:23:30,252 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 11:23:32,242 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 11:23:32,245 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 11:23:36,824 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 11:23:36,831 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 11:23:45,737 test_mypage_multi.py [line:298] INFO 断言成功
+2023-08-04 11:23:45,744 test_mypage_multi.py [line:324] INFO ===我的页面-粉丝头像===
+2023-08-04 11:23:45,744 test_mypage_multi.py [line:327] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 11:23:49,850 test_mypage_multi.py [line:356] INFO ===我的页面-关注===
+2023-08-04 11:23:54,309 test_mypage_multi.py [line:367] INFO 有关注，断言成功
+2023-08-04 11:23:54,311 test_mypage_multi.py [line:385] INFO ===我的页面-关注列表===
+2023-08-04 11:24:03,663 test_mypage_multi.py [line:409] INFO ===断言失败===
+2023-08-04 11:24:04,530 test_mypage_multi.py [line:411] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-关注列表_2023-08-04 11_24_03.png
+2023-08-04 11:24:04,812 test_mypage_multi.py [line:425] INFO ===我的页面-关注头像===
+2023-08-04 11:24:04,812 test_mypage_multi.py [line:428] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 11:24:08,212 test_mypage_multi.py [line:442] INFO ===断言失败===
+2023-08-04 11:24:08,876 test_mypage_multi.py [line:444] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_24_08.png
+2023-08-04 11:24:08,896 test_mypage_multi.py [line:457] INFO ===我的页面-朋友===
+2023-08-04 11:24:17,713 multiMypage_man.py [line:872] INFO no tab_mine_btn
+2023-08-04 11:26:50,149 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 11:26:50,151 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 11:27:07,980 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 11:27:07,995 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 11:27:20,874 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 11:27:25,776 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 11:27:36,788 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 11:27:36,959 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 11:27:41,681 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 11:27:41,684 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 11:27:43,677 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 11:27:48,803 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 11:27:48,806 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 11:27:50,359 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 11:27:51,412 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 11:27:51,414 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 11:27:52,904 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 11:27:52,910 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 11:27:54,477 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 11:27:56,503 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 11:27:56,505 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 11:28:01,207 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 11:28:01,210 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 11:28:12,165 test_mypage_multi.py [line:299] INFO 断言成功
+2023-08-04 11:28:12,172 test_mypage_multi.py [line:325] INFO ===我的页面-粉丝头像===
+2023-08-04 11:28:12,172 test_mypage_multi.py [line:328] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 11:28:16,814 test_mypage_multi.py [line:335] INFO ===断言成功===
+2023-08-04 11:28:16,820 test_mypage_multi.py [line:360] INFO ===我的页面-关注===
+2023-08-04 11:28:21,860 test_mypage_multi.py [line:371] INFO 有关注，断言成功
+2023-08-04 11:28:21,862 test_mypage_multi.py [line:389] INFO ===我的页面-关注列表===
+2023-08-04 11:28:33,544 test_mypage_multi.py [line:414] INFO ===断言失败===
+2023-08-04 11:28:34,413 test_mypage_multi.py [line:416] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-关注列表_2023-08-04 11_28_33.png
+2023-08-04 11:28:34,774 test_mypage_multi.py [line:430] INFO ===我的页面-关注头像===
+2023-08-04 11:28:34,775 test_mypage_multi.py [line:433] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 11:28:38,779 test_mypage_multi.py [line:448] INFO ===断言失败===
+2023-08-04 11:28:39,429 test_mypage_multi.py [line:450] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_28_38.png
+2023-08-04 11:28:39,450 test_mypage_multi.py [line:463] INFO ===我的页面-朋友===
+2023-08-04 11:28:48,278 multiMypage_man.py [line:872] INFO no tab_mine_btn
+2023-08-04 11:28:56,645 multiMypage_man.py [line:963] INFO no user_friendNumText
+2023-08-04 11:29:05,343 test_mypage_multi.py [line:482] INFO ===执行失败===
+2023-08-04 11:29:06,008 test_mypage_multi.py [line:484] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/===我的页面-朋友===_2023-08-04 11_29_05.png
+2023-08-04 11:29:06,057 test_mypage_multi.py [line:492] INFO ===我的页面-朋友列表===
+2023-08-04 11:30:11,217 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 11:30:11,219 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 11:30:28,927 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 11:30:28,945 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 11:30:41,409 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 11:30:46,180 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 11:30:57,525 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 11:30:57,687 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 11:31:02,478 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 11:31:02,481 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 11:31:04,437 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 11:31:09,598 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 11:31:09,600 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 11:31:11,738 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 11:31:12,268 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 11:31:12,271 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 11:31:13,820 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 11:31:13,823 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 11:31:15,976 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 11:31:17,963 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 11:31:17,966 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 11:31:22,261 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 11:31:22,263 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 11:31:32,711 test_mypage_multi.py [line:299] INFO 断言成功
+2023-08-04 11:31:32,713 test_mypage_multi.py [line:325] INFO ===我的页面-粉丝头像===
+2023-08-04 11:31:32,714 test_mypage_multi.py [line:328] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 11:31:37,211 test_mypage_multi.py [line:335] INFO ===断言成功===
+2023-08-04 11:31:37,214 test_mypage_multi.py [line:360] INFO ===我的页面-关注===
+2023-08-04 11:31:42,313 test_mypage_multi.py [line:371] INFO 有关注，断言成功
+2023-08-04 11:31:42,315 test_mypage_multi.py [line:389] INFO ===我的页面-关注列表===
+2023-08-04 11:31:53,194 test_mypage_multi.py [line:414] INFO ===断言失败===
+2023-08-04 11:31:54,146 test_mypage_multi.py [line:416] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-关注列表_2023-08-04 11_31_53.png
+2023-08-04 11:31:54,434 test_mypage_multi.py [line:430] INFO ===我的页面-关注头像===
+2023-08-04 11:31:54,434 test_mypage_multi.py [line:433] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 11:31:58,391 test_mypage_multi.py [line:448] INFO ===断言失败===
+2023-08-04 11:31:59,021 test_mypage_multi.py [line:450] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_31_58.png
+2023-08-04 11:31:59,044 test_mypage_multi.py [line:463] INFO ===我的页面-朋友===
+2023-08-04 11:32:38,176 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 11:32:38,177 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 11:32:56,292 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 11:32:56,298 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 11:33:09,162 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 11:33:13,870 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 11:33:34,991 multiMypage_woman.py [line:1087] INFO no user_ownPage_selfIntroduction
+2023-08-04 11:33:45,717 test_mypage_multi.py [line:94] INFO ===执行失败===
+2023-08-04 11:33:46,317 test_mypage_multi.py [line:96] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_33_45.png
+2023-08-04 11:33:46,634 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 11:33:51,515 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 11:33:51,524 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 11:34:04,230 multiMypage_man.py [line:911] INFO no user_vipLevel
+2023-08-04 11:34:04,230 test_mypage_multi.py [line:149] INFO 没有等级-等级元素再次确认
+2023-08-04 11:34:14,326 test_mypage_multi.py [line:160] INFO ===执行失败===
+2023-08-04 11:34:14,946 test_mypage_multi.py [line:162] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_34_14.png
+2023-08-04 11:34:14,994 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 11:34:16,439 test_mypage_multi.py [line:189] INFO ===执行失败===
+2023-08-04 11:34:17,057 test_mypage_multi.py [line:191] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_34_16.png
+2023-08-04 11:34:17,098 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 11:34:18,635 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 11:34:18,637 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 11:34:20,335 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 11:34:22,340 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 11:34:22,351 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 11:34:26,975 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 11:34:26,978 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 11:34:29,520 test_mypage_multi.py [line:315] INFO ===执行失败===
+2023-08-04 11:34:33,498 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 11:34:33,503 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 11:34:53,643 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 11:34:53,661 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 11:35:06,008 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 11:35:11,211 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 11:35:23,596 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 11:35:23,740 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 11:35:28,970 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 11:35:28,973 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 11:35:30,849 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 11:35:35,978 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 11:35:35,981 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 11:35:37,126 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 11:35:38,073 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 11:35:38,075 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 11:35:39,871 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 11:35:39,874 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 11:35:41,438 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 11:35:43,399 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 11:35:43,407 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 11:35:47,807 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 11:35:47,810 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 11:35:57,824 test_mypage_multi.py [line:299] INFO 断言成功
+2023-08-04 11:35:57,826 test_mypage_multi.py [line:325] INFO ===我的页面-粉丝头像===
+2023-08-04 11:35:57,826 test_mypage_multi.py [line:328] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 11:36:02,218 test_mypage_multi.py [line:335] INFO ===断言成功===
+2023-08-04 11:36:02,220 test_mypage_multi.py [line:360] INFO ===我的页面-关注===
+2023-08-04 11:36:07,193 test_mypage_multi.py [line:371] INFO 有关注，断言成功
+2023-08-04 11:36:07,194 test_mypage_multi.py [line:389] INFO ===我的页面-关注列表===
+2023-08-04 11:36:19,919 test_mypage_multi.py [line:414] INFO ===断言失败===
+2023-08-04 11:36:20,869 test_mypage_multi.py [line:416] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-关注列表_2023-08-04 11_36_19.png
+2023-08-04 11:36:21,155 test_mypage_multi.py [line:430] INFO ===我的页面-关注头像===
+2023-08-04 11:36:21,155 test_mypage_multi.py [line:433] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 11:36:25,064 test_mypage_multi.py [line:448] INFO ===断言失败===
+2023-08-04 11:36:25,718 test_mypage_multi.py [line:450] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_36_25.png
+2023-08-04 11:36:25,737 test_mypage_multi.py [line:463] INFO ===我的页面-朋友===
+2023-08-04 11:36:33,989 multiMypage_man.py [line:872] INFO no tab_mine_btn
+2023-08-04 11:36:42,593 multiMypage_man.py [line:963] INFO no user_friendNumText
+2023-08-04 11:39:44,580 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 11:39:44,582 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 11:40:04,667 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 11:40:04,684 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 11:40:17,280 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 11:40:21,774 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 11:40:32,547 test_mypage_multi.py [line:72] INFO 断言成功
+2023-08-04 11:40:33,722 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 11:40:38,373 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 11:40:38,375 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 11:40:40,978 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 11:40:45,988 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 11:40:45,992 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 11:40:47,541 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 11:40:48,942 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 11:40:48,945 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 11:40:50,439 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 11:40:50,442 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 11:40:52,136 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 11:40:54,121 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 11:40:54,131 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 11:40:58,395 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 11:40:58,397 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 11:41:08,857 test_mypage_multi.py [line:311] INFO ===断言失败===
+2023-08-04 11:41:09,829 test_mypage_multi.py [line:313] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-粉丝列表_2023-08-04 11_41_08.png
+2023-08-04 11:41:10,112 test_mypage_multi.py [line:326] INFO ===我的页面-粉丝头像===
+2023-08-04 11:41:10,112 test_mypage_multi.py [line:329] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 11:41:17,025 test_mypage_multi.py [line:336] INFO ===断言成功===
+2023-08-04 11:41:17,029 test_mypage_multi.py [line:361] INFO ===我的页面-关注===
+2023-08-04 11:41:21,725 test_mypage_multi.py [line:372] INFO 有关注，断言成功
+2023-08-04 11:41:21,727 test_mypage_multi.py [line:390] INFO ===我的页面-关注列表===
+2023-08-04 11:41:34,473 test_mypage_multi.py [line:416] INFO ===断言失败===
+2023-08-04 11:41:35,436 test_mypage_multi.py [line:418] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-关注列表_2023-08-04 11_41_34.png
+2023-08-04 11:41:35,457 test_mypage_multi.py [line:432] INFO ===我的页面-关注头像===
+2023-08-04 11:41:35,457 test_mypage_multi.py [line:435] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 11:41:39,944 test_mypage_multi.py [line:450] INFO ===断言失败===
+2023-08-04 11:41:41,030 test_mypage_multi.py [line:452] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_41_39.png
+2023-08-04 11:41:41,049 test_mypage_multi.py [line:465] INFO ===我的页面-朋友===
+2023-08-04 11:45:54,343 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 11:45:54,348 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 11:46:15,150 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 11:46:15,167 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 11:46:27,964 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 11:46:33,119 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 11:46:38,573 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 11:46:43,346 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 11:46:43,348 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 11:46:45,798 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 11:46:50,881 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 11:46:50,884 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 11:46:51,945 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 11:46:53,288 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 11:46:53,292 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 11:46:54,858 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 11:46:54,866 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 11:46:56,749 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 11:46:58,787 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 11:46:58,790 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 11:47:03,392 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 11:47:03,395 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 11:47:14,132 test_mypage_multi.py [line:300] INFO 断言成功
+2023-08-04 11:47:14,134 test_mypage_multi.py [line:326] INFO ===我的页面-粉丝头像===
+2023-08-04 11:47:14,134 test_mypage_multi.py [line:329] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 11:47:19,227 test_mypage_multi.py [line:336] INFO ===断言成功===
+2023-08-04 11:47:19,230 test_mypage_multi.py [line:361] INFO ===我的页面-关注===
+2023-08-04 11:47:24,359 test_mypage_multi.py [line:372] INFO 有关注，断言成功
+2023-08-04 11:47:24,361 test_mypage_multi.py [line:390] INFO ===我的页面-关注列表===
+2023-08-04 11:47:37,308 test_mypage_multi.py [line:416] INFO ===断言失败===
+2023-08-04 11:47:38,237 test_mypage_multi.py [line:418] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-关注列表_2023-08-04 11_47_37.png
+2023-08-04 11:47:38,521 test_mypage_multi.py [line:432] INFO ===我的页面-关注头像===
+2023-08-04 11:47:38,521 test_mypage_multi.py [line:435] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 11:47:42,404 test_mypage_multi.py [line:450] INFO ===断言失败===
+2023-08-04 11:47:43,076 test_mypage_multi.py [line:452] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_47_42.png
+2023-08-04 11:47:43,095 test_mypage_multi.py [line:465] INFO ===我的页面-朋友===
+2023-08-04 11:47:55,113 test_mypage_multi.py [line:476] INFO 有朋友，断言成功
+2023-08-04 11:47:55,122 test_mypage_multi.py [line:494] INFO ===我的页面-朋友列表===
+2023-08-04 11:48:03,901 test_mypage_multi.py [line:511] INFO 断言成功
+2023-08-04 11:48:03,903 test_mypage_multi.py [line:536] INFO ===我的页面-朋友头像===
+2023-08-04 11:48:03,903 test_mypage_multi.py [line:539] INFO ===我的页面-朋友头像人数不为0===
+2023-08-04 11:48:07,607 test_mypage_multi.py [line:554] INFO ===断言失败===
+2023-08-04 11:48:08,294 test_mypage_multi.py [line:556] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_48_07.png
+2023-08-04 11:56:56,840 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 11:56:56,842 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 11:57:15,471 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 11:57:15,472 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 11:57:28,378 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 11:57:32,897 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 11:57:37,010 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 11:57:41,832 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 11:57:41,834 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 11:57:44,693 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 11:57:49,882 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 11:57:49,885 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 11:57:50,915 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 11:57:52,007 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 11:57:52,010 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 11:57:53,721 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 11:57:53,729 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 11:57:55,914 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 11:57:58,050 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 11:57:58,056 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 11:58:03,058 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 11:58:03,060 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 11:58:13,604 test_mypage_multi.py [line:300] INFO 断言成功
+2023-08-04 11:58:13,607 test_mypage_multi.py [line:326] INFO ===我的页面-粉丝头像===
+2023-08-04 11:58:13,607 test_mypage_multi.py [line:329] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 11:58:19,361 test_mypage_multi.py [line:336] INFO ===断言成功===
+2023-08-04 11:58:19,366 test_mypage_multi.py [line:361] INFO ===我的页面-关注===
+2023-08-04 11:58:23,944 test_mypage_multi.py [line:372] INFO 有关注，断言成功
+2023-08-04 11:58:23,946 test_mypage_multi.py [line:390] INFO ===我的页面-关注列表===
+2023-08-04 11:58:37,598 test_mypage_multi.py [line:418] INFO ===断言失败===
+2023-08-04 11:58:38,608 test_mypage_multi.py [line:420] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-关注列表_2023-08-04 11_58_37.png
+2023-08-04 11:58:38,892 test_mypage_multi.py [line:434] INFO ===我的页面-关注头像===
+2023-08-04 11:58:38,893 test_mypage_multi.py [line:437] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 11:59:05,251 test_mypage_multi.py [line:457] INFO ===执行失败===
+2023-08-04 11:59:06,270 test_mypage_multi.py [line:459] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 11_59_05.png
+2023-08-04 11:59:06,325 test_mypage_multi.py [line:467] INFO ===我的页面-朋友===
+2023-08-04 11:59:14,586 multiMypage_man.py [line:872] INFO no tab_mine_btn
+2023-08-04 12:00:20,857 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 12:00:20,859 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 12:00:40,083 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 12:00:40,084 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 12:00:53,051 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 12:00:57,777 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 12:01:02,985 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 12:01:08,222 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 12:01:08,224 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 12:01:10,845 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 12:01:16,385 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 12:01:16,387 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 12:01:17,370 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 12:01:18,458 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 12:01:18,461 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 12:01:20,478 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 12:01:20,480 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 12:01:22,122 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 12:01:24,127 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 12:01:24,135 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 12:01:28,460 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 12:01:28,462 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 12:01:38,690 test_mypage_multi.py [line:300] INFO 断言成功
+2023-08-04 12:01:38,692 test_mypage_multi.py [line:326] INFO ===我的页面-粉丝头像===
+2023-08-04 12:01:38,692 test_mypage_multi.py [line:329] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 12:01:43,965 test_mypage_multi.py [line:336] INFO ===断言成功===
+2023-08-04 12:01:43,970 test_mypage_multi.py [line:361] INFO ===我的页面-关注===
+2023-08-04 12:01:48,607 test_mypage_multi.py [line:372] INFO 有关注，断言成功
+2023-08-04 12:01:48,612 test_mypage_multi.py [line:390] INFO ===我的页面-关注列表===
+2023-08-04 12:02:02,593 test_mypage_multi.py [line:408] INFO 断言成功
+2023-08-04 12:02:02,595 test_mypage_multi.py [line:434] INFO ===我的页面-关注头像===
+2023-08-04 12:02:02,596 test_mypage_multi.py [line:437] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 12:02:45,387 test_mypage_multi.py [line:457] INFO ===执行失败===
+2023-08-04 12:02:46,421 test_mypage_multi.py [line:459] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 12_02_45.png
+2023-08-04 12:02:46,774 test_mypage_multi.py [line:467] INFO ===我的页面-朋友===
+2023-08-04 12:02:55,578 multiMypage_man.py [line:871] INFO no tab_mine_btn
+2023-08-04 12:03:03,611 multiMypage_man.py [line:962] INFO no user_friendNumText
+2023-08-04 12:03:12,122 test_mypage_multi.py [line:486] INFO ===执行失败===
+2023-08-04 12:03:12,784 test_mypage_multi.py [line:488] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/===我的页面-朋友===_2023-08-04 12_03_12.png
+2023-08-04 12:03:12,832 test_mypage_multi.py [line:496] INFO ===我的页面-朋友列表===
+2023-08-04 12:03:25,651 test_mypage_multi.py [line:528] INFO ===执行失败===
+2023-08-04 12:03:26,370 test_mypage_multi.py [line:530] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-关注列表_2023-08-04 12_03_25.png
+2023-08-04 12:03:26,418 test_mypage_multi.py [line:538] INFO ===我的页面-朋友头像===
+2023-08-04 12:03:26,418 test_mypage_multi.py [line:550] INFO ===我的页面-朋友无该图标===
+2023-08-04 13:36:26,628 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 13:36:26,630 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 13:36:44,869 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 13:36:44,871 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 13:36:56,841 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 13:37:02,508 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 13:37:07,282 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 13:37:11,839 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 13:37:11,841 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 13:37:13,841 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 13:37:19,954 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 13:37:19,961 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 13:37:21,551 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 13:37:22,998 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 13:37:23,000 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 13:37:24,479 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 13:37:24,481 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 13:37:25,996 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 13:37:27,931 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 13:37:27,933 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 13:37:32,413 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 13:37:32,421 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 13:37:43,138 test_mypage_multi.py [line:300] INFO 断言成功
+2023-08-04 13:37:43,140 test_mypage_multi.py [line:326] INFO ===我的页面-粉丝头像===
+2023-08-04 13:37:43,140 test_mypage_multi.py [line:329] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 13:37:48,250 test_mypage_multi.py [line:336] INFO ===断言成功===
+2023-08-04 13:37:48,253 test_mypage_multi.py [line:361] INFO ===我的页面-关注===
+2023-08-04 13:37:53,178 test_mypage_multi.py [line:372] INFO 有关注，断言成功
+2023-08-04 13:37:53,180 test_mypage_multi.py [line:390] INFO ===我的页面-关注列表===
+2023-08-04 13:38:07,612 test_mypage_multi.py [line:408] INFO 断言成功
+2023-08-04 13:38:07,615 test_mypage_multi.py [line:434] INFO ===我的页面-关注头像===
+2023-08-04 13:38:07,615 test_mypage_multi.py [line:437] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 13:38:59,850 test_mypage_multi.py [line:457] INFO ===执行失败===
+2023-08-04 13:39:00,909 test_mypage_multi.py [line:459] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 13_38_59.png
+2023-08-04 13:39:01,219 test_mypage_multi.py [line:467] INFO ===我的页面-朋友===
+2023-08-04 13:39:09,972 multiMypage_man.py [line:871] INFO no tab_mine_btn
+2023-08-04 13:39:14,510 test_mypage_multi.py [line:478] INFO 有朋友，断言成功
+2023-08-04 13:39:14,512 test_mypage_multi.py [line:496] INFO ===我的页面-朋友列表===
+2023-08-04 13:39:24,429 test_mypage_multi.py [line:513] INFO 断言成功
+2023-08-04 13:39:24,432 test_mypage_multi.py [line:538] INFO ===我的页面-朋友头像===
+2023-08-04 13:39:24,432 test_mypage_multi.py [line:541] INFO ===我的页面-朋友头像人数不为0===
+2023-08-04 13:39:28,000 test_mypage_multi.py [line:556] INFO ===断言失败===
+2023-08-04 13:39:28,677 test_mypage_multi.py [line:558] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 13_39_28.png
+2023-08-04 13:43:28,307 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 13:43:28,309 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 13:43:47,215 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 13:43:47,233 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 13:43:59,550 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 13:44:04,906 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 13:44:09,358 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 13:44:13,856 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 13:44:13,858 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 13:44:16,198 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 13:44:21,406 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 13:44:21,409 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 13:44:22,457 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 13:44:23,406 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 13:44:23,409 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 13:44:25,158 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 13:44:25,161 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 13:44:26,678 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 13:44:29,135 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 13:44:29,137 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 13:44:33,900 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 13:44:33,902 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 13:44:44,526 test_mypage_multi.py [line:300] INFO 断言成功
+2023-08-04 13:44:44,528 test_mypage_multi.py [line:326] INFO ===我的页面-粉丝头像===
+2023-08-04 13:44:44,529 test_mypage_multi.py [line:329] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 13:44:49,645 test_mypage_multi.py [line:336] INFO ===断言成功===
+2023-08-04 13:44:49,648 test_mypage_multi.py [line:361] INFO ===我的页面-关注===
+2023-08-04 13:44:53,941 test_mypage_multi.py [line:372] INFO 有关注，断言成功
+2023-08-04 13:44:53,943 test_mypage_multi.py [line:390] INFO ===我的页面-关注列表===
+2023-08-04 13:45:08,815 test_mypage_multi.py [line:408] INFO 断言成功
+2023-08-04 13:45:08,818 test_mypage_multi.py [line:434] INFO ===我的页面-关注头像===
+2023-08-04 13:45:08,818 test_mypage_multi.py [line:437] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 13:45:44,539 test_mypage_multi.py [line:444] INFO 断言成功
+2023-08-04 13:45:44,542 test_mypage_multi.py [line:467] INFO ===我的页面-朋友===
+2023-08-04 13:45:48,571 test_mypage_multi.py [line:478] INFO 有朋友，断言成功
+2023-08-04 13:45:48,573 test_mypage_multi.py [line:496] INFO ===我的页面-朋友列表===
+2023-08-04 13:45:57,606 test_mypage_multi.py [line:513] INFO 断言成功
+2023-08-04 13:45:57,609 test_mypage_multi.py [line:538] INFO ===我的页面-朋友头像===
+2023-08-04 13:45:57,609 test_mypage_multi.py [line:541] INFO ===我的页面-朋友头像人数不为0===
+2023-08-04 13:46:02,835 test_mypage_multi.py [line:556] INFO ===断言失败===
+2023-08-04 13:46:03,573 test_mypage_multi.py [line:558] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 13_46_02.png
+2023-08-04 13:51:37,286 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 13:51:37,288 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 13:51:55,117 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 13:51:55,138 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 13:52:07,741 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 13:52:13,366 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 13:52:18,095 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 13:52:22,922 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 13:52:22,925 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 13:52:24,848 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 13:52:30,218 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 13:52:30,220 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 13:52:31,778 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 13:52:32,854 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 13:52:32,857 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 13:52:34,740 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 13:52:34,742 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 13:52:36,463 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 13:52:38,933 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 13:52:38,935 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 13:52:43,486 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 13:52:43,495 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 13:52:54,217 test_mypage_multi.py [line:300] INFO 断言成功
+2023-08-04 13:52:54,220 test_mypage_multi.py [line:326] INFO ===我的页面-粉丝头像===
+2023-08-04 13:52:54,220 test_mypage_multi.py [line:329] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 13:52:58,758 test_mypage_multi.py [line:336] INFO ===断言成功===
+2023-08-04 13:52:58,760 test_mypage_multi.py [line:361] INFO ===我的页面-关注===
+2023-08-04 13:53:03,605 test_mypage_multi.py [line:372] INFO 有关注，断言成功
+2023-08-04 13:53:03,608 test_mypage_multi.py [line:390] INFO ===我的页面-关注列表===
+2023-08-04 13:53:17,282 test_mypage_multi.py [line:408] INFO 断言成功
+2023-08-04 13:53:17,284 test_mypage_multi.py [line:434] INFO ===我的页面-关注头像===
+2023-08-04 13:53:17,284 test_mypage_multi.py [line:437] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 13:53:53,168 test_mypage_multi.py [line:444] INFO 断言成功
+2023-08-04 13:53:53,171 test_mypage_multi.py [line:467] INFO ===我的页面-朋友===
+2023-08-04 13:53:57,070 test_mypage_multi.py [line:478] INFO 有朋友，断言成功
+2023-08-04 13:53:57,072 test_mypage_multi.py [line:496] INFO ===我的页面-朋友列表===
+2023-08-04 13:54:06,712 test_mypage_multi.py [line:513] INFO 断言成功
+2023-08-04 13:54:06,715 test_mypage_multi.py [line:538] INFO ===我的页面-朋友头像===
+2023-08-04 13:54:06,715 test_mypage_multi.py [line:541] INFO ===我的页面-朋友头像人数不为0===
+2023-08-04 13:54:10,338 test_mypage_multi.py [line:557] INFO ===断言失败===
+2023-08-04 13:54:11,567 test_mypage_multi.py [line:559] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 13_54_10.png
+2023-08-04 13:58:25,859 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 13:58:25,861 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 13:58:42,645 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 13:58:42,647 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 13:58:55,341 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 13:59:00,703 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 13:59:05,596 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 13:59:10,094 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 13:59:10,097 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 13:59:12,407 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 13:59:17,666 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 13:59:17,671 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 13:59:18,600 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 13:59:19,543 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 13:59:19,550 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 13:59:21,186 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 13:59:21,194 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 13:59:23,358 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 13:59:25,368 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 13:59:25,370 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 13:59:29,840 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 13:59:29,842 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 13:59:40,611 test_mypage_multi.py [line:300] INFO 断言成功
+2023-08-04 13:59:40,613 test_mypage_multi.py [line:326] INFO ===我的页面-粉丝头像===
+2023-08-04 13:59:40,614 test_mypage_multi.py [line:329] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 13:59:45,184 test_mypage_multi.py [line:336] INFO ===断言成功===
+2023-08-04 13:59:45,187 test_mypage_multi.py [line:361] INFO ===我的页面-关注===
+2023-08-04 13:59:49,120 test_mypage_multi.py [line:372] INFO 有关注，断言成功
+2023-08-04 13:59:49,123 test_mypage_multi.py [line:390] INFO ===我的页面-关注列表===
+2023-08-04 14:00:04,331 test_mypage_multi.py [line:408] INFO 断言成功
+2023-08-04 14:00:04,333 test_mypage_multi.py [line:434] INFO ===我的页面-关注头像===
+2023-08-04 14:00:04,333 test_mypage_multi.py [line:437] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 14:00:40,038 test_mypage_multi.py [line:444] INFO 断言成功
+2023-08-04 14:00:40,042 test_mypage_multi.py [line:467] INFO ===我的页面-朋友===
+2023-08-04 14:00:44,423 test_mypage_multi.py [line:478] INFO 有朋友，断言成功
+2023-08-04 14:00:44,431 test_mypage_multi.py [line:496] INFO ===我的页面-朋友列表===
+2023-08-04 14:00:53,256 test_mypage_multi.py [line:513] INFO 断言成功
+2023-08-04 14:00:53,259 test_mypage_multi.py [line:538] INFO ===我的页面-朋友头像===
+2023-08-04 14:00:53,259 test_mypage_multi.py [line:541] INFO ===我的页面-朋友头像人数不为0===
+2023-08-04 14:00:58,741 test_mypage_multi.py [line:548] INFO 断言成功
+2023-08-04 14:00:58,744 test_mypage_multi.py [line:571] INFO ===我的页面-男-签到入口===
+2023-08-04 14:01:44,498 test_mypage_multi.py [line:585] INFO 断言成功
+2023-08-04 14:01:44,500 test_mypage_multi.py [line:607] INFO ===我的页面-男-去签到-跳转页面===
+2023-08-04 14:04:01,606 test_mypage_multi.py [line:624] INFO 断言成功
+2023-08-04 14:04:01,610 test_mypage_multi.py [line:647] INFO ===我的页面-女-签到入口===
+2023-08-04 14:04:48,995 test_mypage_multi.py [line:661] INFO 断言成功
+2023-08-04 14:04:48,998 test_mypage_multi.py [line:684] INFO ===我的页面-女-去签到-跳转页面===
+2023-08-04 14:07:09,622 multiMypage_woman.py [line:1054] INFO no MyTasks_rewards_TaskCompletePopoverOkBtn
+2023-08-04 14:07:10,493 test_mypage_multi.py [line:708] INFO 断言成功
+2023-08-04 14:11:07,680 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 14:11:07,682 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 14:11:24,156 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 14:11:24,162 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 14:11:37,025 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 14:11:42,369 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 14:11:46,621 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 14:11:50,889 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 14:11:50,896 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 14:11:52,641 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 14:11:58,246 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 14:11:58,250 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 14:11:59,812 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 14:12:00,690 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 14:12:00,692 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 14:12:02,705 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 14:12:02,708 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 14:12:04,143 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 14:12:06,037 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 14:12:06,040 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 14:12:09,917 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 14:12:09,920 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 14:12:19,783 test_mypage_multi.py [line:300] INFO 断言成功
+2023-08-04 14:12:19,786 test_mypage_multi.py [line:326] INFO ===我的页面-粉丝头像===
+2023-08-04 14:12:19,786 test_mypage_multi.py [line:329] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 14:12:23,938 test_mypage_multi.py [line:336] INFO ===断言成功===
+2023-08-04 14:12:23,940 test_mypage_multi.py [line:361] INFO ===我的页面-关注===
+2023-08-04 14:12:28,287 test_mypage_multi.py [line:372] INFO 有关注，断言成功
+2023-08-04 14:12:28,289 test_mypage_multi.py [line:390] INFO ===我的页面-关注列表===
+2023-08-04 14:12:42,332 test_mypage_multi.py [line:408] INFO 断言成功
+2023-08-04 14:12:42,334 test_mypage_multi.py [line:434] INFO ===我的页面-关注头像===
+2023-08-04 14:12:42,334 test_mypage_multi.py [line:437] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 14:13:17,287 test_mypage_multi.py [line:444] INFO 断言成功
+2023-08-04 14:13:17,295 test_mypage_multi.py [line:467] INFO ===我的页面-朋友===
+2023-08-04 14:13:21,039 test_mypage_multi.py [line:478] INFO 有朋友，断言成功
+2023-08-04 14:13:21,045 test_mypage_multi.py [line:496] INFO ===我的页面-朋友列表===
+2023-08-04 14:13:30,521 test_mypage_multi.py [line:513] INFO 断言成功
+2023-08-04 14:13:30,523 test_mypage_multi.py [line:538] INFO ===我的页面-朋友头像===
+2023-08-04 14:13:30,523 test_mypage_multi.py [line:541] INFO ===我的页面-朋友头像人数不为0===
+2023-08-04 14:13:34,303 test_mypage_multi.py [line:556] INFO ===断言失败===
+2023-08-04 14:13:35,446 test_mypage_multi.py [line:558] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-04 14_13_34.png
+2023-08-04 14:28:50,378 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 14:28:50,380 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 14:29:08,822 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 14:29:08,825 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 14:29:22,039 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 14:29:28,380 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 14:29:32,632 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 14:29:38,526 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 14:29:38,531 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 14:29:41,399 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 14:29:48,205 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 14:29:48,209 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 14:29:49,553 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 14:29:50,481 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 14:29:50,484 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 14:29:52,032 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 14:29:52,034 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 14:29:54,116 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 14:29:56,395 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 14:29:56,397 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 14:29:59,904 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 14:29:59,906 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 14:30:11,825 test_mypage_multi.py [line:300] INFO 断言成功
+2023-08-04 14:30:11,828 test_mypage_multi.py [line:326] INFO ===我的页面-粉丝头像===
+2023-08-04 14:30:11,829 test_mypage_multi.py [line:329] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 14:30:16,377 test_mypage_multi.py [line:336] INFO ===断言成功===
+2023-08-04 14:30:16,380 test_mypage_multi.py [line:361] INFO ===我的页面-关注===
+2023-08-04 14:30:20,189 test_mypage_multi.py [line:372] INFO 有关注，断言成功
+2023-08-04 14:30:20,191 test_mypage_multi.py [line:390] INFO ===我的页面-关注列表===
+2023-08-04 14:30:35,168 test_mypage_multi.py [line:408] INFO 断言成功
+2023-08-04 14:30:35,171 test_mypage_multi.py [line:434] INFO ===我的页面-关注头像===
+2023-08-04 14:30:35,171 test_mypage_multi.py [line:437] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 14:31:10,692 test_mypage_multi.py [line:444] INFO 断言成功
+2023-08-04 14:31:10,694 test_mypage_multi.py [line:467] INFO ===我的页面-朋友===
+2023-08-04 14:31:14,624 test_mypage_multi.py [line:478] INFO 有朋友，断言成功
+2023-08-04 14:31:14,627 test_mypage_multi.py [line:496] INFO ===我的页面-朋友列表===
+2023-08-04 14:31:23,742 test_mypage_multi.py [line:513] INFO 断言成功
+2023-08-04 14:31:23,746 test_mypage_multi.py [line:538] INFO ===我的页面-朋友头像===
+2023-08-04 14:31:23,746 test_mypage_multi.py [line:541] INFO ===我的页面-朋友头像人数不为0===
+2023-08-04 14:31:29,719 test_mypage_multi.py [line:548] INFO 断言成功
+2023-08-04 14:31:29,722 test_mypage_multi.py [line:571] INFO ===我的页面-男-签到入口===
+2023-08-04 14:31:55,057 test_mypage_multi.py [line:585] INFO 断言成功
+2023-08-04 14:31:55,059 test_mypage_multi.py [line:607] INFO ===我的页面-男-去签到-跳转页面===
+2023-08-04 14:32:36,993 test_mypage_multi.py [line:628] INFO ===断言失败===
+2023-08-04 14:32:37,706 test_mypage_multi.py [line:630] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-男-去签到-跳转页面_2023-08-04 14_32_36.png
+2023-08-04 14:32:37,988 test_mypage_multi.py [line:645] INFO ===我的页面-女-签到入口===
+2023-08-04 14:34:10,193 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 14:34:10,197 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 14:34:28,998 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 14:34:29,001 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 14:34:41,405 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 14:34:47,675 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 14:34:52,085 test_mypage_multi.py [line:105] INFO ===我的页面-顶部空白区域===
+2023-08-04 14:34:57,927 test_mypage_multi.py [line:112] INFO 断言成功
+2023-08-04 14:34:57,930 test_mypage_multi.py [line:130] INFO ===我的页面-等级===
+2023-08-04 14:35:00,664 test_mypage_multi.py [line:138] INFO 有等级-点击确认
+2023-08-04 14:35:05,592 test_mypage_multi.py [line:147] INFO 断言成功
+2023-08-04 14:35:05,598 test_mypage_multi.py [line:170] INFO ===我的页面-头像框===
+2023-08-04 14:35:06,643 test_mypage_multi.py [line:174] INFO 等级有,头像框-确认
+2023-08-04 14:35:07,608 test_mypage_multi.py [line:177] INFO 断言成功
+2023-08-04 14:35:07,612 test_mypage_multi.py [line:199] INFO ===我的页面-国家===
+2023-08-04 14:35:09,149 test_mypage_multi.py [line:203] INFO ===我的页面-有国家图标，断言成功===
+2023-08-04 14:35:09,152 test_mypage_multi.py [line:221] INFO ===我的页面-语言===
+2023-08-04 14:35:11,309 test_mypage_multi.py [line:232] INFO 只有第一语言
+2023-08-04 14:35:12,968 test_mypage_multi.py [line:236] INFO 断言成功
+2023-08-04 14:35:12,970 test_mypage_multi.py [line:254] INFO ===我的页面-粉丝===
+2023-08-04 14:35:16,906 test_mypage_multi.py [line:265] INFO 有粉丝，断言成功
+2023-08-04 14:35:16,908 test_mypage_multi.py [line:284] INFO ===我的页面-粉丝列表===
+2023-08-04 14:35:28,629 test_mypage_multi.py [line:300] INFO 断言成功
+2023-08-04 14:35:28,631 test_mypage_multi.py [line:326] INFO ===我的页面-粉丝头像===
+2023-08-04 14:35:28,631 test_mypage_multi.py [line:329] INFO ===我的页面-粉丝头像人数不为0===
+2023-08-04 14:35:34,378 test_mypage_multi.py [line:336] INFO ===断言成功===
+2023-08-04 14:35:34,386 test_mypage_multi.py [line:361] INFO ===我的页面-关注===
+2023-08-04 14:35:37,526 test_mypage_multi.py [line:372] INFO 有关注，断言成功
+2023-08-04 14:35:37,529 test_mypage_multi.py [line:390] INFO ===我的页面-关注列表===
+2023-08-04 14:35:52,996 test_mypage_multi.py [line:408] INFO 断言成功
+2023-08-04 14:35:52,998 test_mypage_multi.py [line:434] INFO ===我的页面-关注头像===
+2023-08-04 14:35:52,998 test_mypage_multi.py [line:437] INFO ===我的页面-关注头像人数不为0===
+2023-08-04 14:36:29,008 test_mypage_multi.py [line:444] INFO 断言成功
+2023-08-04 14:36:29,011 test_mypage_multi.py [line:467] INFO ===我的页面-朋友===
+2023-08-04 14:36:33,109 test_mypage_multi.py [line:478] INFO 有朋友，断言成功
+2023-08-04 14:36:33,118 test_mypage_multi.py [line:496] INFO ===我的页面-朋友列表===
+2023-08-04 14:36:42,164 test_mypage_multi.py [line:513] INFO 断言成功
+2023-08-04 14:36:42,166 test_mypage_multi.py [line:538] INFO ===我的页面-朋友头像===
+2023-08-04 14:36:42,166 test_mypage_multi.py [line:541] INFO ===我的页面-朋友头像人数不为0===
+2023-08-04 14:36:50,093 test_mypage_multi.py [line:548] INFO 断言成功
+2023-08-04 14:36:50,096 test_mypage_multi.py [line:571] INFO ===我的页面-男-签到入口===
+2023-08-04 14:37:15,192 test_mypage_multi.py [line:585] INFO 断言成功
+2023-08-04 14:37:15,195 test_mypage_multi.py [line:607] INFO ===我的页面-男-去签到-跳转页面===
+2023-08-04 14:37:57,132 test_mypage_multi.py [line:628] INFO ===断言失败===
+2023-08-04 14:37:57,798 test_mypage_multi.py [line:630] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-男-去签到-跳转页面_2023-08-04 14_37_57.png
+2023-08-04 14:37:58,080 test_mypage_multi.py [line:645] INFO ===我的页面-女-签到入口===
+2023-08-04 14:38:14,692 test_mypage_multi.py [line:659] INFO 断言成功
+2023-08-04 14:38:14,694 test_mypage_multi.py [line:682] INFO ===我的页面-女-去签到-跳转页面===
+2023-08-04 14:38:47,208 test_mypage_multi.py [line:710] INFO ===断言失败===
+2023-08-04 14:38:48,136 test_mypage_multi.py [line:712] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-女-去签到-跳转页面_2023-08-04 14_38_47.png
+2023-08-04 17:28:31,361 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 17:28:31,363 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 17:28:50,036 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 17:28:50,037 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 17:29:08,221 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 17:29:14,657 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 17:29:19,231 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 17:29:20,874 multiMypage_man.py [line:1669] INFO ===查找等级外部显示lvx===
+2023-08-04 17:29:20,952 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 17:29:21,053 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 17:30:09,455 test_mypage_multi.py [line:2347] INFO ===执行失败===
+2023-08-04 17:30:10,187 test_mypage_multi.py [line:2349] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 17_30_09.png
+2023-08-04 17:30:10,536 test_mypage_multi.py [line:2357] INFO ===我的等级-男-立即充值===
+2023-08-04 17:31:26,525 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 17:31:26,527 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 17:31:44,355 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 17:31:44,361 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 17:32:02,593 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 17:32:07,990 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 17:32:12,386 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 17:32:14,005 multiMypage_man.py [line:1669] INFO ===查找等级外部显示lvx===
+2023-08-04 17:32:14,108 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 17:32:14,346 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 17:32:49,029 test_mypage_multi.py [line:2338] INFO ===执行失败===
+2023-08-04 17:32:49,769 test_mypage_multi.py [line:2340] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 17_32_49.png
+2023-08-04 17:32:50,114 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-04 17:34:04,630 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 17:34:04,632 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 17:34:22,247 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 17:34:22,268 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 17:34:40,403 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 17:34:45,485 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 17:34:49,810 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 17:34:52,048 multiMypage_man.py [line:1669] INFO ===查找等级外部显示lvx===
+2023-08-04 17:34:52,136 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 17:34:52,229 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 17:35:19,097 test_mypage_multi.py [line:2338] INFO ===执行失败===
+2023-08-04 17:35:19,810 test_mypage_multi.py [line:2340] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 17_35_19.png
+2023-08-04 17:35:20,174 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-04 17:38:32,459 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 17:38:32,461 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 17:38:50,510 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 17:38:50,527 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 17:39:08,662 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 17:39:13,910 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 17:39:18,061 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 17:39:19,081 multiMypage_man.py [line:1668] INFO ===查找等级外部显示lvx===
+2023-08-04 17:39:19,783 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 17:39:19,919 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 17:39:30,275 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-04 17:39:32,277 test_mypage_multi.py [line:2332] INFO ===断言失败===
+2023-08-04 17:39:32,868 test_mypage_multi.py [line:2334] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 17_39_32.png
+2023-08-04 17:39:33,182 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-04 17:39:34,692 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 17:39:45,180 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-04 17:39:55,644 test_mypage_multi.py [line:2385] INFO ===执行失败===
+2023-08-04 17:39:56,215 test_mypage_multi.py [line:2387] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-男-立即充值_2023-08-04 17_39_55.png
+2023-08-04 17:39:56,228 test_mypage_multi.py [line:2395] INFO ===我的等级-等级横条===
+2023-08-04 17:39:56,228 test_mypage_multi.py [line:2452] INFO ===执行失败===
+2023-08-04 17:39:56,826 test_mypage_multi.py [line:2454] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-等级横条_2023-08-04 17_39_56.png
+2023-08-04 17:41:31,146 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 17:41:31,148 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 17:41:49,757 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 17:41:49,774 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 17:42:07,913 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 17:42:14,456 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 17:42:18,841 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 17:42:19,831 multiMypage_man.py [line:1668] INFO ===查找等级外部显示lvx===
+2023-08-04 17:42:20,514 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 17:42:20,617 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 17:42:31,143 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-04 17:42:33,144 test_mypage_multi.py [line:2333] INFO ===断言失败===
+2023-08-04 17:42:33,773 test_mypage_multi.py [line:2335] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 17_42_33.png
+2023-08-04 17:42:34,045 test_mypage_multi.py [line:2349] INFO ===我的等级-男-立即充值===
+2023-08-04 17:42:34,967 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 17:43:23,098 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 17:43:23,100 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 17:43:41,164 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 17:43:41,166 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 17:43:54,280 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 17:43:59,570 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 17:44:04,225 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 17:44:05,146 multiMypage_man.py [line:1668] INFO ===查找等级外部显示lvx===
+2023-08-04 17:44:05,982 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 17:44:06,086 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 17:44:16,546 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-04 17:44:18,547 test_mypage_multi.py [line:2333] INFO ===断言失败===
+2023-08-04 17:44:19,097 test_mypage_multi.py [line:2335] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 17_44_18.png
+2023-08-04 17:44:19,385 test_mypage_multi.py [line:2349] INFO ===我的等级-男-立即充值===
+2023-08-04 17:45:18,401 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 17:45:18,402 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 17:45:36,341 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 17:45:36,346 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 17:45:49,494 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 17:45:53,811 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 17:45:58,521 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 17:45:59,913 multiMypage_man.py [line:1668] INFO ===查找等级外部显示lvx===
+2023-08-04 17:46:00,597 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 17:46:00,706 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 17:46:03,195 test_mypage_multi.py [line:2333] INFO ===断言失败===
+2023-08-04 17:46:03,818 test_mypage_multi.py [line:2335] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 17_46_03.png
+2023-08-04 17:46:04,085 test_mypage_multi.py [line:2349] INFO ===我的等级-男-立即充值===
+2023-08-04 17:49:13,397 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 17:49:13,399 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 17:49:31,467 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 17:49:31,493 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 17:49:44,059 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 17:49:52,123 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 17:49:56,359 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 17:49:57,359 multiMypage_man.py [line:1668] INFO ===查找等级外部显示lvx===
+2023-08-04 17:49:58,061 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 17:49:58,198 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 17:50:00,687 test_mypage_multi.py [line:2333] INFO ===断言失败===
+2023-08-04 17:50:01,306 test_mypage_multi.py [line:2335] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 17_50_00.png
+2023-08-04 17:50:01,578 test_mypage_multi.py [line:2349] INFO ===我的等级-男-立即充值===
+2023-08-04 17:51:24,900 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 17:51:24,903 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 17:51:43,361 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 17:51:43,362 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 17:51:55,999 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 17:52:00,520 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 17:52:04,653 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 17:52:05,613 multiMypage_man.py [line:1668] INFO ===查找等级外部显示lvx===
+2023-08-04 17:52:06,301 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 17:52:06,416 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 17:52:08,904 test_mypage_multi.py [line:2333] INFO ===断言失败===
+2023-08-04 17:52:09,512 test_mypage_multi.py [line:2335] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 17_52_08.png
+2023-08-04 17:52:09,778 test_mypage_multi.py [line:2349] INFO ===我的等级-男-立即充值===
+2023-08-04 17:59:02,603 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 17:59:02,605 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 17:59:20,433 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 17:59:20,434 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 17:59:38,602 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 17:59:44,509 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 17:59:49,255 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 17:59:50,840 multiMypage_man.py [line:1669] INFO ===查找等级外部显示lvx===
+2023-08-04 17:59:50,958 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 17:59:51,104 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 18:00:17,921 test_mypage_multi.py [line:2338] INFO ===执行失败===
+2023-08-04 18:00:18,687 test_mypage_multi.py [line:2340] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 18_00_17.png
+2023-08-04 18:00:19,019 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-04 18:01:10,932 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 18:01:10,934 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 18:01:29,259 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 18:01:29,262 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 18:01:42,297 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 18:01:47,837 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 18:01:52,056 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 18:01:54,130 multiMypage_man.py [line:1669] INFO ===查找等级外部显示lvx===
+2023-08-04 18:01:54,252 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 18:01:54,396 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 18:02:21,856 test_mypage_multi.py [line:2338] INFO ===执行失败===
+2023-08-04 18:02:22,455 test_mypage_multi.py [line:2340] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 18_02_21.png
+2023-08-04 18:02:22,818 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-04 18:02:59,373 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 18:02:59,376 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 18:03:17,400 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 18:03:17,402 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 18:03:30,547 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 18:03:35,192 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 18:03:39,568 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 18:03:40,629 multiMypage_man.py [line:1669] INFO ===查找等级外部显示lvx===
+2023-08-04 18:03:41,742 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 18:03:41,835 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 18:03:52,021 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-04 18:04:02,680 multiMypage_man.py [line:1737] INFO no level_title
+2023-08-04 18:04:02,680 test_mypage_multi.py [line:2332] INFO ===断言失败===
+2023-08-04 18:04:03,245 test_mypage_multi.py [line:2334] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 18_04_02.png
+2023-08-04 18:04:03,531 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-04 18:05:16,010 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-04 18:05:16,013 desired_caps_man.py [line:37] INFO start app......
+2023-08-04 18:05:32,571 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-04 18:05:32,576 desired_caps_woman.py [line:37] INFO start app......
+2023-08-04 18:05:45,687 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-04 18:05:50,924 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-04 18:05:55,328 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-04 18:05:56,312 multiMypage_man.py [line:1669] INFO ===查找等级外部显示lvx===
+2023-08-04 18:05:56,954 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-04 18:05:57,063 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-04 18:06:22,819 test_mypage_multi.py [line:2338] INFO ===执行失败===
+2023-08-04 18:06:23,483 test_mypage_multi.py [line:2340] INFO 截图成功，图片为D:\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-04 18_06_22.png
+2023-08-04 18:06:23,845 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-06 22:57:39,414 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 22:57:39,418 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 22:58:09,826 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 22:58:09,829 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:01:54,584 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 23:01:54,589 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:03:55,014 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 23:03:55,017 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:04:12,357 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-06 23:04:19,244 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 23:04:19,247 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:04:35,951 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-06 23:04:48,627 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 23:04:48,630 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:05:05,259 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-06 23:06:54,469 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 23:06:54,473 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:07:11,332 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-06 23:07:11,343 desired_caps_woman.py [line:37] INFO start app......
+2023-08-06 23:07:45,124 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-06 23:07:56,212 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-06 23:07:59,998 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-06 23:08:01,732 multiMypage_man.py [line:1669] INFO ===查找等级外部显示lvx===
+2023-08-06 23:08:02,397 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-06 23:08:02,531 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:08:08,790 test_mypage_multi.py [line:2338] INFO ===执行失败===
+2023-08-06 23:08:09,515 test_mypage_multi.py [line:2340] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-06 23_08_08.png
+2023-08-06 23:08:09,967 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-06 23:08:20,798 multiMypage_man.py [line:873] INFO no tab_mine_btn
+2023-08-06 23:08:20,799 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:08:31,013 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-06 23:08:41,174 test_mypage_multi.py [line:2385] INFO ===执行失败===
+2023-08-06 23:08:41,863 test_mypage_multi.py [line:2387] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-男-立即充值_2023-08-06 23_08_41.png
+2023-08-06 23:08:41,880 test_mypage_multi.py [line:2395] INFO ===我的等级-等级横条===
+2023-08-06 23:08:41,881 test_mypage_multi.py [line:2452] INFO ===执行失败===
+2023-08-06 23:08:42,495 test_mypage_multi.py [line:2454] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-等级横条_2023-08-06 23_08_41.png
+2023-08-06 23:11:36,685 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 23:11:36,689 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:11:53,887 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-06 23:11:53,893 desired_caps_woman.py [line:37] INFO start app......
+2023-08-06 23:12:06,458 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-06 23:12:15,874 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-06 23:12:22,548 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-06 23:12:24,069 multiMypage_man.py [line:1670] INFO ===查找等级外部显示lvx===
+2023-08-06 23:12:24,147 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-06 23:12:24,253 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:12:24,594 multiMypage_man.py [line:1663] INFO 已经点击
+2023-08-06 23:12:29,960 test_mypage_multi.py [line:2338] INFO ===执行失败===
+2023-08-06 23:12:30,585 test_mypage_multi.py [line:2340] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-06 23_12_29.png
+2023-08-06 23:12:30,911 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-06 23:12:41,663 multiMypage_man.py [line:873] INFO no tab_mine_btn
+2023-08-06 23:12:41,663 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:12:52,495 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-06 23:13:02,664 test_mypage_multi.py [line:2385] INFO ===执行失败===
+2023-08-06 23:13:03,315 test_mypage_multi.py [line:2387] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-男-立即充值_2023-08-06 23_13_02.png
+2023-08-06 23:13:03,331 test_mypage_multi.py [line:2395] INFO ===我的等级-等级横条===
+2023-08-06 23:13:03,331 test_mypage_multi.py [line:2452] INFO ===执行失败===
+2023-08-06 23:13:03,974 test_mypage_multi.py [line:2454] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-等级横条_2023-08-06 23_13_03.png
+2023-08-06 23:15:11,013 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 23:15:11,017 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:15:28,150 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-06 23:15:28,156 desired_caps_woman.py [line:37] INFO start app......
+2023-08-06 23:15:40,230 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-06 23:15:52,697 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-06 23:15:56,575 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-06 23:15:57,490 multiMypage_man.py [line:1670] INFO ===查找等级外部显示lvx===
+2023-08-06 23:15:58,198 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-06 23:15:58,339 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:15:59,007 multiMypage_man.py [line:1663] INFO 已经点击
+2023-08-06 23:16:02,008 test_mypage_multi.py [line:2338] INFO ===执行失败===
+2023-08-06 23:16:02,638 test_mypage_multi.py [line:2340] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-06 23_16_02.png
+2023-08-06 23:16:02,887 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-06 23:16:13,770 multiMypage_man.py [line:873] INFO no tab_mine_btn
+2023-08-06 23:16:13,770 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:16:24,014 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-06 23:16:34,179 test_mypage_multi.py [line:2385] INFO ===执行失败===
+2023-08-06 23:16:34,810 test_mypage_multi.py [line:2387] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-男-立即充值_2023-08-06 23_16_34.png
+2023-08-06 23:16:34,824 test_mypage_multi.py [line:2395] INFO ===我的等级-等级横条===
+2023-08-06 23:16:34,825 test_mypage_multi.py [line:2452] INFO ===执行失败===
+2023-08-06 23:16:35,465 test_mypage_multi.py [line:2454] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-等级横条_2023-08-06 23_16_34.png
+2023-08-06 23:17:01,550 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 23:17:01,553 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:17:18,828 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-06 23:17:18,830 desired_caps_woman.py [line:37] INFO start app......
+2023-08-06 23:17:30,358 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-06 23:17:40,620 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-06 23:17:50,232 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-06 23:17:51,658 multiMypage_man.py [line:1670] INFO ===查找等级外部显示lvx===
+2023-08-06 23:17:52,326 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-06 23:17:52,502 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:17:52,775 multiMypage_man.py [line:1663] INFO 已经点击
+2023-08-06 23:18:05,943 multiMypage_man.py [line:1738] INFO no level_title
+2023-08-06 23:18:05,943 test_mypage_multi.py [line:2332] INFO ===断言失败===
+2023-08-06 23:18:06,658 test_mypage_multi.py [line:2334] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-06 23_18_05.png
+2023-08-06 23:18:06,924 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-06 23:18:17,925 multiMypage_man.py [line:873] INFO no tab_mine_btn
+2023-08-06 23:18:17,926 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:18:28,164 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-06 23:18:38,342 test_mypage_multi.py [line:2385] INFO ===执行失败===
+2023-08-06 23:18:39,028 test_mypage_multi.py [line:2387] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-男-立即充值_2023-08-06 23_18_38.png
+2023-08-06 23:18:39,044 test_mypage_multi.py [line:2395] INFO ===我的等级-等级横条===
+2023-08-06 23:18:39,045 test_mypage_multi.py [line:2452] INFO ===执行失败===
+2023-08-06 23:18:39,712 test_mypage_multi.py [line:2454] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-等级横条_2023-08-06 23_18_39.png
+2023-08-06 23:20:18,095 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 23:20:18,098 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:20:35,299 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-06 23:20:35,305 desired_caps_woman.py [line:37] INFO start app......
+2023-08-06 23:20:46,965 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-06 23:21:06,126 test_mypage_multi.py [line:94] INFO ===执行失败===
+2023-08-06 23:21:07,431 test_mypage_multi.py [line:96] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的页面-个人头像-个人主页_2023-08-06 23_21_06.png
+2023-08-06 23:21:07,708 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-06 23:21:18,035 multiMypage_man.py [line:873] INFO no tab_mine_btn
+2023-08-06 23:21:18,035 multiMypage_man.py [line:1671] INFO ===查找等级外部显示lvx===
+2023-08-06 23:21:28,124 multiMypage_man.py [line:1675] INFO no my_vipLevel_UpLevelImgManAll
+2023-08-06 23:21:28,124 test_mypage_multi.py [line:2321] INFO ===我的等外部显示为0===
+2023-08-06 23:21:38,241 test_mypage_multi.py [line:2338] INFO ===执行失败===
+2023-08-06 23:21:39,522 test_mypage_multi.py [line:2340] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-06 23_21_38.png
+2023-08-06 23:21:39,585 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-06 23:21:50,211 multiMypage_man.py [line:873] INFO no tab_mine_btn
+2023-08-06 23:21:50,211 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:22:00,329 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-06 23:22:10,436 test_mypage_multi.py [line:2385] INFO ===执行失败===
+2023-08-06 23:22:11,696 test_mypage_multi.py [line:2387] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-男-立即充值_2023-08-06 23_22_10.png
+2023-08-06 23:22:11,714 test_mypage_multi.py [line:2395] INFO ===我的等级-等级横条===
+2023-08-06 23:22:11,715 test_mypage_multi.py [line:2452] INFO ===执行失败===
+2023-08-06 23:22:12,947 test_mypage_multi.py [line:2454] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-等级横条_2023-08-06 23_22_11.png
+2023-08-06 23:36:06,486 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 23:36:06,488 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:36:23,681 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-06 23:36:23,685 desired_caps_woman.py [line:37] INFO start app......
+2023-08-06 23:36:36,903 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-06 23:36:52,804 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-06 23:36:59,548 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-06 23:37:01,029 multiMypage_man.py [line:1671] INFO ===查找等级外部显示lvx===
+2023-08-06 23:37:01,127 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-06 23:37:01,247 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:37:01,740 multiMypage_man.py [line:1663] INFO 已经点击
+2023-08-06 23:37:06,840 test_mypage_multi.py [line:2338] INFO ===执行失败===
+2023-08-06 23:37:07,498 test_mypage_multi.py [line:2340] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-06 23_37_06.png
+2023-08-06 23:37:07,856 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-06 23:37:18,729 multiMypage_man.py [line:873] INFO no tab_mine_btn
+2023-08-06 23:37:18,730 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:37:28,991 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-06 23:37:39,660 test_mypage_multi.py [line:2385] INFO ===执行失败===
+2023-08-06 23:37:40,299 test_mypage_multi.py [line:2387] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-男-立即充值_2023-08-06 23_37_39.png
+2023-08-06 23:37:40,314 test_mypage_multi.py [line:2395] INFO ===我的等级-等级横条===
+2023-08-06 23:37:40,314 test_mypage_multi.py [line:2452] INFO ===执行失败===
+2023-08-06 23:37:40,984 test_mypage_multi.py [line:2454] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-等级横条_2023-08-06 23_37_40.png
+2023-08-06 23:46:24,801 mypage_multi_Start_End.py [line:12] INFO ===男用户端启动app===
+2023-08-06 23:46:24,804 desired_caps_man.py [line:37] INFO start app......
+2023-08-06 23:46:42,046 mypage_multi_Start_End.py [line:18] INFO ===女用户端启动app===
+2023-08-06 23:46:42,051 desired_caps_woman.py [line:37] INFO start app......
+2023-08-06 23:46:54,356 test_mypage_multi.py [line:37] INFO ===我的页面-个人头像-个人主页===
+2023-08-06 23:47:04,015 test_mypage_multi.py [line:48] INFO 断言成功
+2023-08-06 23:47:10,219 test_mypage_multi.py [line:2309] INFO ===我的等级-我的等级外部显示和内部跳转===
+2023-08-06 23:47:11,101 multiMypage_man.py [line:1671] INFO ===查找等级外部显示lvx===
+2023-08-06 23:47:11,864 test_mypage_multi.py [line:2313] ERROR ===我的等级外部显示不为0===
+2023-08-06 23:47:11,981 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:47:12,280 multiMypage_man.py [line:1663] INFO 已经点击
+2023-08-06 23:47:17,390 test_mypage_multi.py [line:2338] INFO ===执行失败===
+2023-08-06 23:47:18,090 test_mypage_multi.py [line:2340] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级外部显示和内部跳转_2023-08-06 23_47_17.png
+2023-08-06 23:47:18,421 test_mypage_multi.py [line:2348] INFO ===我的等级-男-立即充值===
+2023-08-06 23:47:29,618 multiMypage_man.py [line:873] INFO no tab_mine_btn
+2023-08-06 23:47:29,618 multiMypage_man.py [line:1656] INFO ===开始点击我的等级===
+2023-08-06 23:47:39,827 multiMypage_man.py [line:1660] INFO no my_vipLevel_entryRightClick
+2023-08-06 23:47:50,016 test_mypage_multi.py [line:2385] INFO ===执行失败===
+2023-08-06 23:47:50,696 test_mypage_multi.py [line:2387] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-男-立即充值_2023-08-06 23_47_50.png
+2023-08-06 23:47:50,714 test_mypage_multi.py [line:2395] INFO ===我的等级-等级横条===
+2023-08-06 23:47:50,714 test_mypage_multi.py [line:2452] INFO ===执行失败===
+2023-08-06 23:47:51,391 test_mypage_multi.py [line:2454] INFO 截图成功，图片为D:\chamet-mypage\chamet_mypage_multi_testProject\common../../screenshots/my_page/我的等级-等级横条_2023-08-06 23_47_50.png

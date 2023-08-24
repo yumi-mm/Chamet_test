@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:4843 ===我的余额-free入口===
+[32mINFO    [0m root:test_mypage_multi.py:4857 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:4859 截图成功，图片为D:\chamet_mypage_multi_testProject-8.18\common../../screenshots/my_page/我的余额-free入口_2023-08-21 17_09_34.png

@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:1600 ===留言-一对一-更多相机===
+[32mINFO    [0m root:multiMypage_man.py:1629 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_mypage_multi.py:1608 ===断言成功，发送相机照片成功===
+[32mINFO    [0m root:test_mypage_multi.py:1612 ===断言成功，成功收到相机照片===

@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:4281 ===我的简介-性别===
+[32mINFO    [0m root:multiMypage_man.py:1031 no tab_mine_btn
+[32mINFO    [0m root:test_mypage_multi.py:4298 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:4300 截图成功，图片为D:\chamet_mypage_multi_testProject-8.18\common../../screenshots/my_page/我的简介-男女-性别_2023-08-21 18_02_47.png

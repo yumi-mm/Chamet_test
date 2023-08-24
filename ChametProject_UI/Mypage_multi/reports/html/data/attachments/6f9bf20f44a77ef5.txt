@@ -1,0 +1,14 @@
+INFO     root:my_page_py_startend.py:26 ===setUp===
+INFO     root:desired_caps.py:47 start app......
+INFO     root:common_fun.py:33 ================check_perB=====================
+INFO     root:common_fun.py:38 no perbtn
+INFO     root:login_phoneView.py:32 ================点击更多=====================
+INFO     root:login_phoneView.py:37 no more_btn
+INFO     root:login_phoneView.py:97 ================点击手机号登录=====================
+INFO     root:login_phoneView.py:102 no phonenumber_btn
+INFO     root:login_phoneView.py:123 ================输入手机号码=====================
+INFO     root:login_phoneView.py:125 手机号码是：4086222
+INFO     root:login_phoneView.py:150 已输入账号，开始点击下一步
+INFO     root:login_phoneView.py:160 账号不正确或未选择国家
+ERROR    root:login_phoneView.py:267 账号问题，未走进下一步
+INFO     root:test_mypage.py:21 ===我的页面-个人头像-个人主页===

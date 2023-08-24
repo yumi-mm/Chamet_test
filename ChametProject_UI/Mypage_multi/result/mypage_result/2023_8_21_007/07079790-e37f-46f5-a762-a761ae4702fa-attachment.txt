@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:4194 ===我的简介-ID===
+[32mINFO    [0m root:test_mypage_multi.py:4200 ===断言成功===

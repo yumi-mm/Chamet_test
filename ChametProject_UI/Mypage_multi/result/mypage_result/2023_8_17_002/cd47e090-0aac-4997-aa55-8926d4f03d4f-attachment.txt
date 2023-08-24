@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_mypage_multi.py:1924 ===留言-群聊消息-上麦===
+[32mINFO    [0m root:multiMypage_man.py:1354 权限弹窗，是否允许？
+[32mINFO    [0m root:multiMypage_man.py:1367 权限弹窗，是否允许？
+[32mINFO    [0m root:test_mypage_multi.py:1944 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:1946 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/留言-群聊消息-上麦_2023-08-17 15_21_53.png

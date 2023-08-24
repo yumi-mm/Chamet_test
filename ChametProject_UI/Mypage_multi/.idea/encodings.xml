@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/.pytest_cache" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/baseView" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/businessView" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/businessView/my_page.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/businessView/registView.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/encrypt-decrypt.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/mypage_multi/desired_caps_man.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/mypage_multi/desired_caps_woman.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/mypage_multi/multiMypage_man.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/mypage_multi/multiMypage_woman.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common/mypage_multi/mypage_common_fun.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/common/mypage_multi/mypage_multi_Start_End.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/caps_85phone.yaml.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/log_conf.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/multi_mapage_config/log_config.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/multi_mapage_config/multi_mypage_man114.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config/multi_mapage_config/multi_mypage_woman85.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/account.csv" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/logs" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/logs/runlog.log" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/reports" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/result" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/screenshots" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_case" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_case/__init__.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_case/test_login.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_case/test_mypage.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_case/test_mypage_multi.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_case/test_mypage_unnittest.py" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_run" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_run/run.py" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

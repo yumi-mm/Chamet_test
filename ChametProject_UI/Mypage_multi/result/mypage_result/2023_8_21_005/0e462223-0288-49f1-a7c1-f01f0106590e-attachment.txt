@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:4733 ===我的简介-Gmail===
+[32mINFO    [0m root:test_mypage_multi.py:4742 ===断言成功===

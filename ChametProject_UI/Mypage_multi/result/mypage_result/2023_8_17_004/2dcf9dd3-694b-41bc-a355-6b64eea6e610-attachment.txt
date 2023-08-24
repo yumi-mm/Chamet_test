@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:4983 ===我的页面-设置-黑名单===
+[32mINFO    [0m root:multiMypage_man.py:1020 no tab_mine_btn
+[32mINFO    [0m root:test_mypage_multi.py:5015 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:5017 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/我的页面-设置-黑名单_2023-08-17 17_12_28.png

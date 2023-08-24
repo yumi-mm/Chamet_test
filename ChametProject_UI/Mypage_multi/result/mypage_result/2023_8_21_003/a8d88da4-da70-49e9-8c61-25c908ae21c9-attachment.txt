@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:5008 ===我的页面-设置===
+[32mINFO    [0m root:test_mypage_multi.py:5016 ===断言成功===

@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:1777 ===留言-群聊消息-发言===
+[32mINFO    [0m root:test_mypage_multi.py:1786 ===断言成功===

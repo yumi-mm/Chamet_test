@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:4927 ===我的余额-充值档位-more===
+[32mINFO    [0m root:test_mypage_multi.py:4936 ===断言成功===

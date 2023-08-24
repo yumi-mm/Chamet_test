@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:4365 ===我的简介-定位===
+[32mINFO    [0m root:test_mypage_multi.py:4368 ===我的简介-定位有显示===
+[32mINFO    [0m root:test_mypage_multi.py:4372 ===断言成功===

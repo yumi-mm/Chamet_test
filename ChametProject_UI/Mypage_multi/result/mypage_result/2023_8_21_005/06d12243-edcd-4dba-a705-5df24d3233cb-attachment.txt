@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:3753 ===我的邀请-男-问号按钮===
+[32mINFO    [0m root:test_mypage_multi.py:3755 ===问号按钮===
+[32mINFO    [0m root:test_mypage_multi.py:3760 ===断言成功===

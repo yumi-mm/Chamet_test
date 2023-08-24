@@ -1,0 +1,9 @@
+[32mINFO    [0m root:test_mypage_multi.py:2423 ===留言-群聊消息-群组封面===
+[32mINFO    [0m root:multiMypage_man.py:2024 ===群聊信息-头像状态===
+[32mINFO    [0m root:multiMypage_man.py:2036 ===群聊信息-头像点击-从相册选择ele===
+[32mINFO    [0m root:test_mypage_multi.py:2431 ===群主-断言成功===
+[32mINFO    [0m root:multiMypage_woman.py:2024 ===群聊信息-头像状态===
+[32mINFO    [0m root:multiMypage_woman.py:2028 no messages_Group_MoreGroupHeadPic_picStatus
+[32mINFO    [0m root:multiMypage_woman.py:2036 ===群聊信息-头像点击-从相册选择ele===
+[32mINFO    [0m root:multiMypage_woman.py:2040 no messages_Group_MoreGroupHeadPic_Change
+[32mINFO    [0m root:test_mypage_multi.py:2437 ===群成员-断言成功===

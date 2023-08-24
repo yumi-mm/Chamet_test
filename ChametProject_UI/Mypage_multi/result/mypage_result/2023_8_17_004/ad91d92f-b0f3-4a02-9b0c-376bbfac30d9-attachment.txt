@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_mypage_multi.py:1876 ===留言-群聊消息-图片信息===
+[32mINFO    [0m root:multiMypage_man.py:1847 ===发送照片===
+[32mINFO    [0m root:multiMypage_man.py:1852 ===发送相册照片===
+[32mINFO    [0m root:multiMypage_man.py:1836 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_mypage_multi.py:1881 ===断言成功，成功发送相册图片===
+[32mINFO    [0m root:test_mypage_multi.py:1885 ===断言成功，成功收到相册图片===

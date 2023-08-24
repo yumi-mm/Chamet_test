@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:4984 ===我的余额-客服按钮===
+[32mINFO    [0m root:test_mypage_multi.py:4991 ===断言成功===

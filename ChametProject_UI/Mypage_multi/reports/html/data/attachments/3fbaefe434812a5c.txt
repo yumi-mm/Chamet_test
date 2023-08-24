@@ -1,0 +1,2 @@
+INFO     root:test_mypage.py:72 ===我的页面-等级===
+INFO     root:test_mypage.py:79 有等级-点击确认

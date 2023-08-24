@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:359 ===我的页面-关注===
+[32mINFO    [0m root:multiMypage_man.py:1029 no tab_mine_btn
+[32mINFO    [0m root:multiMypage_man.py:1162 no user_followingNumText
+[32mINFO    [0m root:test_mypage_multi.py:378 ===执行失败===

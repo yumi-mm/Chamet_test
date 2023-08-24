@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_mypage_multi.py:1460 ===留言-一对一-表情===
+[32mINFO    [0m root:multiMypage_man.py:1564 ===准备发送表情===
+[32mINFO    [0m root:multiMypage_man.py:1582 ===发送Chamet表情===
+[32mINFO    [0m root:multiMypage_man.py:1585 ===发送成功===
+[32mINFO    [0m root:multiMypage_man.py:1629 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_mypage_multi.py:1465 ===断言成功，发送chamet表情成功===
+[32mINFO    [0m root:test_mypage_multi.py:1469 ===断言成功，成功收到chamet表情===

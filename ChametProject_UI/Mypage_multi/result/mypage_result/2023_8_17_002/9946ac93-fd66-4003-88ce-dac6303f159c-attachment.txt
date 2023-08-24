@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:3146 ====我的任务-男-邀请入口'===
+[32mINFO    [0m root:test_mypage_multi.py:3164 ===执行失败===

@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:2912 ===我的等级-女-立即充值==
+[32mINFO    [0m root:multiMypage_woman.py:2682 click vip_level_level_goback already
+[32mINFO    [0m root:test_mypage_multi.py:2919 ===断言成功===

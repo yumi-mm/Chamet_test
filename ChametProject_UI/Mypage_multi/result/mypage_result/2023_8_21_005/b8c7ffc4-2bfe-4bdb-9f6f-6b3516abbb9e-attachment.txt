@@ -1,0 +1,8 @@
+[32mINFO    [0m root:test_mypage_multi.py:3877 ===我的打招呼-男女入口显示-进入显示===
+[32mINFO    [0m root:test_mypage_multi.py:3879 ===我的打招呼-女入口显示-进入显示===
+[32mINFO    [0m root:multiMypage_woman.py:3216 no MyGrWords_faceVerification_popoverAll
+[32mINFO    [0m root:multiMypage_woman.py:3227 no MyGrWords_edit_saveBtn
+[32mINFO    [0m root:test_mypage_multi.py:3902 ===我的打招呼-已通过真人检测，有消息记录===
+[32mINFO    [0m root:test_mypage_multi.py:3905 ===女用户-断言成功===
+[32mINFO    [0m root:test_mypage_multi.py:3907 ===我的打招呼-男女入口显示-进入显示===
+[32mINFO    [0m root:test_mypage_multi.py:3909 ===男用户-断言成功===

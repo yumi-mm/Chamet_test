@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:2360 ===留言-群聊消息-更多-动态-大图模式===
+[32mINFO    [0m root:test_mypage_multi.py:2363 ===没有动态元素===

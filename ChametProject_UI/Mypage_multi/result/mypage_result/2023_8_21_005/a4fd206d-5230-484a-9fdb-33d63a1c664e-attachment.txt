@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_mypage_multi.py:3283 ====我的任务-男-开通月卡'===
+[32mINFO    [0m root:multiMypage_man.py:2822 no MyTasks_rewards_TopUpMonthCard
+[32mINFO    [0m root:test_mypage_multi.py:3299 ===男用户没有充值月卡入口,已经开通完成===
+[32mINFO    [0m root:multiMypage_man.py:2833 no MyTasks_rewards_CongratsPopoverAwesomeBtn
+[31m[1mERROR   [0m root:test_mypage_multi.py:3306 ===断言成功===
