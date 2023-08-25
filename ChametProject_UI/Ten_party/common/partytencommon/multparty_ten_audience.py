@@ -300,20 +300,20 @@ class Multaudience(object):
         try:
             enterparty_car = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/special_effects_pic_bg")
             logging.info('===有进场座驾===')
-            return True
+            return False
         except:
             logging.info('===无进场座驾===')
-            return False
+            return True
 
     # 获取观众进场标签
     def enterparty_label(self):
         try:
             enterparty_label = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/special_effects_pic_bg")
             logging.info('===有进场标签===')
-            return True
+            return False
         except:
             logging.info('===无进场标签===')
-            return False
+            return True
 
     # 获取消息区最后一条文本消息
     def party_textmessage(self):
