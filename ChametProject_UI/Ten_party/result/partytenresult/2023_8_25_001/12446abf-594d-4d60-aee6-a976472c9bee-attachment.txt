@@ -1,0 +1,15 @@
+[32mINFO    [0m root:test_10party_mult.py:2985 ===用例134：主播端群聊页面送礼===
+[32mINFO    [0m root:multparty_ten_anchor.py:884 ===打开礼物页面===
+[32mINFO    [0m root:multparty_ten_anchor.py:938 ===送礼===
+[32mINFO    [0m root:multparty_ten_anchor.py:890 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:896 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multparty_ten_anchor.py:897 ===判断夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:890 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:896 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multparty_ten_anchor.py:897 ===判断夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:1097 ===判断有无充值优惠券===
+[32mINFO    [0m root:multparty_ten_anchor.py:1111 ===无优惠券===
+[32mINFO    [0m root:multparty_ten_anchor.py:873 ===判断有无夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:879 ===无夺宝弹窗===
+[32mINFO    [0m root:multparty_ten_anchor.py:980 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_10party_mult.py:2996 ===断言成功，主播群聊页面成功送礼===

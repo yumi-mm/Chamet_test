@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:1695 ===用例75：主播查看是否收到消息===
+[32mINFO    [0m root:multparty_ten_anchor.py:510 ===获取主播聊天区文本消息===
+[32mINFO    [0m root:test_10party_mult.py:1699 ===断言成功，成功发送文字===

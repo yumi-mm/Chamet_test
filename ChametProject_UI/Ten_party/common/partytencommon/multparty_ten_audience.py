@@ -6,12 +6,14 @@ from selenium.webdriver.support.ui import WebDriverWait
 from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver import ActionChains
 import logging
-import time, os
+import time
+import os
 import allure
 import pytest
 
 
 class Multaudience(object):
+    warning_message = (MobileBy.XPATH, "//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")
 
     def __init__(self, driver):
         self.driver = driver
@@ -426,7 +428,7 @@ class Multaudience(object):
     def audience_sendgift(self,gift_tab,gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("棒棒糖")').click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
         audience_sendgift_but = self.driver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/sendTv")
@@ -464,9 +466,17 @@ class Multaudience(object):
         audience_sendgift_but = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/sendTv")
         audience_sendgift_but.click()
         if self.rechargewindow_bysendgift() and self.rechargewindow_able():
-            self.rechargewindow_recharge()
-            self.audience_sendgift_bymessage("热门", "棒棒糖")
+            recharge = self.rechargewindow_recharge()
+            if recharge == True:
+                self.audience_sendgift_bymessage("热门", "棒棒糖")
+            else:
+                logging.info('===充值失败，跳过下方送礼断言用例。===')
+                return 0
         elif self.rechargewindow_bysendgift() and self.rechargewindow_able() == False:
+            self.back(2)
+            logging.info('===余额不足，设备无谷歌充值，跳过下方送礼断言用例。===')
+            return 0
+        elif self.rechargewindow_bysendgift() == False and self.rechargewindow_able() == False:
             self.back(2)
             logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
             return 0
@@ -876,6 +886,7 @@ class Multaudience(object):
         self.usermessage_camera_but()
         logging.info('===拍照发送===')
         try:
+            time.sleep(0.5)
             self.driver.find_element(MobileBy.ID,"com.oppo.camera:id/shutter_button").click()
             self.driver.find_element(MobileBy.ID,"com.oppo.camera:id/done_button").click()
             time.sleep(2)
@@ -916,13 +927,27 @@ class Multaudience(object):
             assert "用户没有回答" in get_usermessage_voicecontent
             logging.info('===断言成功，成功拨打电话===')
 
+    # 余额不足弹窗
+    def balance_win(self):
+        try:
+            a = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("余额不足")')
+        except:
+            return False
+        else:
+            return True
+
     # 观众端私聊页面拨打语音聊天
     def usermessage_video_but(self):
-        video_butele = (MobileBy.ANDROID_UIAUTOMATOR, 'text("视频聊天")')
+        video_butele = (MobileBy.ANDROID_UIAUTOMATOR, 'text("语音聊天")')
         video_but = self.driver.find_element(*video_butele)
         logging.info('===拨打语言聊天===')
         video_but.click()
-        self.not_available_win()
+        balance_win = self.balance_win()
+        if balance_win == True:
+            self.back(1)
+            logging.info('===拨打失败，用户余额不足===')
+        else:
+            self.not_available_win()
 
     # 观众端打开私聊送礼页面
     def audience_usermessage_open_giftpage(self):
@@ -1062,7 +1087,7 @@ class Multaudience(object):
     # 观众端打开消息列表
     def audienceopen_message(self):
         self.audienceopen_more()
-        message_but = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("留言")')
+        message_but = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("消息")')
         logging.info('===打开留言浮窗===')
         message_but.click()
 
@@ -1249,6 +1274,7 @@ class Multaudience(object):
         cameraphoto_choicebut.click()
         logging.info('===发送拍摄照片===')
         try:
+            time.sleep(2)
             self.driver.find_element(MobileBy.ID,"com.oppo.camera:id/shutter_button").click()
             time.sleep(0.5)
             self.driver.find_element(MobileBy.ID,"com.oppo.camera:id/done_button").click()
@@ -1324,7 +1350,7 @@ class Multaudience(object):
     def audience_groupmessage_sendgift(self,gift_tab,gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("棒棒糖")').click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
         self.driver.find_elements(MobileBy.ID, "com.hkfuliao.chamet:id/item_group_count_text")[0].click()
         # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
@@ -1381,10 +1407,10 @@ class Multaudience(object):
 
     # 观众进入游戏页面
     def audienceenter_game_window(self, game_type):
+        race_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_rank")
+        LuckyNumber_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_ln_wheel_mask")
         game_race_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("Chamet赛车")')
         game_LuckyNumber_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("幸运数字")')
-        race_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_rank")
-        LuckyNumber_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/rank")
         game_race = self.driver.find_element(*game_race_ele)
         game_LuckyNumber = self.driver.find_element(*game_LuckyNumber_ele)
         if game_type == "Chamet赛车":
@@ -1494,10 +1520,10 @@ class Multaudience(object):
             return True
 
     def get_anchorname(self):
-        anchorname = self.anchorname()
-        if anchorname:
+        # anchorname = self.anchorname()
+        try:
             new_anchorname = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/live_titletv").text
-        else:
+        except:
             new_anchorname = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/profile_name").text
         return new_anchorname
 

@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:838 ===用例37：主播端查看观众端送礼===
-[32mINFO    [0m root:test_10party_mult.py:854 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:856 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-08-24 17_49_23.png

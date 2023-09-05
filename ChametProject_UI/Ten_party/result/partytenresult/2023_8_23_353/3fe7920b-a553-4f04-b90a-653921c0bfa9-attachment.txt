@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:334 ===用例15：观众进入交友房进场座驾===
+[32mINFO    [0m root:multparty_ten_audience.py:306 ===无进场座驾===
+[32mINFO    [0m root:test_10party_mult.py:341 ===断言成功，不存在进场座驾===
+[32mINFO    [0m root:multparty_ten_audience.py:316 ===无进场标签===
+[32mINFO    [0m root:test_10party_mult.py:343 ===断言成功，不存在进场标签===

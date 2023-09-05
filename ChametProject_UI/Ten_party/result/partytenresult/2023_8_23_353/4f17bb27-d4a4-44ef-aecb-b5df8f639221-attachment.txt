@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:2114 ===用例95：主播检查是否收到相机照片===
+[32mINFO    [0m root:test_10party_mult.py:2119 ===断言成功，主播成功收到相机照片===

@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_10party_mult.py:2009 ===用例90：主播私聊界面发送相册照片===
+[32mINFO    [0m root:multparty_ten_anchor.py:660 ===展开下拉列表===
+[32mINFO    [0m root:multparty_ten_anchor.py:608 ===打开相册===
+[32mINFO    [0m root:multparty_ten_anchor.py:614 ===发送相册照片===
+[32mINFO    [0m root:multparty_ten_anchor.py:539 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_10party_mult.py:2015 ===断言成功，主播发送相册照片成功===

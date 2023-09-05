@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:865 ===用例38：观众端滑动送礼弹窗===
+[32mINFO    [0m root:multparty_ten_audience.py:349 ===获取礼物按钮===
+[32mINFO    [0m root:test_10party_mult.py:877 ===执行失败===
+[32mINFO    [0m root:test_10party_mult.py:879 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-09-04 13_46_52.png

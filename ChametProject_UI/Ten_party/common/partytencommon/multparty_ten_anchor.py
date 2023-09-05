@@ -1,3 +1,4 @@
+import self
 from appium.webdriver.common.mobileby import MobileBy
 from businessView.login_phoneView import LoginView
 from selenium.common.exceptions import NoSuchElementException
@@ -74,11 +75,10 @@ class Multanchor(object):
         except:
             logging.info('===签到执行失败===')
 
-
+    # 获取当前时间
     def getTime(self):
         self.now = time.strftime("%Y-%m-%d %H_%M_%S")
         return self.now
-
 
     # 失败截图
     def screenshot(self, module):
@@ -279,7 +279,7 @@ class Multanchor(object):
     def anchor_sendgift(self, gift_tab, gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("棒棒糖")').click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
         audience_sendgift_but = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/sendTv")
@@ -455,9 +455,12 @@ class Multanchor(object):
             cancelmute_guestbut = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("取消禁言")')
         except:
             logging.info('===不存在取消禁言按钮===')
+            return  False
         else:
             logging.info('===主播取消禁言===')
             cancelmute_guestbut.click()
+            return True
+
 
     # 主播打开右上角观众列表
     def open_audiencelist(self):
@@ -580,7 +583,7 @@ class Multanchor(object):
             google_expression_searchbut.click()
             time.sleep(1)
             google_expression_list = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout")
-            time.sleep(1)
+            time.sleep(0.5)
             google_expression_list[0].click()
         else:
             self.driver.find_elements(*usermessage_expression)[index].click()
@@ -620,6 +623,7 @@ class Multanchor(object):
                                       "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout")
         self.driver.find_elements(*usermessage_drop_down_list)[2].click()
         logging.info('===拍照发送===')
+        time.sleep(0.5)
         self.driver.find_element(MobileBy.XPATH,"//android.widget.LinearLayout[1]/android.widget.RelativeLayout[2]/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]").click()
         self.driver.find_element(MobileBy.ID,"com.huawei.camera:id/done_button").click()
         time.sleep(2)
@@ -693,7 +697,7 @@ class Multanchor(object):
 
     # 主播进入留言页面
     def anchorenter_messagewin(self):
-        partymessage = (MobileBy.ANDROID_UIAUTOMATOR, 'text("留言")')
+        partymessage = (MobileBy.ANDROID_UIAUTOMATOR, 'text("消息")')
         self.driver.find_element(*partymessage).click()
 
     # 判断有无群聊消息
@@ -933,7 +937,7 @@ class Multanchor(object):
     def groupmessage_send_gift(self,gift_tab,gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("棒棒糖")').click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
         # self.driver.find_elements(MobileBy.ID,"com.hkfuliao.chamet:id/item_group_count_text")[0].click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
@@ -1000,6 +1004,8 @@ class Multanchor(object):
 
     # 进入游戏页面
     def enter_game_window(self,game_type):
+        race_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_rank")
+        LuckyNumber_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_ln_wheel_mask")
         game_race_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("Chamet赛车")')
         game_LuckyNumber_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("幸运数字")')
         game_race = self.driver.find_element(*game_race_ele)
@@ -1008,10 +1014,13 @@ class Multanchor(object):
             logging.info('===进入赛车游戏===')
             game_race.click()
             time.sleep(5)
+            return self.driver.find_element(*race_rank)
         elif game_type == "幸运数字":
             logging.info('===进入幸运数字===')
             game_LuckyNumber.click()
-            time.sleep(3)
+            time.sleep(5)
+            wheel_mask = self.driver.find_element(*LuckyNumber_rank)
+            return wheel_mask
         else:
             logging.info('===游戏类型输入错误===')
             raise

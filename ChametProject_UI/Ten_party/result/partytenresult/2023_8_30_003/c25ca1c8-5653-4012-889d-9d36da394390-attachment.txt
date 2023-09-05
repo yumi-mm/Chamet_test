@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:2913 ===用例131：主播端群聊页面发送钻石包快速感谢语，观众端检查===
+[32mINFO    [0m root:test_10party_mult.py:2920 thank_text：❤️ Thanks! My friend!
+[32mINFO    [0m root:test_10party_mult.py:2921 audience_messageregion：@markd7fdeaqq ❤️ Thanks! My friend!
+[32mINFO    [0m root:test_10party_mult.py:2922 ===断言成功,观众成功收到主播发送的感谢语===

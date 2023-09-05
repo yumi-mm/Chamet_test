@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:2174 ===用例98：观众端左右滑动私聊礼物页面===
+[32mINFO    [0m root:multparty_ten_audience.py:931 ===打开私聊送礼页面===
+[32mINFO    [0m root:multparty_ten_audience.py:940 #####################
+[32mINFO    [0m root:test_10party_mult.py:2178 ===断言成功===

@@ -9,8 +9,6 @@ logging.config.fileConfig(log_file_path)
 logging = logging.getLogger()
 
 def audience_appium_desired():
-    # with open('C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\config\partytenconfig\mult_config_audience.py', 'r', encoding='utf-8') as file:
-    # with open('C:\\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\config\partytenconfig\mult_config_audience.py', 'r', encoding='utf-8') as file:
     audienceconfig_path = os.path.join(os.path.dirname(os.path.abspath(__file__)),'../../config/partytenconfig/mult_config_audience.py')
     with open(audienceconfig_path, 'r', encoding='utf-8') as file:
         data=yaml.load(file, Loader=yaml.FullLoader)

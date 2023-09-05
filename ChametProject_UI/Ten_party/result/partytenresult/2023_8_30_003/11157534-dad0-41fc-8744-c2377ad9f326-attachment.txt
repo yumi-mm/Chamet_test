@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_10party_mult.py:2681 ===用例120：观众端群聊页面发送相册图片===
+[32mINFO    [0m root:multparty_ten_audience.py:1255 ===发送照片===
+[32mINFO    [0m root:multparty_ten_audience.py:1260 ===发送相册照片===
+[32mINFO    [0m root:multparty_ten_audience.py:1183 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_10party_mult.py:2686 ===断言成功，成功发送相册图片===

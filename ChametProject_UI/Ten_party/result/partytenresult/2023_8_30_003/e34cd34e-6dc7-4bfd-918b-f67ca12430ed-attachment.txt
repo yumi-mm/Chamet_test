@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:1418 ===用例63：观众从主播个人主页小窗进入交友房===
+[32mINFO    [0m root:multparty_ten_audience.py:705 ===点击个人主页交友房小窗===
+[32mINFO    [0m root:multparty_ten_audience.py:662 ===获取交友房主播名称===
+[32mINFO    [0m root:test_10party_mult.py:1422 ===断言成功===
