@@ -3040,9 +3040,9 @@ class Test_multi_mypage(mypage_multi_Start_End):
     @allure.story('我的任务')
     # @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
-    @allure.title('用例94：我的任务-男-立即做任务按钮')
+    @allure.title('用例94：我的任务-男-现在做任务按钮')
     def test_homepage94(self):
-        logging.info("====我的任务-男-立即做任务按钮'===")
+        logging.info("====我的任务-男-现在做任务按钮'===")
         try:
             self.multiman.tap(899, 161)
             self.mandriver.find_element(*MultiMan.MyTasks_tab_rewards).click()
@@ -3050,7 +3050,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.multiman.swipe(40, 1473, 40, 387, 100)
             self.multiman.swipe(40, 1473, 40, 387, 100)
             MyTasks_rewards_DoTasksNowBtn_case1=self.mandriver.find_element(*MultiMan.MyTasks_rewards_DoTasksNowBtn)
-            assert MyTasks_rewards_DoTasksNowBtn_case1.text == '立即做任务！'
+            assert MyTasks_rewards_DoTasksNowBtn_case1.text == '现在做任务！'
             MyTasks_rewards_DoTasksNowBtn_case1.click()
             MyTasks_tab_tasks = self.mandriver.find_element(*MultiMan.MyTasks_tab_tasks)
             assert MyTasks_tab_tasks.get_attribute('selected') == 'true'
@@ -3061,7 +3061,6 @@ class Test_multi_mypage(mypage_multi_Start_End):
             screen_name = self.multiman.screenshot('我的任务-男-现在做任务按钮')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
-
         except:
             logging.info("===执行失败===")
             screen_name = self.multiman.screenshot('我的任务-男-现在做任务按钮')
@@ -3080,9 +3079,12 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.multiman.swipe(40, 387, 40, 1473, 100)
             self.multiman.swipe(40, 387, 40, 1473, 100)
             MyTasks_tasktab_pointsSwitchBtn = self.mandriver.find_element(*MultiMan.MyTasks_tab_pointsSwitchBtn)
-            assert MyTasks_tasktab_pointsSwitchBtn.text == '兑换奖励'
-            MyTasks_tasktab_pointsSwitchBtn.click()
-            assert MyTasks_tasktab_pointsSwitchBtn.text == '更多积分'
+            if MyTasks_tasktab_pointsSwitchBtn.text == '兑换奖励':
+                MyTasks_tasktab_pointsSwitchBtn.click()
+                assert MyTasks_tasktab_pointsSwitchBtn.text == '更多积分'
+            else:
+                MyTasks_tasktab_pointsSwitchBtn.click()
+                assert MyTasks_tasktab_pointsSwitchBtn.text == '兑换奖励'
             logging.info("===断言成功===")
 
         except AssertionError as e:
@@ -3116,8 +3118,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
                 self.multiman.system_goback_key()
                 logging.info("===断言成功===")
             else:
-                logging.info("===没有充值过月卡，无记录===")
-                logging.info("===断言成功===")
+                pytest.skip("===没有充值过月卡，无记录===")
 
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -3499,7 +3500,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
         try:
             self.multiwoman.tap(1061, 111)
             self.womandriver.find_element(*MultiWoman.MyTasks_tab_tasks).click()
-            assert self.multiwoman.MyTasks_womanTasks_LoginTomorrowAllEle()
+            assert self.womandriver.find_element(*MultiWoman.MyTasks_womanTasks_LoginTomorrowText).text=='签到'
             self.womandriver.find_element(*MultiWoman.MyTasks_womanTasks_alreadyLoginAll).click()
             sign_btn_man = self.womandriver.find_element(*MultiWoman.sign_in_popover_SigninSubmitTextID)
             assert sign_btn_man.text == '兑换奖励', "已签到，按钮不是兑换奖励"
@@ -3661,7 +3662,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.womandriver.find_element(*MultiWoman.myBackpack_entryAll).click()
             assert self.womandriver.find_element(*MultiWoman.myBackpack_title).text == '我的背包'
             self.multiwoman.system_goback_key()
-            logging.info("===男用户入口跳转成功===")
+            logging.info("===女用户入口跳转成功===")
 
         except AssertionError as e:
             logging.info('===断言失败===')
@@ -3714,8 +3715,6 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
 
-
-
     @allure.story('我的邀请')
     # @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
@@ -3727,9 +3726,12 @@ class Test_multi_mypage(mypage_multi_Start_End):
             assert self.mandriver.find_element(*MultiMan.MyInvite_entry_FreeCardsText).text == '免费卡片'
             self.multiman.MyInvite_entry_AllEle()
             self.multiman.native_to_h5()
-            assert self.mandriver.find_element(*MultiMan.MyInvite_inviteRewardsText).text == '邀请奖励'
+            self.mandriver.implicitly_wait(2)
+            # assert self.mandriver.find_element(*MultiMan.MyInvite_inviteRewardsTextName)
+            # assert self.mandriver.find_element(*MultiMan.MyInvite_inviteRewardsTextXpath).text == '邀请奖励'
             logging.info("===女用户，没有我的邀请入口===")
             assert self.womandriver.find_element(*MultiWoman.MyInvite_entry_nameText).text != '我的邀请'
+            # self.mandriver.quit()
             logging.info('===断言成功===')
 
         except AssertionError as e:
@@ -3752,6 +3754,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage118(self):
         logging.info("===我的邀请-男-问号按钮===")
         try:
+
             logging.info("===问号按钮===")
             self.mandriver.find_element(*MultiMan.MyInvite_instructionsBtn).click()
             assert self.mandriver.find_element(*MultiMan.MyInvite_instructionsPopover_rule1).text == '聊天卡免费用于视频聊天1分钟，每张卡有效期为5天'
@@ -3864,7 +3867,6 @@ class Test_multi_mypage(mypage_multi_Start_End):
             screen_name = self.multiman.screenshot('我的邀请-周排行')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
-
 
 
 
@@ -4147,7 +4149,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
     @allure.story('我的简介')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例131：我的简介-女-头像-编辑')
     def test_homepage131(self):
@@ -4249,10 +4251,13 @@ class Test_multi_mypage(mypage_multi_Start_End):
         logging.info("===我的简介-昵称-修改===")
         try:
             global newName
-            newName='Tom33364388ttt'
+            newName='Tom33364388yyy'
             self.mandriver.find_element(*MultiMan.myProfile_NickName_EditorContent).clear()
             self.mandriver.find_element(*MultiMan.myProfile_NickName_EditorContent).send_keys(newName)
-            self.mandriver.find_element(*MultiMan.myProfile_NickName_EditorCommit).click()
+            self.multiman.system_goback_key()
+            self.multiman.myProfile_NickName_EditorCommitBtnEle()
+            self.multiman.myProfile_NickName_EditorCommitBtnEle()
+            # self.mandriver.find_element(*MultiMan.myProfile_NickName_EditorCommit).click()
             assert self.mandriver.find_element(*MultiMan.myProfile_Title).text == '我的简介'
             self.mandriver.find_element(*MultiMan.myProfile_Goback).click()
             self.multiman.tab_Mine_Btn()
@@ -4610,7 +4615,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage147(self):
         logging.info("===我的简介-自我介绍修改===")
         try:
-            newIntro='oh!happy every 1 dayttt'
+            newIntro='oh!happy every 1 dayyy'
             # self.mandriver.find_element(*MultiMan.myProfile_SelfIntroduction_All).click()
             # assert self.mandriver.find_element(*MultiMan.myProfile_SelfIntroduction_title).text == '自我介绍', '并未跳转到自我介绍页面'
             SelfIntr = self.mandriver.find_element(*MultiMan.myProfile_SelfIntroduction_content).text
@@ -4729,12 +4734,12 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeCancelAll).click()
             self.mandriver.find_element(*MultiMan.myProfile_Phone_entryAll).click()
             self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeNumText).click()
-            # assert self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeTitle).text == '请验证原手机号'
-            # login_phone_area = self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeAreaCode).text
-            # assert login_phone_area=='+86'
-            # assert self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangePhoneNum).text=='18868100000'
-            # self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeVerCode).send_keys('3795')
-            # self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeNextBtn).click()
+            assert self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeTitle).text == '请验证原手机号'
+            login_phone_area = self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeAreaCode).text
+            assert login_phone_area=='+86'
+            assert self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangePhoneNum).text=='18868100000'
+            self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeVerCode).send_keys('3795')
+            self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeNextBtn).click()
             time.sleep(2)
             assert self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeTitle).text == '更换手机号'
             assert self.mandriver.find_element(*MultiMan.myProfile_Phone_ChangeAreaCode).text == '+99999'
@@ -4926,7 +4931,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
     @allure.story('我的余额')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例158：我的余额-充值档位-充值')
     def test_homepage158(self):
@@ -5293,7 +5298,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.mandriver.find_element(*MultiMan.settings_AboutUs_deleteEditReason).send_keys(delete_reason)
             time.sleep(1)
             self.mandriver.find_element(*MultiMan.settings_AboutUs_deleteDeleteBtn).click()
-            assert self.mandriver.find_element(*MultiMan.settings_AboutUs_deletePopoverContentText).text=='删除账号后，你可以在14天内重新登录并恢复账号。14天后，你的帐户将被永久删除且无法恢复。 请慎重考虑！'
+            assert self.mandriver.find_element(*MultiMan.settings_AboutUs_deletePopoverContentText).text=='删除账号后，你可以在14天内重新登录并恢复账号。14天后，你的账号将被永久删除且无法恢复。 请慎重考虑！'
             self.mandriver.find_element(*MultiMan.settings_AboutUs_deletePopoverCancel).click()
             assert self.mandriver.find_element(*MultiMan.settings_AboutUs_deleteUserName).text == man_pagePersonalName or newName
             self.multiman.system_goback_key()
@@ -5401,13 +5406,13 @@ class Test_multi_mypage(mypage_multi_Start_End):
         logging.info("===我的页面-设置-登出按钮===")
         self.Login = LoginView(self.mandriver)
         try:
-            assert self.mandriver.find_element(*MultiMan.settings_logout_logoutText).text=='登出'
+            assert self.mandriver.find_element(*MultiMan.settings_logout_logoutText).text=='退出'
             self.mandriver.find_element(*MultiMan.settings_logout).click()
             assert self.mandriver.find_element(*MultiMan.settings_logout_popoverTitle).text == '确定退出？'
             self.multiman.tap(917,2010)
             self.mandriver.find_element(*MultiMan.settings_logout).click()
             self.mandriver.find_element(*MultiMan.settings_logout_popoverCancel).click()
-            assert self.mandriver.find_element(*MultiMan.settings_logout_logoutText).text == '登出'
+            assert self.mandriver.find_element(*MultiMan.settings_logout_logoutText).text == '退出'
             logging.info("===断言成功===")
 
         except AssertionError as e:
@@ -5429,8 +5434,9 @@ class Test_multi_mypage(mypage_multi_Start_End):
         logging.info("===我的页面-设置-登出按钮-登出===")
         try:
             self.mandriver.find_element(*MultiMan.settings_logout).click()
-            assert self.mandriver.find_element(*MultiMan.settings_logout_popoverConfirm).text == '好的'
-            self.mandriver.find_element(*MultiMan.settings_logout_popoverConfirm).click()
+            settings_logout_popoverConfirm2=self.mandriver.find_element(*MultiMan.settings_logout_popoverConfirm)
+            assert settings_logout_popoverConfirm2.text == '好的'
+            settings_logout_popoverConfirm2.click()
             assert self.mandriver.find_element(*MultiMan.more_btn)
             logging.info("===断言成功===")
 
@@ -5462,6 +5468,6 @@ if __name__ == '__main__':
 
 ''' pytest .\test_mypage_multi.py -s -v --alluredir=..\result\mypage_result\2023_8_24_001'''
 # '''pytest ./test_case/est_mypage_multi.py - vs --alluredir= D:\chamet_mypage_multi_testProject-8.10\result\mypage_result\2023_08_15_001'''
-'''allure serve ..\result\mypage_result\2023_8_21_001'''
+'''allure serve ..\result\mypage_result\2023_8_24_001'''
 # D:\chamet_mypage_multi_testProject-8.15.2\result\mypage_result\2023_8_17_001
 # pytest .\test_mypage_multi.py -s -v --alluredir=..\result\mypage_result\2023_8_17

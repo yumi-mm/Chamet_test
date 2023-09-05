@@ -305,9 +305,11 @@ class MultiMan(Common):
     messages_Group_MoreGroupMana = (By.XPATH, "//*[@text='管理群组']")
     messages_Group_MoreGroupManaVis = (By.ID, 'com.hkfuliao.chamet:id/tv_title')
     messages_Group_MoreGroupManaVisCon = (By.ID, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.TextView[4]')
-    messages_Group_MoreGroupManaVisConText = (By.XPATH, "//*[@text='非群组用户可以查看消息和送礼，但不能发送消息、进行语音聊天或玩游戏。 开启访客模式的群组将更容易被看到，群组将变得更加活跃。']")
+    # messages_Group_MoreGroupManaVisConText = (By.XPATH, "//*[@text='非群组用户可以查看消息和送礼，但不能发送消息、进行语音聊天或玩游戏。 开启访客模式的群组将更容易被看到，群组将变得更加活跃。']")
+    messages_Group_MoreGroupManaVisConTextXPATH = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.TextView[4]')
     messages_Group_MoreGroupManaPriCon = (By.ID, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout[3]/android.widget.TextView[4]')
-    messages_Group_MoreGroupManaPriConText = (By.XPATH, "//*[@text='不在群组内的用户不能申请加入。用户只能通过群主或管理员的邀请加入。']")
+    # messages_Group_MoreGroupManaPriConText = (By.XPATH, "//*[@text='不在群组内的用户不能申请加入。用户只能通过群主或管理员的邀请加入']")
+    messages_Group_MoreGroupManaPriConTextXPATH = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.RelativeLayout[3]/android.widget.TextView[4]')
     messages_Group_MoreGroupManaNextHost = (By.XPATH, "//*[@text='群组所有权转让']")
     messages_Group_MoreGroupManaNextHostTitle = (By.ID, 'com.hkfuliao.chamet:id/title')
     messages_Group_MoreGroupManaAdmin =(By.XPATH, "//*[@text='群管理员']")
@@ -315,7 +317,8 @@ class MultiMan(Common):
     messages_Group_MoreGroupManaDisPopCon = (By.ID, 'com.hkfuliao.chamet:id/tv_content')
     messages_Group_MoreGroupManaDisPopCancel = (By.ID, 'com.hkfuliao.chamet:id/tv_cancel')
     messages_Group_MoreGroupManaDisPopConfirm = (By.ID, 'com.hkfuliao.chamet:id/tv_confirm')
-    messages_Group_MoreGroupManaDeAndLeave = (By.XPATH, "//*[@text='删除并离开']")
+    # messages_Group_MoreGroupManaDeAndLeave = (By.XPATH, "//*[@text='删除并离开']")
+    messages_Group_MoreGroupManaDeAndLeaveID = (By.ID, 'com.hkfuliao.chamet:id/tv_group_delete')
     messages_Group_MoreGroupAddBtn = (By.ID, 'com.hkfuliao.chamet:id/rl_add')
     messages_Group_MoreGroupRemovePer = (By.XPATH, "//*[@text='Mary33470557…啊bbb哦哦哦']")
     messages_Group_MoreGroupRemovePerSave = (By.ID, 'com.hkfuliao.chamet:id/tv_done')
@@ -594,9 +597,13 @@ class MultiMan(Common):
     # 我的邀请
     MyInvite_entry_All = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[6]')
     MyInvite_entry_nameText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[6]/android.widget.TextView[1]')
-    MyInvite_inviteRewardsText = (By.XPATH,'//*[@id="invitation_rewards"]')
+    MyInvite_inviteRewardsText = (By.ID,'invitation_rewards')
+    MyInvite_inviteRewardsTextName =(By.XPATH, "//*[@text='邀请奖励']")
+    # MyInvite_inviteRewardsTextXpath = (By.XPATH,'//*[@id="invitation_rewards"]')
+    MyInvite_inviteRewardsTextXpath = (MobileBy.XPATH,'//*[@id="invitation_rewards"]')
     MyInvite_entry_FreeCardsText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[6]/android.widget.LinearLayout/android.widget.TextView')
-    MyInvite_instructionsBtn = (By.XPATH, '/html/body/div/div[1]/div[1]/img[2]')
+    MyInvite_instructionsBtn = (MobileBy, '/html/body/div/div[1]/div[1]/img[2]')
+    # MyInvite_instructionsBtn = (By.XPATH, '/html/body/div/div[1]/div[1]/img[2]')
     MyInvite_instructionsPopover = (By.CLASS_NAME, 'close_pop_up rule_pop')
     MyInvite_instructionsPopover_rule1= (By.XPATH,'//*[@id="rule1"]')
     # 聊天卡免费用于视频聊天1分钟，每张卡有效期为5天
@@ -723,6 +730,7 @@ class MultiMan(Common):
     MyTasks_womanTasks_alreadyLoginAll = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout')
     MyTasks_womanTasks_alreadyLoginCompletedText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView[2]')
     MyTasks_womanTasks_LoginTomorrowAll = (By.ID, 'com.hkfuliao.chamet:id/ll_sign_tomorrow_day')
+    MyTasks_womanTasks_LoginTomorrowText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView[2]')
     MyTasks_womanTasks_dailyTasks = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup')
 
     MyTasks_womanRewards_RewardsText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[1]/android.view.ViewGroup/android.widget.TextView')
@@ -1044,6 +1052,18 @@ class MultiMan(Common):
             logging.info('no tab_mine_btn')
         else:
             tab_mine.click()
+
+    '''点击我的图标85手机'''
+    def tab_Mine_Btn_85(self):
+        try:
+            Common.tap(self, 956, 2124)
+            tab_mine = self.driver.find_element(*self.tab_mine_btn)
+        except NoSuchElementException:
+            logging.info('no tab_mine_btn')
+        else:
+            tab_mine.click()
+
+
 
 
 
@@ -1946,7 +1966,7 @@ class MultiMan(Common):
     # 获取群聊文本消息
     def groupmessage_text(self,num):
         grouptext_message = self.driver.find_elements(MobileBy.ID,"com.hkfuliao.chamet:id/tv_content")
-        return grouptext_message[num].text
+        return grouptext_message[num].text.encode("utf-8")
 
     # 观众端群聊页面打开送礼窗口
     def group_opengiftwin(self):
@@ -1959,7 +1979,7 @@ class MultiMan(Common):
     def audience_groupmessage_sendgift(self, gift_tab, gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
+        # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
         self.driver.find_elements(MobileBy.ID, "com.hkfuliao.chamet:id/item_group_count_text")[0].click()
         # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
@@ -2312,7 +2332,7 @@ class MultiMan(Common):
 
         # 观众端私聊页面拨打语音聊天
     def usermessage_video_but(self):
-        video_butele = (MobileBy.ANDROID_UIAUTOMATOR, 'text("视频聊天")')
+        video_butele = (MobileBy.ANDROID_UIAUTOMATOR, 'text("语音聊天")')
         video_but = self.driver.find_element(*video_butele)
         logging.info('===拨打语言聊天===')
         video_but.click()
@@ -3020,7 +3040,7 @@ class MultiMan(Common):
             logging.info('no MyInvite_entry_All')
         else:
             MyInvite_entry_All.click()
-            time.sleep(3)
+            # time.sleep(2)
             #进入h5界面后，获取上下文，并切换至h5
             # Common.native_to_h5(self)
 
@@ -3170,6 +3190,20 @@ class MultiMan(Common):
             return False
         else:
             return True
+
+    '''我的页面-我的简介-昵称确认按钮元素'''
+    def myProfile_NickName_EditorCommitBtnEle(self):
+        logging.info('昵称确认按钮元素')
+        try:
+           myProfile_NickName_EditorCommit1=self.driver.find_element(*self.myProfile_NickName_EditorCommit)
+
+        except NoSuchElementException:
+            logging.info('no myProfile_MyAvatar_PosterHistoryBtn')
+            return False
+        else:
+            myProfile_NickName_EditorCommit1.click()
+            logging.info('昵称确认按钮元素已点击')
+
 
 
 

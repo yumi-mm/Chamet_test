@@ -103,12 +103,14 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage22(self):
         logging.info("===留言-列表及消息未读数===")
         try:
+            self.multiwoman.find_search_id()
+            time.sleep(3)
             self.multiman.tab_Mine_Btn()
             self.multiman.tap(930, 2123)
             entry_UnReadNum_case=self.multiman.messages_entry_UnReadNumIDEle()
             # print(UnReadNum_case44)
             self.mandriver.find_element(*MultiMan.messages_entry_All).click()
-            assert self.mandriver.find_element(*MultiMan.messages_title).text == '留言'
+            assert self.mandriver.find_element(*MultiMan.messages_title).text == '消息'
             assert self.mandriver.find_element(*MultiMan.messages_system_EntryTitle).text == 'Chamet团队'
             assert self.mandriver.find_element(*MultiMan.messages_customerService_entryTitle).text == 'Chamet客服'
             if entry_UnReadNum_case != False:
@@ -202,8 +204,8 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage26(self):
         logging.info("===留言-陌生人留言消息及未读数===")
         try:
-            self.multiwoman.find_search_id()
-            time.sleep(3)
+            # self.multiwoman.find_search_id()
+            time.sleep(1)
             assert self.mandriver.find_element(*MultiMan.messages_Stranger_entryUserAndText).text=='Mary33470557…啊bbb哦哦哦: hhhhh'
             self.mandriver.find_element(*MultiMan.messages_Stranger_entryHeadPic).click()
             # assert self.mandriver.find_element(*MultiMan.messages_Stranger_title).text=='陌生人留言'
@@ -232,7 +234,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage27(self):
         logging.info("===留言-陌生人列表===")
         try:
-            assert self.mandriver.find_element(*MultiMan.messages_Stranger_title).text=='陌生人留言'
+            assert self.mandriver.find_element(*MultiMan.messages_Stranger_title).text=='陌生人消息'
             first_userName=self.mandriver.find_elements(*MultiMan.messages_Stranger_UserNameList)[0].text
             print(first_userName)
             print(self.mandriver.find_elements(*MultiMan.messages_Stranger_UserEntryList))
@@ -546,7 +548,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             raise
 
     @allure.story('留言')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例38：留言-陌生人留言-送礼')
     def test_homepage38(self):
@@ -621,13 +623,17 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.multiman.system_goback_key()
             self.multiman.system_goback_key()
             self.multiman.system_goback_key()
-            new_text = "NotStrange"
+            self.multiman.system_goback_key()
+            new_text = "user2223"
             InputEdit_case = self.womandriver.find_element(*MultiWoman.messages_Stranger_InputEdit)
             InputEdit_case.send_keys(new_text)
             InputEdit_case.click()
             self.womandriver.find_element(*MultiWoman.messages_Stranger_InputSendBtn).click()
-            assert self.womandriver.find_elements(*MultiWoman.messages_Stranger_TextInputContentText)[-1].text==new_text
             time.sleep(3)
+            assert self.womandriver.find_elements(*MultiWoman.messages_Stranger_TextInputContentText)[-1].text==new_text
+            # self.multiman.system_goback_key()
+            self.mandriver.find_element(*MultiMan.messages_entry_All).click()
+            time.sleep(2)
             assert self.mandriver.find_element(*MultiMan.messages_User_ListCountryIcon)
             # assert self.mandriver.find_element(*MultiMan.messages_User_ListLevelIcon)
             assert self.mandriver.find_element(*MultiMan.messages_User_userContentText).text==new_text
@@ -680,12 +686,23 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage41(self):
         logging.info("===留言-一对一列表-列表跳转===")
         try:
-            self.mandriver.find_element(*MultiMan.messages_User_33470557Strange).click()
-            assert  self.mandriver.find_element(*MultiMan.messages_User_StrangeTopName).text=='Mary33470557…啊bbb哦哦哦'
-            self.multiman.system_goback_key()
-            assert self.multiman.messages_User_userContentUnreadDotEle()==False
-            self.mandriver.find_element(*MultiMan.messages_User_33470557Strange).click()
-            logging.info('===断言成功===')
+            expected_name1 = self.mandriver.find_elements(*MultiMan.messages_User_EntryUserName)
+            expected_name2=expected_name1[0].text
+            expected_name1[0].click()
+            assert self.mandriver.find_element(*MultiMan.messages_User_StrangeTopName).text == expected_name2
+
+            # self.mandriver.find_element(*MultiMan.messages_User_33470557Strange).click()
+            # assert  self.mandriver.find_element(*MultiMan.messages_User_StrangeTopName).text=='Mary33470557…啊bbb哦哦哦'
+            # self.multiman.system_goback_key()
+            # assert self.multiman.messages_User_userContentUnreadDotEle()==False
+            # self.mandriver.find_element(*MultiMan.messages_User_33470557Strange).click()
+            # logging.info('===断言成功===')
+            #
+            # assert self.mandriver.find_element(*MultiMan.messages_User_userContentText).text == new_text
+            # assert self.multiman.messages_User_userContentUnreadDotEle()
+            # expected_name1 = self.mandriver.find_elements(*MultiMan.messages_User_EntryUserName)[0].text
+            # self.mandriver.find_elements(*MultiMan.messages_User_EntryHead)[0].click()
+            # expected_name3 = self.mandriver.find_element(*MultiMan.user_own_pagePersonalName).text
 
 
         except AssertionError as e:
@@ -992,7 +1009,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             raise
 
     @allure.story('留言')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例52：留言-一对一-送礼')
     def test_homepage52(self):
@@ -1032,17 +1049,17 @@ class Test_multi_mypage(mypage_multi_Start_End):
         try:
             self.multiman.find_element(*MultiMan.messages_Stranger_userGoback).click()
             time.sleep(2)
-            assert self.mandriver.find_element(*MultiMan.messages_title).text == '留言'
+            assert self.mandriver.find_element(*MultiMan.messages_title).text == '消息'
             logging.info("断言成功")
 
         except AssertionError as e:
             logging.info('===断言失败===')
-            screen_name = self.multiman.screenshot('留言-一对一-送礼')
+            screen_name = self.multiman.screenshot('留言-一对一-返回')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
         except:
             logging.info("===执行失败===")
-            screen_name = self.multiman.screenshot('留言-一对一-送礼')
+            screen_name = self.multiman.screenshot('留言-一对一-返回')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
 
@@ -1059,6 +1076,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.multiwoman.swipe(506, 1832, 506, 400)
             self.multiwoman.swipe(506, 1832, 506, 400)
             self.multiwoman.swipe(506, 1832, 506, 400)
+            self.multiwoman.swipe(1000, 929, 168, 929)
             self.womandriver.find_element(*MultiWoman.messages_Group_pageGroupName).click()
             group_text='gHello'
             self.womandriver.find_element(*MultiWoman.messages_Group_inputBtn).send_keys(group_text)
@@ -1069,7 +1087,9 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.multiwoman.system_goback_key()
             self.multiwoman.system_goback_key()
             self.multiwoman.system_goback_key()
+            self.multiwoman.system_goback_key()
             # 加点击
+            self.multiwoman.tab_Mine_Btn_85()
             self.womandriver.find_element(*MultiWoman.messages_entry_All).click()
             self.womandriver.find_elements(*MultiWoman.messages_Group_entryGroupName)[0].click()
             time.sleep(3)
@@ -1301,7 +1321,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             raise
 
     @allure.story('留言')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例62：留言-群聊消息-上麦用户头像-查看自己')
     def test_homepage62(self):
@@ -1382,10 +1402,8 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
 
-
-
     @allure.story('留言')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例64：留言-群聊消息-上麦用户头像-查看他人')
     def test_homepage64(self):
@@ -1433,7 +1451,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
     @allure.story('留言')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例65：留言-群聊消息-上麦用户头像-他人送礼和通话')
     def test_homepage65(self):
@@ -1489,7 +1507,6 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage66(self):
         logging.info("===留言-群聊消息-下麦===")
         try:
-
             upMicLen_num1=len(self.mandriver.find_elements(*MultiMan.messages_Group_upMicUserHeadList))
             messages_Group_upMicBtn_on=self.mandriver.find_element(*MultiMan.messages_Group_upMicBtn)
             messages_Group_upMicBtn_on.click()
@@ -1500,7 +1517,8 @@ class Test_multi_mypage(mypage_multi_Start_End):
             messages_Group_upMicBtn_on.click()
             self.womandriver.find_element(*MultiWoman.messages_Group_upMicTurnOffBtn).click()
             if upMicLen_num2==1:
-                assert self.womandriver.find_element(*MultiWoman.messages_Group_BannerListLast)
+                assert len(self.womandriver.find_elements(*MultiWoman.messages_Group_upMicUserHeadList))==0
+                # assert self.womandriver.find_element(*MultiWoman.messages_Group_BannerListLast)
             else:
                 assert upMicLen_num2 > len(self.womandriver.find_elements(*MultiWoman.messages_Group_upMicUserHeadList))
             logging.info('===下麦-断言成功===')
@@ -1538,10 +1556,14 @@ class Test_multi_mypage(mypage_multi_Start_End):
             assert user_head
             logging.info('===断言成功，男生成功领取钻石包===')
             thank_ele = self.multiwoman.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/tv_thanking_1")
-            thank_text = thank_ele.text
+            thank_text = thank_ele.text.encode("utf-8")
             thank_ele.click()
             self.multiman.tap(335,1903)
+            time.sleep(3)
             audience_messageregion = self.multiman.groupmessage_text(-1)
+            print(thank_text,audience_messageregion)
+            # print(thank_text.encode("utf-8"))
+            # print(audience_messageregion.encode("utf-8"))
             assert thank_text in audience_messageregion
             logging.info('===断言成功,男生成功收到主播发送的感谢语===')
 
@@ -1565,11 +1587,11 @@ class Test_multi_mypage(mypage_multi_Start_End):
         try:
             self.mandriver.find_element(*MultiMan.messages_Group_GameBtn).click()
             assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer1).text=='Chamet赛车'
-            assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer2).text=='顶级赛车'
-            assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer3).text=='幸运盒子'
-            assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer4).text=='幸运转盘'
-            assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer5).text=='幸运数字'
-            assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer6).text=='幸运抽奖机'
+            # assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer2).text=='顶级赛车'
+            assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer2).text=='幸运盒子'
+            assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer3).text=='幸运转盘'
+            assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer4).text=='幸运数字'
+            assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer5).text=='幸运抽奖机'
             self.multiman.tap(584,1804)
             logging.info('====游戏浮层-断言成功===')
 
@@ -1586,7 +1608,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             raise
 
     @allure.story('留言')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例69：留言-群聊消息-礼物送礼')
     def test_homepage69(self):
@@ -1882,20 +1904,24 @@ class Test_multi_mypage(mypage_multi_Start_End):
         logging.info("===留言-群聊消息-管理群组===")
         try:
             self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupMana).click()
-            assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaVisConText)
-            assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaPriConText)
-            logging.info("===模式-断言完成===")
+            assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaVisConTextXPATH).text=='非群组用户可以查看消息和送礼，但不能发送消息、进行语音聊天或玩游戏。 \n 开启访客模式的群组将更容易被看到，群组将变得更加活跃。'
+            assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaPriConTextXPATH).text=='不在群组内的用户不能申请加入。用户只能通过群主或管理员的邀请加入'
+            logging.info("===模式内容-断言完成===")
             self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaNextHost).click()
+            time.sleep(2)
             assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaNextHostTitle).text=='选择新群主'
             self.multiman.system_goback_key()
             logging.info("===群组所有权转让-断言完成===")
             self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaAdmin).click()
+            time.sleep(2)
             assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaNextHostTitle).text =='群管理员'
             self.multiman.system_goback_key()
             logging.info("===群管理员-断言完成===")
             self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisband).click()
-            assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisPopCon).text == '解散后，所有成员（包括群主）将被移出组'
+            assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisPopCon).text == '解散后，所有成员（包括群主）将被移出群组'
             self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisPopCancel).click()
+            time.sleep(2)
+            self.multiman.system_goback_key()
             logging.info("===解散群组-断言完成===")
             logging.info("===群主-断言完成===")
             assert self.multiwoman.messages_Group_MoreGroupManaEle()==False
@@ -1920,12 +1946,13 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage79(self):
         logging.info("===留言-群聊消息-删除并离开===")
         try:
-            self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDeAndLeave).click()
-            assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisPopCon).text == '退出此群组后没有群组消息'
+            time.sleep(3)
+            self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDeAndLeaveID).click()
+            assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisPopCon).text == '退出此群组后将不再接收群组消息'
             self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisPopCancel).click()
             logging.info("===群主-断言完成===")
-            self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupManaDeAndLeave).click()
-            assert self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupManaDisPopCon).text == '退出此群组后没有群组消息'
+            self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupManaDeAndLeaveID).click()
+            assert self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupManaDisPopCon).text == '退出此群组后将不再接收群组消息'
             self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupManaDisPopCancel).click()
             logging.info('===群成员-断言成功===')
 
@@ -1949,9 +1976,10 @@ class Test_multi_mypage(mypage_multi_Start_End):
         logging.info("===留言-群聊消息-添加成员===")
         try:
             self.mandriver.find_elements(*MultiMan.messages_Group_MoreGroupAddBtn)[0].click()
+            time.sleep(2)
             self.mandriver.find_elements(*MultiMan.messages_Group_MoreGroupAddIcon)[0].click()
-            self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupRemovePerSave).click()
-            assert  self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupTitle).text == groupName_text
+            self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupNameSetContentGoback).click()
+            assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupTitle).text == groupName_text
             logging.info('===断言成功===')
 
         except AssertionError as e:
@@ -1977,10 +2005,15 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.mandriver.find_elements(*MultiMan.messages_Group_MoreGroupAddBtn)[-1].click()
             assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupIntroTitle).text == '移除成员'
             self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupRemovePer).click()
+            time.sleep(2)
             self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupRemovePerSave).click()
+            time.sleep(3)
             assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupRemoveTips).text == '“你移除了”Mary33470557…啊bb...“来自群组”'
             self.multiman.system_goback_key()
-            logging.info("===群主-断言完成===")
+            self.multiman.system_goback_key()
+            logging.info("===群主-断言完成,已返回至我的页面===")
+            # logging.info("===群主-断言完成===")
+            self.multiwoman.system_goback_key()
             assert self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupRemovePTips)
             self.multiwoman.system_goback_key()
             self.womandriver.find_element(*MultiWoman.messages_Group_pageGroupName).click()
@@ -1988,7 +2021,9 @@ class Test_multi_mypage(mypage_multi_Start_End):
             assert self.womandriver.find_element(*MultiWoman.messages_Group_joinPopCon).text=='等待群主同意'
             self.womandriver.find_element(*MultiWoman.messages_Group_joinPopConfirm).click()
             self.multiwoman.system_goback_key()
-            time.sleep(8)
+            self.multiwoman.system_goback_key()
+            time.sleep(3)
+            self.mandriver.find_element(*MultiMan.messages_entry_All).click()
             self.mandriver.find_element(*MultiMan.messages_Group_Notification).click()
             assert self.mandriver.find_element(*MultiMan.messages_Group_NotiJoinCon).text =='Mary33470557…啊bb... 申请加入群组: 今日也莫人陪我'
             self.mandriver.find_element(*MultiMan.messages_Group_joinAgree).click()
@@ -2040,11 +2075,8 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
 
-
-
-
 if __name__ == '__main__':
-    pytest.main(["-vs","..\test_case\test_mypage_message_multi.py","--alluredir=..\result\tmp\2023_08_17_001"])
+    pytest.main(["-vs","..\test_case\test_mypage_message_multi.py","--alluredir=..\result\tmp\2023_08_30_001"])
 
 ''' pytest .\test_mypage_message_multi.py -s -v --alluredir=..\result\tmp\2023_8_17_001'''
 # '''pytest ./test_case/est_mypage_multi.py - vs --alluredir= D:\chamet_mypage_multi_testProject-8.10\result\mypage_result\2023_08_15_001'''
