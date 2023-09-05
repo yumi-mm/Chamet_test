@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_10party_mult.py:90 ===用例4：主播端交友房警告消息检查===
+[32mINFO    [0m root:test_10party_mult.py:94 ===断言成功===

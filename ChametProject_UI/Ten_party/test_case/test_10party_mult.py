@@ -187,7 +187,7 @@ class Test_multchamet(anchorparty_Start_End):
             logging.info(f'截图成功，图片为{screen_name}')
             raise
 
-    # @pytest.mark.skip(reason='头像不是必须，跳过执行')
+    # @pytest.mark.skip(reason='跳过执行，3.5.3版本取消显示')
     @allure.severity(allure.severity_level.CRITICAL)
     @allure.title('用例9：交友房封面包含内容--头像')
     def test_TenParty_009(self):

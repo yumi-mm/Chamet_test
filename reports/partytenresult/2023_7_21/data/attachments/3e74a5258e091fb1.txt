@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:306 ===用例14：观众进入10人交友房===
+[32mINFO    [0m root:multparty_ten_audience.py:170 ===查看交友房房主用户名===
+[32mINFO    [0m root:test_10party_mult.py:314 ===断言成功，成功进入10人交友房===
