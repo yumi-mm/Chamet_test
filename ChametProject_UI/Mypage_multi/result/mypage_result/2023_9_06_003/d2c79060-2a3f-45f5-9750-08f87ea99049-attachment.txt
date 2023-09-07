@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:3379 ===我的页面-设置-为Chamet评分===
+[32mINFO    [0m root:test_mypage_multi.py:3396 ===执行失败===

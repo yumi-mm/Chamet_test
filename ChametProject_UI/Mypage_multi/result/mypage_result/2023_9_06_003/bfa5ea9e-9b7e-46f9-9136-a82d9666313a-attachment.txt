@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:2854 ===我的简介-密码显示===
+[32mINFO    [0m root:test_mypage_multi.py:2885 ===执行失败===

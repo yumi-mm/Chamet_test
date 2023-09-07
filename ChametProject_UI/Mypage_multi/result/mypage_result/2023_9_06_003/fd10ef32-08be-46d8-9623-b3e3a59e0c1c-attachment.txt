@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:2815 ===我的简介-Gmail===
+[32mINFO    [0m root:test_mypage_multi.py:2843 ===执行失败===

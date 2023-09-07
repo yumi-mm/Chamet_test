@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:2009 ===留言-群聊消息-移除成员===
+[32mINFO    [0m root:test_mypage_message_multi.py:2022 ===群成员-断言成功===

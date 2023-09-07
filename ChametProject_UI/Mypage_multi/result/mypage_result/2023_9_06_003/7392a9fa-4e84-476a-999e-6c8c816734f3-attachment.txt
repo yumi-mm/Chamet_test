@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:2778 ===我的简介-手机号更换===
+[32mINFO    [0m root:test_mypage_multi.py:2804 ===执行失败===

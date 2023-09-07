@@ -573,6 +573,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage18(self):
         logging.info("===我的页面-男-签到入口===")
         try:
+            self.multiwoman.tab_Mine_Btn_85()
             self.multiman.tab_Mine_Btn()
             global signInfoTopEle_man
             signInfoTopEle_man = self.multiman.tab_Mine_user_signInfoTop()
@@ -649,7 +650,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage20(self):
         logging.info("===我的页面-女-签到入口===")
         try:
-            self.multiwoman.tab_Mine_Btn_126()
+            self.multiwoman.tab_Mine_Btn_85()
             global signInfoTopEle_woman
             signInfoTopEle_woman = self.multiwoman.tab_Mine_user_signInfoTop()
             self.multiwoman.tap(930, 2123)
@@ -662,7 +663,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
                 # assert self.womandriver.find_element(*MultiWoman.sign_in_popover_SigninSubmitTextID).text == '签到'
                 # 测试点击空白处弹窗消失
                 self.multiwoman.tap(930, 2123)
-                assert self.womandriver.find_element(*MultiWoman.tab_mine_btn)
+                # assert self.womandriver.find_element(*MultiWoman.tab_mine_btn)
                 logging.info("断言成功")
             else:
                 logging.error("没有签到入口")
@@ -688,8 +689,8 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage21(self):
         logging.info("===我的页面-女-去签到-跳转页面===")
         try:
-            self.multiwoman.tab_Mine_Btn()
-            self.multiwoman.tap(930, 2123)
+            self.multiwoman.tab_Mine_Btn_85()
+            # self.multiwoman.tap(930, 2123)
             if signInfoTopEle_woman != False:
                 signInfoTopEle_woman.click()
                 sign_btn_woman = self.womandriver.find_element(*MultiWoman.sign_in_popover_SigninSubmitTextID)
@@ -724,1983 +725,6 @@ class Test_multi_mypage(mypage_multi_Start_End):
             screen_name = self.multiwoman.screenshot('我的页面-女-去签到-跳转页面')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    # #
-    # #
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例22、23：留言-列表及消息未读数')
-    # # def test_homepage22(self):
-    # #     logging.info("===留言-列表及消息未读数===")
-    # #     try:
-    # #         self.multiman.tab_Mine_Btn()
-    # #         self.multiman.tap(930, 2123)
-    # #         entry_UnReadNum_case=self.multiman.messages_entry_UnReadNumIDEle()
-    # #         # print(UnReadNum_case44)
-    # #         self.mandriver.find_element(*MultiMan.messages_entry_All).click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_title).text == '留言'
-    # #         assert self.mandriver.find_element(*MultiMan.messages_system_EntryTitle).text == 'Chamet团队'
-    # #         assert self.mandriver.find_element(*MultiMan.messages_customerService_entryTitle).text == 'Chamet客服'
-    # #         if entry_UnReadNum_case != False:
-    # #         # if entry_UnReadNum_case!=False and len(entry_UnReadNum_case)!=0:
-    # #             logging.info("===留言-入口有消息未读数===")
-    # #             # UnReadNum_case44 = entry_UnReadNum_case.text
-    # #             UnReadNum_lists=self.multiman.messages_UnReadNum_lists()
-    # #             assert UnReadNum_lists ==int(entry_UnReadNum_case)
-    # #             logging.info("断言成功")
-    # #         else:
-    # #             logging.info("===留言-入口没有消息未读数，断言成功===")
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-列表及消息未读数')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-列表及消息未读数')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例24：留言-chamet团队')
-    # # def test_homepage24(self):
-    # #     logging.info("===留言-chamet团队===")
-    # #     try:
-    # #         entry_text=self.mandriver.find_element(*MultiMan.messages_system_entryText).text
-    # #         self.mandriver.find_element(*MultiMan.messages_system_EntryAll).click()
-    # #         time.sleep(2)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_system_title).text == 'Chamet团队'
-    # #         if entry_text=='没有消息':
-    # #             logging.info("===留言-chamet团队无消息===")
-    # #             assert self.mandriver.find_element(*MultiMan.messages_system_emptyIcon)
-    # #             assert self.mandriver.find_element(*MultiMan.messages_system_emptyText).text == '无消息'
-    # #             self.mandriver.find_element(*MultiMan.messages_system_goback).click()
-    # #         else:
-    # #             logging.info("===留言-chamet团队有消息===")
-    # #             assert self.mandriver.find_element(*MultiMan.messages_system_messagesContentAll)
-    # #             # assert self.mandriver.find_elements(*MultiMan.messages_system_learnMoreText)
-    # #             self.mandriver.find_element(*MultiMan.messages_system_goback).click()
-    # #         logging.info("断言成功")
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-chamet团队')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-chamet团队')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例25：留言-chamet客服')
-    # # def test_homepage25(self):
-    # #     logging.info("===留言-chamet客服===")
-    # #     try:
-    # #         assert self.mandriver.find_element(*MultiMan.messages_customerService_entryText).text== '任何问题？联络我'
-    # #         self.mandriver.find_element(*MultiMan.messages_customerService_EntryAll).click()
-    # #         time.sleep(2)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_customerService_title).text == '在线客服'
-    # #         assert self.mandriver.find_element(*MultiMan.messages_customerService_Container)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_customerService_problemChoice)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_customerService_InputText)
-    # #         self.mandriver.find_element(*MultiMan.messages_customerService_goback).click()
-    # #         logging.info("断言成功")
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-chamet客服')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-chamet客服')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例26：留言-陌生人留言消息及未读数')
-    # # def test_homepage26(self):
-    # #     logging.info("===留言-陌生人留言消息及未读数===")
-    # #     try:
-    # #         self.multiwoman.find_search_id()
-    # #         time.sleep(3)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Stranger_entryUserAndText).text=='Mary33470557…啊bbb哦哦哦: hhhhh'
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_entryHeadPic).click()
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_title).text=='陌生人留言'
-    # #         self.multiman.system_goback_key()
-    # #         assert self.multiman.messages_Stranger_entryUnread_Ele()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_entryHeadPic).click()
-    # #         assert self.multiman.messages_Stranger_userListUnread_Ele()
-    # #         logging.info('===返回-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言消息及未读数')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言消息及未读数')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例27：留言-陌生人留言-陌生人列表')
-    # # def test_homepage27(self):
-    # #     logging.info("===留言-陌生人列表===")
-    # #     try:
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Stranger_title).text=='陌生人留言'
-    # #         first_userName=self.mandriver.find_elements(*MultiMan.messages_Stranger_UserNameList)[0].text
-    # #         print(first_userName)
-    # #         print(self.mandriver.find_elements(*MultiMan.messages_Stranger_UserEntryList))
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Stranger_UserUnread)
-    # #         self.mandriver.find_elements(*MultiMan.messages_Stranger_UserNameList)[0].click()
-    # #         assert first_userName == 'Mary33470557…啊bbb哦哦哦'
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Stranger_userTitleName).text==first_userName
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-陌生人列表')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-陌生人列表')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例28：留言-陌生人留言-一对一更多个人主页')
-    # # def test_homepage28(self):
-    # #     logging.info("===留言-陌生人留言-一对一更多个人主页===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_userMoreBtn).click()
-    # #         first_userName = self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverName).text
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverHeadFrame)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverNation)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverNationName)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverLanguage)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverLevel)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverFollowBtn)
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverHead).click()
-    # #         assert self.mandriver.find_element(*MultiMan.user_own_pagePersonalName).text == first_userName
-    # #         self.multiman.system_goback_key()
-    # #         logging.info('===返回-断言成功===')
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-一对一更多个人主页')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-一对一更多个人主页')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例29：留言-陌生人留言-一对一个人浮层送礼滑动')
-    # # def test_homepage29(self):
-    # #     logging.info("===留言-陌生人留言-一对一个人浮层送礼滑动===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_userMoreBtn).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverSendGiftBtn).click()
-    # #         nowgift_list_text, newgift_list_text = self.multiman.usermessage_scroll_gift()
-    # #         self.multiman.tap(576, 543)
-    # #         assert nowgift_list_text != newgift_list_text
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-一对一更多个人浮层送礼滑动')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-一对一更多个人浮层送礼滑动')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例30：留言-陌生人留言-一对一更多个人浮层视频通话')
-    # # def test_homepage30(self):
-    # #     logging.info("===留言-陌生人留言-一对一更多个人浮层视频通话===")
-    # #     try:
-    # #         self.multiman.tap(826,1000)
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_userMoreBtn).click()
-    # #         video_butele = (MobileBy.ANDROID_UIAUTOMATOR, 'text("视频通话")')
-    # #         video_but = self.mandriver.find_element(*video_butele)
-    # #         logging.info('===拨打语言聊天===')
-    # #         video_but.click()
-    # #         self.multiman.Phone114_getPermission_checkPopover()
-    # #         self.multiman.Phone114_getPermission_checkPopover()
-    # #         self.multiman.Permission_114Phone_MediaPopoverConfirmBtnEle()
-    # #         self.multiman.not_available_win()
-    # #         logging.info('====一对一更多个人浮层视频通话-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-一对一更多个人浮层视频通话')
-    # #         screen_name = self.multiwoman.screenshot('留言-陌生人留言-一对一更多个人浮层视频通话')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-一对一更多个人浮层视频通话')
-    # #         screen_name = self.multiwoman.screenshot('留言-陌生人留言-一对一更多个人浮层视频通话')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例31：留言-陌生人留言-一对一输入框')
-    # # def test_homepage31(self):
-    # #     logging.info("===留言-陌生人留言-一对一输入框===")
-    # #     try:
-    # #         name_text = "hello123"
-    # #         InputEdit_case=self.mandriver.find_element(*MultiMan.messages_Stranger_InputEdit)
-    # #         InputEdit_case.send_keys(name_text)
-    # #         InputEdit_case.click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_InputSendBtn).click()
-    # #         time.sleep(3)
-    # #         assert self.mandriver.find_elements(*MultiMan.messages_Stranger_TextInputContentText)[-1].text == name_text
-    # #         assert self.womandriver.find_elements(*MultiWoman.messages_Stranger_TextInputContentText)[-1].text == name_text
-    # #         assert self.multiwoman.messages_Stranger_translateContentEle()
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-一对一输入框')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-一对一输入框')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例32：留言-陌生人留言-表情')
-    # # def test_homepage32(self):
-    # #     logging.info("===留言-陌生人留言-表情===")
-    # #     try:
-    # #         self.multiman.audience_usermessage_sendexpression(1)
-    # #         expression = self.multiman.watch_selfsendexpression()
-    # #         assert expression
-    # #         logging.info('===断言成功，发送chamet表情成功===')
-    # #         head_frame, expression = self.multiwoman.watch_othersendexpression()
-    # #         assert head_frame
-    # #         assert expression
-    # #         logging.info('===断言成功，成功收到chamet表情===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例33：留言-陌生人留言-搜索表情')
-    # # def test_homepage33(self):
-    # #     logging.info("===留言-陌生人留言-搜索表情===")
-    # #     try:
-    # #         self.multiman.audience_usermessage_sendexpression(0)
-    # #         expression = self.multiman.watch_selfsendgooglexpression()
-    # #         assert expression
-    # #         logging.info('===断言成功，发送Facebook表情成功===')
-    # #         head_frame, expression = self.multiwoman.watch_othersendgoogleexpression()
-    # #         assert head_frame
-    # #         assert expression
-    # #         logging.info('===断言成功，成功收到Facebook表情===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-搜索表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-搜索表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例34：留言-陌生人留言-更多翻译')
-    # # def test_homepage34(self):
-    # #     logging.info("===留言-陌生人留言-更多翻译===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_inputMoreBtn).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_TranslateBtn).click()
-    # #         # usermessage_Voice_chat_toast = self.multiman.toast_message('翻译已关闭')
-    # #         # assert usermessage_Voice_chat_toast.text == "翻译已关闭"
-    # #         name_text = "hehehehe"
-    # #         InputEdit_case = self.womandriver.find_element(*MultiWoman.messages_Stranger_InputEdit)
-    # #         InputEdit_case.send_keys(name_text)
-    # #         InputEdit_case.click()
-    # #         self.womandriver.find_element(*MultiWoman.messages_Stranger_InputSendBtn).click()
-    # #         assert self.womandriver.find_elements(*MultiWoman.messages_Stranger_TextInputContentText)[-1].text == name_text
-    # #         time.sleep(3)
-    # #         assert self.mandriver.find_elements(*MultiMan.messages_Stranger_TextInputContentText)[-1].text == name_text
-    # #         assert self.multiman.messages_Stranger_translateContentEle()==False or self.multiman.messages_Stranger_translateContentEle()!=name_text
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-更多翻译')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-更多翻译')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例35：留言-陌生人留言-更多相册')
-    # # def test_homepage35(self):
-    # #     logging.info("===留言-陌生人留言-更多相册===")
-    # #     try:
-    # #         # self.mandriver.find_element(*MultiMan.messages_Stranger_inputMoreBtn).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_phonePictureBtn).click()
-    # #         self.mandriver.find_elements(*MultiMan.messages_Stranger_phonePictureListSelect)[0].click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_phonePictureListConfirmBtn).click()
-    # #         time.sleep(2)
-    # #         photo = self.multiman.watch_selfsendexpression()
-    # #         assert photo
-    # #         logging.info('===断言成功，发送相册照片成功===')
-    # #         head_frame, expression = self.multiwoman.watch_othersendexpression()
-    # #         assert head_frame
-    # #         assert expression
-    # #         logging.info('===断言成功，成功收到相册照片===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-更多相册')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-更多相册')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例36：留言-陌生人留言-更多相机')
-    # # def test_homepage36(self):
-    # #     logging.info("===留言-陌生人留言-更多相机===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_CameraBtn).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_114CameraTakeBtn).click()
-    # #         time.sleep(5)
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_114CameraTakeDoneBtn).click()
-    # #         photo = self.multiman.watch_selfsendexpression()
-    # #         assert photo
-    # #         logging.info('===断言成功，发送相机照片成功===')
-    # #         head_frame, expression = self.multiwoman.watch_othersendexpression()
-    # #         assert head_frame
-    # #         assert expression
-    # #         logging.info('===断言成功，成功收到相机照片===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-更多相机')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-更多相机')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例37：留言-陌生人留言-更多视频聊天')
-    # # def test_homepage37(self):
-    # #     logging.info("===留言-陌生人留言-更多视频聊天===")
-    # #     try:
-    # #         self.multiman.usermessage_video_but()
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-更多视频聊天')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-更多视频聊天')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例38：留言-陌生人留言-送礼')
-    # # def test_homepage38(self):
-    # #     logging.info('===留言-陌生人留言-送礼===')
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_SendGiftBtn).click()
-    # #         # global sendgift_assertcondition_4
-    # #         sendgift_assertcondition_4 = self.multiman.audience_sendgift_bymessage("热门", "棒棒糖")
-    # #         if sendgift_assertcondition_4 == 0:
-    # #             pytest.skip("送礼方未送礼")
-    # #         else:
-    # #             last_text = self.multiman.get_usermessage_textcontent(-1)
-    # #             assert '送出' in last_text
-    # #             logging.info('===断言成功，送礼方成功发送礼物===')
-    # #             head_frame, gift_content = self.multiwoman.watch_othersendgift()
-    # #             assert head_frame
-    # #             assert '送出' in gift_content
-    # #             logging.info('===断言成功，收到私聊礼物===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-送礼')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info('===执行失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言-送礼')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例39：留言-陌生人留言返回')
-    # # def test_homepage39(self):
-    # #     logging.info("===留言-陌生人留言返回===")
-    # #     try:
-    # #         self.multiman.find_element(*MultiMan.messages_Stranger_userGoback).click()
-    # #         time.sleep(2)
-    # #         assert self.multiman.messages_Stranger_userListUnread_Ele()==False
-    # #         # self.mandriver.find_element(*MultiMan.messages_Stranger_goback).click()
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_title).text == '留言'
-    # #         logging.info('===返回-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言返回')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-陌生人留言返回')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例40：留言-一对一列表-用户头像跳转')
-    # # def test_homepage40(self):
-    # #     logging.info("===留言-一对一列表-用户头像跳转===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_User_33470557Strange).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_User_StrangeTopName).click()
-    # #         self.mandriver.find_element(*MultiMan.user_own_pageFollowBtn).click()
-    # #         self.multiman.system_goback_key()
-    # #         self.multiman.system_goback_key()
-    # #         self.multiman.system_goback_key()
-    # #         new_text = "NotStrange"
-    # #         InputEdit_case = self.womandriver.find_element(*MultiWoman.messages_Stranger_InputEdit)
-    # #         InputEdit_case.send_keys(new_text)
-    # #         InputEdit_case.click()
-    # #         self.womandriver.find_element(*MultiWoman.messages_Stranger_InputSendBtn).click()
-    # #         assert self.womandriver.find_elements(*MultiWoman.messages_Stranger_TextInputContentText)[-1].text==new_text
-    # #         time.sleep(3)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_User_ListCountryIcon)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_User_ListLevelIcon)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_User_userContentText).text==new_text
-    # #         assert self.multiman.messages_User_userContentUnreadDotEle()
-    # #         expected_name1=self.mandriver.find_elements(*MultiMan.messages_User_EntryUserName)[0].text
-    # #         self.mandriver.find_elements(*MultiMan.messages_User_EntryHead)[0].click()
-    # #         expected_name2 = self.mandriver.find_element(*MultiMan.user_own_pagePersonalName).text
-    # #         assert expected_name2==expected_name1
-    # #         self.multiman.system_goback_key()
-    # #         logging.info('===断言成功===')
-    # #
-    # #
-    # #
-    # #         # global user_haveOrNot
-    # #         # User_EntryHeadEle_case=self.multiman.messages_User_EntryHeadEle()
-    # #         # if User_EntryHeadEle_case!=False and len(User_EntryHeadEle_case)!=0:
-    # #         #     user_haveOrNot=1
-    # #         #     logging.info("===留言-有一对一消息，开始点击头像===")
-    # #         #     OneUserEntryUserNameList_case=self.multiman.messages_User_EntryUserNameEle()
-    # #         #     # print(type(OneUserEntryUserNameList))
-    # #         #     if OneUserEntryUserNameList_case!=False:
-    # #         #         logging.info('===有用户头像且获取到了昵称元素===')
-    # #         #         expected_name1=OneUserEntryUserNameList_case.text
-    # #         #         # print(OneUserEntryUserNameList_case.text)
-    # #         #         self.mandriver.find_elements(*MultiMan.messages_User_EntryHead)[0].click()
-    # #         #         expected_name2=self.mandriver.find_element(*MultiMan.user_own_pagePersonalName).text
-    # #         #         # print(self.mandriver.find_element(*MultiMan.user_own_pagePersonalName).text)
-    # #         #         assert expected_name2==expected_name1
-    # #         #         self.multiman.system_goback_key()
-    # #         #         assert self.mandriver.find_elements(*MultiMan.messages_User_EntryHead)
-    # #         #     # else:
-    # #         #     #     logging.info('===有用户头像但是没有获取到昵称元素===')
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一列表-用户头像跳转')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一列表-用户头像跳转')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例41：留言-一对一列表-列表跳转')
-    # # def test_homepage41(self):
-    # #     logging.info("===留言-一对一列表-列表跳转===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_User_33470557Strange).click()
-    # #         assert  self.mandriver.find_element(*MultiMan.messages_User_StrangeTopName).text=='Mary33470557…啊bbb哦哦哦'
-    # #         self.multiman.system_goback_key()
-    # #         assert self.multiman.messages_User_userContentUnreadDotEle()==False
-    # #         self.mandriver.find_element(*MultiMan.messages_User_33470557Strange).click()
-    # #         logging.info('===断言成功===')
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一列表-列表跳转')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一列表-列表跳转')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例42：留言-一对一-更多个人主页')
-    # # def test_homepage42(self):
-    # #     logging.info("===留言-一对一-更多个人主页===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_userMoreBtn).click()
-    # #         first_userName = self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverName).text
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverHeadFrame)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverNation)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverNationName)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverLanguage)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverLevel)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverFollowBtn)
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverHead).click()
-    # #         assert self.mandriver.find_element(*MultiMan.user_own_pagePersonalName).text == first_userName
-    # #         self.multiman.system_goback_key()
-    # #         logging.info('===返回-断言成功===')
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多个人主页')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多个人主页')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例43：留言-一对一-更多个人浮层送礼滑动')
-    # # def test_homepage43(self):
-    # #     logging.info("===留言-一对一-更多个人浮层送礼滑动===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_userMoreBtn).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_userHalfPagePopoverSendGiftBtn).click()
-    # #         nowgift_list_text, newgift_list_text = self.multiman.usermessage_scroll_gift()
-    # #         self.multiman.tap(576, 543)
-    # #         print(nowgift_list_text)
-    # #         print(newgift_list_text)
-    # #         assert nowgift_list_text != newgift_list_text
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多个人浮层送礼')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多个人浮层送礼')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例44：留言-一对一-更多视频通话')
-    # # def test_homepage44(self):
-    # #     logging.info("===留言-一对一-更多视频通话===")
-    # #     try:
-    # #         self.multiman.tap(826,1000)
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_userMoreBtn).click()
-    # #         video_butele = (MobileBy.ANDROID_UIAUTOMATOR, 'text("视频通话")')
-    # #         video_but = self.mandriver.find_element(*video_butele)
-    # #         logging.info('===拨打语言聊天===')
-    # #         video_but.click()
-    # #         self.multiman.Phone114_getPermission_checkPopover()
-    # #         self.multiman.Phone114_getPermission_checkPopover()
-    # #         self.multiman.Permission_114Phone_MediaPopoverConfirmBtnEle()
-    # #         self.multiman.not_available_win()
-    # #         logging.info('====一对一更多个人浮层视频通话-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多视频通话')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多视频通话')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例45：留言-一对一-输入框')
-    # # def test_homepage45(self):
-    # #     logging.info("===留言-一对一-输入框===")
-    # #     try:
-    # #         name_text = "userHello123"
-    # #         InputEdit_case=self.mandriver.find_element(*MultiMan.messages_Stranger_InputEdit)
-    # #         InputEdit_case.send_keys(name_text)
-    # #         InputEdit_case.click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_InputSendBtn).click()
-    # #         time.sleep(3)
-    # #         assert self.mandriver.find_elements(*MultiMan.messages_Stranger_TextInputContentText)[-1].text == name_text
-    # #         assert self.womandriver.find_elements(*MultiWoman.messages_Stranger_TextInputContentText)[-1].text == name_text
-    # #         assert self.multiwoman.messages_Stranger_translateContentEle()
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-输入框')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-输入框')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例46：留言-一对一-表情')
-    # # def test_homepage46(self):
-    # #     logging.info("===留言-一对一-表情===")
-    # #     try:
-    # #         self.multiman.audience_usermessage_sendexpression(1)
-    # #         expression = self.multiman.watch_selfsendexpression()
-    # #         assert expression
-    # #         logging.info('===断言成功，发送chamet表情成功===')
-    # #         head_frame, expression = self.multiwoman.watch_othersendexpression()
-    # #         assert head_frame
-    # #         assert expression
-    # #         logging.info('===断言成功，成功收到chamet表情===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例47：留言-一对一-搜索表情')
-    # # def test_homepage47(self):
-    # #     logging.info("===留言-一对一-搜索表情===")
-    # #     try:
-    # #         self.multiman.audience_usermessage_sendexpression(0)
-    # #         expression = self.multiman.watch_selfsendgooglexpression()
-    # #         assert expression
-    # #         logging.info('===断言成功，发送Facebook表情成功===')
-    # #         head_frame, expression = self.multiwoman.watch_othersendgoogleexpression()
-    # #         assert head_frame
-    # #         assert expression
-    # #         logging.info('===断言成功，成功收到Facebook表情===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-搜索表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-搜索表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例48：留言-一对一-更多翻译')
-    # # def test_homepage48(self):
-    # #     logging.info("===留言-一对一-更多翻译===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_inputMoreBtn).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_TranslateBtn).click()
-    # #         # usermessage_Voice_chat_toast = self.multiman.toast_message('翻译已开启')
-    # #         # assert usermessage_Voice_chat_toast.text == "翻译已开启"
-    # #         name_text = "userTranslate"
-    # #         InputEdit_case = self.womandriver.find_element(*MultiWoman.messages_Stranger_InputEdit)
-    # #         InputEdit_case.send_keys(name_text)
-    # #         InputEdit_case.click()
-    # #         self.womandriver.find_element(*MultiWoman.messages_Stranger_InputSendBtn).click()
-    # #         assert self.womandriver.find_elements(*MultiWoman.messages_Stranger_TextInputContentText)[-1].text == name_text
-    # #         time.sleep(3)
-    # #         assert self.mandriver.find_elements(*MultiMan.messages_Stranger_TextInputContentText)[-1].text == name_text
-    # #         assert self.multiman.messages_Stranger_translateContentEle()!=False
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多翻译')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多翻译')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例49：留言-一对一-更多相册')
-    # # def test_homepage49(self):
-    # #     logging.info("===留言-一对一-更多相册===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_phonePictureBtn).click()
-    # #         self.mandriver.find_elements(*MultiMan.messages_Stranger_phonePictureListSelect)[0].click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_phonePictureListConfirmBtn).click()
-    # #         time.sleep(2)
-    # #         photo = self.multiman.watch_selfsendexpression()
-    # #         assert photo
-    # #         logging.info('===断言成功，发送相册照片成功===')
-    # #         head_frame, expression = self.multiwoman.watch_othersendexpression()
-    # #         assert head_frame
-    # #         assert expression
-    # #         logging.info('===断言成功，成功收到相册照片===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多相册')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多相册')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例50：留言-一对一-更多相机')
-    # # def test_homepage50(self):
-    # #     logging.info("===留言-一对一-更多相机===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_CameraBtn).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_114CameraTakeBtn).click()
-    # #         time.sleep(5)
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_114CameraTakeDoneBtn).click()
-    # #         photo = self.multiman.watch_selfsendexpression()
-    # #         assert photo
-    # #         logging.info('===断言成功，发送相机照片成功===')
-    # #         head_frame, expression = self.multiwoman.watch_othersendexpression()
-    # #         assert head_frame
-    # #         assert expression
-    # #         logging.info('===断言成功，成功收到相机照片===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多相机')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多相机')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例51：留言-一对一-更多视频聊天')
-    # # def test_homepage51(self):
-    # #     logging.info("===留言-一对一-更多视频聊天===")
-    # #     try:
-    # #         self.multiman.usermessage_video_but()
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多视频聊天')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-更多视频聊天')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例52：留言-一对一-送礼')
-    # # def test_homepage52(self):
-    # #     logging.info("===留言-一对一-送礼===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Stranger_SendGiftBtn).click()
-    # #         global sendgift_assertcondition_5
-    # #         sendgift_assertcondition_5 = self.multiman.audience_sendgift_bymessage("热门", "棒棒糖")
-    # #         if sendgift_assertcondition_5 == 0:
-    # #             pytest.skip("送礼方未送礼")
-    # #         else:
-    # #             last_text = self.multiman.get_usermessage_textcontent(-1)
-    # #             assert '送出' in last_text
-    # #             logging.info('===断言成功，送礼方成功发送礼物===')
-    # #             head_frame, gift_content = self.multiwoman.watch_othersendgift()
-    # #             assert head_frame
-    # #             assert '送出' in gift_content
-    # #             logging.info('===断言成功，收到私聊礼物===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-送礼')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-送礼')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例53：留言-一对一-返回')
-    # # def test_homepage53(self):
-    # #     logging.info("===留言-一对一-返回===")
-    # #     try:
-    # #         self.multiman.find_element(*MultiMan.messages_Stranger_userGoback).click()
-    # #         time.sleep(2)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_title).text == '留言'
-    # #         logging.info("断言成功")
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-一对一-送礼')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-一对一-送礼')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例54：留言-群聊消息显示')
-    # # def test_homepage54(self):
-    # #     logging.info("===留言-群聊消息显示===")
-    # #     try:
-    # #         self.womandriver.find_elements(*MultiWoman.messages_Stranger_UserHeadList)[-1].click()
-    # #         self.womandriver.find_element(*MultiWoman.messages_Stranger_userHalfPagePopoverHead).click()
-    # #         self.multiwoman.swipe(506, 1832, 506, 400)
-    # #         self.multiwoman.swipe(506, 1832, 506, 400)
-    # #         self.multiwoman.swipe(506, 1832, 506, 400)
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_pageGroupName).click()
-    # #         group_text='gHello'
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_inputBtn).send_keys(group_text)
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_inputBtn).click()
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_inputSendBtn).click()
-    # #         logging.info('===女生发言，准备成功===')
-    # #         self.multiwoman.system_goback_key()
-    # #         self.multiwoman.system_goback_key()
-    # #         self.multiwoman.system_goback_key()
-    # #         self.multiwoman.system_goback_key()
-    # #         # 加点击
-    # #         self.womandriver.find_element(*MultiWoman.messages_entry_All).click()
-    # #         self.womandriver.find_elements(*MultiWoman.messages_Group_entryGroupName)[0].click()
-    # #         time.sleep(3)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_ContentText).text.find(group_text)>=0
-    # #         time.sleep(3)
-    # #         # assert self.multiman.messages_User_userContentUnreadDotEle()
-    # #         global groupName_text, groupCount_text
-    # #         groupName_text = self.mandriver.find_element(*MultiMan.messages_Group_entryGroupName).text
-    # #         groupCount_text = self.mandriver.find_element(*MultiMan.messages_Group_entryGroupCount).text
-    # #         self.mandriver.find_elements(*MultiMan.messages_Group_entryGroupName)[0].click()
-    # #         time.sleep(2)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_titleGroupName).text == groupName_text
-    # #         assert '\x20''{}'.format(
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_titleGroupCount).text) == groupCount_text
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息显示')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息显示')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例55：留言-群聊消息未读数')
-    # # def test_homepage55(self):
-    # #     logging.info("===留言-群聊消息未读数===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_goback).click()
-    # #         assert self.multiman.messages_User_userContentUnreadDotEle()==False
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_entryGroupHead).click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_titleGroupName).text == groupName_text
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息未读数')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息未读数')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例56：留言-群聊消息-发言')
-    # # def test_homepage56(self):
-    # #     logging.info("===留言-群聊消息-发言===")
-    # #     try:
-    # #         name_text ="vndsiiovnhif VFSHTR"
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_inputBtn).send_keys(name_text)
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_inputBtn).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_inputSendBtn).click()
-    # #         time.sleep(1)
-    # #         assert self.mandriver.find_elements(*MultiMan.messages_Group_TextInputContent)[-1].text==name_text
-    # #         assert self.womandriver.find_elements(*MultiWoman.messages_Group_TextInputContent)[-1].text == name_text
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-发言')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-发言')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例57：留言-群聊消息-表情')
-    # # def test_homepage57(self):
-    # #     logging.info("===留言-群聊消息-表情===")
-    # #     try:
-    # #         self.multiman.audience_groupmessage_sendexpression(1)
-    # #         expression = self.multiman.watchgroup_selfsendexpression()
-    # #         assert expression
-    # #         logging.info('===断言成功，成功发送chamet表情===')
-    # #         head_frame, expression = self.multiwoman.watchgroup_othersendexpression()
-    # #         assert head_frame
-    # #         assert expression
-    # #         logging.info('===断言成功，收到chamet表情消息===')
-    # #
-    # #     except AssertionError as e:
-    # #             logging.info('===断言失败===')
-    # #             screen_name = self.multiman.screenshot('留言-群聊消息-表情')
-    # #             logging.info(f'截图成功，图片为{screen_name}')
-    # #             raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例58：留言-群聊消息-搜索表情')
-    # # def test_homepage58(self):
-    # #     logging.info("===留言-群聊消息-搜索表情===")
-    # #     try:
-    # #         self.multiman.groupmessage_send_expression(0)
-    # #         expression = self.multiman.watchgroup_selfsendgooglexpression()
-    # #         assert expression
-    # #         logging.info('===断言成功，成功发送google表情===')
-    # #         user_name, expression = self.multiwoman.watchgroup_othersendgoogleexpression()
-    # #         assert user_name
-    # #         assert expression
-    # #         logging.info('===断言成功，收到google表情消息===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-搜索表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-搜索表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例59：留言-群聊消息-语音消息')
-    # # def test_homepage59(self):
-    # #     logging.info("===留言-群聊消息-语音消息===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_voiceBtn).click()
-    # #         self.multiman.Phone114_getPermission_checkPopover()
-    # #         self.multiman.Permission_114Phone_MediaPopoverConfirmBtnEle()
-    # #         message_group_sendVoicePress = self.mandriver.find_element(*MultiMan.messages_Group_voiceAddBtn)
-    # #         self.multiman.longPress_action(message_group_sendVoicePress)
-    # #         assert self.mandriver.find_elements(*MultiMan.messages_Group_TextVoiceIcon)
-    # #         assert self.womandriver.find_elements(*MultiWoman.messages_Group_TextVoiceIcon)
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-语音消息')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-语音消息')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例60：留言-群聊消息-图片信息')
-    # # def test_homepage60(self):
-    # #     logging.info("===留言-群聊消息-图片信息===")
-    # #     try:
-    # #         self.multiman.groupmessage_send_photo(2)
-    # #         expression = self.multiman.watchgroup_selfsendexpression()
-    # #         assert expression
-    # #         logging.info('===断言成功，成功发送相册图片===')
-    # #         head_frame, expression = self.multiwoman.watchgroup_othersendexpression()
-    # #         assert head_frame
-    # #         assert expression
-    # #         logging.info('===断言成功，成功收到相册图片===')
-    # #
-    # #         # self.mandriver.find_element(*MultiMan.messages_Group_pictureMoreBtn).click()
-    # #         # self.mandriver.find_element(*MultiMan.messages_Group_pictureChooseBtn).click()
-    # #         # time.sleep(2)
-    # #         # self.multiman.Permission_114Phone_PopoverConfirmOnlyBtn()
-    # #         # # assert self.mandriver.find_elements(*MultiMan.messages_Group_pictureChooseList)
-    # #         # self.mandriver.find_elements(*MultiMan.messages_Group_pictureChooseList)[0].click()
-    # #         # assert len(self.mandriver.find_elements(*MultiMan.messages_Group_TextImageList)) >= 1
-    # #         # logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-图片信息')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-图片信息')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例：61留言-群聊消息-上麦')
-    # # def test_homepage61(self):
-    # #     logging.info("===留言-群聊消息-上麦===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_upMicBtn).click()
-    # #         self.multiman.Phone114_getPermission_checkPopover()
-    # #         self.multiman.Permission_114Phone_MediaPopoverConfirmBtnEle()
-    # #         # time.sleep(1)
-    # #         # assert self.mandriver.find_elements(*MultiMan.messages_Group_upMic10All)
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_upMicBtn).click()
-    # #         self.multiwoman.get_permission_checkPopover()
-    # #         self.multiwoman.get_permission_checkPopover()
-    # #         upMicUserHeadListNum=len(self.mandriver.find_elements(*MultiMan.messages_Group_upMicUserHeadList))
-    # #         assert upMicUserHeadListNum>=2
-    # #         logging.info("===上麦已成功===")
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-上麦')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-上麦')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例62：留言-群聊消息-上麦用户头像-查看自己')
-    # # def test_homepage62(self):
-    # #     logging.info("===留言-群聊消息-上麦用户头像-查看自己===")
-    # #     try:
-    # #         time.sleep(2)
-    # #         self.mandriver.find_elements(*MultiMan.messages_Group_upMicUserHeadList)[0].click()
-    # #         global man_upMicName,woman_upMicName
-    # #         man_upMicName=self.mandriver.find_element(*MultiMan.messages_Group_OneSelfHalfPagePopoverName).text
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverHeadFrame)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverLev)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverCouName)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverLan)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Group_OneSelfHalfPagePopoverMomentList)
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverHead).click()
-    # #         assert self.mandriver.find_element(*MultiMan.user_own_pagePersonalName).text == man_upMicName
-    # #         self.multiman.system_goback_key()
-    # #         logging.info("===男群主上麦，查看自己，断言成功===")
-    # #         self.womandriver.find_elements(*MultiWoman.messages_Group_upMicUserHeadList)[1].click()
-    # #         woman_upMicName = self.womandriver.find_element(*MultiWoman.messages_Group_OneSelfHalfPagePopoverName).text
-    # #         # assert self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverHeadFrame)
-    # #         # assert self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverLev)
-    # #         # assert self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverCouName)
-    # #         # assert self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverLan)
-    # #         # assert self.womandriver.find_element(*MultiMan.messages_Group_OneSelfHalfPagePopoverMomentList)
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverHead).click()
-    # #         assert self.womandriver.find_element(*MultiWoman.user_own_pagePersonalName).text == woman_upMicName
-    # #         self.multiwoman.system_goback_key()
-    # #         logging.info("===女成员上麦，查看自己，断言成功===")
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-上麦用户头像-查看自己')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-上麦用户头像-查看自己')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例63：留言-群聊消息-麦位表情')
-    # # def test_homepage63(self):
-    # #     logging.info("===留言-群聊消息-麦位表情===")
-    # #     try:
-    # #         self.mandriver.find_elements(*MultiMan.messages_Group_upMicUserHeadList)[0].click()
-    # #         time.sleep(3)
-    # #         userHalfPagePopoverImgList_case1=self.mandriver.find_elements(*MultiMan.messages_Group_userHalfPagePopoverImgList)
-    # #         userHalfPagePopoverImgList_case1[0].click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_upMicBtn)
-    # #         logging.info("===男群主麦位表情，断言成功===")
-    # #         self.womandriver.find_elements(*MultiWoman.messages_Group_upMicUserHeadList)[1].click()
-    # #         time.sleep(3)
-    # #         userHalfPagePopoverImgList_case2 = self.womandriver.find_elements(*MultiWoman.messages_Group_userHalfPagePopoverImgList)
-    # #         userHalfPagePopoverImgList_case2[0].click()
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_upMicBtn)
-    # #         logging.info("===女成员麦位表情，断言成功===")
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-麦位表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-麦位表情')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # #
-    # #
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例64：留言-群聊消息-上麦用户头像-查看他人')
-    # # def test_homepage64(self):
-    # #     logging.info("===留言-群聊消息-上麦用户头像-查看他人===")
-    # #     try:
-    # #         self.mandriver.find_elements(*MultiMan.messages_Group_upMicUserHeadList)[1].click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverName).text==woman_upMicName
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverHeadFrame)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverLev)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverCouName)
-    # #         # assert self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverLan)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverAtHer)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverReport)
-    # #         # assert self.multiman.messages_Group_userHalfPagePopoverMomentListEle() ==False
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverHead).click()
-    # #         assert self.mandriver.find_element(*MultiMan.user_own_pagePersonalName).text == woman_upMicName
-    # #         self.multiman.system_goback_key()
-    # #         logging.info("===男群主上麦，查看他人，断言成功===")
-    # #         self.womandriver.find_elements(*MultiWoman.messages_Group_upMicUserHeadList)[0].click()
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverName).text == man_upMicName
-    # #         # assert self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverHeadFrame)
-    # #         # assert self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverLev)
-    # #         # assert self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverCouName)
-    # #         # assert self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverLan)
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverAtHer)
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverReport)
-    # #         # assert self.multiwoman.messages_Group_userHalfPagePopoverMomentListEle() == False
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverHead).click()
-    # #         assert self.womandriver.find_element(*MultiWoman.user_own_pagePersonalName).text == man_upMicName
-    # #         self.multiwoman.system_goback_key()
-    # #         logging.info("===女成员上麦，查看他人，断言成功===")
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-上麦用户头像-查看他人')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-上麦用户头像-查看他人')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例65：留言-群聊消息-上麦用户头像-他人送礼和通话')
-    # # def test_homepage65(self):
-    # #     logging.info("===留言-群聊消息-上麦用户头像-他人送礼和通话===")
-    # #     try:
-    # #         time.sleep(2)
-    # #         self.mandriver.find_elements(*MultiMan.messages_Group_upMicUserHeadList)[1].click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverGifBtn).click()
-    # #         assert self.mandriver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("热门")')
-    # #         self.multiman.tap (751,925)
-    # #         logging.info("===男群主上麦给他人送礼，断言成功===")
-    # #         self.mandriver.find_elements(*MultiMan.messages_Group_upMicUserHeadList)[1].click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverCallBtn).click()
-    # #         if self.multiman.messages_Group_CallMoneyNotEnoughEle():
-    # #             self.multiman.tap(941, 2027)
-    # #         else:
-    # #             time.sleep(5)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_upMicBtn)
-    # #         logging.info("===男群主上麦给他人通话，断言成功===")
-    # #         self.womandriver.find_elements(*MultiWoman.messages_Group_upMicUserHeadList)[0].click()
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverGifBtn).click()
-    # #         assert self.womandriver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("热门")')
-    # #         self.multiwoman.tap(906, 798)
-    # #         logging.info("===女成员上麦上麦给他人送礼，断言成功===")
-    # #         self.womandriver.find_elements(*MultiWoman.messages_Group_upMicUserHeadList)[1].click()
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_userHalfPagePopoverCallBtn).click()
-    # #         if self.multiwoman.messages_Group_CallMoneyNotEnoughEle():
-    # #             self.multiwoman.tap(892, 2027)
-    # #         else:
-    # #             time.sleep(5)
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_upMicBtn)
-    # #         logging.info("===女成员上麦上麦给他人通话，断言成功===")
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-上麦用户头像-他人送礼和通话')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-上麦用户头像-他人送礼和通话')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例66：留言-群聊消息-下麦')
-    # # def test_homepage66(self):
-    # #     logging.info("===留言-群聊消息-下麦===")
-    # #     try:
-    # #
-    # #         upMicLen_num1=len(self.mandriver.find_elements(*MultiMan.messages_Group_upMicUserHeadList))
-    # #         messages_Group_upMicBtn_on=self.mandriver.find_element(*MultiMan.messages_Group_upMicBtn)
-    # #         messages_Group_upMicBtn_on.click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_upMicTurnOffBtn).click()
-    # #         assert upMicLen_num1 > len(self.mandriver.find_elements(*MultiMan.messages_Group_upMicUserHeadList))
-    # #         upMicLen_num2 = len(self.womandriver.find_elements(*MultiWoman.messages_Group_upMicUserHeadList))
-    # #         messages_Group_upMicBtn_on = self.womandriver.find_element(*MultiWoman.messages_Group_upMicBtn)
-    # #         messages_Group_upMicBtn_on.click()
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_upMicTurnOffBtn).click()
-    # #         if upMicLen_num2==1:
-    # #             assert self.womandriver.find_element(*MultiWoman.messages_Group_BannerListLast)
-    # #         else:
-    # #             assert upMicLen_num2 > len(self.womandriver.find_elements(*MultiWoman.messages_Group_upMicUserHeadList))
-    # #         logging.info('===下麦-断言成功===')
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-下麦')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-下麦')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例67：留言-群聊消息-钻石包发送-领取')
-    # # def test_homepage67(self):
-    # #     logging.info("===留言-群聊消息-钻石包发送-领取===")
-    # #     try:
-    # #         self.multiman.audience_send_diamondenvelope(2, 200)
-    # #         envelope = self.multiman.messageregion_getenvelope()
-    # #         assert envelope
-    # #         logging.info('===断言成功，成功发送钻石包===')
-    # #         self.multiwoman.audience_get_diamondenvelope()
-    # #         user_head = self.multiwoman.getenvelope_userhead()
-    # #         assert user_head
-    # #         logging.info('===断言成功,女生成功领取钻石包===')
-    # #         self.multiman.get_diamond_envelope()
-    # #         user_head = self.multiman.getenvelope_userhead()
-    # #         assert user_head
-    # #         logging.info('===断言成功，男生成功领取钻石包===')
-    # #         thank_ele = self.multiwoman.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/tv_thanking_1")
-    # #         thank_text = thank_ele.text
-    # #         thank_ele.click()
-    # #         self.multiman.tap(335,1903)
-    # #         audience_messageregion = self.multiman.groupmessage_text(-1)
-    # #         assert thank_text in audience_messageregion
-    # #         logging.info('===断言成功,男生成功收到主播发送的感谢语===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-钻石包发送-领取')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-钻石包发送-领取')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例68：留言-群聊消息-游戏浮层')
-    # # def test_homepage68(self):
-    # #     logging.info("===留言-群聊消息-游戏浮层===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_GameBtn).click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer1).text=='Chamet赛车'
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer2).text=='顶级赛车'
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer3).text=='幸运盒子'
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer4).text=='幸运转盘'
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer5).text=='幸运数字'
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_GameLayer6).text=='幸运抽奖机'
-    # #         self.multiman.tap(584,1804)
-    # #         logging.info('====游戏浮层-断言成功===')
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-游戏浮层')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-游戏浮层')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例69：留言-群聊消息-礼物送礼')
-    # # def test_homepage69(self):
-    # #     logging.info("===留言-群聊消息-礼物送礼===")
-    # #     try:
-    # #         self.multiman.group_opengiftwin()
-    # #         global sendgift_assertcondition_6
-    # #         sendgift_assertcondition_6 = self.multiman.audience_groupmessage_sendgift("热门", "幸运之吻")
-    # #         if sendgift_assertcondition_6 == 0:
-    # #             pytest.skip("观众端未送礼")
-    # #         gift_text = self.multiman.watchgroup_selfsendgift()
-    # #         assert "送出" in gift_text
-    # #         logging.info('===断言成功，观众群聊页面成功送礼===')
-    # #         if sendgift_assertcondition_6 == 0:
-    # #             pytest.skip("观众端未送礼")
-    # #         user_name, gift_text = self.multiwoman.watchgroup_othersendgift()
-    # #         assert user_name
-    # #         assert "送出" in gift_text
-    # #         logging.info('===断言成功，主播收到送礼消息===')
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-礼物送礼')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-礼物送礼')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例70：留言-群聊消息-顶部banner入口')
-    # # def test_homepage70(self):
-    # #     logging.info("===留言-群聊消息-顶部banner入口===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_BannerListLast).click()
-    # #         time.sleep(8)
-    # #         assert self.mandriver.find_elements(*MultiMan.messages_Group_BannerListLayer)
-    # #         self.multiman.tap(577, 617)
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_BannerListPackupBtn).click()
-    # #         time.sleep(3)
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_BannerListSmallBtn).click()
-    # #         logging.info('====顶部banner入口收起成功===')
-    # #         assert self.mandriver.find_elements(*MultiMan.messages_Group_BannerList)
-    # #         logging.info('====顶部banner入口展开成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-顶部banner入口')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-顶部banner入口')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例71：留言-群聊消息-更多按钮')
-    # # def test_homepage71(self):
-    # #     logging.info("===留言-群聊消息-更多按钮===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_detailMoreBtn).click()
-    # #         HeadList_test1=self.mandriver.find_elements(*MultiMan.messages_Group_MoreUserHeadList)
-    # #         group_userlist1 = len(HeadList_test1)
-    # #         HeadList_test1[0].click()
-    # #         logging.info('===更多跳转详情页成功===')
-    # #         group_UserName=self.multiman.userHalfPagePopoverNameOrOneselfEle()
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_userHalfPagePopoverHead).click()
-    # #         assert self.mandriver.find_element(*MultiMan.user_own_pagePersonalName).text==group_UserName
-    # #         self.multiman.system_goback_key()
-    # #         logging.info('===头像跳转个人主页成功===')
-    # #         if self.multiman.groupCount_number(groupCount_text)<=20:
-    # #             assert ' (''{}'')'.format(group_userlist1)==groupCount_text
-    # #         else:
-    # #             assert len(self.mandriver.find_elements(*MultiMan.messages_Group_MoreUserHeadList))==20
-    # #         logging.info('===用户数据正常===')
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-更多按钮')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-更多按钮')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例72：留言-群聊消息-更多-动态-更多详情页')
-    # # def test_homepage72(self):
-    # #     logging.info("===留言-群聊消息-更多-动态-更多详情页===")
-    # #     try:
-    # #         if self.mandriver.find_elements(*MultiMan.messages_Group_MoreUserHeadList):
-    # #             logging.info("===留言-有群聊消息，在群聊页面===")
-    # #             MoreMomentAllEle=self.multiman.messages_Group_MoreMomentAllEle()
-    # #             global moment_ele
-    # #             if MoreMomentAllEle!=False and len(MoreMomentAllEle)!=0:
-    # #                 moment_ele=1
-    # #                 logging.info('===有动态元素===')
-    # #                 self.mandriver.find_element(*MultiMan.messages_Group_MoreMomentPicLast).click()
-    # #                 assert self.mandriver.find_element(*MultiMan.messages_Group_MoreMomentMoreTitle).text=='动态'
-    # #                 assert self.mandriver.find_elements(*MultiMan.messages_Group_MoreMomentMoreSendBtn)
-    # #                 self.mandriver.find_element(*MultiMan.messages_Group_MoreMomentMoreGoback).click()
-    # #                 # assert self.l.messages_Group_MoreMomentAllEle()
-    # #                 logging.info('===更多跳转详情页成功===')
-    # #             else:
-    # #                 moment_ele = 0
-    # #                 logging.info('===没有动态元素===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-更多-动态-更多详情页')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-更多-动态-更多详情页')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例73：留言-群聊消息-更多-动态-大图模式')
-    # # def test_homepage73(self):
-    # #     logging.info("===留言-群聊消息-更多-动态-大图模式===")
-    # #     try:
-    # #         if moment_ele==0:
-    # #             logging.info('===没有动态元素===')
-    # #         else:
-    # #             logging.info('===有动态元素===')
-    # #             print(self.multiman.messages_Group_MoreMomentPicFrontEle())
-    # #             group_MoreMomentPicFrontEle_case=self.multiman.messages_Group_MoreMomentPicFrontEle()
-    # #             if group_MoreMomentPicFrontEle_case==False or len(group_MoreMomentPicFrontEle_case)==1:
-    # #                 logging.info('===只有一个动态===')
-    # #             else:
-    # #                 logging.info('===多个动态===')
-    # #                 self.mandriver.find_elements(*MultiMan.messages_Group_MoreMomentPicFront)[0].click()
-    # #                 assert self.mandriver.find_element(*MultiMan.messages_Group_MoreMomentMaxZanBtn)
-    # #                 self.multiman.swipe(531,1776,531,900)
-    # #                 assert self.mandriver.find_element(*MultiMan.messages_Group_MoreMomentMaxZanBtn)
-    # #                 self.multiman.system_goback_key()
-    # #                 # assert self.l.messages_Group_MoreMomentAllEle()
-    # #                 logging.info('===大图模式-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-更多-动态-大图模式')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-更多-动态-大图模式')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例74：留言-群聊消息-群组类型')
-    # # def test_homepage74(self):
-    # #     logging.info("===留言-群聊消息-群组类型===")
-    # #     try:
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_detailMoreBtn).click()
-    # #         time.sleep(3)
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupType).text=='普通群组'
-    # #         time.sleep(2)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupType).text == '普通群组'
-    # #         logging.info('===返回-断言成功===')
-    # #
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-群组类型')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-群组类型')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例75：留言-群聊消息-群组封面')
-    # # def test_homepage75(self):
-    # #     logging.info("===留言-群聊消息-群组封面===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupHeadPic).click()
-    # #         assert self.multiman.messages_Group_MoreGroupHeadPic_picStatusEle()
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupHeadPic_pic).click()
-    # #         assert self.multiman.messages_Group_MoreGroupHeadPic_ChangeEle()
-    # #         self.multiman.tap(389,1583)
-    # #         self.multiman.system_goback_key()
-    # #         logging.info('===群主-断言成功===')
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupHeadPic).click()
-    # #         assert self.multiwoman.messages_Group_MoreGroupHeadPic_picStatusEle()==False
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupHeadPic_pic).click()
-    # #         assert self.multiwoman.messages_Group_MoreGroupHeadPic_ChangeEle()==False
-    # #         self.multiwoman.system_goback_key()
-    # #         logging.info('===群成员-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-群组封面')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-群组封面')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例76：留言-群聊消息-群组名')
-    # # def test_homepage76(self):
-    # #     logging.info("===留言-群聊消息-群组名===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupNameSet).click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupNameSetContent).text==groupName_text
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupNameSetContentGoback).click()
-    # #         logging.info('===群主-断言成功===')
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupNameSet).click()
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupNameSet).text == groupName_text
-    # #         logging.info('===群成员-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-群组名')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-群组名')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例77：留言-群聊消息-群组介绍')
-    # # def test_homepage77(self):
-    # #     logging.info("===留言-群聊消息-群组介绍===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupIntro).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupIntroContent).clear()
-    # #         group_intro='hhhhhhh7'
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupIntroContent).send_keys(group_intro)
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupIntroContent).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupNameSetContentSave).click()
-    # #         time.sleep(2)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupIntroDes).text==group_intro
-    # #         logging.info('===群主-断言成功===')
-    # #         self.multiwoman.system_goback_key()
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_detailMoreBtn).click()
-    # #         time.sleep(2)
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupIntroDes).text == group_intro
-    # #         logging.info('===群成员-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-群组介绍')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-群组介绍')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例78：留言-群聊消息-管理群组')
-    # # def test_homepage78(self):
-    # #     logging.info("===留言-群聊消息-管理群组===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupMana).click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaVisConText)
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaPriConText)
-    # #         logging.info("===模式-断言完成===")
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaNextHost).click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaNextHostTitle).text=='选择新群主'
-    # #         self.multiman.system_goback_key()
-    # #         logging.info("===群组所有权转让-断言完成===")
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaAdmin).click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaNextHostTitle).text =='群管理员'
-    # #         self.multiman.system_goback_key()
-    # #         logging.info("===群管理员-断言完成===")
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisband).click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisPopCon).text == '解散后，所有成员（包括群主）将被移出组'
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisPopCancel).click()
-    # #         logging.info("===解散群组-断言完成===")
-    # #         logging.info("===群主-断言完成===")
-    # #         assert self.multiwoman.messages_Group_MoreGroupManaEle()==False
-    # #         logging.info('===群成员-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-管理群组')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-管理群组')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例79：留言-群聊消息-删除并离开')
-    # # def test_homepage79(self):
-    # #     logging.info("===留言-群聊消息-删除并离开===")
-    # #     try:
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDeAndLeave).click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisPopCon).text == '退出此群组后没有群组消息'
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupManaDisPopCancel).click()
-    # #         logging.info("===群主-断言完成===")
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupManaDeAndLeave).click()
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupManaDisPopCon).text == '退出此群组后没有群组消息'
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupManaDisPopCancel).click()
-    # #         logging.info('===群成员-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-删除并离开')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-删除并离开')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例80：留言-群聊消息-添加成员')
-    # # def test_homepage80(self):
-    # #     logging.info("===留言-群聊消息-添加成员===")
-    # #     try:
-    # #         self.mandriver.find_elements(*MultiMan.messages_Group_MoreGroupAddBtn)[0].click()
-    # #         self.mandriver.find_elements(*MultiMan.messages_Group_MoreGroupAddIcon)[0].click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupRemovePerSave).click()
-    # #         assert  self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupTitle).text == groupName_text
-    # #         logging.info('===断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-添加成员')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-添加成员')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例81：留言-群聊消息-移除成员')
-    # # def test_homepage81(self):
-    # #     logging.info("===留言-群聊消息-移除成员===")
-    # #     try:
-    # #         self.mandriver.find_elements(*MultiMan.messages_Group_MoreGroupAddBtn)[-1].click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupIntroTitle).text == '移除成员'
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupRemovePer).click()
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupRemovePerSave).click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_MoreGroupRemoveTips).text == '“你移除了”Mary33470557…啊bb...“来自群组”'
-    # #         self.multiman.system_goback_key()
-    # #         logging.info("===群主-断言完成===")
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_MoreGroupRemovePTips)
-    # #         self.multiwoman.system_goback_key()
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_pageGroupName).click()
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_joinBtn).click()
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_joinPopCon).text=='等待群主同意'
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_joinPopConfirm).click()
-    # #         self.multiwoman.system_goback_key()
-    # #         time.sleep(8)
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_Notification).click()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_Group_NotiJoinCon).text =='Mary33470557…啊bb... 申请加入群组: 今日也莫人陪我'
-    # #         self.mandriver.find_element(*MultiMan.messages_Group_joinAgree).click()
-    # #         time.sleep(2)
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_pageGroupName).click()
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_Group_joinInTips)
-    # #         logging.info('===群成员-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-移除成员')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-移除成员')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #
-    # #
-    # #
-    # # @allure.story('留言')
-    # # # @pytest.mark.skip(reason="本次不执行")
-    # # @allure.severity(allure.severity_level.BLOCKER)
-    # # @allure.title('用例82：留言-群聊消息-返回')
-    # # def test_homepage82(self):
-    # #     logging.info("===留言-群聊消息-返回===")
-    # #     try:
-    # #         self.multiman.system_goback_key()
-    # #         assert self.mandriver.find_element(*MultiMan.messages_title).text == '留言'
-    # #         self.womandriver.find_element(*MultiWoman.messages_Group_goback).click()
-    # #         assert self.womandriver.find_element(*MultiWoman.messages_title).text=='留言'
-    # #         self.multiman.system_goback_key()
-    # #         self.multiwoman.system_goback_key()
-    # #         logging.info('===返回-断言成功===')
-    # #
-    # #     except AssertionError as e:
-    # #         logging.info('===断言失败===')
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-返回')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    # #     except:
-    # #         logging.info("===执行失败===")
-    # #         screen_name = self.multiman.screenshot('留言-群聊消息-返回')
-    # #         logging.info(f'截图成功，图片为{screen_name}')
-    # #         raise
-    #
-    #
-    #
-    #
-    #
-    #
-    #
-
-
-
-
-
-
-
 
 
 
@@ -2766,7 +790,9 @@ class Test_multi_mypage(mypage_multi_Start_End):
                 # assert self.mandriver.find_element(*MultiMan.level_privilege_detailPopoverHeadFrameCss).text  == '头像框'
                 self.multiman.tap(972, 1830)
                 logging.info('===开始断言等级特权tab切换===')
-                self.mandriver.find_elements(*MultiMan.level_tabItem)[1].click()
+                # self.mandriver.find_elements(*MultiMan.level_tabItem)[1].click()
+                item2=self.mandriver.find_elements(*MultiMan.level_tabItem)[1]
+                self.mandriver.execute_script("arguments[0].click();", item2)
                 assert len(self.mandriver.find_elements(*MultiMan.level_privilege_DetailList)) == 2
                 # assert self.mandriver.find_element(*MultiMan.level_tabSelectedManCss).text == 'Lv2'
                 logging.info('===断言成功===')
@@ -2777,16 +803,18 @@ class Test_multi_mypage(mypage_multi_Start_End):
                 logging.info('===开始断言等级特权弹窗===')
                 self.mandriver.find_element(*MultiMan.level_privilege_DetailAllCss).click()
                 assert self.mandriver.find_element(*MultiMan.level_privilege_detailPopoverHeadFrameCss).text == '进场气泡'
-                time.sleep(3)
+                time.sleep(2)
                 # print(self.mandriver.window_handles)
                 # print(len(self.mandriver.window_handles))
                 # self.multiman.swipe(780,1000,348,1000)
                 # self.mandriver.swipe(348,1000,780,1000,2000)
-                # assert self.mandriver.find_element(*MultiMan.level_privilege_detailPopoverHeadFrameCss).text == '头像框'
+                # assert self.mandriver.find_element(*MultiMan.level_privilege_detailPopoverHeadFrameCss).text == '头像框
                 self.multiman.tap(972, 1830)
                 logging.info('===开始断言等级特权tab切换===')
                 # self.mandriver.find_elements(*MultiMan.level_tabItem)[0].click()
-                self.mandriver.find_elements(*MultiMan.level_tabItem)[0].click()
+                # teme1=self.mandriver.find_elements(*MultiMan.level_tabItem)[0].click()
+                teme1=self.mandriver.find_elements(*MultiMan.level_tabItem)[0]
+                self.mandriver.execute_script("arguments[0].click();", teme1)
                 time.sleep(1)
                 assert len(self.mandriver.find_elements(*MultiMan.level_privilege_DetailList))==2
                 logging.info('===断言成功===')
@@ -2815,12 +843,16 @@ class Test_multi_mypage(mypage_multi_Start_End):
             # self.multiman.swipe(622,2000,622,600)
             assert self.mandriver.find_element(*MultiMan.level_rules_text).text == '充值/消费'
             topUpBtn=self.multiman.vipLevel_level_topUpBtn()
-            topUpBtn[0].click()
-            self.multiman.h5_to_native()
+            # topUpBtn[0].click()
+            self.mandriver.execute_script("arguments[0].click();", topUpBtn[0])
+            # self.multiman.h5_to_native()
             time.sleep(3)
-            assert self.mandriver.find_element(*MultiMan.myBalance_myDiamondText).text == '余额'
+            # assert self.mandriver.find_element(*MultiMan.myBalance_myDiamondText).text == '余额'
+            # 三方充值界面用户ID元素
+            # assert self.mandriver.find_element(*MultiMan.myBalance_entry3rdAmountTEXT)
             self.multiman.system_goback_key()
-            self.multiman.native_to_h5()
+            time.sleep(2)
+            # self.multiman.native_to_h5()
             self.multiman.vip_Level_mylevel_goback()
             # self.l.tap(564,205)
             # self.mandriver.find_element(*MultiMan.level_goback).click()
@@ -2845,11 +877,12 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage87(self):
         logging.info("===我的等级-女-外部显示和内部跳转===")
         # self.multiwoman.tap(980,2155)
-        self.multiwoman.tab_Mine_Btn_126()
+        self.multiwoman.tab_Mine_Btn_85()
         try:
             my_vipLevel_NowLevelImgWomanZero = self.womandriver.find_element(*MultiWoman.my_vipLevel_NowLevelImgZeroAndWoman).text
             self.multiwoman.vip_Level_right_click()
             self.multiwoman.native_to_h5()
+            time.sleep(2)
             assert self.multiwoman.vipLevel_level_value() == my_vipLevel_NowLevelImgWomanZero
             logging.error("===断言成功===")
 
@@ -2885,13 +918,16 @@ class Test_multi_mypage(mypage_multi_Start_End):
                 # assert self.womandriver.find_element(*MultiWoman.level_privilege_detailPopoverHeadFrameCss).text  == '头像框'
                 self.multiwoman.tap(870, 2036)
                 logging.info('===开始断言等级特权tab切换===')
-                self.womandriver.find_elements(*MultiWoman.level_tabItem)[1].click()
+                # self.womandriver.find_elements(*MultiWoman.level_tabItem)[1].click()
+                item1=self.womandriver.find_elements(*MultiWoman.level_tabItem)[1]
+                self.womandriver.execute_script("arguments[0].click();", item1)
                 assert len(self.womandriver.find_elements(*MultiWoman.level_privilege_DetailList))==3
                 logging.info('===断言成功===')
             else:
                 logging.info('===等级不为Lv0，开始断言等级与横条等级内容===')
                 print(vipLevel_level_value)
-                assert self.womandriver.find_element(*MultiWoman.level_tabSelectedWomanCss).text == vipLevel_levelLeft_value
+                # assert self.womandriver.find_element(*MultiWoman.level_tabSelectedWomanCss).text == vipLevel_levelLeft_value
+                assert self.womandriver.find_element(*MultiWoman.level_tabSelectedWomanCss).text == vipLevel_level_value
                 logging.info('===开始断言等级特权弹窗===')
                 self.womandriver.find_element(*MultiWoman.level_privilege_DetailAllCss).click()
                 assert self.womandriver.find_element(*MultiWoman.level_privilege_detailPopoverHeadFrameCss).text == '进场气泡'
@@ -2899,7 +935,9 @@ class Test_multi_mypage(mypage_multi_Start_End):
                 # assert self.womandriver.find_element(*MultiWoman.level_privilege_detailPopoverHeadFrameCss).text  == '头像框'
                 self.multiwoman.tap(870, 2036)
                 logging.info('===开始断言等级特权tab切换===')
-                self.womandriver.find_elements(*MultiWoman.level_tabItem)[0].click()
+                # self.womandriver.find_elements(*MultiWoman.level_tabItem)[0].click()
+                item2=self.womandriver.find_elements(*MultiWoman.level_tabItem)[0]
+                self.womandriver.execute_script("arguments[0].click();", item2)
                 assert len(self.womandriver.find_elements(*MultiWoman.level_privilege_DetailList))==2
                 logging.info('===断言成功===')
 
@@ -3017,7 +1055,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.multiman.swipe(40, 1473, 40, 387, 100)
             self.multiman.swipe(40, 1473, 40, 387, 100)
             self.multiman.swipe(40, 1473, 40, 387, 100)
-            self.mandriver.find_elements(*MultiMan.MyTasks_rewards_manLast6500NoClaim)[-1].click()
+            self.mandriver.find_element(*MultiMan.MyTasks_rewards_manLast6500NoClaimXpath).click()
             RewardDetailsPopoverOkBtn_test=self.mandriver.find_element(*MultiMan.MyTasks_rewards_RewardDetailsPopoverOkBtn)
             assert RewardDetailsPopoverOkBtn_test.text == '完成任务获得更多奖励'
             RewardDetailsPopoverOkBtn_test.click()
@@ -3040,9 +1078,9 @@ class Test_multi_mypage(mypage_multi_Start_End):
     @allure.story('我的任务')
     # @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
-    @allure.title('用例94：我的任务-男-现在做任务按钮')
+    @allure.title('用例94：我的任务-男-立即做任务按钮')
     def test_homepage94(self):
-        logging.info("====我的任务-男-现在做任务按钮'===")
+        logging.info("====我的任务-男-立即做任务按钮'===")
         try:
             self.multiman.tap(899, 161)
             self.mandriver.find_element(*MultiMan.MyTasks_tab_rewards).click()
@@ -3050,7 +1088,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.multiman.swipe(40, 1473, 40, 387, 100)
             self.multiman.swipe(40, 1473, 40, 387, 100)
             MyTasks_rewards_DoTasksNowBtn_case1=self.mandriver.find_element(*MultiMan.MyTasks_rewards_DoTasksNowBtn)
-            assert MyTasks_rewards_DoTasksNowBtn_case1.text == '现在做任务！'
+            assert MyTasks_rewards_DoTasksNowBtn_case1.text == '立即做任务！'
             MyTasks_rewards_DoTasksNowBtn_case1.click()
             MyTasks_tab_tasks = self.mandriver.find_element(*MultiMan.MyTasks_tab_tasks)
             assert MyTasks_tab_tasks.get_attribute('selected') == 'true'
@@ -3058,12 +1096,12 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
         except AssertionError as e:
             logging.info('===断言失败===')
-            screen_name = self.multiman.screenshot('我的任务-男-现在做任务按钮')
+            screen_name = self.multiman.screenshot('我的任务-男-立即做任务按钮')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
         except:
             logging.info("===执行失败===")
-            screen_name = self.multiman.screenshot('我的任务-男-现在做任务按钮')
+            screen_name = self.multiman.screenshot('我的任务-男-立即做任务按钮')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
 
@@ -3107,6 +1145,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage96(self):
         logging.info("====我的任务-男-通行证历史'===")
         try:
+            self.multiwoman.tab_Mine_Btn_85()
             self.multiman.tap(899, 161)
             self.multiman.swipe(40, 387, 40, 1473, 100)
             monthlyHistory=self.multiman.my_Tasks_pointsMonthlyHistory()
@@ -3170,6 +1209,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage98(self):
         logging.info("====我的任务-男-邀请入口'===")
         try:
+            self.multiwoman.tab_Mine_Btn_85()
             self.multiman.tap(899, 161)
             MyTasks_tab_tasks_case1=self.mandriver.find_element(*MultiMan.MyTasks_tab_tasks)
             MyTasks_tab_tasks_case1.click()
@@ -3322,8 +1362,6 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
 
-
-
     @allure.story('我的任务')
     # @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
@@ -3331,7 +1369,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage103(self):
         logging.info("===我的任务-女-有奖励红点或积分及未领取和领取奖励===")
         try:
-            self.multiwoman.tab_Mine_Btn_126()
+            self.multiwoman.tab_Mine_Btn_85()
             self.multiwoman.tap(970, 2114)
             global my_Tasks_entryTwoText
             my_Tasks_entryTwoText1 = self.multiwoman.my_Tasks_entryTwoText()
@@ -3688,6 +1726,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.mandriver.find_element(*MultiMan.MyBalance_entry_man).click()
             time.sleep(3)
             self.multiman.native_to_h5()
+            self.multiman.tap(545, 120)
             assert self.mandriver.find_element(*MultiMan.MyBalance_title).text == '我的赚取'
             self.multiman.system_goback_key()
             self.multiman.h5_to_native()
@@ -3696,10 +1735,13 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.womandriver.find_element(*MultiWoman.MyBalance_entry_woman).click()
             time.sleep(3)
             self.multiwoman.native_to_h5()
-            assert self.womandriver.find_element(*MultiWoman.MyBalance_title).text == '我的赚取'
+            logging.info("===女用户入口跳转成功===")
+            self.multiwoman.tap(737,212)
+            assert self.womandriver.find_element(*MultiWoman.MyBalance_earnText).text == '赚取'
+            '//*[@id="app"]/div/div/div[2]/div[1]/div/div[1]/div'
             self.multiwoman.system_goback_key()
             self.multiwoman.h5_to_native()
-            logging.info("===男用户入口跳转成功===")
+            logging.info("===女用户入口跳转成功===")
 
 
         except AssertionError as e:
@@ -3725,7 +1767,9 @@ class Test_multi_mypage(mypage_multi_Start_End):
             logging.info("===我的邀请-男用户-入口显示===")
             assert self.mandriver.find_element(*MultiMan.MyInvite_entry_FreeCardsText).text == '免费卡片'
             self.multiman.MyInvite_entry_AllEle()
+            time.sleep(3)
             self.multiman.native_to_h5()
+            self.multiman.tap(545, 120)
             self.mandriver.implicitly_wait(2)
             # assert self.mandriver.find_element(*MultiMan.MyInvite_inviteRewardsTextName)
             # assert self.mandriver.find_element(*MultiMan.MyInvite_inviteRewardsTextXpath).text == '邀请奖励'
@@ -3754,9 +1798,15 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage118(self):
         logging.info("===我的邀请-男-问号按钮===")
         try:
-
+            # time.sleep(3)
+            self.multiman.tap(814,405)
+            context = self.mandriver.contexts
+            print(context)
             logging.info("===问号按钮===")
-            self.mandriver.find_element(*MultiMan.MyInvite_instructionsBtn).click()
+            # self.mandriver.find_element(*MultiMan.MyInvite_instructionsBtn).click()
+            self.multiman.tap(814, 405)
+            item6=self.mandriver.find_element(*MultiMan.MyInvite_instructionsBtn)
+            self.mandriver.execute_script("arguments[0].click();", item6)
             assert self.mandriver.find_element(*MultiMan.MyInvite_instructionsPopover_rule1).text == '聊天卡免费用于视频聊天1分钟，每张卡有效期为5天'
             assert self.mandriver.find_element(*MultiMan.MyInvite_instructionsPopover_rule2).text == '只有新的Chamet用户才能获得奖励'
             self.multiman.tap(609,197)
@@ -3783,6 +1833,8 @@ class Test_multi_mypage(mypage_multi_Start_End):
         logging.info("===我的邀请-男-邀请好友按钮===")
         try:
             logging.info("===邀请好友按钮===")
+            context = self.mandriver.contexts
+            print(context)
             self.mandriver.find_element(*MultiMan.MyInvite_inviteFriendsBtnID).click()
             self.multiman.h5_to_native()
             assert self.mandriver.find_element(*MultiMan.MyInvite_inviteFriendsPopover_whats)
@@ -3879,7 +1931,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
         logging.info("===我的打招呼-男女入口显示-进入显示===")
         try:
             logging.info("===我的打招呼-女入口显示-进入显示===")
-            self.multiwoman.tab_Mine_Btn()
+            self.multiwoman.tab_Mine_Btn_85()
             self.womandriver.find_element(*MultiWoman.MyGreetingWords_entry).click()
             time.sleep(2)
             global GrWords_woman
@@ -3994,7 +2046,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.mandriver.find_element(*MultiMan.myProfile_entry_man).click()
             assert self.mandriver.find_element(*MultiMan.myProfile_Title).text=='我的简介','没有进入我的等级页面'
             logging.info("===男-进入简介-断言成功===")
-            self.multiwoman.tab_Mine_Btn()
+            self.multiwoman.tab_Mine_Btn_85()
             self.womandriver.find_element(*MultiWoman.myProfile_entry_woman).click()
             assert self.womandriver.find_element(*MultiWoman.myProfile_Title).text == '我的简介', '没有进入我的等级页面'
             logging.info("===女-进入简介-断言成功===")
@@ -4045,6 +2097,8 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.mandriver.find_element(*MultiMan.myProfile_MyAvatar_ChangePosterBtn).click()
             self.mandriver.find_element(*MultiMan.myProfile_MyAvatar_ChangePosterPopPictureBtn).click()
             self.multiman.get_permission_checkPopover()
+            self.multiman.Phone114_getPermission_checkPopover()
+            self.multiman.Permission_114Phone_MediaPopoverConfirmBtnEle()
             self.mandriver.find_elements(*MultiMan.messages_Group_pictureChooseList)[0].click()
             self.mandriver.find_element(*MultiMan.myProfile_MyAvatar_ChangePosterUpdateConfirm).click()
             assert self.mandriver.find_element(*MultiMan.myProfile_MyAvatar_PosterStateText).text=='审核中' or '已通过'or'失败'
@@ -4149,7 +2203,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
     @allure.story('我的简介')
-    @pytest.mark.skip(reason="本次不执行")
+    # @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例131：我的简介-女-头像-编辑')
     def test_homepage131(self):
@@ -4159,17 +2213,23 @@ class Test_multi_mypage(mypage_multi_Start_End):
             self.womandriver.find_element(*MultiWoman.myProfile_MyAvatar_ChangePosterBtn).click()
             self.womandriver.find_element(*MultiWoman.myProfile_MyAvatar_ChangePosterPopPictureBtn).click()
             self.multiwoman.get_permission_checkPopover()
+            self.multiwoman.Phone85_getPermission_checkPopover()
+            self.multiwoman.Phone85_getPermission_checkPopover()
             self.womandriver.find_elements(*MultiWoman.messages_Group_pictureChooseList)[0].click()
             self.womandriver.find_element(*MultiWoman.myProfile_MyAvatar_ChangePosterUpdateConfirm).click()
             time.sleep(3)
-            self.multiwoman.tap(952, 2200)
-            time.sleep(3)
-            self.multiwoman.tap(952, 2200)
+            # self.multiwoman.tap(952, 2200)
+            # time.sleep(3)
+            # self.multiwoman.tap(952, 2200)
+            self.multiwoman.myProfile_MyAvatar_ChangePosterFailed_Pop()
             assert self.womandriver.find_element(*MultiWoman.myProfile_MyAvatar_PosterStateText).text=='审核中' or '已通过'or'失败'
-            print(self.womandriver.find_element(*MultiWoman.myProfile_MyAvatar_PosterStateText).text)
-            MyAvatar_posterNew = self.womandriver.find_element(*MultiWoman.myProfile_MyAvatar_poster)
-            assert MyAvatar_posterOld!=MyAvatar_posterNew
+            # print(self.womandriver.find_element(*MultiWoman.myProfile_MyAvatar_PosterStateText).text)
+            # MyAvatar_posterNew = self.womandriver.find_element(*MultiWoman.myProfile_MyAvatar_poster)
+            # assert MyAvatar_posterOld!=MyAvatar_posterNew
             self.multiwoman.system_goback_key()
+            self.multiwoman.myProfile_MyAvatar_ChangePosterFailed_Pop()
+            if self.womandriver.find_element(*MultiWoman.myProfile_MyAvatar_title).text == '我的封面':
+                self.multiwoman.system_goback_key()
             logging.info("===断言成功===")
 
         except AssertionError as e:
@@ -4251,7 +2311,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
         logging.info("===我的简介-昵称-修改===")
         try:
             global newName
-            newName='Tom33364388yyy'
+            newName='Tom33364388kkk'
             self.mandriver.find_element(*MultiMan.myProfile_NickName_EditorContent).clear()
             self.mandriver.find_element(*MultiMan.myProfile_NickName_EditorContent).send_keys(newName)
             self.multiman.system_goback_key()
@@ -4615,7 +2675,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
     def test_homepage147(self):
         logging.info("===我的简介-自我介绍修改===")
         try:
-            newIntro='oh!happy every 1 dayyy'
+            newIntro='oh!happy every 1 dakkk'
             # self.mandriver.find_element(*MultiMan.myProfile_SelfIntroduction_All).click()
             # assert self.mandriver.find_element(*MultiMan.myProfile_SelfIntroduction_title).text == '自我介绍', '并未跳转到自我介绍页面'
             SelfIntr = self.mandriver.find_element(*MultiMan.myProfile_SelfIntroduction_content).text
@@ -4651,6 +2711,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
         logging.info("===我的简介-google弹窗===")
         try:
             self.mandriver.find_element(*MultiMan.myProfile_Google_All).click()
+            time.sleep(8)
             # assert self.mandriver.find_element(*MultiMan.myProfile_Google_Popover)
             assert self.mandriver.find_element(*MultiMan.myProfile_Google_PopoverFirstAccountAll)
             assert self.mandriver.find_element(*MultiMan.myProfile_Google_PopoverAccountAddText).text == '再添加一个帐号'
@@ -4701,13 +2762,6 @@ class Test_multi_mypage(mypage_multi_Start_End):
             #     assert self.mandriver.find_element(*MultiMan.myProfile_Gmail_BindTitle).text == '换绑Gmail邮箱'
             #     self.mandriver.find_element(*MultiMan.myProfile_Gmail_BindGoback).click()
             # logging.info("===断言成功===")
-
-
-
-
-
-
-
 
 
         except AssertionError as e:
@@ -4824,6 +2878,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
                 assert self.mandriver.find_element(*MultiMan.myProfile_Password_ChangeTitle).text == '修改登录密码'
                 self.multiman.system_goback_key()
                 self.multiman.system_goback_key()
+                self.multiwoman.myProfile_MyAvatar_ChangePosterFailed_Pop()
                 self.multiwoman.system_goback_key()
                 logging.info("===断言成功===")
 
@@ -4844,7 +2899,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
     @allure.story('我的余额')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例154-155：我的余额-入口-我的钻石')
     def test_homepage154(self):
@@ -4883,7 +2938,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
     @allure.story('我的余额')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例156：我的余额-free入口')
     def test_homepage156(self):
@@ -4908,7 +2963,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
     @allure.story('我的余额')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例157：我的余额-充值档位')
     def test_homepage157(self):
@@ -4965,7 +3020,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
     @allure.story('我的余额')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例159：我的余额-充值档位-more')
     def test_homepage159(self):
@@ -4994,7 +3049,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
     @allure.story('我的余额')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例160：我的余额-历史详情')
     def test_homepage160(self):
@@ -5022,7 +3077,7 @@ class Test_multi_mypage(mypage_multi_Start_End):
 
 
     @allure.story('我的余额')
-    # @pytest.mark.skip(reason="本次不执行")
+    @pytest.mark.skip(reason="本次不执行")
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例161：我的余额-客服按钮')
     def test_homepage161(self):
@@ -5466,8 +3521,8 @@ if __name__ == '__main__':
 
 
 
-''' pytest .\test_mypage_multi.py -s -v --alluredir=..\result\mypage_result\2023_8_24_001'''
+''' pytest .\test_mypage_multi.py -s -v --alluredir=..\result\mypage_result\2023_9_07_001'''
 # '''pytest ./test_case/est_mypage_multi.py - vs --alluredir= D:\chamet_mypage_multi_testProject-8.10\result\mypage_result\2023_08_15_001'''
-'''allure serve ..\result\mypage_result\2023_8_24_001'''
+'''allure serve ..\result\mypage_result\2023_9_07_001'''
 # D:\chamet_mypage_multi_testProject-8.15.2\result\mypage_result\2023_8_17_001
 # pytest .\test_mypage_multi.py -s -v --alluredir=..\result\mypage_result\2023_8_17

@@ -14,7 +14,8 @@ class mypage_multi_Start_End:
         self.mandriver.implicitly_wait(8)
         self.multiman = MultiMan(self.mandriver)
         # self.multanchor.anchor_sign_in()
-        sleep(5)
+        # sleep(2)
+
         logging.info('===女用户端启动app===')
         self.womandriver = woman_appium_desired()
         self.womandriver.implicitly_wait(8)

@@ -218,6 +218,8 @@ class MultiMan(Common):
     messages_Group_upMicBtn = (By.ID, 'com.hkfuliao.chamet:id/iv_bottom_up_mic')
     messages_Group_upMic10All = (By.ID, 'com.hkfuliao.chamet:id/recycler_group_video')
     messages_Group_upMicUserHeadList = (By.ID, 'com.hkfuliao.chamet:id/iv_user_head')
+    messages_Group_upMicUserHeadList1 = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[1]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageView[2]')
+    messages_Group_upMicUserHeadList2 = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout[2]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageView[2]')
     messages_Group_upMicEmptyList = (By.ID, 'com.hkfuliao.chamet:id/emptyView')
     messages_Group_upMicSwitchMicBtn = (By.ID, 'com.hkfuliao.chamet:id/switch_microphone')
     messages_Group_upMicTurnOffBtn = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView[2]')
@@ -323,6 +325,7 @@ class MultiMan(Common):
     messages_Group_MoreGroupRemovePer = (By.XPATH, "//*[@text='Mary33470557…啊bbb哦哦哦']")
     messages_Group_MoreGroupRemovePerSave = (By.ID, 'com.hkfuliao.chamet:id/tv_done')
     messages_Group_MoreGroupRemoveTips = (By.ID, 'com.hkfuliao.chamet:id/tv_tip_default_msg')
+    messages_Group_MoreGroupRemoveTipsText = (By.XPATH,  "//*[@text='“你移除了”Mary33470557…啊bb...“来自群组”']")
     messages_Group_MoreGroupRemovePTips = (By.XPATH, "//*[@text='你已被移出群组']")
     messages_Group_MoreGroupRemovePTips2 = (By.XPATH, "//*[@text='该群组已被解散']")
     messages_Group_joinBtn = (By.ID,'com.hkfuliao.chamet:id/btn_join_group')
@@ -334,9 +337,7 @@ class MultiMan(Common):
     messages_Group_joinIgnore = (By.ID, 'com.hkfuliao.chamet:id/tv_ignore')
     messages_Group_joinInTips =  (By.XPATH, "//*[@text='Mary33470557…啊bb... 加入了群组']")
     messages_Group_MoreGroupAddIcon = (By.ID, 'com.hkfuliao.chamet:id/tv_select_icon')
-    messages_Group_MoreGroupAddIcon = (By.ID, 'com.hkfuliao.chamet:id/tv_select_icon')
-    messages_Group_MoreGroupAddIcon = (By.ID, 'com.hkfuliao.chamet:id/tv_select_icon')
-    messages_Group_MoreGroupAddIcon = (By.ID, 'com.hkfuliao.chamet:id/tv_select_icon')
+
 
 
 
@@ -400,9 +401,9 @@ class MultiMan(Common):
     messages_Stranger_phonePictureListSelectFirst = (By.ID, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.ImageView[2]')
     messages_Stranger_phonePictureListConfirmBtn = (By.ID, 'com.hkfuliao.chamet:id/menu_id_confirm')
     # 114手机
-    messages_Stranger_CameraBtn = (By.ID, 'com.hkfuliao.chamet:id/tv_take_camera')
-    messages_Stranger_VideoCallBtn = (By.ID, 'com.hkfuliao.chamet:id/videoView')
-    messages_Stranger_phonePictureListSelectFirst = (By.ID,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.ImageView[2]')
+    messages_Stranger_114CameraBtn = (By.ID, 'com.hkfuliao.chamet:id/tv_take_camera')
+    messages_Stranger_114VideoCallBtn = (By.ID, 'com.hkfuliao.chamet:id/videoView')
+    messages_Stranger_114phonePictureListSelectFirst = (By.ID,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.ImageView[2]')
 
     # 85手机相机
     messages_Stranger_CameraTakeBtn= (By.ID, 'com.android.camera:id/shutter_button')
@@ -427,9 +428,7 @@ class MultiMan(Common):
     messages_User_ListLevelIcon = (By.ID ,'com.hkfuliao.chamet:id/iv_vip_level')
     messages_User_userContentText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView[1]')
     messages_User_userContentUnreadDot = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView[2]')
-    messages_User_ListLevelIcon = (By.ID, '')
-    messages_User_ListLevelIcon = (By.ID, '')
-    messages_User_ListLevelIcon = (By.ID, '')
+
 
 
 
@@ -475,6 +474,7 @@ class MultiMan(Common):
     level_tabSelectedWomanCss = (By.CSS_SELECTOR, '[class="lev_tab_item lev_tab_item_select_female"]')
     # level_tabItem = (By.CLASS_NAME, 'lev_tab_item')
     level_tabItem = (By.XPATH, '//*[@id="lev_tab_menu"]/li')
+    # =(,'//*[@id="lev_tab_menu"]/li[1]')
     level_tabItemCss = (By.CSS_SELECTOR, '[class="lev_tab_item"]')
     level_privilege_DetailList = (By.XPATH,'//*[@id="lev_detail_menu"]/div')
     level_privilege_DetailAll = (By.CLASS_NAME, 'lev_detail_item')
@@ -494,6 +494,7 @@ class MultiMan(Common):
     MyBalance_entry_woman = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[3]')
     MyBalance_entry_manText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[8]/android.widget.LinearLayout/android.widget.TextView')
     MyBalance_entry_womanText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[3]/android.widget.LinearLayout/android.widget.TextView')
+    MyBalance_earnText = (By.XPATH, '//*[@id="app"]/div/div/div[2]/div[1]/div/div[1]/div')
     MyBalance_title = (By.XPATH, '//*[@id="app"]/div/div/div[1]/span')
     MyBalance_goback = (By.XPATH, '//*[@id="app"]/div/div/div[1]/svg/path')
 
@@ -602,7 +603,7 @@ class MultiMan(Common):
     # MyInvite_inviteRewardsTextXpath = (By.XPATH,'//*[@id="invitation_rewards"]')
     MyInvite_inviteRewardsTextXpath = (MobileBy.XPATH,'//*[@id="invitation_rewards"]')
     MyInvite_entry_FreeCardsText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[6]/android.widget.LinearLayout/android.widget.TextView')
-    MyInvite_instructionsBtn = (MobileBy, '/html/body/div/div[1]/div[1]/img[2]')
+    MyInvite_instructionsBtn = (By.XPATH, '/html/body/div/div[1]/div[1]/img[2]')
     # MyInvite_instructionsBtn = (By.XPATH, '/html/body/div/div[1]/div[1]/img[2]')
     MyInvite_instructionsPopover = (By.CLASS_NAME, 'close_pop_up rule_pop')
     MyInvite_instructionsPopover_rule1= (By.XPATH,'//*[@id="rule1"]')
@@ -718,6 +719,7 @@ class MultiMan(Common):
     MyTasks_rewards_first100Claimed = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout')
     MyTasks_rewards_manFirst100Claimed_Status = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.view.ViewGroup/android.widget.ImageView[2]')
     MyTasks_rewards_manLast6500NoClaim = (By.ID, 'com.hkfuliao.chamet:id/iv_gift_pic')
+    MyTasks_rewards_manLast6500NoClaimXpath = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[7]/android.widget.LinearLayout/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ImageView')
     MyTasks_rewards_LeftClickGuideID = (By.ID, 'com.hkfuliao.chamet:id/svga_left_click_guide')
     MyTasks_rewards_RightClickGuideID= (By.ID,'com.hkfuliao.chamet:id/svga_right_click_guide')
 
@@ -822,6 +824,7 @@ class MultiMan(Common):
     myProfile_MyAvatar_ChangePosterUpdateConfirm = (By.ID,'com.hkfuliao.chamet:id/iv_cover_update')
     myProfile_MyAvatar_PosterState = (By.ID, 'com.hkfuliao.chamet:id/ll_upload_poster_state')
     myProfile_MyAvatar_PosterStateText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.TextView')
+    myProfile_MyAvatar_ChangePosterFailedBtn = (By.ID,'com.hkfuliao.chamet:id/single_btn')
     myProfile_MyAvatar_PosterHistoryBtn = (By.ID, 'com.hkfuliao.chamet:id/iv_poster_history')
     myProfile_MyAvatar_PosterHistoryTitle = (By.ID, 'com.hkfuliao.chamet:id/title')
     myProfile_MyAvatar_PosterScore = (By.ID, 'com.hkfuliao.chamet:id/tv_poster_score')
@@ -970,6 +973,12 @@ class MultiMan(Common):
     myBalance_entryDiamondWomanNum = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[8]/android.widget.LinearLayout/android.widget.TextView')
     myBalance_entry_goback = (By.ID, 'com.hkfuliao.chamet:id/fv_back')
     myBalance_myDiamondText = (By.ID, 'com.hkfuliao.chamet:id/tv_my_diamonds')
+    myBalance_entry3rdID = (By.XPATH,'//*[@id="app"]/div/div/div[1]/div[3]/div[1]/div/div[2]/span')
+    myBalance_entry3rdDetail = (By.XPATH,'//*[@id="app"]/div/div/div[1]/div[1]/img[4]')
+    myBalance_entry3rdDetailCLASS= (By.XPATH,'//*[@id="type-txt"]')
+    myBalance_entry3rdAmount = (By.CLASS_NAME,'balance_amount')
+    myBalance_entry3rdAmountTEXT = (By.CLASS_NAME, "//*[@text='余额']")
+    myBalance_entry3rdAmountXPATH = (By.XPATH,'/html/body/div/div/div/div[1]/div[3]/div[1]/div/div')
     myBalance_myDiamondCountText = (By.ID, 'com.hkfuliao.chamet:id/tv_my_diamonds_count')
     myBalance_topOffers_Entry = (By.ID, 'com.hkfuliao.chamet:id/iv_free_advertising')
     myBalance_topOffers_Title = (By.ID, 'com.hkfuliao.chamet:id/tv_base_title')
@@ -1338,11 +1347,11 @@ class MultiMan(Common):
             logging.info('有速配弹窗')
             return True
 
-    '''速配弹窗检查'''
-    def Check_RandomCall_PopoverEle(self):
-        if self.Permission_popoverTitleEle() != False:
-            logging.info('速配弹窗检查')
-            self.tap(930,2123)
+    # '''速配弹窗检查'''
+    # def Check_RandomCall_PopoverEle(self):
+    #     if self.Permission_popoverTitleEle() != False:
+    #         logging.info('速配弹窗检查')
+    #         self.tap(930,2123)
 
 
     '''“Chamet”请求权限弹窗？'''
@@ -1487,7 +1496,8 @@ class MultiMan(Common):
                 print(type(Num))
             if len(messages_system_UnReadNum2)!=0:
                 messages_system_UnReadNum22 = messages_system_UnReadNum2[0].text
-                return Num+messages_system_UnReadNum22
+                print(type(messages_system_UnReadNum22))
+                return Num+int(messages_system_UnReadNum22)
             return Num
 
                 # print(messages_system_UnReadNum1)
@@ -1979,7 +1989,7 @@ class MultiMan(Common):
     def audience_groupmessage_sendgift(self, gift_tab, gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
-        # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("么么哒")').click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
         self.driver.find_elements(MobileBy.ID, "com.hkfuliao.chamet:id/item_group_count_text")[0].click()
         # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
@@ -2018,7 +2028,7 @@ class MultiMan(Common):
             # self.audience_sendgift("简体中文chinese simplified","Moon sighting")
             self.audience_sendgift("热门", "幸运之吻")
         elif self.rechargewindow_bysendgift() and self.rechargewindow_able() == False:
-            self.back(2)
+            self.system_goback_key()
             logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
             return 0
         else:
@@ -2444,8 +2454,10 @@ class MultiMan(Common):
             logging.info('===充值失败===')
             return False
 
-
-
+    # 获取钻石弹窗
+    def audience_buysuccess_page(self):
+        buy_success_page = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_card_icon")
+        return self.driver.find_element(*buy_success_page)
 
 
 
@@ -2701,7 +2713,7 @@ class MultiMan(Common):
         except NoSuchElementException:
             logging.info('no level_title')
         else:
-            print(ll)
+            # print(ll)
             ll[0].click()
             # 返回至原生界面后，切换至原生界面
             Common.h5_to_native(self)
@@ -3231,6 +3243,42 @@ class MultiMan(Common):
         else:
             print(myProfile_SecondLanguage_Text1)
             return myProfile_SecondLanguage_Text1
+
+
+
+
+    '''我的简介——女用户头像更改审核弹窗'''
+    def myProfile_MyAvatar_ChangePosterFailed_Btn(self):
+        try:
+            myProfile_MyAvatar_ChangePosterFailedBtn11 = self.driver.find_element(*self.myProfile_MyAvatar_PosterStateText)
+            # myProfile_MyAvatar_ChangePosterFailedBtn11 = self.driver.find_element(*self.myProfile_MyAvatar_ChangePosterFailedBtn)
+
+        except NoSuchElementException:
+            logging.info('没有——我的简介——女用户头像更改审核弹窗')
+            self.driver.find_element(*self.myProfile_MyAvatar_ChangePosterFailedBtn).click()
+            self.tap(952, 2200)
+            return False
+        else:
+            logging.info('我的简介——女用户头像更改审核弹窗已点击')
+            return True
+
+
+    '''我的简介——女用户头像更改审核弹窗'''
+    def myProfile_MyAvatar_ChangePosterFailed_Pop(self):
+        try:
+            myProfile_MyAvatar_ChangePosterFailedBtn11 = self.driver.find_element(*self.myProfile_MyAvatar_ChangePosterFailedBtn)
+
+        except NoSuchElementException:
+            logging.info('没有——我的简介——女用户头像更改审核弹窗')
+            return False
+        else:
+            myProfile_MyAvatar_ChangePosterFailedBtn11.click()
+            self.tap(545, 120)
+            logging.info('我的简介——女用户头像更改审核弹窗已点击')
+            return True
+
+
+
 
     '''我的页面-我的简介——重置密码重置字样显示'''
     def myProfile_Password_entryTextEle(self):

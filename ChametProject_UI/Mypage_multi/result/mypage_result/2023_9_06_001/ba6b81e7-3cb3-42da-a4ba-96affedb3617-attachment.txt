@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_mypage_multi.py:877 ===我的等级-女-外部显示和内部跳转===
+[32mINFO    [0m root:multiMypage_woman.py:2577 ===开始点击我的等级===
+[32mINFO    [0m root:multiMypage_woman.py:2584 已经点击
+[32mINFO    [0m root:multiMypage_woman.py:2591 已经进入
+[32mINFO    [0m root:multiMypage_woman.py:2661 开始拼接
+[32mINFO    [0m root:test_mypage_multi.py:888 ===断言失败===
+[32mINFO    [0m root:test_mypage_multi.py:890 截图成功，图片为D:\chamet_mypage_multi_testProject-9.5\common../../screenshots/my_page/我的等级-女-外部显示和内部跳转_2023-09-06 16_26_52.png

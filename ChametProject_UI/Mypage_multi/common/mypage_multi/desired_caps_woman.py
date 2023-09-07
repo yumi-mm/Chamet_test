@@ -28,7 +28,7 @@ def woman_appium_desired():
 
     desired_caps2['appPackage'] = data['woman_appPackage']
     desired_caps2['appActivity'] = data['woman_appActivity']
-    desired_caps2['automationName'] = data['woman_automationName']
+    desired_caps2['ANDROID_UIAUTOMATOR'] = data['woman_ANDROID_UIAUTOMATOR']
     desired_caps2['noReset'] = data['woman_noReset']
     desired_caps2['unicodeKeyboard'] = data['woman_unicodeKeyboard']
     desired_caps2['resetKeyboard'] = data['woman_resetKeyboard']

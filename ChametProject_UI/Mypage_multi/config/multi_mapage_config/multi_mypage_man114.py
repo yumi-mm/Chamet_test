@@ -9,6 +9,7 @@ man_unicodeKeyboard: False
 man_resetKeyboard: False
 man_port: 4726
 # man_ip: 127.0.0.1
-man_automationName: Uiautomator2
+# man_automationName: Uiautomator2
+man_ANDROID_UIAUTOMATOR: Uiautomator2
 man_newCommandTimeout: 600000
 man_udid: 133e13bb

@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:1324 ====我的任务-男-开通月卡'===
+[32mINFO    [0m root:test_mypage_multi.py:1331 ===男用户有充值月卡入口===
+[31m[1mERROR   [0m root:test_mypage_multi.py:1338 ===断言成功===

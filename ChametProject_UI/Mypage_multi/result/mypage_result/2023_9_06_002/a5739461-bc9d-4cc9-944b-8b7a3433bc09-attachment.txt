@@ -1,0 +1,9 @@
+[32mINFO    [0m root:test_mypage_multi.py:992 ===我的任务-男-有奖励红点或积分及未领取和领取奖励===
+[32mINFO    [0m root:multiMypage_man.py:2759 显示积分
+[32mINFO    [0m root:test_mypage_multi.py:999 ===我的任务-新奖励===
+[32mINFO    [0m root:test_mypage_multi.py:1003 ===已完成未领取奖励，开始领取===
+[32mINFO    [0m root:multiMypage_man.py:2895 ===左侧引导手势元素有无===
+[32mINFO    [0m root:test_mypage_multi.py:1010 ===领取奖励中===
+[32mINFO    [0m root:test_mypage_multi.py:1015 ===已完成已领取奖励，弹窗跳转确认===
+[32mINFO    [0m root:test_mypage_multi.py:1018 ===已领取奖励的弹窗跳转===
+[32mINFO    [0m root:test_mypage_multi.py:1021 ===断言成功===

@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:3267 ===我的页面-设置-用户协议===
+[32mINFO    [0m root:test_mypage_multi.py:3286 ===执行失败===

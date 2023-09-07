@@ -9,7 +9,8 @@ woman_unicodeKeyboard: False
 woman_resetKeyboard: False
 woman_port: 4723
 # woman_ip: 127.0.0.1
-woman_automationName: Uiautomator2
+# woman_automationName: Uiautomator2
+woman_ANDROID_UIAUTOMATOR: Uiautomator2
 woman_newCommandTimeout: 600000
 woman_udid: e6a9b0df
 

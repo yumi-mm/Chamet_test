@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:1566 ====我的任务-女-邀请入口'===
+[32mINFO    [0m root:multiMypage_woman.py:2799 no MyTasks_tasks_inviteEntryText
+[32mINFO    [0m root:test_mypage_multi.py:1572 ===断言成功===

@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:3201 ===我的页面-设置-黑名单===
+[32mINFO    [0m root:multiMypage_man.py:3396 no settings_blocklist_noUserText
+[32mINFO    [0m root:test_mypage_multi.py:3215 ===有用户===
+[32mINFO    [0m root:test_mypage_multi.py:3226 ===断言成功===

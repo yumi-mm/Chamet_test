@@ -28,7 +28,7 @@ def man_appium_desired():
 
     desired_caps1['appPackage'] = data['man_appPackage']
     desired_caps1['appActivity'] = data['man_appActivity']
-    desired_caps1['automationName'] = data['man_automationName']
+    desired_caps1['ANDROID_UIAUTOMATOR'] = data['man_ANDROID_UIAUTOMATOR']
     desired_caps1['noReset'] = data['man_noReset']
     desired_caps1['unicodeKeyboard'] = data['man_unicodeKeyboard']
     desired_caps1['resetKeyboard'] = data['man_resetKeyboard']
