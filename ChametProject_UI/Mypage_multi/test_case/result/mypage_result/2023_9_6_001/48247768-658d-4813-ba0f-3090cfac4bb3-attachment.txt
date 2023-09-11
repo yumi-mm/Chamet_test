@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:4527 ===我的简介-第二语言显示和切换===
+[32mINFO    [0m root:test_mypage_multi.py:4579 ===执行失败===

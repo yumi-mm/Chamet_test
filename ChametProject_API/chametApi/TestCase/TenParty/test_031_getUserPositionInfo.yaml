@@ -1,0 +1,2 @@
+- {'api':'POST /getUserPositionInfo','apiName':'获取用户麦位信息','method':'post','url':'/live/user/getUserPositionInfo','headers':0}
+- {'caseName':'获取用户麦位信息', 'data': {"bizCode":null,"toUserId":20113007}}

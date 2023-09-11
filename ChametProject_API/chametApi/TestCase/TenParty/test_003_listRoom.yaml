@@ -1,0 +1,2 @@
+- {'api':'POST 	/listRoom','apiName':'1.1.4.1.29.5 直播间列表','method':'post','url':'/live/listRoom','headers':0}
+- {'caseName':'直播间列表', 'data': {"pageNo":1,"pageSize":1,"countryNo":0,"languageNo":0}}

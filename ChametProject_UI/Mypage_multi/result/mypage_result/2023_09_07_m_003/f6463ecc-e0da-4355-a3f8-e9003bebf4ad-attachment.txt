@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1592 ===留言-群聊消息-游戏浮层===
+[32mINFO    [0m root:test_mypage_message_multi.py:1602 ====游戏浮层-断言成功===

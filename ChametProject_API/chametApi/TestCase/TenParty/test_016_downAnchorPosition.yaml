@@ -1,0 +1,2 @@
+- {'api':'POST /downAnchorPosition','apiName':'用户下麦位','method':'post','url':'/live/user/downAnchorPosition','headers':0}
+- {'caseName':'用户下麦位', 'data': {"bizCode":null}}

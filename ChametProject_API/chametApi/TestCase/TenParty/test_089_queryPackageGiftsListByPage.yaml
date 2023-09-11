@@ -1,0 +1,2 @@
+- {'api':'POST /queryPackageGiftsListByPage','apiName':'背包礼物列表详情','method':'post','url':'/giftListConfig/queryPackageGiftsListByPage','headers':0}
+- {'caseName':'背包礼物列表详情', 'data': {"souceType":2,"pageNo":1,"pageSize":1,}}

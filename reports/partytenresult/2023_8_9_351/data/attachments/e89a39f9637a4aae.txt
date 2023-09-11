@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3281 ===用例146：10人交友房观众端充值===
-[32mINFO    [0m root:multparty_ten_audience.py:566 ===点击更多按钮===
-[32mINFO    [0m root:multparty_ten_audience.py:1401 ===进入充值页面===
-[32mINFO    [0m root:multparty_ten_audience.py:1414 ===进行充值===
-[32mINFO    [0m root:test_10party_mult.py:3286 ===断言成功===

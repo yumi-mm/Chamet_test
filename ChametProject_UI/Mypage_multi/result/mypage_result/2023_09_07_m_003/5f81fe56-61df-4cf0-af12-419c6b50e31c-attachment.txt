@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:870 ===留言-一对一-搜索表情===
+[32mINFO    [0m root:multiMypage_man.py:1620 ===准备发送表情===
+[32mINFO    [0m root:multiMypage_man.py:1627 ===发送google表情===
+[32mINFO    [0m root:test_mypage_message_multi.py:887 ===执行失败===

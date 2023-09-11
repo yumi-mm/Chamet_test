@@ -1,0 +1,2 @@
+- {'api':'POST /agreeInvite','apiName':'同意上麦邀请（允许被带走&关闭摄像头）','method':'post','url':'/live/user/agreeInvite','headers':0}
+- {'caseName':'同意上麦邀请（允许被带走&关闭摄像头）', 'data': {"bizCode":null,"isAllowBeTaken":1,"beTakenLimitLevel":1,"isOpenCamera":0}}

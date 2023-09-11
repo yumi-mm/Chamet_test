@@ -1,0 +1,2 @@
+- {'api':'POST  /listMyFollowRoom','apiName':'我的关注交友房列表','method':'post','url':'/live/user/listMyFollowRoom','headers':0}
+- {'caseName':'我的关注交友房列表', 'data': {"pageNo":1,"pageSize":1,"type":1}}

@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:4286 ===我的简介-性别===
+[32mINFO    [0m root:test_mypage_multi.py:4303 ===执行失败===

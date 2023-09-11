@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:2626 ===用例116：观众端群聊页面发送语音===
+[32mINFO    [0m root:multparty_ten_audience.py:1244 ===准备发送语音===
+[32mINFO    [0m root:multparty_ten_audience.py:1041 ===点击空白处===
+[32mINFO    [0m root:test_10party_mult.py:2632 ===断言成功，成功发送语音===

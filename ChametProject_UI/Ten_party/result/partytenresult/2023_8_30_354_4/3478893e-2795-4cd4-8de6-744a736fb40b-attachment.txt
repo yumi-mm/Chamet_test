@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:1559 ===用例68：主播检查是否收到@消息===
+[32mINFO    [0m root:multparty_ten_anchor.py:231 ===获取消息区最后一条文本消息===
+[32mINFO    [0m root:test_10party_mult.py:1563 ===断言成功，主播收到@消息===

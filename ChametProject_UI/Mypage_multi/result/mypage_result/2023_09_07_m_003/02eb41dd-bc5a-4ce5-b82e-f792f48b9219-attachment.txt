@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:534 ===留言-陌生人留言-更多视频聊天===
+[32mINFO    [0m root:multiMypage_man.py:2347 ===拨打语言聊天===
+[32mINFO    [0m root:multiMypage_man.py:2331 ===用户在线===
+[32mINFO    [0m root:multiMypage_man.py:2365 ===断言成功，成功拨打电话===
+[32mINFO    [0m root:test_mypage_message_multi.py:537 ===断言成功===

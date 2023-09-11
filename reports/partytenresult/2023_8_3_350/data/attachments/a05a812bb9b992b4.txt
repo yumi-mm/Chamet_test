@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1922 ===用例86：观众展开私聊页面下拉按钮===
-[32mINFO    [0m root:multparty_ten_audience.py:822 ===展开下拉列表===
-[32mINFO    [0m root:test_10party_mult.py:1926 ===断言成功，观众成功展开下拉项===

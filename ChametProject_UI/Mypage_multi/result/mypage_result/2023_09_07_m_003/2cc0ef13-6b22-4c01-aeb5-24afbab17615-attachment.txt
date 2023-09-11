@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1152 ===留言-群聊消息-发言===
+[32mINFO    [0m root:test_mypage_message_multi.py:1169 ===执行失败===

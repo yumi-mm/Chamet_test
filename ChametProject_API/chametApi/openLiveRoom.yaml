@@ -1,0 +1,4 @@
+- {'api':'POST /openLiveRoom','apiName':'开启10人交友房','method':'post','url':'/live/openLiveRoom','headers':0}
+- {'caseName':'开启10人交友房,语音房&普通房&允许被带走', 'data': {"isAllowBeTaken":1,"beTakenLimitLevel":1,"avType":2,"gameType":0}}
+- {'caseName':'开启10人交友房,语音房&普通房&不允许被带走', 'data': {"isAllowBeTaken":0,"beTakenLimitLevel":1,"avType":2,"gameType":0}}
+- {'caseName':'开启10人交友房,语音房&lucky28&允许被带走', 'data': {"isAllowBeTaken":1,"beTakenLimitLevel":1,"avType":2,"gameType":1}}

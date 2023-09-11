@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:409 ===留言-陌生人留言-搜索表情===
+[32mINFO    [0m root:multiMypage_man.py:1620 ===准备发送表情===
+[32mINFO    [0m root:multiMypage_man.py:1627 ===发送google表情===
+[32mINFO    [0m root:multiMypage_man.py:1641 ===发送成功===
+[32mINFO    [0m root:multiMypage_man.py:1650 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_mypage_message_multi.py:414 ===断言成功，发送Facebook表情成功===
+[32mINFO    [0m root:test_mypage_message_multi.py:418 ===断言成功，成功收到Facebook表情===

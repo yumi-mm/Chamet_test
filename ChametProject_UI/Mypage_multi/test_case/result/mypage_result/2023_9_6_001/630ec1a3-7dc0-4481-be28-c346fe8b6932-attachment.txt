@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:389 ===我的页面-关注列表===
+[32mINFO    [0m root:test_mypage_multi.py:409 断言成功

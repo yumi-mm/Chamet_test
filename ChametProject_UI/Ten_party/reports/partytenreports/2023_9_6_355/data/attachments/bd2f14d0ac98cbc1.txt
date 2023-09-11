@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:2831 ===用例127：主播群聊页面上麦===
+[32mINFO    [0m root:multparty_ten_anchor.py:822 ===主播端上麦===
+[32mINFO    [0m root:test_10party_mult.py:2836 ===断言成功===

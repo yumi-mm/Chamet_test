@@ -388,7 +388,8 @@ class Multanchor(object):
     # 主播禁言嘉宾
     def mute_guest(self):
         try:
-            mute_guestbut = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/tv_mute")
+            # mute_guestbut = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/tv_mute")
+            mute_guestbut = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("禁言")')
         except:
             logging.info('===不存在禁言按钮===')
         else:
@@ -1005,7 +1006,7 @@ class Multanchor(object):
     # 进入游戏页面
     def enter_game_window(self,game_type):
         race_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_rank")
-        LuckyNumber_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_ln_wheel_mask")
+        LuckyNumber_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_bet_user_count")
         game_race_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("Chamet赛车")')
         game_LuckyNumber_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("幸运数字")')
         game_race = self.driver.find_element(*game_race_ele)

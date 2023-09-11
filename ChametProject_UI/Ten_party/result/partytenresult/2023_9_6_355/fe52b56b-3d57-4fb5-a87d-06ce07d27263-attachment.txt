@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_10party_mult.py:1886 ===用例84：主播私聊页面发送Facebook表情===
+[32mINFO    [0m root:multparty_ten_anchor.py:572 ===准备发送表情===
+[32mINFO    [0m root:multparty_ten_anchor.py:561 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_10party_mult.py:1891 ===断言成功，主播发送Facebook表情成功===

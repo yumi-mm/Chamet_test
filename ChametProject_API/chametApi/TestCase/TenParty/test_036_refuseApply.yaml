@@ -1,0 +1,2 @@
+- {'api':'POST /refuseApply','apiName':'拒绝申请上麦位','method':'post','url':'/live/host/refuseApply','headers':0}
+- {'caseName':'拒绝申请上麦位', 'data': {"bizCode":null,"toUserId":20113007}}

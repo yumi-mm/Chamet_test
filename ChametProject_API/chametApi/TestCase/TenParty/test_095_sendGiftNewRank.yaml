@@ -1,0 +1,2 @@
+- {'api':'POST /sendGiftNewRank','apiName':'送礼排行榜(新)','method':'post','url':'/gift/sendGiftNewRank','headers':0}
+- {'caseName':'送礼排行榜(新)', 'data': {"pageNo":1,"rankType":1}}

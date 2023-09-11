@@ -1,0 +1,2 @@
+- {'api':'POST /operateUserSelf','apiName':'用户对自己的操作（开启麦克风）','method':'post','url':'/live/user/operateUserSelf','headers':0}
+- {'caseName':'用户对自己的操作（开启麦克风）', 'data': {"bizCode":null,"type":2}}

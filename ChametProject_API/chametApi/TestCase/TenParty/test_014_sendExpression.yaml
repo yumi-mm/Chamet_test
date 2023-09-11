@@ -1,0 +1,2 @@
+- {'api':'POST /sendExpression','apiName':'发送交友房-麦位表情（主播端）','method':'post','url':'/live/user/sendExpression','headers':0}
+- {'caseName':'发送交友房-麦位表情（主播端）', 'data': {"bizCode":null,"picurl":"https://ws-img.ichamet.com/aliyun_oss/gift/image/2023/07/17/expressions/2.gif"}}
