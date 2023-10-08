@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:1490 ====我的任务-女-立即做任务按钮'===
+[32mINFO    [0m root:test_mypage_multi.py:1511 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:1513 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-09-25 17_49_14_我的任务-女-立即做任务按钮.png

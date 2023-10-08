@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:2030 ===留言-群聊消息-添加成员===
+[32mINFO    [0m root:test_mypage_message_multi.py:2037 ===断言成功===

@@ -107,11 +107,12 @@ class Common(BaseView):
     def screenshot(self, module):
         time = self.getTime()
         # image_file = os.path.dirname(os.path.dirname(__file__)) + '/screenshots/my_page/%s_%s.png' % (module, time)
-        image_file = os.path.dirname(os.path.dirname(__file__)) + '../../screenshots/my_page/%s_%s.png' % (module, time)
+        image_file = os.path.dirname(os.path.dirname(__file__)) + '../../screenshots/my_page/%s_%s.png' % (time,module)
         self.driver.get_screenshot_as_file(image_file)
         with open(image_file, mode='rb') as f:
             file = f.read()
         allure.attach(file, module, allure.attachment_type.PNG)
+        # allure.attach(module, file, allure.attachment_type.PNG)
         return image_file
 
         # testcase中的写入方式
@@ -171,7 +172,7 @@ class Common(BaseView):
         '''Common.native_to_h5(self) 可以直接调用'''
         context = self.driver.contexts
         print(context)
-        self.driver.switch_to.context(context[1])
+        self.driver.switch_to.context(context[-1])
 
     '''返回至原生界面后，切换至原生界面'''
     def h5_to_native(self):

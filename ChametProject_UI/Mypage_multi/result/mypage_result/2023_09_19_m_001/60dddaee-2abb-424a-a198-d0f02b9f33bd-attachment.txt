@@ -1,0 +1,12 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1659 ===留言-群聊消息-礼物送礼===
+[32mINFO    [0m root:multiMypage_woman.py:1989 ===打开礼物页面===
+[32mINFO    [0m root:multiMypage_woman.py:1996 ===送礼===
+[32mINFO    [0m root:multiMypage_woman.py:2484 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multiMypage_woman.py:2490 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multiMypage_woman.py:2484 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multiMypage_woman.py:2490 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multiMypage_woman.py:2431 ===判断有无夺宝弹窗===
+[32mINFO    [0m root:multiMypage_woman.py:2437 ===无夺宝弹窗===
+[32mINFO    [0m root:multiMypage_woman.py:2061 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_mypage_message_multi.py:1668 ===断言成功，女生群聊页面成功送礼===
+[32mINFO    [0m root:test_mypage_message_multi.py:1674 ===断言成功，男生收到送礼消息===

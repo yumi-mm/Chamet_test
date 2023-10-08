@@ -33,6 +33,9 @@ def man_appium_desired():
     desired_caps1['unicodeKeyboard'] = data['man_unicodeKeyboard']
     desired_caps1['resetKeyboard'] = data['man_resetKeyboard']
     desired_caps1['newCommandTimeout'] = data['man_newCommandTimeout']
+    # desired_caps1["chromeOptions"] = data['man_chromeOptions']
+    # desired_caps1["showChromedriverLog"] = data['man_showChromedriverLog']
+    desired_caps1["chromeOptions"] = data['man_chromeOptions']
 
     logging.info('start app......')
     driver = webdriver.Remote('http://localhost' + ":" + str(data['man_port']) + '/wd/hub', desired_caps1)

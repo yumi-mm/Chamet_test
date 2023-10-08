@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:96 ===留言-列表及消息未读数===
+[32mINFO    [0m root:multiMypage_woman.py:1524 ===开始查找用户id===
+[32mINFO    [0m root:multiMypage_woman.py:1543 查找陌生人33364388已成功
+[32mINFO    [0m root:multiMypage_man.py:1489 ===未读数元素有无===
+[32mINFO    [0m root:test_mypage_message_multi.py:109 ===留言-入口有消息未读数===
+[32mINFO    [0m root:multiMypage_man.py:1517 ===留言一级页面-未读数总和===
+[32mINFO    [0m root:test_mypage_message_multi.py:112 断言成功

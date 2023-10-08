@@ -1,0 +1,10 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1591 ===留言-群聊消息-钻石包发送-领取===
+[32mINFO    [0m root:multiMypage_woman.py:1927 ===发送钻石包===
+[32mINFO    [0m root:multiMypage_woman.py:1947 ===判断有无充值优惠券===
+[32mINFO    [0m root:multiMypage_woman.py:1943 ===无优惠券===
+[32mINFO    [0m root:test_mypage_message_multi.py:1596 ===断言成功，成功发送钻石包===
+[32mINFO    [0m root:multiMypage_man.py:1962 ===领取钻石包===
+[32mINFO    [0m root:test_mypage_message_multi.py:1600 ===断言成功,男生成功领取钻石包===
+[32mINFO    [0m root:multiMypage_woman.py:1975 ===领取钻石包===
+[32mINFO    [0m root:test_mypage_message_multi.py:1604 ===断言成功，女生成功领取钻石包===
+[32mINFO    [0m root:test_mypage_message_multi.py:1615 ===断言成功,女生成功收到男生发送的感谢语===

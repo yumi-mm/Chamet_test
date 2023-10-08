@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1556 ===留言-群聊消息-下麦===
+[32mINFO    [0m root:test_mypage_message_multi.py:1575 ===下麦-断言成功===

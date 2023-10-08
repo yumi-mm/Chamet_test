@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_mypage_multi.py:1662 ===我的打招呼-女-已通过真人检测===
+[32mINFO    [0m root:test_mypage_multi.py:1678 ===我的打招呼-已通过真人检测===
+[32mINFO    [0m root:multiMypage_woman.py:3367 no MyGrWords_sendAllBtn
+[32mINFO    [0m root:multiMypage_woman.py:3367 no MyGrWords_sendAllBtn
+[32mINFO    [0m root:test_mypage_multi.py:1697 ===没有已通过的打招呼消息===
+[32mINFO    [0m root:test_mypage_multi.py:1707 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:1709 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 16_05_29_我的打招呼-女-已通过真人检测.png

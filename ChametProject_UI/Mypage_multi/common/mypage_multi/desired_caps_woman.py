@@ -33,6 +33,9 @@ def woman_appium_desired():
     desired_caps2['unicodeKeyboard'] = data['woman_unicodeKeyboard']
     desired_caps2['resetKeyboard'] = data['woman_resetKeyboard']
     desired_caps2['newCommandTimeout'] = data['woman_newCommandTimeout']
+    # desired_caps2["chromeOptions"] = data['woman_chromeOptions']
+    # desired_caps2["showChromedriverLog"] = data['woman_showChromedriverLog']
+    desired_caps2["chromeOptions"] = data['woman_chromeOptions']
 
     logging.info('start app......')
     driver = webdriver.Remote('http://localhost' + ":" + str(data['woman_port']) + '/wd/hub', desired_caps2)

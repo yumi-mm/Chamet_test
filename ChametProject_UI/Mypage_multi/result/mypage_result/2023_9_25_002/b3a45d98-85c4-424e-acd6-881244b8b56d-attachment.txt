@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_mypage_multi.py:1985 ===我的简介-昵称-修改===
+[32mINFO    [0m root:multiMypage_man.py:3269 昵称确认按钮元素
+[32mINFO    [0m root:multiMypage_man.py:3278 昵称确认按钮元素已点击
+[32mINFO    [0m root:multiMypage_man.py:3269 昵称确认按钮元素
+[32mINFO    [0m root:multiMypage_man.py:3274 no myProfile_MyAvatar_PosterHistoryBtn
+[32mINFO    [0m root:test_mypage_multi.py:2000 ===断言成功===

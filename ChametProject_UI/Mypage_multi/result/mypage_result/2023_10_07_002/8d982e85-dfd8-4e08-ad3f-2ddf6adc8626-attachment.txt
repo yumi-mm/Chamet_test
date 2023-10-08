@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:1998 ===我的简介-昵称===
+[32mINFO    [0m root:test_mypage_multi.py:2008 ===断言成功===

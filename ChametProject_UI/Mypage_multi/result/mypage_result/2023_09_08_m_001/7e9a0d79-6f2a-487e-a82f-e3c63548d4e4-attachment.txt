@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1550 ===留言-群聊消息-钻石包发送-领取===
+[32mINFO    [0m root:multiMypage_man.py:1926 ===发送钻石包===
+[32mINFO    [0m root:test_mypage_message_multi.py:1582 ===执行失败===
+[32mINFO    [0m root:test_mypage_message_multi.py:1584 截图成功，图片为D:\chamet_mypage_multi_testProject-9.6\common../../screenshots/my_page/留言-群聊消息-钻石包发送-领取_2023-09-08 15_34_42.png

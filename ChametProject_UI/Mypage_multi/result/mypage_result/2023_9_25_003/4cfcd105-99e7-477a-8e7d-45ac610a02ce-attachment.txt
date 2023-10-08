@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:1021 ===我的任务-男-有奖励红点或积分及未领取和领取奖励===
+[32mINFO    [0m root:multiMypage_man.py:2825 显示积分
+[32mINFO    [0m root:test_mypage_multi.py:1052 ===我的任务-具体积分===
+[32mINFO    [0m root:test_mypage_multi.py:1064 ===断言成功===

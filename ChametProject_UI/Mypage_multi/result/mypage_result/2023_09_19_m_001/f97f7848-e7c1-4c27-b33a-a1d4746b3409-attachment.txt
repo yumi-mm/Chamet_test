@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1335 ===留言-群聊消息-上麦===
+[32mINFO    [0m root:multiMypage_man.py:1414 114权限弹窗，是否允许？
+[32mINFO    [0m root:multiMypage_man.py:1427 114权限弹窗，是否允许？
+[32mINFO    [0m root:multiMypage_woman.py:1390 权限弹窗，是否允许？
+[32mINFO    [0m root:multiMypage_woman.py:1390 权限弹窗，是否允许？
+[32mINFO    [0m root:test_mypage_message_multi.py:1349 ===上麦已成功===

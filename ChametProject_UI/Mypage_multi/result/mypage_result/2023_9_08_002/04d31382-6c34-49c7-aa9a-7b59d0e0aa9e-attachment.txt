@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:1725 ===我的收入-入口跳转===
+[32mINFO    [0m root:test_mypage_multi.py:1755 ===执行失败===

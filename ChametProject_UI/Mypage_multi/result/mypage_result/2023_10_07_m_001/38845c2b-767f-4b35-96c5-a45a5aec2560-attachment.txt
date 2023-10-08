@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1249 ===留言-群聊消息-搜索表情===
+[32mINFO    [0m root:multiMypage_man.py:1829 ===准备发送表情===
+[32mINFO    [0m root:test_mypage_message_multi.py:1268 ===执行失败===
+[32mINFO    [0m root:test_mypage_message_multi.py:1270 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 11_53_33_留言-群聊消息-搜索表情.png

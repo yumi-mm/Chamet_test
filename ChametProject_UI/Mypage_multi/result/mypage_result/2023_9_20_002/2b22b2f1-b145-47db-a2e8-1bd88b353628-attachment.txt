@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:203 ===我的页面-国家===
+[32mINFO    [0m root:test_mypage_multi.py:207 ===我的页面-有国家图标，断言成功===

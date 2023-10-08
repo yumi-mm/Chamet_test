@@ -1,0 +1,6 @@
+[32mINFO    [0m root:mypage_multi_Start_End.py:12 ===男用户端启动app===
+[32mINFO    [0m root:desired_caps_man.py:39 start app......
+[32mINFO    [0m root:mypage_multi_Start_End.py:19 ===女用户端启动app===
+[32mINFO    [0m root:desired_caps_woman.py:40 start app......
+[32mINFO    [0m root:test_mypage_multi.py:35 ===我的页面-个人头像-个人主页===
+[32mINFO    [0m root:test_mypage_multi.py:45 断言成功

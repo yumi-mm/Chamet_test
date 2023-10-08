@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:2476 ===我的简介-语言切换===
+[32mINFO    [0m root:test_mypage_multi.py:2486 ===断言成功===

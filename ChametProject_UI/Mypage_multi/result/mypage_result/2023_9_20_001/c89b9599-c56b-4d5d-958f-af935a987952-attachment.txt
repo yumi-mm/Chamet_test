@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:1327 ====我的任务-男-每月任务'===
+[32mINFO    [0m root:test_mypage_multi.py:1330 ====检查每月任务===
+[1m[31mERROR   [0m root:test_mypage_multi.py:1332 ===断言成功===

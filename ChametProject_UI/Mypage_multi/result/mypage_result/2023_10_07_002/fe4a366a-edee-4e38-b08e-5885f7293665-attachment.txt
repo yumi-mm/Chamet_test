@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:2242 ===我的简介-语言===
+[32mINFO    [0m root:test_mypage_multi.py:2254 ===断言成功===

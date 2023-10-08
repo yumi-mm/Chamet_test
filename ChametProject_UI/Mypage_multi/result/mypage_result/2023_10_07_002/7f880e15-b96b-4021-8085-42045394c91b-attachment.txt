@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_mypage_multi.py:1611 ===我的打招呼-男女入口显示-进入显示===
+[32mINFO    [0m root:test_mypage_multi.py:1613 ===我的打招呼-女入口显示-进入显示===
+[32mINFO    [0m root:multiMypage_woman.py:3324 no MyGrWords_faceVerification_popoverAll
+[32mINFO    [0m root:test_mypage_multi.py:1623 ===我的打招呼-已通过真人检测，没有消息记录===
+[32mINFO    [0m root:multiMypage_woman.py:1393 权限弹窗，是否允许？

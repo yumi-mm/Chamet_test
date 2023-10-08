@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:1725 ===我的收入-入口跳转===
+[32mINFO    [0m root:test_mypage_multi.py:1735 ===男用户入口跳转成功===
+[32mINFO    [0m root:test_mypage_multi.py:1740 ===女用户入口跳转成功===
+[32mINFO    [0m root:test_mypage_multi.py:1746 ===女用户入口跳转成功===

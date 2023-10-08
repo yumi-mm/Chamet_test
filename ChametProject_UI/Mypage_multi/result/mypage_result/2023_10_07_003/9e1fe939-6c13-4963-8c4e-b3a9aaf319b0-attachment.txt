@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:2590 ===我的简介-密码显示===
+[32mINFO    [0m root:multiMypage_man.py:3364 no myProfile_Password_entryText
+[32mINFO    [0m root:test_mypage_multi.py:2621 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:2623 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-08 10_48_21_我的简介-密码显示.png

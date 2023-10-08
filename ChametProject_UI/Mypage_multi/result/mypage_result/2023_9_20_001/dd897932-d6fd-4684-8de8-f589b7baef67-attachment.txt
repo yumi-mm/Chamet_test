@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:3092 ===我的页面-设置-切换APP语言===
+[32mINFO    [0m root:multiMypage_man.py:1058 no tab_mine_btn
+[32mINFO    [0m root:test_mypage_multi.py:3111 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:3113 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/我的页面-设置-切换APP语言_2023-09-21 11_17_47.png

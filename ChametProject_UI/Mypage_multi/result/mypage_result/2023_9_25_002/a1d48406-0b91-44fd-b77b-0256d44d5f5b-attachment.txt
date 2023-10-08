@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:593 ===我的页面-男-签到入口===
+[32mINFO    [0m root:test_mypage_multi.py:611 断言成功

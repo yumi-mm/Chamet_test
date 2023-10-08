@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:2302 ===我的简介-年龄显示===
+[32mINFO    [0m root:test_mypage_multi.py:2308 ===断言成功===

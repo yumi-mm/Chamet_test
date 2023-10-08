@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:876 ===留言-好友一对一-表情===
+[32mINFO    [0m root:multiMypage_man.py:1658 ===准备发送表情===
+[32mINFO    [0m root:test_mypage_message_multi.py:895 ===执行失败===
+[32mINFO    [0m root:test_mypage_message_multi.py:897 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 12_47_36_留言-好友一对一-表情.png

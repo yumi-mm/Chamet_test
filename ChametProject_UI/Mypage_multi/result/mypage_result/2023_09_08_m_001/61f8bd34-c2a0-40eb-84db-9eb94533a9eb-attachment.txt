@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1959 ===留言-群聊消息-删除并离开===
+[32mINFO    [0m root:test_mypage_message_multi.py:1965 ===群主-断言完成===
+[32mINFO    [0m root:test_mypage_message_multi.py:1969 ===群成员-断言成功===

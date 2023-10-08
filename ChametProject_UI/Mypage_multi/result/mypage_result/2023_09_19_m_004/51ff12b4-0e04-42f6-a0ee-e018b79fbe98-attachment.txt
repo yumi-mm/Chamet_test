@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1696 ===留言-群聊消息-顶部banner入口===
+[32mINFO    [0m root:test_mypage_message_multi.py:1708 ====顶部banner入口收起成功===
+[32mINFO    [0m root:test_mypage_message_multi.py:1710 ====顶部banner入口展开成功===

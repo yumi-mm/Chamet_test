@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_mypage_multi.py:1611 ===我的打招呼-男女入口显示-进入显示===
+[32mINFO    [0m root:test_mypage_multi.py:1613 ===我的打招呼-女入口显示-进入显示===
+[32mINFO    [0m root:multiMypage_woman.py:3322 no MyGrWords_faceVerification_popoverAll
+[32mINFO    [0m root:test_mypage_multi.py:1624 ===我的打招呼-已通过真人检测，没有消息记录===
+[32mINFO    [0m root:test_mypage_multi.py:1651 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:1653 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 16_04_45_我的打招呼-男女入口显示-进入显示.png

@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:2011 ===我的简介-头像-编辑===
+[32mINFO    [0m root:test_mypage_multi.py:2033 ===执行失败===

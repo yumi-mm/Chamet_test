@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:3184 ===我的页面-设置-登出按钮-登出===
+[32mINFO    [0m root:test_mypage_multi.py:3191 ===断言成功===

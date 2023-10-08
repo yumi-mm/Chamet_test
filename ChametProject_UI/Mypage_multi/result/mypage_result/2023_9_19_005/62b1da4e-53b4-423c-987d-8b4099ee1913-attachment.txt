@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_mypage_multi.py:1682 ===我的邀请-男女入口显示及跳转===
+[32mINFO    [0m root:test_mypage_multi.py:1684 ===我的邀请-男用户-入口显示===
+[32mINFO    [0m root:multiMypage_man.py:3054 ===开始点击我的邀请入口===
+[32mINFO    [0m root:test_mypage_multi.py:1693 ===女用户，没有我的邀请入口===
+[32mINFO    [0m root:test_mypage_multi.py:1696 ===断言成功===

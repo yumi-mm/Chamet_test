@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:2461 ===我的简介-手机号显示===
+[32mINFO    [0m root:test_mypage_multi.py:2497 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:2499 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-08 10_47_31_我的简介-手机号显示.png

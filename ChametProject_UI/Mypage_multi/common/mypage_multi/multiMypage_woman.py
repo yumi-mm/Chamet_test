@@ -2,6 +2,9 @@
 
 import logging
 import re
+
+from appium.webdriver.common.appiumby import AppiumBy
+
 from common.mypage_multi.mypage_common_fun import Common,NoSuchElementException
 from common.desired_caps import appium_desired
 from businessView.login_phoneView import LoginView
@@ -223,7 +226,7 @@ class MultiWoman(Common):
     messages_Group_upMicEmptyList = (By.ID, 'com.hkfuliao.chamet:id/emptyView')
     messages_Group_upMicSwitchMicBtn = (By.ID, 'com.hkfuliao.chamet:id/switch_microphone')
     messages_Group_upMicTurnOffBtn = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView[2]')
-    messages_Group_pageGroupName = (By.XPATH, "//*[@text='今日也莫人陪我']")
+    # messages_Group_pageGroupName = (By.XPATH, "//*[@text='今日也莫人陪我']")
     messages_Group_ContentText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.TextView[1]')
 
     # 个人主页半屏浮层
@@ -495,6 +498,9 @@ class MultiWoman(Common):
     MyBalance_entry_manText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[8]/android.widget.LinearLayout/android.widget.TextView')
     MyBalance_entry_womanText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[3]/android.widget.LinearLayout/android.widget.TextView')
     MyBalance_earnText= (By.XPATH,'//*[@id="app"]/div/div/div[2]/div[1]/div/div[1]/div')
+    MyBalance_earnText_price = (By.XPATH,'//*[@id="app"]/div/div/div[2]/div[5]/div[1]/div/div/div[1]')
+    # MyBalance_earnText = (By.XPATH, '//*[@id="app"]/div/div/div[2]/div[1]/div/div[1]/div/text()')
+    MyBalance_earnTitleText = (AppiumBy.XPATH, "//*[@text='我的赚取']")
     MyBalance_title = (By.XPATH, '//*[@id="app"]/div/div/div[1]/span')
     MyBalance_goback = (By.XPATH, '//*[@id="app"]/div/div/div[1]/svg/path')
 
@@ -779,6 +785,8 @@ class MultiWoman(Common):
     # tap(522,427)系统第二张图片
     MyGrWords_edit_errorTip = (By.ID, 'com.hkfuliao.chamet:id/tv_error_tip')
     MyGrWords_edit_saveBtn = (By.ID, 'com.hkfuliao.chamet:id/tv_save')
+    MyGrWords_edit_saveBannedText = (By.XPATH, "//*[@text='is banned for']")
+    MyGrWords_edit_saveBannedTitle = (By.ID, "com.hkfuliao.chamet:id/dialog_title")
     # 有打招呼记录list
     MyGrWords_wordListAll = (By.ID, 'com.hkfuliao.chamet:id/rv_greeting_words_list')
     MyGrWords_wordListNum = (By.ID,'com.hkfuliao.chamet:id/v_select_message')
@@ -1056,6 +1064,7 @@ class MultiWoman(Common):
     '''点击我的图标'''
     def tab_Mine_Btn_126(self):
         try:
+            Common.tap(self, 963, 2268)
             tab_mine = self.driver.find_element(*self.tab_mine_btn)
         except NoSuchElementException:
             logging.info('no tab_mine_btn')
@@ -1514,14 +1523,15 @@ class MultiWoman(Common):
 
 
     # 通过更多-id查找用户
-    def find_search_id(self):
+    def find_search_id(self,userID):
         logging.info('===开始查找用户id===')
         try:
-            self.driver.find_element(*self.tab_discoverEle).click()
+            self.tap(318,2128)
+            # self.driver.find_element(*self.tab_discoverEle).click()
             self.driver.find_element(*self.tab_discoverEle_selectedEntry).click()
-            self.swipe(904,996,904,695,1000)
+            self.swipe(521,1563,521,1088,1000)
             self.driver.find_element(*self.tab_discoverEle_moreEntry).click()
-            self.driver.find_element(*self.tab_discoverEle_searchInput).send_keys('33364388')
+            self.driver.find_element(*self.tab_discoverEle_searchInput).send_keys(userID)
             self.driver.find_element(*self.tab_discoverEle_searchBtn).click()
             time.sleep(1)
             self.driver.find_element(*self.otherPage_messageBtn).click()
@@ -1932,7 +1942,7 @@ class MultiWoman(Common):
         enrich_window = self.audience_enrich_window()
         if enrich_window:
             logging.info("===有优惠券===")
-            self.driver.back()
+            self.system_goback_key()
         else:
             logging.info("===无优惠券===")
 
@@ -1985,32 +1995,40 @@ class MultiWoman(Common):
                                             "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ImageView[4]")
         gift_but.click()
 
-    # 观众端群聊页面送礼
+
+
+        # 观众端群聊页面送礼
     def audience_groupmessage_sendgift(self, gift_tab, gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
-        # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("幸运锁")').click()
+        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("么么哒")').click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
         self.driver.find_elements(MobileBy.ID, "com.hkfuliao.chamet:id/item_group_count_text")[0].click()
         # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
         audience_sendgift_but = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/sendTv")
         audience_sendgift_but.click()
         if self.rechargewindow_bysendgift() and self.rechargewindow_able():
-            self.rechargewindow_recharge()
-            # self.audience_sendgift("简体中文chinese simplified","Fox")
-            self.audience_sendgift("热门", "幸运之吻")
+            if self.rechargewindow_recharge():
+                self.driver.find_elements(MobileBy.XPATH,
+                                          "//androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")[
+                    1].click()
+                self.audience_sendgift_bymessage("热门", "幸运之吻")
+            else:
+                logging.info('===设备无法充值，跳过下方送礼断言用例。===')
+                return 0
         elif self.rechargewindow_bysendgift() and self.rechargewindow_able() == False:
             self.system_goback_key()
             logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
             return 0
         else:
+            # 是否夺宝弹窗
             lucky_window = self.audience_lucky_window()
             if lucky_window:
                 finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("真棒！")')
                 finish.click()
-                self.driver.back()
+                self.system_goback_key()
             else:
-                self.driver.back()
+                self.system_goback_key()
             return 1
 
 
@@ -2036,9 +2054,9 @@ class MultiWoman(Common):
             if lucky_window:
                 finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("真棒！")')
                 finish.click()
-                self.driver.back()
+                self.system_goback_key()
             else:
-                self.driver.back()
+                self.system_goback_key()
             return 1
 
 
@@ -2063,8 +2081,8 @@ class MultiWoman(Common):
 
     # 查看群聊界面对方发送礼物
     def watchgroup_othersendgift(self):
-        message_list = self.driver.find_elements(MobileBy.XPATH,
-                                                 "//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        # message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout/android.widget.RelativeLayout/android.view.ViewGroup")
+        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
         message_num = len(message_list)
         user_name = self.driver.find_element(MobileBy.XPATH,
                                              "//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[1]/android.widget.TextView" % message_num)
@@ -2414,10 +2432,14 @@ class MultiWoman(Common):
 
     # 查看私聊界面对方发送礼物
     def watch_othersendgift(self):
-        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.RelativeLayout/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        # message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
         message_num = len(message_list)
-        head_frame = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.FrameLayout" %message_num)
-        gift_content = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[1]/android.widget.TextView" %message_num).text
+        # head_frame = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.FrameLayout" %message_num)
+        # head_frame = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.FrameLayout/android.view.ViewGroup" %message_num)
+        head_frame = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageView[1]" %message_num)
+        # gift_content = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[1]/android.widget.TextView" %message_num).text
+        gift_content = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[1]/android.widget.TextView" %message_num).text
         return head_frame,gift_content
 
     # 观众端夺宝礼物弹窗

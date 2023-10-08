@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:225 ===我的页面-语言===
+[32mINFO    [0m root:test_mypage_multi.py:230 有第二语言
+[32mINFO    [0m root:test_mypage_multi.py:234 断言成功

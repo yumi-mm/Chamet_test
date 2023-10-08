@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:1833 ===我的简介-女-头像===
+[32mINFO    [0m root:test_mypage_multi.py:1839 ===我的简介-头像断言成功===

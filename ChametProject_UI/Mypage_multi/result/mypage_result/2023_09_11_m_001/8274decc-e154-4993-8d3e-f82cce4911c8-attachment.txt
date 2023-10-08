@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1154 ===留言-群聊消息未读数===
+[32mINFO    [0m root:test_mypage_message_multi.py:1168 ===执行失败===
+[32mINFO    [0m root:test_mypage_message_multi.py:1170 截图成功，图片为D:\chamet_mypage_multi_testProject-9.6\common../../screenshots/my_page/留言-群聊消息未读数_2023-09-11 11_05_15.png

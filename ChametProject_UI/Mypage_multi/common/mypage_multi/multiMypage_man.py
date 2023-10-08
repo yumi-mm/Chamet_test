@@ -2,6 +2,9 @@
 
 import logging
 import re
+
+from appium.webdriver.common.appiumby import AppiumBy
+
 from common.mypage_multi.mypage_common_fun import Common,NoSuchElementException
 from common.desired_caps import appium_desired
 from businessView.login_phoneView import LoginView
@@ -234,7 +237,8 @@ class MultiMan(Common):
     messages_Group_userHalfPagePopoverCouName = (By.ID, 'com.hkfuliao.chamet:id/tv_country_name')
     messages_Group_userHalfPagePopoverLan = (By.ID, 'com.hkfuliao.chamet:id/tv_language')
     messages_Group_userHalfPagePopoverMomentList = (By.ID, 'com.hkfuliao.chamet:id/cv_user_moment_list')
-    messages_Group_userHalfPagePopoverGifBtn = (By.ID, 'com.hkfuliao.chamet:id/profile_gift')
+    # messages_Group_userHalfPagePopoverGifBtn = (By.ID, 'com.hkfuliao.chamet:id/profile_gift')
+    messages_Group_userHalfPagePopoverGifBtn = (By.XPATH, "//*[@text='送礼物']")
     messages_Group_userHalfPagePopoverCallBtn = (By.ID, 'com.hkfuliao.chamet:id/ll_enable')
     messages_Group_userHalfPagePopoverAtHer = (By.ID, 'com.hkfuliao.chamet:id/tv_atHer')
     messages_Group_userHalfPagePopoverReport = (By.ID, 'com.hkfuliao.chamet:id/tv_report')
@@ -288,8 +292,10 @@ class MultiMan(Common):
     messages_Group_MoreMomentPicLast = (By.ID, 'com.hkfuliao.chamet:id/img_moment_pic2')
     messages_Group_MoreMomentMoreTitle = (By.ID, 'com.hkfuliao.chamet:id/title')
     messages_Group_MoreMomentMoreGoback = (By.ID, 'com.hkfuliao.chamet:id/back')
-    messages_Group_MoreMomentMoreSendBtn = (By.ID, 'com.hkfuliao.chamet:id/iv_send_moment')
+    # messages_Group_MoreMomentMoreSendBtn = (By.ID, 'com.hkfuliao.chamet:id/iv_send_moment')
+    messages_Group_MoreMomentGiftSendBtn = (By.ID, 'com.hkfuliao.chamet:id/iv_gift_select')
     messages_Group_MoreMomentMaxZanBtn = (By.ID, 'com.hkfuliao.chamet:id/ivZan_unSelect')
+    messages_Group_MoreMomentMaxCommentBtn = (By.ID, 'com.hkfuliao.chamet:id/ivComment')
     messages_Group_MoreGroupType = (By.ID, 'com.hkfuliao.chamet:id/tv_group_type')
     messages_Group_MoreGroupHeadPic = (By.ID, 'com.hkfuliao.chamet:id/img_group_head_pic')
     messages_Group_MoreGroupHeadPic_Change = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout[2]/android.widget.LinearLayout')
@@ -322,10 +328,10 @@ class MultiMan(Common):
     # messages_Group_MoreGroupManaDeAndLeave = (By.XPATH, "//*[@text='删除并离开']")
     messages_Group_MoreGroupManaDeAndLeaveID = (By.ID, 'com.hkfuliao.chamet:id/tv_group_delete')
     messages_Group_MoreGroupAddBtn = (By.ID, 'com.hkfuliao.chamet:id/rl_add')
-    messages_Group_MoreGroupRemovePer = (By.XPATH, "//*[@text='Mary33470557…啊bbb哦哦哦']")
+    # messages_Group_MoreGroupRemovePer = (By.XPATH, "//*[@text='Mary33470557…啊bbb哦哦哦']")
     messages_Group_MoreGroupRemovePerSave = (By.ID, 'com.hkfuliao.chamet:id/tv_done')
     messages_Group_MoreGroupRemoveTips = (By.ID, 'com.hkfuliao.chamet:id/tv_tip_default_msg')
-    messages_Group_MoreGroupRemoveTipsText = (By.XPATH,  "//*[@text='“你移除了”Mary33470557…啊bb...“来自群组”']")
+    # messages_Group_MoreGroupRemoveTipsText = (By.XPATH,  "//*[@text='“你移除了”Mary33470557…啊bb...“来自群组”']")
     messages_Group_MoreGroupRemovePTips = (By.XPATH, "//*[@text='你已被移出群组']")
     messages_Group_MoreGroupRemovePTips2 = (By.XPATH, "//*[@text='该群组已被解散']")
     messages_Group_joinBtn = (By.ID,'com.hkfuliao.chamet:id/btn_join_group')
@@ -335,7 +341,7 @@ class MultiMan(Common):
     messages_Group_NotiJoinCon = (By.ID, 'com.hkfuliao.chamet:id/tv_content')
     messages_Group_joinAgree = (By.ID, 'com.hkfuliao.chamet:id/tv_agree')
     messages_Group_joinIgnore = (By.ID, 'com.hkfuliao.chamet:id/tv_ignore')
-    messages_Group_joinInTips =  (By.XPATH, "//*[@text='Mary33470557…啊bb... 加入了群组']")
+    # messages_Group_joinInTips =  (By.XPATH, "//*[@text='Mary33470557…啊bb... 加入了群组']")
     messages_Group_MoreGroupAddIcon = (By.ID, 'com.hkfuliao.chamet:id/tv_select_icon')
 
 
@@ -346,6 +352,7 @@ class MultiMan(Common):
     messages_Stranger_entryUserAndText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.TextView[1]')
     messages_Stranger_entryUnread = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.RelativeLayout[2]/android.widget.LinearLayout/android.widget.TextView[3]')
     messages_Stranger_userListUnread = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[3]')
+    messages_Stranger_userListUnread1 = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.RelativeLayout/android.widget.LinearLayout/android.widget.TextView[3]')
     messages_Stranger_entryTitleName = (By.ID, 'com.hkfuliao.chamet:id/userNameTv')
     messages_Stranger_title = (By.ID, 'com.hkfuliao.chamet:id/title')
     messages_Stranger_goback = (By.ID, 'com.hkfuliao.chamet:id/back')
@@ -398,8 +405,9 @@ class MultiMan(Common):
     messages_Stranger_CameraBtn = (By.ID, 'com.hkfuliao.chamet:id/tv_take_camera')
     messages_Stranger_VideoCallBtn = (By.ID, 'com.hkfuliao.chamet:id/videoView')
     messages_Stranger_phonePictureListSelect = (By.ID, 'com.hkfuliao.chamet:id/iv_select')
-    messages_Stranger_phonePictureListSelectFirst = (By.ID, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.ImageView[2]')
-    messages_Stranger_phonePictureListConfirmBtn = (By.ID, 'com.hkfuliao.chamet:id/menu_id_confirm')
+    messages_Stranger_phonePictureListSelectFirst = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.ImageView[2]')
+    messages_Stranger_phonePictureListConfirmBtn = (By.ID, 'com.hkfuliao.chamet:id/btn_confirm')
+    messages_Stranger_phonePictureListUnselectedBtn = (By.ID, 'com.hkfuliao.chamet:id/iv_unselect')
     # 114手机
     messages_Stranger_114CameraBtn = (By.ID, 'com.hkfuliao.chamet:id/tv_take_camera')
     messages_Stranger_114VideoCallBtn = (By.ID, 'com.hkfuliao.chamet:id/videoView')
@@ -422,7 +430,7 @@ class MultiMan(Common):
     messages_User_GobackBtn = (By.ID, 'com.hkfuliao.chamet:id/iv_back')
     messages_User_MoreBtn = (By.ID, 'com.hkfuliao.chamet:id/iv_more')
     # Mary33470557…啊bbb哦哦哦
-    messages_User_33470557Strange = (By.XPATH,"//*[@text='Mary33470557…啊bbb哦哦哦']")
+    # messages_User_33470557Strange = (By.XPATH,"//*[@text='Mary33470557…啊bbb哦哦哦']")
     messages_User_StrangeTopName = (By.ID,'com.hkfuliao.chamet:id/tv_name')
     messages_User_ListCountryIcon = (By.ID,'com.hkfuliao.chamet:id/countryIv')
     messages_User_ListLevelIcon = (By.ID ,'com.hkfuliao.chamet:id/iv_vip_level')
@@ -495,6 +503,8 @@ class MultiMan(Common):
     MyBalance_entry_manText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[8]/android.widget.LinearLayout/android.widget.TextView')
     MyBalance_entry_womanText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[3]/android.widget.LinearLayout/android.widget.TextView')
     MyBalance_earnText = (By.XPATH, '//*[@id="app"]/div/div/div[2]/div[1]/div/div[1]/div')
+    # MyBalance_earnText = (By.XPATH,'//*[@id="app"]/div/div/div[2]/div[1]/div/div[1]/div/text()')
+    MyBalance_earnTitleText =(AppiumBy.XPATH,"//*[@text='我的赚取']")
     MyBalance_title = (By.XPATH, '//*[@id="app"]/div/div/div[1]/span')
     MyBalance_goback = (By.XPATH, '//*[@id="app"]/div/div/div[1]/svg/path')
 
@@ -603,13 +613,13 @@ class MultiMan(Common):
     # MyInvite_inviteRewardsTextXpath = (By.XPATH,'//*[@id="invitation_rewards"]')
     MyInvite_inviteRewardsTextXpath = (MobileBy.XPATH,'//*[@id="invitation_rewards"]')
     MyInvite_entry_FreeCardsText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[6]/android.widget.LinearLayout/android.widget.TextView')
-    MyInvite_instructionsBtn = (By.XPATH, '/html/body/div/div[1]/div[1]/img[2]')
+    MyInvite_instructionsBtn = (AppiumBy.XPATH, '/html/body/div/div[1]/div[1]/img[2]')
     # MyInvite_instructionsBtn = (By.XPATH, '/html/body/div/div[1]/div[1]/img[2]')
     MyInvite_instructionsPopover = (By.CLASS_NAME, 'close_pop_up rule_pop')
-    MyInvite_instructionsPopover_rule1= (By.XPATH,'//*[@id="rule1"]')
+    MyInvite_instructionsPopover_rule1= (AppiumBy.XPATH,'//*[@id="rule1"]')
     # 聊天卡免费用于视频聊天1分钟，每张卡有效期为5天
     # 只有新的Chamet用户才能获得奖励
-    MyInvite_instructionsPopover_rule2 = (By.XPATH, '//*[@id="rule2"]')
+    MyInvite_instructionsPopover_rule2 = (AppiumBy.XPATH, '//*[@id="rule2"]')
 
 
 
@@ -639,6 +649,30 @@ class MultiMan(Common):
     myBackpack_entryText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout[1]/android.widget.ScrollView/android.widget.ScrollView/android.widget.LinearLayout/android.widget.RelativeLayout[5]/android.widget.LinearLayout/android.widget.TextView')
     myBackpack_title = (By.ID, 'com.hkfuliao.chamet:id/title')
     myBackpack_goback = (By.ID, 'com.hkfuliao.chamet:id/back')
+    myBackpack_Frame_Num = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView')
+    myBackpack_EntranceEffect_Num = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.HorizontalScrollView/android.widget.LinearLayout/android.widget.LinearLayout[2]/android.widget.TextView')
+    myBackpack_Frame_inUse_NameText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView')
+    myBackpack_Frame_inUse_Head = (By.ID, 'com.hkfuliao.chamet:id/iv_user_head')
+    myBackpack_Frame_inUse_NoneImage = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.ImageView')
+    myBackpack_Frame_inUse_PopTag= (By.ID,'com.hkfuliao.chamet:id/tv_in_user_tag')
+    myBackpack_Frame_inUse_PopFrame1= (By.ID,'com.hkfuliao.chamet:id/iv_user_head_level_frame')
+    myBackpack_Frame_inUse_PopFrame2= (By.ID,'com.hkfuliao.chamet:id/svga_user_head_level_frame')
+    # myBackpack_Frame_inUse_PopFrame3 = (By.ID, 'com.hkfuliao.chamet:id/svga_user_head_level_frame')
+    myBackpack_Frame_inUse_PopSourceLink= (By.ID,'com.hkfuliao.chamet:id/tv_source_link')
+    myBackpack_Entrance_inUse_NameText= (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.TextView')
+    myBackpack_Entrance_inUse_Image= (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.ImageView')
+    myBackpack_Entrance_inUse_NoneImage= (By.ID,'com.hkfuliao.chamet:id/svag_effect')
+    myBackpack_Entrance_inUse_PopTag= (By.ID,'com.hkfuliao.chamet:id/tv_in_user_tag')
+    myBackpack_Entrance_inUse_PopPreviewImg= (By.ID,'com.hkfuliao.chamet:id/svga_preview')
+    myBackpack_Entrance_inUse_PopSourceLink= (By.ID,'com.hkfuliao.chamet:id/tv_source_link')
+    myBackpack_Entrance_inUse_PopPreviewBtn= (By.ID,'com.hkfuliao.chamet:id/btn_single')
+    myBackpack_Entrance_inUse_PreviewUser= (By.ID,'com.hkfuliao.chamet:id/tv_user_name')
+    myBackpack_Entrance_inUse_PreviewEffect= (By.ID,'com.hkfuliao.chamet:id/special_effects_enter')
+
+
+
+
+
     myBackpack_expiredEntry = (By.ID, 'com.hkfuliao.chamet:id/right')
     myBackpack_expiredTitle = (By.ID, 'com.hkfuliao.chamet:id/title')
     myBackpack_expiredGoback = (By.ID, 'com.hkfuliao.chamet:id/back')
@@ -899,21 +933,21 @@ class MultiMan(Common):
     myProfile_SecondLanguage_PopoverConfirmBtn = (By.ID, 'com.hkfuliao.chamet:id/tv_confirm')
     myProfile_SecondLanguage_PopoverCancelBtn = (By.ID, 'com.hkfuliao.chamet:id/tv_cancel')
 
-    myProfile_SelfIntroduction_All = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[10]/android.view.ViewGroup')
+    myProfile_SelfIntroduction_All = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[11]/android.view.ViewGroup')
     myProfile_SelfIntroduction_title = (By.ID, 'com.hkfuliao.chamet:id/title')
     myProfile_SelfIntroduction_goback = (By.ID, 'com.hkfuliao.chamet:id/back')
     myProfile_SelfIntroduction_content = (By.ID, 'com.hkfuliao.chamet:id/et_content')
     myProfile_SelfIntroduction_CommitBtn = (By.ID, 'com.hkfuliao.chamet:id/iv_commit')
 
-    myProfile_Google_All = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[11]/android.view.ViewGroup')
+    myProfile_Google_All = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[12]/android.view.ViewGroup')
     myProfile_Google_Popover = (By.ID, 'com.google.android.gms:id/account_picker_container')
     myProfile_Google_PopoverFirstAccountAll = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[1]/android.widget.LinearLayout')
     myProfile_Google_PopoverFirstAccountText = (By.ID, 'com.google.android.gms:id/account_display_name')
     myProfile_Google_PopoverAccountAddText = (By.ID,'com.google.android.gms:id/add_account_chip_title')
     myProfile_Google_PopoverAccountAddAll = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.support.v7.widget.RecyclerView/android.widget.LinearLayout[2]')
 
-    myProfile_Phone_entryText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[12]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView')
-    myProfile_Phone_entryAll = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[12]/android.view.ViewGroup')
+    myProfile_Phone_entryText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[13]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView')
+    myProfile_Phone_entryAll = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[13]/android.view.ViewGroup')
     myProfile_Phone_ChangeNumAll = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]')
     myProfile_Phone_ChangeNumText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView')
     myProfile_Phone_ChangeCancelAll = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]')
@@ -926,9 +960,9 @@ class MultiMan(Common):
     myProfile_Phone_ChangeNextBtn = (By.ID, 'com.hkfuliao.chamet:id/next')
     myProfile_Phone_ChangeBindBtn = (By.ID, 'com.hkfuliao.chamet:id/bind_phone')
 
-    myProfile_Gmail_entry = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[13]/android.view.ViewGroup')
+    myProfile_Gmail_entry = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[14]/android.view.ViewGroup')
     myProfile_Gmail_BindTitle = (By.ID, 'com.hkfuliao.chamet:id/title')
-    myProfile_Gmail_entryText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[13]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView')
+    myProfile_Gmail_entryText = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[14]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView')
     # 换绑
     myProfile_Gmail_BindChangePopConf = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView')
     myProfile_Gmail_BindChangePopCan = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[2]/android.widget.TextView')
@@ -945,9 +979,9 @@ class MultiMan(Common):
 
 
 
-    myProfile_Password_entryAll = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[14]/android.view.ViewGroup')
-    myProfile_Password_entryText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[14]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView')
-    myProfile_Password_entryRedDotXpath = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[14]/android.view.ViewGroup/android.widget.LinearLayout/android.view.View')
+    myProfile_Password_entryAll = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[15]/android.view.ViewGroup')
+    myProfile_Password_entryText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[15]/android.view.ViewGroup/android.widget.LinearLayout/android.widget.TextView')
+    myProfile_Password_entryRedDotXpath = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup[15]/android.view.ViewGroup/android.widget.LinearLayout/android.view.View')
     myProfile_Password_entryRedDot = (By.ID,'com.hkfuliao.chamet:id/iv_red_dot')
     myProfile_Password_popoverResetText = (By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]/android.widget.TextView')
     myProfile_Password_popoverResetAll=(By.XPATH,'/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]')
@@ -999,6 +1033,10 @@ class MultiMan(Common):
     myBalance_FirstRechargeText = (By.ID, 'com.hkfuliao.chamet:id/tv_first_recharge_title')
     myBalance_TopUpList = (By.ID, 'com.hkfuliao.chamet:id/recycler_top_up_list')
     myBalance_TopUpList5Id = (By.ID, 'com.hkfuliao.chamet:id/root_view')
+    myBalance_TopUpTabTitle = (By.ID,'com.hkfuliao.chamet:id/tv_recharge_tab_title')
+    myBalance_TopUpRecChangeBtn = (By.ID,'com.hkfuliao.chamet:id/btn_change')
+    myBalance_TopUpRecChangePopSelected = (By.ID,'com.hkfuliao.chamet:id/iv_select_type')
+    myBalance_TopUpListNextCard= (By.ID,'com.hkfuliao.chamet:id/webview')
     myBalance_TopUp_googleTestCard = (By.XPATH, '//android.widget.LinearLayout[@content-desc="测试卡，一律批准. 更改付款方式"]/android.widget.LinearLayout/android.widget.LinearLayout[1]/android.widget.TextView')
     myBalance_TopUp_googleTestCardXpath = (By.XPATH, "//*[@text='测试卡，一律批准']")
     myBalance_TopUp_googleBuyBtn = (By.XPATH, '/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[4]/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.Button')
@@ -1394,7 +1432,7 @@ class MultiMan(Common):
 
     '''85手机-请求权限弹窗？'''
     def Phone85_getPermission_checkPopover(self):
-        logging.info('权限弹窗，是否允许？')
+        logging.info('85权限弹窗，是否允许？')
         try:
             Permission_85Phone_PopoverConfirmBtn = self.driver.find_element(*self.Permission_85Phone_PopoverConfirmBtn)
         except NoSuchElementException:
@@ -1406,7 +1444,7 @@ class MultiMan(Common):
 
     '''114手机-请求权限弹窗？'''
     def Phone114_getPermission_checkPopover(self):
-        logging.info('权限弹窗，是否允许？')
+        logging.info('114权限弹窗，是否允许？')
         try:
             Permission_114Phone_PopoverConfirmBtn1 = self.driver.find_element(*self.Permission_114Phone_PopoverConfirmOnlyBtn)
         except NoSuchElementException:
@@ -1419,7 +1457,7 @@ class MultiMan(Common):
 
     '''114手机-请求权限弹窗？'''
     def Permission_114Phone_MediaPopoverConfirmBtnEle(self):
-        logging.info('权限弹窗，是否允许？')
+        logging.info('114权限弹窗，是否允许？')
         try:
             Permission_114Phone_MediaPopoverConfirmBtn1 = self.driver.find_element(*self.Permission_114Phone_MediaPopoverConfirmBtn)
         except NoSuchElementException:
@@ -1590,7 +1628,7 @@ class MultiMan(Common):
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("热门")').click()
         gift_list_text = self.driver.find_elements(MobileBy.XPATH,
                                                    "//androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")
-        gift_list_text[0].click()
+        gift_list_text[1].click()
         self.swipe(1000, 1750, 100, 1750, 500)
         nowgift_list_text = self.driver.find_elements(MobileBy.XPATH,
                                                       "//androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")[0].text
@@ -1806,11 +1844,17 @@ class MultiMan(Common):
                                                                "//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout")
             time.sleep(1)
             google_expression_list[0].click()
-            self.tap(350, 900)
+            # self.tap(350, 900)
+            # self.tap(882,170)
+            time.sleep(2)
+            self.tap(137,1329)
         else:
             logging.info('===发送Chamet表情===')
             self.driver.find_elements(*usermessage_expression)[index].click()
-            self.tap(350, 900)
+            # self.tap(350, 900)
+            # self.tap(882,170)
+            time.sleep(2)
+            self.tap(390,1329)
         logging.info('===发送成功===')
 
     # 查看群聊界面对方发送表情(Chamet表情)
@@ -1829,9 +1873,10 @@ class MultiMan(Common):
     # 群聊界面发送表情
     def groupmessage_send_expression(self,index):
         logging.info('===准备发送表情===')
-        groupmessage_expression_but = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_face_gif")
+        groupmessage_expression_but = (By.ID, 'com.hkfuliao.chamet:id/iv_face_gif')
         groupmessage_expression = (MobileBy.XPATH,"//android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout/android.widget.ImageView")
-        self.driver.find_element(*groupmessage_expression_but).click()
+        # self.driver.find_element(*groupmessage_expression_but).click()
+        self.driver.find_element(By.ID, 'com.hkfuliao.chamet:id/iv_face_gif').click()
         time.sleep(3)
         if index == 0:
             logging.info('===发送google表情===')
@@ -1846,12 +1891,14 @@ class MultiMan(Common):
             # google_expression_list[0].click()
             self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.RelativeLayout")[0].click()
             time.sleep(1)
-            self.tap(330, 1100)
+            # self.tap(330, 1100)
+            self.tap(882,170)
         else:
             logging.info('===发送Chamet表情===')
             self.driver.find_elements(*groupmessage_expression)[index].click()
             time.sleep(1)
-            self.tap(330, 1100)
+            self.tap(882,170)
+            # self.tap(330, 1100)
         logging.info('===发送成功===')
 
 
@@ -1894,7 +1941,7 @@ class MultiMan(Common):
         else:
             logging.info('===断言失败，自己未发消息===')
             assert False
-        expression = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.ImageView[2]" %message_num)
+        expression = self.driver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.ImageView[2]" %message_num )
         return expression
 
 
@@ -1907,10 +1954,16 @@ class MultiMan(Common):
         photo_choicebut.click()
         logging.info('===发送相册照片===')
         try:
-            self.driver.find_elements(MobileBy.XPATH,"//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.ImageView")[num].click()
+            # self.driver.find_elements(MobileBy.XPATH,"//androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.ImageView")[num].click()
+            # self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView[1]/android.view.ViewGroup[%d]/android.widget.ImageView[2]" %num ).click()
+            self.driver.find_elements(By.ID, 'com.hkfuliao.chamet:id/iv_select')[num].click()
             time.sleep(1)
+            self.driver.find_element(By.ID, 'com.hkfuliao.chamet:id/btn_confirm').click()
+            time.sleep(1)
+            logging.info('===发送成功===')
             return True
         except:
+            logging.info('===发送失败===')
             return False
 
 
@@ -1932,7 +1985,7 @@ class MultiMan(Common):
         enrich_window = self.audience_enrich_window()
         if enrich_window:
             logging.info("===有优惠券===")
-            self.driver.back()
+            self.system_goback_key()
         else:
             logging.info("===无优惠券===")
 
@@ -1985,6 +2038,7 @@ class MultiMan(Common):
                                             "//android.widget.FrameLayout/android.widget.LinearLayout/android.widget.LinearLayout/android.widget.ImageView[4]")
         gift_but.click()
 
+
     # 观众端群聊页面送礼
     def audience_groupmessage_sendgift(self, gift_tab, gift_name):
         logging.info('===送礼===')
@@ -1996,22 +2050,27 @@ class MultiMan(Common):
         audience_sendgift_but = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/sendTv")
         audience_sendgift_but.click()
         if self.rechargewindow_bysendgift() and self.rechargewindow_able():
-            self.rechargewindow_recharge()
-            # self.audience_sendgift("简体中文chinese simplified","Fox")
-            self.audience_sendgift("热门", "幸运之吻")
+            if self.rechargewindow_recharge():
+                self.driver.find_elements(MobileBy.XPATH,"//androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")[1].click()
+                self.audience_sendgift_bymessage("热门", "幸运之吻")
+            else:
+                logging.info('===设备无法充值，跳过下方送礼断言用例。===')
+                return 0
         elif self.rechargewindow_bysendgift() and self.rechargewindow_able() == False:
             self.system_goback_key()
             logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
             return 0
         else:
+            # 是否夺宝弹窗
             lucky_window = self.audience_lucky_window()
             if lucky_window:
                 finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("真棒！")')
                 finish.click()
-                self.driver.back()
+                self.system_goback_key()
             else:
-                self.driver.back()
+                self.system_goback_key()
             return 1
+
 
 
     # 观众端送礼
@@ -2036,17 +2095,16 @@ class MultiMan(Common):
             if lucky_window:
                 finish = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR,'text("真棒！")')
                 finish.click()
-                self.driver.back()
+                self.system_goback_key()
             else:
-                self.driver.back()
+                self.system_goback_key()
             return 1
 
 
 
     # 查看群聊界面自己发送礼物
     def watchgroup_selfsendgift(self):
-        message_list = self.driver.find_elements(MobileBy.XPATH,
-                                                 "//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
         message_num = len(message_list)
         try:
             user_name = self.driver.find_element(MobileBy.XPATH,
@@ -2383,18 +2441,23 @@ class MultiMan(Common):
         else:
             return OneUserEntryHead
 
-        # 观众端送礼(私聊)
 
+    # 观众端送礼(私聊)
     def audience_sendgift_bymessage(self, gift_tab, gift_name):
         logging.info('===送礼===')
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_tab)).click()
         self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("{}")'.format(gift_name)).click()
-        self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
+        # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("1")').click()
+        self.driver.find_elements(MobileBy.ID,'com.hkfuliao.chamet:id/item_group_count_text')[0].click()
         audience_sendgift_but = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/sendTv")
         audience_sendgift_but.click()
         if self.rechargewindow_bysendgift() and self.rechargewindow_able():
-            self.rechargewindow_recharge()
-            self.audience_sendgift_bymessage("热门", "棒棒糖")
+            if self.rechargewindow_recharge():
+                self.driver.find_elements(MobileBy.XPATH, "//androidx.viewpager.widget.ViewPager/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")[1].click()
+                self.audience_sendgift_bymessage("热门", "棒棒糖")
+            else:
+                logging.info('===设备无法充值，跳过下方送礼断言用例。===')
+                return 0
         elif self.rechargewindow_bysendgift() and self.rechargewindow_able() == False:
             self.system_goback_key()
             logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
@@ -2410,15 +2473,22 @@ class MultiMan(Common):
                 self.system_goback_key()
             return 1
 
-
-
-    # 查看私聊界面对方发送礼物
+        # 查看私聊界面对方发送礼物
     def watch_othersendgift(self):
-        message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        message_list = self.driver.find_elements(MobileBy.XPATH,
+                                                 "//android.widget.RelativeLayout/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
+        # message_list = self.driver.find_elements(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup")
         message_num = len(message_list)
-        head_frame = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.FrameLayout" %message_num)
-        gift_content = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[1]/android.widget.TextView" %message_num).text
-        return head_frame,gift_content
+        # head_frame = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.FrameLayout" %message_num)
+        # head_frame = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.FrameLayout/android.view.ViewGroup" %message_num)
+        head_frame = self.driver.find_element(MobileBy.XPATH,
+                                              "//android.widget.RelativeLayout/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ImageView[1]" % message_num)
+        # gift_content = self.driver.find_element(MobileBy.XPATH,"//android.widget.RelativeLayout[2]/android.widget.FrameLayout/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[1]/android.widget.TextView" %message_num).text
+        gift_content = self.driver.find_element(MobileBy.XPATH,
+                                                "//android.widget.RelativeLayout/android.widget.FrameLayout[1]/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[%d]/android.widget.LinearLayout[1]/android.widget.TextView" % message_num).text
+        return head_frame, gift_content
+
+
 
     # 观众端夺宝礼物弹窗
     def audience_lucky_window(self):
@@ -2437,8 +2507,7 @@ class MultiMan(Common):
         logging.info('===充值===')
         try:
             logging.info('===进行充值===')
-            recharge_level = self.driver.find_elements(MobileBy.XPATH,
-                                                       "//android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.widget.FrameLayout/android.view.ViewGroup")
+            recharge_level = self.driver.find_elements(MobileBy.ID,"com.hkfuliao.chamet:id/root_view")
             recharge_level[0].click()
             time.sleep(2)
             buy_but = self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("一键购买")')
@@ -2446,18 +2515,22 @@ class MultiMan(Common):
             # self.driver.find_element(MobileBy.ANDROID_UIAUTOMATOR, 'text("不用了")').click()
             time.sleep(3)
             buy_success_page = self.audience_buysuccess_page()
-            assert buy_success_page
+            assert len(buy_success_page)!=0
             logging.info('===充值成功===')
+            self.system_goback_key()
             self.system_goback_key()
             return True
         except:
             logging.info('===充值失败===')
+            self.system_goback_key()
+            # self.system_goback_key()
             return False
 
     # 获取钻石弹窗
     def audience_buysuccess_page(self):
+        # buy_success_page = (MobileBy.ID, "com.hkfuliao.chamet:id/dialog_msg")
         buy_success_page = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_card_icon")
-        return self.driver.find_element(*buy_success_page)
+        return self.driver.find_elements(*buy_success_page)
 
 
 
@@ -2466,7 +2539,9 @@ class MultiMan(Common):
     def rechargewindow_able(self):
         logging.info('===判断设备是否可进行google充值===')
         try:
-            rechargewindow = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/recycler_top_up_list")
+            self.driver.find_elements(MobileBy.ID, "com.hkfuliao.chamet:id/tv_recharge_tab_title")[0]
+            rechargewindow = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/root_view")
+            # rechargewindow = self.driver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/recycler_top_up_list")
             logging.info('===设备可进行google充值===')
             return True
         except:

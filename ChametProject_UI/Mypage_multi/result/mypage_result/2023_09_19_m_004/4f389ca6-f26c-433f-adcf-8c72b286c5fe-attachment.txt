@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1453 ===留言-群聊消息-上麦用户头像-查看他人===
+[32mINFO    [0m root:test_mypage_message_multi.py:1468 ===男群主上麦，查看他人，断言成功===
+[32mINFO    [0m root:test_mypage_message_multi.py:1481 ===女成员上麦，查看他人，断言成功===

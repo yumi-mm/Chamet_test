@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:3168 ===我的页面-设置-清除缓存===
+[32mINFO    [0m root:test_mypage_multi.py:3175 ===断言成功===

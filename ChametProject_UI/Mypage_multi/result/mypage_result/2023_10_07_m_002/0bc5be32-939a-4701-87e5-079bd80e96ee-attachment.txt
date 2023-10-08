@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:847 ===留言-好友一对一-输入框===
+[32mINFO    [0m root:test_mypage_message_multi.py:866 ===执行失败===
+[32mINFO    [0m root:test_mypage_message_multi.py:868 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 12_47_26_留言-好友一对一-输入框.png

@@ -1,0 +1,14 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1510 ===留言-群聊消息-上麦用户头像-他人送礼和通话===
+[32mINFO    [0m root:multiMypage_man.py:2042 ===送礼===
+[32mINFO    [0m root:multiMypage_man.py:2551 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multiMypage_man.py:2557 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multiMypage_man.py:2551 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multiMypage_man.py:2557 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multiMypage_man.py:2493 ===判断有无夺宝弹窗===
+[32mINFO    [0m root:multiMypage_man.py:2496 ===获得夺宝弹窗===
+[32mINFO    [0m root:multiMypage_man.py:2111 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_mypage_message_multi.py:1521 ===断言成功，男生群聊页面成功送礼===
+[32mINFO    [0m root:test_mypage_message_multi.py:1525 ===断言成功，女生收到送礼消息===
+[32mINFO    [0m root:test_mypage_message_multi.py:1526 ===男群主上麦给他人送礼，断言成功===
+[32mINFO    [0m root:test_mypage_message_multi.py:1543 ===执行失败===
+[32mINFO    [0m root:test_mypage_message_multi.py:1545 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 12_01_53_留言-群聊消息-上麦用户头像-他人送礼和通话.png

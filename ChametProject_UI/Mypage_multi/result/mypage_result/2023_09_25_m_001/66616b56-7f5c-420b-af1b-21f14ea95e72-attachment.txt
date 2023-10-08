@@ -1,0 +1,12 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:284 ===留言-陌生人留言-一对一个人浮层送礼===
+[32mINFO    [0m root:multiMypage_man.py:1624 送礼浮层左右滑动
+[32mINFO    [0m root:multiMypage_man.py:2429 ===送礼===
+[32mINFO    [0m root:multiMypage_man.py:2535 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multiMypage_man.py:2541 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multiMypage_man.py:2535 ===判断是否余额不足，有无充值弹窗===
+[32mINFO    [0m root:multiMypage_man.py:2541 ===送礼成功，无充值弹窗。===
+[32mINFO    [0m root:multiMypage_man.py:2477 ===判断有无夺宝弹窗===
+[32mINFO    [0m root:multiMypage_man.py:2483 ===无夺宝弹窗===
+[32mINFO    [0m root:test_mypage_message_multi.py:297 ===断言成功，送礼方成功发送礼物===
+[32mINFO    [0m root:test_mypage_message_multi.py:301 ===断言成功，收到私聊礼物===
+[32mINFO    [0m root:test_mypage_message_multi.py:303 ===断言成功===

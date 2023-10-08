@@ -13,3 +13,9 @@ man_port: 4726
 man_ANDROID_UIAUTOMATOR: Uiautomator2
 man_newCommandTimeout: 600000
 man_udid: 133e13bb
+man_chromeOptions : {
+      "androidProcess" : "WEBVIEW_com.hkfuliao.chamet",
+      "androidPackage" : "com.hkfuliao.chamet"
+  }
+# man_chromeOptions :{'w3c': False}
+# man_showChromedriverLog :True

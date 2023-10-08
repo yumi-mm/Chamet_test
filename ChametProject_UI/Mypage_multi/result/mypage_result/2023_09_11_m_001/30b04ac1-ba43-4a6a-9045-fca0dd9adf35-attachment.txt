@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1649 ===留言-群聊消息-礼物送礼===
+[32mINFO    [0m root:multiMypage_man.py:1988 ===打开礼物页面===
+[32mINFO    [0m root:test_mypage_message_multi.py:1673 ===执行失败===
+[32mINFO    [0m root:test_mypage_message_multi.py:1675 截图成功，图片为D:\chamet_mypage_multi_testProject-9.6\common../../screenshots/my_page/留言-群聊消息-礼物送礼_2023-09-11 11_07_15.png

@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:1245 ====我的任务-男-邀请入口'===
+[32mINFO    [0m root:multiMypage_woman.py:1077 no tab_mine_btn
+[31m[1mERROR   [0m root:test_mypage_multi.py:1256 ===断言成功===

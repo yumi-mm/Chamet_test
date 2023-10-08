@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1221 ===留言-群聊消息-表情===
+[32mINFO    [0m root:multiMypage_man.py:1829 ===准备发送表情===
+[32mINFO    [0m root:multiMypage_man.py:1851 ===发送Chamet表情===
+[32mINFO    [0m root:multiMypage_man.py:1856 ===发送成功===
+[32mINFO    [0m root:multiMypage_man.py:1937 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_mypage_message_multi.py:1239 ===执行失败===
+[32mINFO    [0m root:test_mypage_message_multi.py:1241 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 11_53_19_留言-群聊消息-表情.png

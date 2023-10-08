@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:847 ===留言-好友一对一-输入框===
+[32mINFO    [0m root:test_mypage_message_multi.py:858 ===断言成功===

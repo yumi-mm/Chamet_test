@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:2870 ===我的页面-设置===
+[32mINFO    [0m root:multiMypage_man.py:1090 no tab_mine_btn
+[32mINFO    [0m root:test_mypage_multi.py:2886 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:2888 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-08 10_49_41_我的页面-设置.png

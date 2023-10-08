@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:2767 ===我的余额-推荐充值或三方===
+[32mINFO    [0m root:test_mypage_multi.py:2787 ===无推荐充值===
+[32mINFO    [0m root:test_mypage_multi.py:2803 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:2805 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-08 10_49_07_我的余额-推荐充值或三方.png

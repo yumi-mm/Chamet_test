@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:2551 ===我的简介-Gmail===
+[32mINFO    [0m root:test_mypage_multi.py:2555 ===Gmail未绑定-进绑定页面===
+[32mINFO    [0m root:test_mypage_multi.py:2579 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:2581 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-08 10_48_04_我的简介-Gmail.png

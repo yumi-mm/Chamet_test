@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:2542 ===我的简介-Gmail===
+[32mINFO    [0m root:test_mypage_multi.py:2546 ===Gmail未绑定-进绑定页面===
+[32mINFO    [0m root:test_mypage_multi.py:2562 ===断言成功===

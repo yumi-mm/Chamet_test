@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:2435 ===我的简介-google弹窗===
+[32mINFO    [0m root:test_mypage_multi.py:2443 ===断言成功===

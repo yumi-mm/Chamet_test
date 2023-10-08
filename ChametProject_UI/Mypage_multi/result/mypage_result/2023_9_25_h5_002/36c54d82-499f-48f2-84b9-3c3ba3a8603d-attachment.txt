@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mpage_h5.py:288 ===我的邀请-周排行===
+[32mINFO    [0m root:test_mpage_h5.py:299 ===断言成功===

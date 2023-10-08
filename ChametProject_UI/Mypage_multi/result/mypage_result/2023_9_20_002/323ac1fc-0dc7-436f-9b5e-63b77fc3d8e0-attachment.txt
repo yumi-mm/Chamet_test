@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_multi.py:2275 ===我的简介-性别===
+[32mINFO    [0m root:test_mypage_multi.py:2281 ===男-断言成功===
+[32mINFO    [0m root:test_mypage_multi.py:2292 ===执行失败===
+[32mINFO    [0m root:test_mypage_multi.py:2294 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/我的简介-男女-性别_2023-09-21 16_27_33.png

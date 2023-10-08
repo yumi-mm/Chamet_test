@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:479 ===留言-陌生人留言-更多相册===
+[32mINFO    [0m root:multiMypage_man.py:1720 ===断言成功，为自己发的消息===
+[32mINFO    [0m root:test_mypage_message_multi.py:491 ===断言成功，发送相册照片成功===
+[32mINFO    [0m root:test_mypage_message_multi.py:495 ===断言成功，成功收到相册照片===

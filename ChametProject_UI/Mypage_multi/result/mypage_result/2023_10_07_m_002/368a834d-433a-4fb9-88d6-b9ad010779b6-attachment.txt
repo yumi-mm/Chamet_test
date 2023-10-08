@@ -1,0 +1,7 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:323 ===留言-陌生人留言-一对一更多个人浮层视频通话===
+[32mINFO    [0m root:test_mypage_message_multi.py:331 ===拨打语言聊天===
+[32mINFO    [0m root:multiMypage_man.py:1447 114权限弹窗，是否允许？
+[32mINFO    [0m root:multiMypage_woman.py:1391 权限弹窗，是否允许？
+[32mINFO    [0m root:multiMypage_man.py:2389 ===用户在线===
+[32mINFO    [0m root:test_mypage_message_multi.py:350 ===执行失败===
+[32mINFO    [0m root:test_mypage_message_multi.py:353 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 12_44_02_留言-陌生人留言-一对一更多个人浮层视频通话.png

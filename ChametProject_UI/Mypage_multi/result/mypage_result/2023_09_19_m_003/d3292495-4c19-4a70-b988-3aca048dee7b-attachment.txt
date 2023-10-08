@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:1083 ===留言-一对一-返回===
+[32mINFO    [0m root:test_mypage_message_multi.py:1088 断言成功

@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_message_multi.py:249 ===留言-陌生人列表===
+[32mINFO    [0m root:test_mypage_message_multi.py:259 ===断言成功===

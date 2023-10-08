@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:1271 ====我的任务-男-Top Offers入口'===
+[1m[31mERROR   [0m root:test_mypage_multi.py:1283 ===断言成功===

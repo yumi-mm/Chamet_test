@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mpage_h5.py:254 ===我的邀请-邀请列表===
+[32mINFO    [0m root:test_mpage_h5.py:269 ===断言成功===
