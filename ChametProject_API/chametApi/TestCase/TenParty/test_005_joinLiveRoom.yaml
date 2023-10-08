@@ -1,0 +1,2 @@
+- {'api':'POST  /joinLiveRoom','apiName':'进入直播间','method':'post','url':'/live/joinLiveRoom','headers':0}
+- {'caseName':'进入直播间', 'data': {"bizCode":null}}

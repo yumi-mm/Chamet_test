@@ -1,0 +1,2 @@
+- {'api':'POST /getRewardBoxTime','apiName':'获取奖励宝箱时间','method':'post','url':'/live/user/getRewardBoxTime','headers':0}
+- {'caseName':'获取奖励宝箱时间', 'data': {"bizCode":null}}

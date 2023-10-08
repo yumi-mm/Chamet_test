@@ -1,0 +1,2 @@
+- {'api':'POST /checkIsVideoChat','apiName':'检测用户是否可视频聊','method':'post','url':'/videoChat/checkIsVideoChat','headers':0}
+- {'caseName':'检测用户是否可视频聊（不允许打给自己）', 'data': {"userid":2000004,"touserid":2000004,"type":1,"callType":14,"isUseChatCard":0,"videoType":2}}

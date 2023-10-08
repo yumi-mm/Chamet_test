@@ -1,0 +1,2 @@
+- {'api':'POST /listIsolationRoom','apiName':'交友房隔离榜列表(聊天房)','method':'post','url':'/live/listIsolationRoom','headers':0}
+- {'caseName':'交友房隔离榜列表(聊天房)', 'data': {"pageSize":1,"pageNo":1,"gameType":0}}

@@ -1,0 +1,2 @@
+- {'api':'POST /checkCanApply','apiName':'校验是否能够申请上麦位','method':'post','url':'/live/user/checkCanApply','headers':0}
+- {'caseName':'校验是否能够申请上麦位', 'data': {"bizCode":null}}

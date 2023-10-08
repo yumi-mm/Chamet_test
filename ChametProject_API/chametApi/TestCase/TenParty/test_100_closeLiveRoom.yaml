@@ -1,0 +1,2 @@
+- {'api':'POST /closeLiveRoom','apiName':'关闭直播间','method':'post','url':'/live/closeLiveRoom','headers':0}
+- {'caseName':'关闭直播间（主动关闭）', 'data': {"bizCode":null,"endCode":1}}

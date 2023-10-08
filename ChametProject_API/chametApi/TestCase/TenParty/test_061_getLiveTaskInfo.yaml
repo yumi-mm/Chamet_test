@@ -1,0 +1,2 @@
+- {'api':'POST /getLiveTaskInfo','apiName':'获取直播间任务信息','method':'post','url':'/live/user/getLiveTaskInfo','headers':0}
+- {'caseName':'获取直播间任务信息', 'data': {"bizCode":null}}

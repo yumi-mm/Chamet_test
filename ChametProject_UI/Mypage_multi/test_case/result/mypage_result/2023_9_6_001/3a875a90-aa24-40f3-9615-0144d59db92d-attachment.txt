@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_mypage_multi.py:3879 ===我的打招呼-男女入口显示-进入显示===
+[32mINFO    [0m root:test_mypage_multi.py:3881 ===我的打招呼-女入口显示-进入显示===
+[32mINFO    [0m root:test_mypage_multi.py:3919 ===执行失败===

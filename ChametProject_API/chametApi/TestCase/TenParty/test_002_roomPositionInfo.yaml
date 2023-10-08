@@ -1,0 +1,2 @@
+- {'api':'POST /getRoomPositionInfo','apiName':'获取房间麦位信息接口','method':'post','url':'/live/getRoomPositionInfo','headers':0}
+- {'caseName':'获取房间麦位信息接口', 'data': {"bizCode":null}}

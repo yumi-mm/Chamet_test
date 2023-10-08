@@ -1,0 +1,3 @@
+[32mINFO    [0m root:test_10party_mult.py:132 ===用例6：观众进入交友房页签===
+[32mINFO    [0m root:multparty_ten_audience.py:138 ===进入交友房页签===
+[32mINFO    [0m root:test_10party_mult.py:137 ===断言成功，进入交友房页签===

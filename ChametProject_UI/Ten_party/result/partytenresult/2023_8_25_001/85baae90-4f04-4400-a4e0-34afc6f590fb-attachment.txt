@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2375 ===用例106：观众端进入群聊页面===
-[32mINFO    [0m root:multparty_ten_audience.py:573 ===点击更多按钮===
-[32mINFO    [0m root:test_10party_mult.py:2387 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2389 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-08-25 14_43_19.png

@@ -1,0 +1,2 @@
+- {'api':'POST /checkSendPrivateMsg','apiName':'校验是否可以发送私聊消息','method':'post','url':'/privateChat/checkSendPrivateMsg','headers':0}
+- {'caseName':'校验是否可以发送私聊消息', 'data': {"touserid":2000004}}

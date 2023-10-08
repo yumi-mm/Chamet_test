@@ -1,0 +1,5 @@
+[32mINFO    [0m root:test_mypage_multi.py:166 ===我的页面-头像框===
+[32mINFO    [0m root:multiMypage_man.py:1043 no tab_mine_btn
+[32mINFO    [0m root:test_mypage_multi.py:170 等级有,头像框-确认
+[32mINFO    [0m root:multiMypage_man.py:1084 no user_head_levelFrame
+[32mINFO    [0m root:test_mypage_multi.py:180 ===断言失败===

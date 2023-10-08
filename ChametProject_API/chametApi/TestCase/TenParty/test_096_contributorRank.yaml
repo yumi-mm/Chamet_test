@@ -1,0 +1,2 @@
+- {'api':'POST /contributorRank','apiName':'本场贡献榜','method':'post','url':'/gift/contributorRank','headers':0}
+- {'caseName':'本场贡献榜', 'data': {"bizCode":null,"toUserId":2000004}}

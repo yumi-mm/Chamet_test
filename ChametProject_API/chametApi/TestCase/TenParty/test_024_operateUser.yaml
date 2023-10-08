@@ -1,0 +1,2 @@
+- {'api':'POST /operateUser','apiName':'主持人操作用户（邀请上麦）','method':'post','url':'/live/host/operateUser','headers':0}
+- {'caseName':'主持人操作用户（邀请上麦）', 'data': {"bizCode":null,"toUserId":20113007,"type":3}}

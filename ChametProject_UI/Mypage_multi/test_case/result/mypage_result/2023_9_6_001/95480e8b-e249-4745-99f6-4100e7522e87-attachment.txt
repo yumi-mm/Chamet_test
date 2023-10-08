@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_mypage_multi.py:280 ===我的页面-粉丝列表===
+[32mINFO    [0m root:test_mypage_multi.py:298 断言成功

@@ -240,6 +240,21 @@ class Multaudience(object):
         except:
             logging.info('===没有交友房===')
 
+
+    # 获取交友房卡片内容--游戏押注金额
+    def BetEnergy(self):
+        party_list_num = self.party_list()
+        try:
+            if party_list_num != 0:
+                logging.info('===有交友房===')
+                BetEnergy = self.driver.find_elements(MobileBy.ID, "com.hkfuliao.chamet:id/llBetEnergy")
+                return BetEnergy
+            else:
+                raise
+        except:
+            logging.info('===没有交友房===')
+
+
     # 获取交友房卡片内容--人数
     def partycard_peopleNumber(self):
         party_list_num = self.party_list()
@@ -325,7 +340,7 @@ class Multaudience(object):
 
     # 获取消息区文本消息
     def party_textmessage_all(self):
-        logging.info('===获取消息区最后一条文本消息===')
+        logging.info('===获取消息区所有文本消息===')
         str = ''
         party_textmessage_all = self.driver.find_elements(MobileBy.XPATH,"//android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup/android.widget.TextView")
         for i in party_textmessage_all:
@@ -476,10 +491,10 @@ class Multaudience(object):
             self.back(2)
             logging.info('===余额不足，设备无谷歌充值，跳过下方送礼断言用例。===')
             return 0
-        elif self.rechargewindow_bysendgift() == False and self.rechargewindow_able() == False:
-            self.back(2)
-            logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
-            return 0
+        # elif self.rechargewindow_bysendgift() == False and self.rechargewindow_able() == False:
+        #     self.back(2)
+        #     logging.info('===余额不足，设备无法充值，跳过下方送礼断言用例。===')
+        #     return 0
         else:
             lucky_window = self.audience_lucky_window()
             if lucky_window:
@@ -1408,7 +1423,7 @@ class Multaudience(object):
     # 观众进入游戏页面
     def audienceenter_game_window(self, game_type):
         race_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_race_rank")
-        LuckyNumber_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_ln_wheel_mask")
+        LuckyNumber_rank = (MobileBy.ID, "com.hkfuliao.chamet:id/iv_bet_user_count")
         game_race_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("Chamet赛车")')
         game_LuckyNumber_ele = (MobileBy.ANDROID_UIAUTOMATOR,'text("幸运数字")')
         game_race = self.driver.find_element(*game_race_ele)

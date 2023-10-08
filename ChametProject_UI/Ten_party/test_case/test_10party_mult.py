@@ -15,9 +15,12 @@ class Test_multchamet(anchorparty_Start_End):
     # 测试环境ID
     # Anchor_ID = "20113007"
     # 线上环境ID
+    # audience_name = "markd7fdeaqq"
     Anchor_ID = "46565897"
-    audience_name = "markd7fdeaqq"
+    audience_name = "balalamin"
     anchor_name = "yumi680bc2"
+    group_name = "哈哈aa"
+
 
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例1：主播进入交友房预览页')
@@ -187,18 +190,41 @@ class Test_multchamet(anchorparty_Start_End):
             logging.info(f'截图成功，图片为{screen_name}')
             raise
 
-    @pytest.mark.skip(reason='跳过执行，3.5.3版本取消显示')
+    # @pytest.mark.skip(reason='跳过执行，3.5.3版本取消显示')
+    # @allure.severity(allure.severity_level.CRITICAL)
+    # @allure.title('用例9：交友房封面包含内容--头像')
+    # def test_TenParty_009(self):
+    #     logging.info('===用例9：交友房封面包含内容--头像===')
+    #     try:
+    #         party_list_num = self.multaudience.party_list()
+    #         if party_list_num == 0:
+    #             pytest.skip("没有交友房，跳过该测试用例")
+    #         partycard_avatargrade = self.multaudience.partycard_avatargrade()
+    #         assert partycard_avatargrade
+    #         logging.info('===断言成功，交友房封面存在头像===')
+    #     except AssertionError as e:
+    #         logging.info('===断言失败===')
+    #         screen_name = self.multaudience.screenshot('party_ten')
+    #         logging.info(f'截图成功，图片为{screen_name}')
+    #         raise
+    #     except:
+    #         logging.info("===执行失败===")
+    #         screen_name = self.multaudience.screenshot('party_ten')
+    #         logging.info(f'截图成功，图片为{screen_name}')
+    #         raise
+
+
     @allure.severity(allure.severity_level.CRITICAL)
-    @allure.title('用例9：交友房封面包含内容--头像')
+    @allure.title('用例9：交友房封面包含内容--游戏押注金额')
     def test_TenParty_009(self):
-        logging.info('===用例9：交友房封面包含内容--头像===')
+        logging.info('===用例9：交友房封面包含内容--游戏押注金额===')
         try:
             party_list_num = self.multaudience.party_list()
             if party_list_num == 0:
                 pytest.skip("没有交友房，跳过该测试用例")
-            partycard_avatargrade = self.multaudience.partycard_avatargrade()
-            assert partycard_avatargrade
-            logging.info('===断言成功，交友房封面存在头像===')
+            BetEnergy = self.multaudience.BetEnergy()
+            assert BetEnergy
+            logging.info('===断言成功，交友房封面存在游戏押注金额===')
         except AssertionError as e:
             logging.info('===断言失败===')
             screen_name = self.multaudience.screenshot('party_ten')
@@ -209,6 +235,7 @@ class Test_multchamet(anchorparty_Start_End):
             screen_name = self.multaudience.screenshot('party_ten')
             logging.info(f'截图成功，图片为{screen_name}')
             raise
+
 
     @allure.severity(allure.severity_level.BLOCKER)
     @allure.title('用例10：交友房封面包含内容--人数')
@@ -1329,6 +1356,7 @@ class Test_multchamet(anchorparty_Start_End):
     def test_TenParty_059(self):
         logging.info('===用例59：主播邀请观众上麦，观众关闭上麦邀请===')
         # self.multanchor.invite_guest("markd7fdeaqq")
+        # self.multanchor.invite_guest("balalamin")
         self.multanchor.invite_guest(guestname)
         time.sleep(1)
         self.audiencedriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/negative_btn").click()
@@ -2270,6 +2298,7 @@ class Test_multchamet(anchorparty_Start_End):
         try:
             self.multanchor.open_audiencelist()
             # self.multanchor.enter_audiencehaldwin("markd7fdeaqq")
+            # self.multanchor.enter_audiencehaldwin("balalamin")
             self.multanchor.enter_audiencehaldwin(guestname)
             self.multanchor.enter_giftpage()
             global sendgift_assertcondition_7
@@ -2328,6 +2357,7 @@ class Test_multchamet(anchorparty_Start_End):
         try:
             self.multanchor.open_audiencelist()
             # self.multanchor.enter_audiencehaldwin("markd7fdeaqq")
+            # self.multanchor.enter_audiencehaldwin("balalamin")
             self.multanchor.enter_audiencehaldwin(guestname)
             self.multanchor.sendmessage_toaudience("hello")
             self.multaudience.enter_privatechatpage()
@@ -2375,7 +2405,7 @@ class Test_multchamet(anchorparty_Start_End):
     def test_TenParty_106(self):
         logging.info('===用例106：观众端进入群聊页面===')
         try:
-            self.multaudience.audienceenter_groupmessage("哈哈aa")
+            self.multaudience.audienceenter_groupmessage(self.group_name)
             groupmessage_name = self.multaudience.audience_groupmessage_name()
             assert groupmessage_name[-1] == ')'
             logging.info('===断言成功，观众成功进入群聊页面===')
@@ -2422,7 +2452,7 @@ class Test_multchamet(anchorparty_Start_End):
             message_group_lists = self.multanchor.message_group_list()
             if len(message_group_lists) == 0:
                 pytest.skip("聊天列表中没有群聊记录，跳过该测试用例")
-            self.multanchor.message_group_enter("哈哈aa")
+            self.multanchor.message_group_enter(self.group_name)
             groupmessage_number = (MobileBy.ID, "com.hkfuliao.chamet:id/tv_group_number")
             groupmessage_pagenumber = self.anchordriver.find_element(*groupmessage_number)
             groupmessage_pagenumberlast = groupmessage_pagenumber.text[-1]
@@ -3528,19 +3558,57 @@ class Test_multchamet(anchorparty_Start_End):
     @allure.title('用例156：主播退出10人交友房')
     def test_TenParty_156(self):
         logging.info('===用例156：主播退出10人交友房===')
+        # try:
+        #     self.multanchor.quit_party()
+        #     head_ele = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/profile_head")
+        #     username_ele = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/profile_name")
+        #     endpage_title = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/title")
+        #     party_time = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/tv_live_duration")
+        #     party_audience = self.anchordriver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.TextView[1]")
+        #     party_earn = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/tv_earn_title")
+        #     gift_people = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/tv_game_tip")
+        #     flyt_rank = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/flyt_rank")
+        #     party_audience_number = self.anchordriver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.TextView[2]")
+        #     gift_people_number = self.anchordriver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.TextView")
+        #     party_earn_number = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/tv_earn")
+        #     assert head_ele
+        #     assert username_ele
+        #     assert endpage_title.text == "派对已结束"
+        #     assert party_time.text == "派对时长"
+        #     assert party_audience.text == "观众"
+        #     assert party_earn.text == "礼物收入"
+        #     assert gift_people.text == "送礼人"
+        #     assert flyt_rank
+        #     assert party_audience_number != 0
+        #     assert gift_people_number != 0
+        #     assert party_earn_number != 0
+        #     logging.info('===断言成功===')
+        # except AssertionError as e:
+        #     logging.info('===断言失败===')
+        #     screen_name = self.multanchor.screenshot('party_ten')
+        #     logging.info(f'截图成功，图片为{screen_name}')
+        #     raise
+        # except:
+        #     logging.info('===执行失败===')
+        #     screen_name = self.multanchor.screenshot('party_ten')
+        #     logging.info(f'截图成功，图片为{screen_name}')
+        #     raise
         try:
             self.multanchor.quit_party()
             head_ele = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/profile_head")
             username_ele = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/profile_name")
             endpage_title = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/title")
             party_time = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/tv_live_duration")
-            party_audience = self.anchordriver.find_element(MobileBy.XPATH,"//android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.TextView[1]")
-            party_earn = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/tv_earn_title")
-            gift_people = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/tv_game_tip")
-            recommend_list = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/recyclerview")
-            party_audience_number = self.anchordriver.find_element(MobileBy.XPATH,"//android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.TextView[2]")
-            gift_people_number = self.anchordriver.find_element(MobileBy.XPATH,"//android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.TextView")
-            party_earn_number = self.anchordriver.find_element(MobileBy.ID,"com.hkfuliao.chamet:id/tv_earn")
+            party_audience = self.anchordriver.find_element(MobileBy.XPATH,
+                                                            "//android.widget.FrameLayout/android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.TextView[1]")
+            party_earn = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/tv_earn_title")
+            gift_people = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/tv_game_tip")
+            recommend_list = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/recyclerview")
+            party_audience_number = self.anchordriver.find_element(MobileBy.XPATH,
+                                                                   "//android.view.ViewGroup/android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[2]/android.widget.TextView[2]")
+            gift_people_number = self.anchordriver.find_element(MobileBy.XPATH,
+                                                                "//android.widget.LinearLayout/android.view.ViewGroup/android.widget.LinearLayout[3]/android.widget.LinearLayout/android.widget.TextView")
+            party_earn_number = self.anchordriver.find_element(MobileBy.ID, "com.hkfuliao.chamet:id/tv_earn")
             assert head_ele
             assert username_ele
             assert endpage_title.text == "派对已结束"

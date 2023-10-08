@@ -1,0 +1,2 @@
+- {'api':'POST /getPushRoomInfo','apiName':'获取push跳转房间信息','method':'post','url':'/live/user/getPushRoomInfo','headers':0}
+- {'caseName':'获取push跳转房间信息', 'data': {"touserid":20113007}}

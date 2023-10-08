@@ -1,0 +1,2 @@
+- {'api':'POST /listNewWomanSingleRoom','apiName':'单人直播间新女榜列表','method':'post','url':'/live/listNewWomanSingleRoom','headers':0}
+- {'caseName':'单人直播间新女榜列表', 'data': {"pageNo":1,"pageSize":1}}

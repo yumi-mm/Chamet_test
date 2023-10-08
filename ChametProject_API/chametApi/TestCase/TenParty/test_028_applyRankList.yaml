@@ -1,0 +1,2 @@
+- {'api':'POST /applyRankList','apiName':'申请上麦列表','method':'post','url':'/live/applyRankList','headers':0}
+- {'caseName':'申请上麦列表', 'data': {"bizCode":null,"pageNo":1,"pageSize":1}}

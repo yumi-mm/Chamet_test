@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2063 ===用例93：主播私聊界面发拨打语音聊天===
-[32mINFO    [0m root:multparty_ten_anchor.py:581 ===拨打视频聊天===
-[32mINFO    [0m root:multparty_ten_anchor.py:588 ===查看是否余额不足===
-[32mINFO    [0m root:multparty_ten_anchor.py:592 ===余额足够===
-[32mINFO    [0m root:test_10party_mult.py:2075 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2077 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-07-21 11_52_52.png

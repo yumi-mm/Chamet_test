@@ -1,0 +1,2 @@
+- {'api':'POST /getLiveRecomRankUserInfos','apiName':'获取指定房间的单人直播间卡片页信息','method':'post','url':'/live/user/getLiveRecomRankUserInfos','headers':0}
+- {'caseName':'获取指定房间的单人直播间卡片页信息', 'data': {"roomIdList":null}}

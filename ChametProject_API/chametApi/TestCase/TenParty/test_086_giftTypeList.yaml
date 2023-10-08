@@ -1,0 +1,2 @@
+- {'api':'POST /giftTypeList','apiName':'礼物分组','method':'post','url':'/giftListConfig/giftTypeList','headers':0}
+- {'caseName':'礼物分组', 'data': {"souceType":2}}

@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:910 ===用例40：主播端申请上麦未读消息检查===
-[32mINFO    [0m root:test_10party_mult.py:923 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:925 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-09-04 13_47_16.png

@@ -1,0 +1,2 @@
+- {'api':'POST /getRecomRank','apiName':'结束页推荐榜','method':'post','url':'/live/getRecomRank','headers':0}
+- {'caseName':'结束页推荐榜', 'data': {"type":1}}

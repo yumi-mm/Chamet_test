@@ -1,0 +1,2 @@
+- {'api':'POST /destroyVideoChat','apiName':'关闭视频聊','method':'post','url':'/videoChatCom/destroyVideoChat','headers':0}
+- {'caseName':'关闭视频聊（被叫方主动挂断结束）', 'data': {"sid": null,"endCode": 1,"endReason": 0}}

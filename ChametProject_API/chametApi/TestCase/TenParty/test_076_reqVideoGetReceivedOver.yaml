@@ -1,0 +1,2 @@
+- {'api':'POST /reqVideoGetReceivedOver','apiName':'拨打被叫方收到消息回复','method':'post','url':'/videoChat/callSameTime/reqVideoGetReceivedOver','headers':0}
+- {'caseName':'拨打被叫方收到消息回复（接听）', 'data': {"sid":null,"receiveCode": 1,"isRejectVideoCall": 0}}

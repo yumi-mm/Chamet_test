@@ -1,0 +1,2 @@
+- {'api':'POST /isMute','apiName':'用户是否禁言（未被禁言）','method':'post','url':'/live/user/isMute','headers':0}
+- {'caseName':'用户是否禁言（未被禁言）', 'data': {"bizCode":null,"toUserId":20113007}}

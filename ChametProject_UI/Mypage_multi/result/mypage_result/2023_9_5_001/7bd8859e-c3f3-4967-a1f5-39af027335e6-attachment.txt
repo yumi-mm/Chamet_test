@@ -1,0 +1,6 @@
+[32mINFO    [0m root:test_mypage_multi.py:2755 ===我的等级-男-等级tab栏===
+[32mINFO    [0m root:multiMypage_man.py:2663 开始拼接
+[32mINFO    [0m root:multiMypage_man.py:2667 no level_title
+[32mINFO    [0m root:multiMypage_man.py:2680 no level_specificNumberleft
+[32mINFO    [0m root:test_mypage_multi.py:2774 ===等级不为Lv0，开始断言等级与横条等级内容===
+[32mINFO    [0m root:test_mypage_multi.py:2801 ===执行失败===
