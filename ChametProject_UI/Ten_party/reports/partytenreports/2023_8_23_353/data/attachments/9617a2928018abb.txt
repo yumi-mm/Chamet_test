@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2417 ===用例108：主播端进入群聊页面===
-[32mINFO    [0m root:test_10party_mult.py:2436 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2438 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-08-25 17_54_47.png

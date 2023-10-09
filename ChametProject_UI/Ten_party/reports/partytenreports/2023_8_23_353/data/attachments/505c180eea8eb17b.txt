@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2135 ===用例96：观众私聊界面发拨打视频聊天===
-[32mINFO    [0m root:test_10party_mult.py:2144 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2146 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-08-25 17_50_11.png

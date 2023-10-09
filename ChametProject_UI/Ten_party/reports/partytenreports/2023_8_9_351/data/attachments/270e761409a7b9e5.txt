@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2656 ===用例119：观众端群聊页面检查相册图片===
-[32mINFO    [0m root:test_10party_mult.py:2661 ===断言成功，成功收到相册图片===

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1397 ===用例62：观众进入主播个人主页===
-[32mINFO    [0m root:multparty_ten_audience.py:681 ===获取半屏交友房主播名称===
-[32mINFO    [0m root:multparty_ten_audience.py:689 ===点击进入主播个人主页===
-[32mINFO    [0m root:test_10party_mult.py:1401 ===断言成功，主播名称与个人主页名称一致===

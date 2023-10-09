@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:69 ===用例3：主播创建10人交友房===
-[32mINFO    [0m root:multparty_ten_anchor.py:146 ===进入10人交友房===
-[32mINFO    [0m root:test_10party_mult.py:75 ===断言成功===

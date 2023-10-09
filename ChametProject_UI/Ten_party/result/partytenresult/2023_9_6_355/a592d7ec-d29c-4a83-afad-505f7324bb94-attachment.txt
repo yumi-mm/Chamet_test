@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1380 ===用例61：观众打开主播个人主页半屏浮窗===
-[32mINFO    [0m root:multparty_ten_audience.py:662 ===获取交友房主播名称===
-[32mINFO    [0m root:multparty_ten_audience.py:681 yumi680bc2
-[32mINFO    [0m root:multparty_ten_audience.py:669 ===点击展开主播个人主页半屏浮窗===
-[32mINFO    [0m root:multparty_ten_audience.py:674 ===获取半屏浮层主播名字===
-[32mINFO    [0m root:multparty_ten_audience.py:684 yumi680bc2
-[32mINFO    [0m root:test_10party_mult.py:1384 ===断言成功，主播名称与半屏浮层名称一致===

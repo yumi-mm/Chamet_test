@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3193 ===用例142：观众端打开游戏页面查看游戏类型===
-[32mINFO    [0m root:multparty_ten_audience.py:1403 ===进入游戏页面===

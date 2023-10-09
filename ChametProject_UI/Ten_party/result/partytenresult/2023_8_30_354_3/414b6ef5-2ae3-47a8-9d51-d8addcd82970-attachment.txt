@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1870 ===用例82：观众私聊页面发送Facebook表情===
-[32mINFO    [0m root:multparty_ten_audience.py:813 ===准备发送表情===
-[32mINFO    [0m root:multparty_ten_audience.py:820 ===发送google表情===
-[32mINFO    [0m root:multparty_ten_audience.py:835 ===发送成功===
-[32mINFO    [0m root:multparty_ten_audience.py:1088 ===断言成功，为自己发的消息===
-[32mINFO    [0m root:test_10party_mult.py:1875 ===断言成功，观众发送Facebook表情成功===

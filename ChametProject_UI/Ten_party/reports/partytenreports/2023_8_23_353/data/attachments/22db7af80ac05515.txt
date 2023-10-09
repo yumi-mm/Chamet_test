@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2093 ===用例94：观众私聊界面发送相机照片===
-[32mINFO    [0m root:multparty_ten_audience.py:872 ===打开相机===
-[32mINFO    [0m root:multparty_ten_audience.py:878 ===拍照发送===
-[32mINFO    [0m root:multparty_ten_audience.py:1026 ===断言成功，为自己发的消息===
-[32mINFO    [0m root:test_10party_mult.py:2105 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:2107 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-08-25 17_49_59.png

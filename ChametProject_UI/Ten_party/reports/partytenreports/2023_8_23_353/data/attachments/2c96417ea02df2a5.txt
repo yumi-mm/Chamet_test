@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:668 ===用例30：主播端打开送礼物弹窗===
-[32mINFO    [0m root:multparty_ten_anchor.py:238 ===打开送礼弹窗===
-[32mINFO    [0m root:multparty_ten_anchor.py:242 #####################
-[32mINFO    [0m root:multparty_ten_anchor.py:247 ===获取礼物列表===
-[32mINFO    [0m root:test_10party_mult.py:673 ===断言成功===

@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2096 ===用例94：观众私聊界面发送相机照片===
-[32mINFO    [0m root:multparty_ten_audience.py:881 ===打开相机===
-[32mINFO    [0m root:multparty_ten_audience.py:887 ===拍照发送===
-[32mINFO    [0m root:multparty_ten_audience.py:1050 ===断言成功，为自己发的消息===
-[32mINFO    [0m root:test_10party_mult.py:2101 ===断言成功，观众发送相机照片成功===

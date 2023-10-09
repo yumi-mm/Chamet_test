@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2554 ===用例114：主播端群聊页面发送google表情===
-[32mINFO    [0m root:multparty_ten_anchor.py:738 ===准备发送表情===
-[32mINFO    [0m root:multparty_ten_anchor.py:744 ===发送google表情===
-[32mINFO    [0m root:multparty_ten_anchor.py:594 ===点击空白处===
-[32mINFO    [0m root:multparty_ten_anchor.py:762 ===发送成功===
-[32mINFO    [0m root:multparty_ten_anchor.py:802 ===断言成功，为自己发的消息===
-[32mINFO    [0m root:test_10party_mult.py:2559 ===断言成功，成功发送google表情===
