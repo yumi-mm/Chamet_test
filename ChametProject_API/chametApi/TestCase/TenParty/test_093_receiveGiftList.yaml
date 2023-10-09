@@ -1,2 +1,0 @@
-- {'api':'POST /receiveGiftList','apiName':'收礼/送礼列表接口','method':'post','url':'/giftList/receiveGiftList','headers':0}
-- {'caseName':'收礼列表接口', 'data': {"touserid":2000004,"typeId":1,"pageNo":1,"type":0}}

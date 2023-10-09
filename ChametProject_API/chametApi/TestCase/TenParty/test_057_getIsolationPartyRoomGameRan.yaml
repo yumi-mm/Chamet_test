@@ -1,2 +1,0 @@
-- {'api':'POST /getIsolationPartyRoomGameRank','apiName':'交友房游戏隔离榜列表','method':'post','url':'/live/getIsolationPartyRoomGameRank','headers':0}
-- {'caseName':'交友房游戏隔离榜列表', 'data': {"pageNo":1,"pageSize":1}}

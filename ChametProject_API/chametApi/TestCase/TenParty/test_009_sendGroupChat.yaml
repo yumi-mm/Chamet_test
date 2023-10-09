@@ -1,2 +1,0 @@
-- {'api':'POST /sendGroupChat','apiName':'主播端发送聊天室消息','method':'post','url':'/live/user/sendGroupChat','headers':0}
-- {'caseName':'主播端发送聊天室消息', 'data': {"bizCode":null,"content":"hello"}}

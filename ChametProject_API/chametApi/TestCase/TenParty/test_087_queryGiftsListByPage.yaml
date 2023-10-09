@@ -1,2 +1,0 @@
-- {'api':'POST /queryGiftsListByPage','apiName':'礼物列表详情','method':'post','url':'/giftListConfig/queryGiftsListByPage','headers':0}
-- {'caseName':'礼物列表详情', 'data': {"souceType":2,"typeId":1,"pageNo":1,"pageSize":1,}}

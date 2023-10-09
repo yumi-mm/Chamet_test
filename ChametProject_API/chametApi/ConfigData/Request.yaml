@@ -1,4 +1,0 @@
-# 请求的配置信息
-baseUrl: https://api.ichamet.net
-headerData:
-  - {'Content-Type':'application/json'}

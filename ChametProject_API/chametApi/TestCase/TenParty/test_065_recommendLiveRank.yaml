@@ -1,2 +1,0 @@
-- {'api':'POST /recommendLiveRank','apiName':'直播间推荐榜单','method':'post','url':'/live/user/recommendLiveRank','headers':0}
-- {'caseName':'直播间推荐榜单', 'data': {"recommendType":1,"pageNo":1,"pageSize":1}}

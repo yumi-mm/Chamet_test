@@ -1,2 +1,0 @@
-- {'api':'POST /getTaskRoomInfo','apiName':'获取任务房间信息','method':'post','url':'/live/user/getTaskRoomInfo','headers':0}
-- {'caseName':'获取任务房间信息', 'data': {"type":2}}

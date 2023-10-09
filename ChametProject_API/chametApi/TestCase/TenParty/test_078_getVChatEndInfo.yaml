@@ -1,2 +1,0 @@
-- {'api':'POST /getVChatEndInfo','apiName':'视频聊天结束页信息','method':'post','url':'/videoChatCom/getVChatEndInfo','headers':0}
-- {'caseName':'视频聊天结束页信息', 'data': {"sid": null}}

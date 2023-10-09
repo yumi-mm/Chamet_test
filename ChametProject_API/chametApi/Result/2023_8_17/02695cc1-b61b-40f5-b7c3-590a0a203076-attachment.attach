@@ -1,1 +1,0 @@
-{'msg': 'success', 'result': 1000, 'info': {'videoAuthPushUrl': 'rtmp://pili-publish-test-party-live.ichamet.net/test-chamet-party-live/auth_TEST_1367556', 'avType': 1, 'userId': 20113007, 'roomId': 1123459, 'isOpenCamera': False, 'isFocus': False, 'createTime': 1692236452000, 'isOpenMic': True, 'position': 2, 'isCloseVideoStream': 1, 'timestamp': 1692236492976}}

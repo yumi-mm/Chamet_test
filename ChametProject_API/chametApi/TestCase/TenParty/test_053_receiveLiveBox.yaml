@@ -1,2 +1,0 @@
-- {'api':'POST /receiveLiveBox','apiName':'直播间宝箱领取接口','method':'post','url':'/live/box/receiveLiveBox','headers':0}
-- {'caseName':'直播间宝箱领取接口', 'data': {"bizCode":null,"packetId":null}}

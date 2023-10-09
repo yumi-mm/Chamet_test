@@ -1,2 +1,0 @@
-- {'api':'POST /getLiveLikeRank','apiName':'直播间Like榜单','method':'post','url':'/live/user/getLiveLikeRank','headers':0}
-- {'caseName':'直播间Like榜单', 'data': {"pageNo":1,"pageSize":1}}

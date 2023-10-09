@@ -1,2 +1,0 @@
-- {'api':'POST /rankList','apiName':'1.1.4.1.29.8 观众列表','method':'post','url':'/live/rankList','headers':0}
-- {'caseName':'观众列表', 'data': {"pageNo":1,"pageSize":1,"bizCode":null,"scene":2}}

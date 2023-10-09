@@ -1,2 +1,0 @@
-- {'api':'POST /imHeartbeat','apiName':'观众心跳接口','method':'post','url':'/heartbeat/imHeartbeat','headers':0}
-- {'caseName':'观众心跳接口', 'data': {"body":"{'type':4,'value':{'code':404,'param':{'bizCode':null,'userid':20113007}}}"}}

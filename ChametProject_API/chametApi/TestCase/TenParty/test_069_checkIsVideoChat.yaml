@@ -1,2 +1,0 @@
-- {'api':'POST /checkIsVideoChat','apiName':'检测用户是否可视频聊','method':'post','url':'/videoChat/checkIsVideoChat','headers':0}
-- {'caseName':'检测用户是否可视频聊（交友房房主不允许拨打视频聊）', 'data': {"userid":2000004,"touserid":20113007,"type":1,"callType":14,"isUseChatCard":0,"videoType":2}}

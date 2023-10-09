@@ -1,2 +1,0 @@
-- {'api':'POST /userReceiveList','apiName':'领取直播间宝箱列表','method':'post','url':'/live/box/userReceiveList','headers':0}
-- {'caseName':'领取直播间宝箱列表', 'data': {"bizCode":null,"packetId":null,"pageNo":1,"pageSize":1}}

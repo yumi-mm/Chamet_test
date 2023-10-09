@@ -1,2 +1,0 @@
-- {'api':'POST /liveContributeRank','apiName':'直播间贡献榜','method':'post','url':'/live/liveContributeRank','headers':0}
-- {'caseName':'直播间贡献榜', 'data': {"bizCode":null,"pageNo":1,"pageSize":1,"toUserId":2000004}}

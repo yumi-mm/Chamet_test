@@ -1,2 +1,0 @@
-- {'api':'POST /agreeApply','apiName':'同意申请上麦位','method':'post','url':'/live/host/agreeApply','headers':0}
-- {'caseName':'同意申请上麦位', 'data': {"bizCode":null,"toUserId":20113007}}

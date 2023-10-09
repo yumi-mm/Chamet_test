@@ -1,2 +1,0 @@
-- {'api':'POST /startVideoChat','apiName':'拨打视频聊','method':'post','url':'/videoChat/callSameTime/startVideoChat','headers':0}
-- {'caseName':'拨打视频聊（观众给房主）', 'data': {"callType": 14,"touserid": 2000004,"ctype": "2"}}
