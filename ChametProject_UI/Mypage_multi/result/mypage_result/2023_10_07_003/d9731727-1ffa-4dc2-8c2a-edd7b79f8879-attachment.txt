@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2097 ===我的简介-年龄显示===
-[32mINFO    [0m root:test_mypage_multi.py:2111 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:2113 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-08 10_45_43_我的简介-年龄显示.png

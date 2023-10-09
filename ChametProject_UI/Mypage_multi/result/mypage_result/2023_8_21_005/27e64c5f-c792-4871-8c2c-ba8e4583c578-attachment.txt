@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:4982 ===我的余额-客服按钮===
-[32mINFO    [0m root:test_mypage_multi.py:4997 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:4999 截图成功，图片为D:\chamet_mypage_multi_testProject-8.18\common../../screenshots/my_page/我的余额-客服按钮_2023-08-21 17_10_19.png

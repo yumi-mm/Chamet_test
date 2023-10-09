@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1273 ===留言-群聊消息-语音消息===
-[32mINFO    [0m root:multiMypage_man.py:1444 114权限弹窗，是否允许？
-[32mINFO    [0m root:multiMypage_man.py:1457 114权限弹窗，是否允许？
-[32mINFO    [0m root:test_mypage_message_multi.py:1282 ===断言成功===

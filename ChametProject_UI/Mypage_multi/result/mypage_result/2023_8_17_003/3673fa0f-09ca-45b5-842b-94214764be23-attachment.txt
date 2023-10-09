@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:388 ===我的页面-关注列表===
-[32mINFO    [0m root:test_mypage_multi.py:423 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:425 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/我的页面-关注列表_2023-08-17 16_09_18.png

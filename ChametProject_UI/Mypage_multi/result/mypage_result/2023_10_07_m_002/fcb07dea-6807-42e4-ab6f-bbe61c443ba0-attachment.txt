@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:705 ===留言-好友一对一列表-列表跳转===
-[32mINFO    [0m root:test_mypage_message_multi.py:732 ===执行失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:734 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 12_45_42_留言-好友一对一列表-列表跳转.png

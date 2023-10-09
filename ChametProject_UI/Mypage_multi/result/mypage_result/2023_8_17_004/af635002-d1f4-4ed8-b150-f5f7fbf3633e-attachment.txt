@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3899 ===我的简介-入口===
-[32mINFO    [0m root:test_mypage_multi.py:3915 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:3917 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/我的简介-入口_2023-08-17 17_05_36.png

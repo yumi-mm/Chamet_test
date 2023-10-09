@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2428 ===我的简介-地区===
-[32mINFO    [0m root:test_mypage_multi.py:2440 ===执行失败===

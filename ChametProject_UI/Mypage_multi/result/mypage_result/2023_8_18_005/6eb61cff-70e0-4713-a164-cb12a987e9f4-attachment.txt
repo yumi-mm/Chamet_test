@@ -1,8 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3318 ===我的任务-女-有奖励红点或积分及未领取和领取奖励===
-[32mINFO    [0m root:multiMypage_woman.py:2726 显示积分
-[32mINFO    [0m root:test_mypage_multi.py:3325 ===我的任务-新奖励===
-[32mINFO    [0m root:test_mypage_multi.py:3329 ===有已完成未领取奖励,开始领取===
-[32mINFO    [0m root:test_mypage_multi.py:3332 ===领取奖励中===
-[32mINFO    [0m root:test_mypage_multi.py:3336 ===已领取奖励的弹窗，点击无反应===
-[32mINFO    [0m root:test_mypage_multi.py:3339 ===已完成已领取奖励,开始查看===
-[32mINFO    [0m root:test_mypage_multi.py:3343 ===断言成功===

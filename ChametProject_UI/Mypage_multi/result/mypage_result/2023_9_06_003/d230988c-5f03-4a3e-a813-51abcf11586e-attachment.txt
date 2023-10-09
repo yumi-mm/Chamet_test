@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1976 ===我的打招呼-女-已通过真人检测===
-[32mINFO    [0m root:test_mypage_multi.py:2021 ===执行失败===

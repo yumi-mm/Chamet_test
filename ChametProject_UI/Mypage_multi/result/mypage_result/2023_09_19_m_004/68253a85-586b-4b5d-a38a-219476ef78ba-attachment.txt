@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:846 ===留言-好友一对一-输入框===
-[32mINFO    [0m root:multiMypage_woman.py:1613 ===chamet团队未读数元素有无===
-[32mINFO    [0m root:test_mypage_message_multi.py:857 ===断言成功===

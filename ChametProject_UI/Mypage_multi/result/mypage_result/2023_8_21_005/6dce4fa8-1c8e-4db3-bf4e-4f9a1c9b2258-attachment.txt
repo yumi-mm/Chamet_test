@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:5143 ===我的页面-设置-隐私政策===
-[32mINFO    [0m root:test_mypage_multi.py:5153 ===断言成功===

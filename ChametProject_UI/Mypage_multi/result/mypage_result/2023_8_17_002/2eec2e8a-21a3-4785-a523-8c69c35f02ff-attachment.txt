@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2850 ===我的等级-女-等级tab栏===
-[32mINFO    [0m root:multiMypage_woman.py:2617 开始拼接
-[32mINFO    [0m root:test_mypage_multi.py:2889 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:2891 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/我的等级-女-等级tab栏_2023-08-17 15_29_03.png

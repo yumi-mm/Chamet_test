@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2508 ===我的简介-手机号更换===
-[32mINFO    [0m root:test_mypage_multi.py:2531 ===断言成功===

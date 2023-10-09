@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:547 ===我的页面-朋友头像===
-[32mINFO    [0m root:test_mypage_multi.py:550 ===我的页面-朋友头像人数不为0===
-[32mINFO    [0m root:test_mypage_multi.py:558 断言成功

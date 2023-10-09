@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:515 ===留言-陌生人留言-更多相机===
-[32mINFO    [0m root:multiMypage_man.py:1720 ===断言成功，为自己发的消息===
-[32mINFO    [0m root:test_mypage_message_multi.py:523 ===断言成功，发送相机照片成功===
-[32mINFO    [0m root:test_mypage_message_multi.py:527 ===断言成功，成功收到相机照片===

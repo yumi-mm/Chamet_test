@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:459 ===留言-陌生人留言-更多翻译===
-[32mINFO    [0m root:multiMypage_man.py:1613 ===chamet团队未读数元素有无===
-[32mINFO    [0m root:multiMypage_man.py:1617 no messages_Stranger_translateContent
-[32mINFO    [0m root:test_mypage_message_multi.py:474 ===断言成功===

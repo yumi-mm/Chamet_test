@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:651 ===我的页面-女-签到入口===
-[32mINFO    [0m root:test_mypage_multi.py:667 断言成功

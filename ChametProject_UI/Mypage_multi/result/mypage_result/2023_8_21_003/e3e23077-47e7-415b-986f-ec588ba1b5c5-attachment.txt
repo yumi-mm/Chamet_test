@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:4280 ===我的简介-性别===
-[32mINFO    [0m root:test_mypage_multi.py:4286 ===男-断言成功===
-[32mINFO    [0m root:test_mypage_multi.py:4289 ===女-断言成功===

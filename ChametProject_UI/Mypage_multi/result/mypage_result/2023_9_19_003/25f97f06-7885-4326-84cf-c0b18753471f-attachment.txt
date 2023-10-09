@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:174 ===我的页面-头像框===
-[32mINFO    [0m root:test_mypage_multi.py:178 等级有,头像框-确认
-[32mINFO    [0m root:test_mypage_multi.py:181 断言成功

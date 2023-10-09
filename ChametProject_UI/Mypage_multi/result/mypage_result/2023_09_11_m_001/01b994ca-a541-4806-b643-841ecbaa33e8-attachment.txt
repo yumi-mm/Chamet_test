@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:310 ===留言-陌生人留言-一对一个人浮层送礼滑动===
-[32mINFO    [0m root:test_mypage_message_multi.py:326 ===执行失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:328 截图成功，图片为D:\chamet_mypage_multi_testProject-9.6\common../../screenshots/my_page/留言-陌生人留言-一对一更多个人浮层送礼滑动_2023-09-11 10_57_02.png

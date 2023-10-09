@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1618 ===我的收入-入口跳转===
-[32mINFO    [0m root:test_mypage_multi.py:1631 ===男用户断言成功===
-[32mINFO    [0m root:test_mypage_multi.py:1644 ===女用户断言成功===

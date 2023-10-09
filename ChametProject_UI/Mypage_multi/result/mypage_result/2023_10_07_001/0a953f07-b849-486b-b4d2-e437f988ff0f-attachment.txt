@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1806 ===我的简介-头像-男-无历史图集==
-[32mINFO    [0m root:multiMypage_man.py:3229 开始查找历史图集入口
-[32mINFO    [0m root:multiMypage_man.py:3232 no myProfile_MyAvatar_PosterHistoryBtn_ele
-[32mINFO    [0m root:test_mypage_multi.py:1812 ===断言成功===

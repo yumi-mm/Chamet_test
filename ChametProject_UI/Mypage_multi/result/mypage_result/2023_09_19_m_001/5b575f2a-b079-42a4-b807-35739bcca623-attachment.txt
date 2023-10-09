@@ -1,8 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:122 ===留言-列表及消息未读数===
-[32mINFO    [0m root:multiMypage_woman.py:1523 ===开始查找用户id===
-[32mINFO    [0m root:multiMypage_woman.py:1542 查找陌生人33364388已成功
-[32mINFO    [0m root:multiMypage_man.py:1456 ===未读数元素有无===
-[32mINFO    [0m root:test_mypage_message_multi.py:135 ===留言-入口有消息未读数===
-[32mINFO    [0m root:multiMypage_man.py:1484 ===留言一级页面-未读数总和===
-[32mINFO    [0m root:test_mypage_message_multi.py:143 ===断言失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:145 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/留言-列表及消息未读数_2023-09-19 09_11_06.png

@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2096 ===我的简介-头像-女-有历史图集===
-[32mINFO    [0m root:multiMypage_woman.py:3161 开始查找历史图集入口
-[32mINFO    [0m root:test_mypage_multi.py:2110 ===断言成功===

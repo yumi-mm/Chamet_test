@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1400 ===我的任务-女-有奖励红点或积分及未领取和领取奖励===
-[32mINFO    [0m root:test_mypage_multi.py:1445 ===执行失败===

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1316 ===留言-一对一列表-列表跳转===
-[32mINFO    [0m root:multiMypage_man.py:2491 ===一对一列表-第三排未读数元素元素有无===
-[32mINFO    [0m root:multiMypage_man.py:2495 no messages_User_userContentUnreadDot
-[32mINFO    [0m root:test_mypage_multi.py:1323 ===断言成功===

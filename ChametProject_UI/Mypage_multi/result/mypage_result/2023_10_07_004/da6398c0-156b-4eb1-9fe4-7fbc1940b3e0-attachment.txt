@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2927 ===我的页面-设置-切换APP语言===
-[32mINFO    [0m root:test_mypage_multi.py:2938 ===断言成功===

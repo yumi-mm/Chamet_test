@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2626 ===我的余额-free入口===
-[32mINFO    [0m root:test_mypage_multi.py:2632 ===断言成功===

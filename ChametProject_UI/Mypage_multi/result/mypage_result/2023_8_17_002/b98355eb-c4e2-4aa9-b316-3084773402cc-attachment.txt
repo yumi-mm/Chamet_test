@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1954 ===留言-群聊消息-上麦用户头像-查看自己===
-[32mINFO    [0m root:test_mypage_multi.py:1968 ===男群主上麦，查看自己，断言成功===
-[32mINFO    [0m root:test_mypage_multi.py:1988 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:1990 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/留言-群聊消息-上麦用户头像-查看自己_2023-08-17 15_23_01.png

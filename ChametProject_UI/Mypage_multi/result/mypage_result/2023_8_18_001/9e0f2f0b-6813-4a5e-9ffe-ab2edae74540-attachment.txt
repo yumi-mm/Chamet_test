@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3583 ====我的任务-女-每月任务'===
-[32mINFO    [0m root:test_mypage_multi.py:3585 ====检查每月任务===
-[32mINFO    [0m root:multiMypage_woman.py:2809 no MyTasks_tasks_MonthlyTasksAll
-[31m[1mERROR   [0m root:test_mypage_multi.py:3588 ===断言成功===

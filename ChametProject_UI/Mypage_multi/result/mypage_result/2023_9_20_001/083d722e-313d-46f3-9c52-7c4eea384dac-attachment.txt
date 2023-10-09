@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3358 ===我的页面-设置-版本===
-[32mINFO    [0m root:test_mypage_multi.py:3372 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:3374 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/我的页面-设置-版本_2023-09-21 11_19_16.png

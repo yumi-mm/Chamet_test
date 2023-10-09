@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mpage_h5.py:225 ===我的邀请-男-邀请好友按钮===
-[32mINFO    [0m root:test_mpage_h5.py:227 ===邀请好友按钮===
-[32mINFO    [0m root:test_mpage_h5.py:236 ===断言成功===

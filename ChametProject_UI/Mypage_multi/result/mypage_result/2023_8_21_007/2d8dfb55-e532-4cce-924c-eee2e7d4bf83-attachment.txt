@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:4361 ===我的简介-地区===
-[32mINFO    [0m root:test_mypage_multi.py:4365 ===断言成功===

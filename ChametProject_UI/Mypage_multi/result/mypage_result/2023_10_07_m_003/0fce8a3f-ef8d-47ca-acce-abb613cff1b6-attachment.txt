@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1804 ===留言-群聊消息-更多-动态-大图模式===
-[32mINFO    [0m root:test_mypage_message_multi.py:1809 ===有动态元素===
-[32mINFO    [0m root:multiMypage_man.py:2284 ===动态整个元素===
-[32mINFO    [0m root:multiMypage_man.py:2284 ===动态整个元素===
-[32mINFO    [0m root:test_mypage_message_multi.py:1815 ===多个动态===
-[32mINFO    [0m root:test_mypage_message_multi.py:1822 ===大图模式-断言成功===

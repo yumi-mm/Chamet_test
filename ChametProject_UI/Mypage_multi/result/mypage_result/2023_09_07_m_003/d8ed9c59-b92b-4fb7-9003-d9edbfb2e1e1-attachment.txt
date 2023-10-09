@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:899 ===留言-一对一-更多翻译===
-[32mINFO    [0m root:test_mypage_message_multi.py:922 ===执行失败===

@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:4783 ===我的简介-入口-我的钻石===
-[32mINFO    [0m root:test_mypage_multi.py:4808 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:4810 截图成功，图片为D:\chamet_mypage_multi_testProject-8.17\common../../screenshots/my_page/我的余额-入口-我的钻石_2023-08-18 17_40_22.png

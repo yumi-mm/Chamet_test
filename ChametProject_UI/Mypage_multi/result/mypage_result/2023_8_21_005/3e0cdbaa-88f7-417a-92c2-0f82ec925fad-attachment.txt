@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2846 ===我的等级-女-外部显示和内部跳转===
-[32mINFO    [0m root:multiMypage_woman.py:1039 no tab_mine_btn
-[32mINFO    [0m root:multiMypage_woman.py:2554 ===开始点击我的等级===
-[32mINFO    [0m root:multiMypage_woman.py:2561 已经点击
-[32mINFO    [0m root:multiMypage_woman.py:2568 已经进入
-[32mINFO    [0m root:multiMypage_woman.py:2638 开始拼接
-[31m[1mERROR   [0m root:test_mypage_multi.py:2854 ===断言成功===

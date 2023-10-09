@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1785 ===我的简介-男-头像===
-[32mINFO    [0m root:test_mypage_multi.py:1799 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:1801 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-08 10_43_52_我的简介-男-头像.png

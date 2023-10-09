@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1106 ===留言-群聊消息显示===
-[32mINFO    [0m root:test_mypage_message_multi.py:1122 ===女生发言，准备成功===
-[32mINFO    [0m root:test_mypage_message_multi.py:1145 ===断言成功===

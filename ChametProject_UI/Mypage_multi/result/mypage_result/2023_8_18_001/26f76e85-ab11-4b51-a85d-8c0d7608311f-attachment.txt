@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2741 ===我的等级-男-等级tab栏===
-[32mINFO    [0m root:multiMypage_man.py:2637 开始拼接
-[32mINFO    [0m root:test_mypage_multi.py:2760 ===等级不为Lv0，开始断言等级与横条等级内容===
-[32mINFO    [0m root:test_mypage_multi.py:2763 ===开始断言等级特权弹窗===
-[32mINFO    [0m root:test_mypage_multi.py:2773 ===开始断言等级特权tab切换===
-[32mINFO    [0m root:test_mypage_multi.py:2778 ===断言成功===

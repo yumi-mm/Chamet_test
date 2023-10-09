@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3001 ===我的页面-设置-隐私政策===
-[32mINFO    [0m root:test_mypage_multi.py:3019 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:3021 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-08 10_50_39_我的页面-设置-隐私政策.png

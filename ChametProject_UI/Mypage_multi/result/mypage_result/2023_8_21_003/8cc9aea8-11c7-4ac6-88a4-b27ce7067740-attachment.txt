@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:4122 ===我的简介-头像-女-有历史图集===
-[32mINFO    [0m root:multiMypage_woman.py:3117 开始查找历史图集入口
-[32mINFO    [0m root:test_mypage_multi.py:4143 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:4145 截图成功，图片为D:\chamet_mypage_multi_testProject-8.18\common../../screenshots/my_page/我的简介-头像-女-有历史图集_2023-08-21 15_59_17.png

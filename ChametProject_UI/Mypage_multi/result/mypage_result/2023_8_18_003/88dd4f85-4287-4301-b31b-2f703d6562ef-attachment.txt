@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:250 ===我的页面-粉丝===
-[32mINFO    [0m root:test_mypage_multi.py:261 有粉丝，断言成功

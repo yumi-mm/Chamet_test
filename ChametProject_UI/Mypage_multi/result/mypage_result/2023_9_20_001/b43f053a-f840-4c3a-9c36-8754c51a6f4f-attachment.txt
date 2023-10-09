@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:134 ===我的页面-等级===
-[32mINFO    [0m root:test_mypage_multi.py:142 有等级-点击确认
-[32mINFO    [0m root:test_mypage_multi.py:151 断言成功

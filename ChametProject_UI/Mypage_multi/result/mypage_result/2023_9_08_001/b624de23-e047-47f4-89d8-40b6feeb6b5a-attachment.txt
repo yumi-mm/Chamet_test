@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1085 ====我的任务-男-立即做任务按钮'===
-[32mINFO    [0m root:test_mypage_multi.py:1097 ===断言成功===

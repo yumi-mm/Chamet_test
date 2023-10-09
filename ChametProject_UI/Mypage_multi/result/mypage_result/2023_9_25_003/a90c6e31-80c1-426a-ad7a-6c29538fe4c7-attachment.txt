@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1550 ====我的任务-女-签到入口'===
-[32mINFO    [0m root:test_mypage_multi.py:1569 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:1571 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-09-25 17_49_37_我的任务-女-签到入口.png

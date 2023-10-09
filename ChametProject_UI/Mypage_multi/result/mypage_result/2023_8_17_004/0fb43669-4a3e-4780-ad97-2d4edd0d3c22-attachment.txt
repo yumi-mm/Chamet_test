@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2026 ===留言-群聊消息-上麦用户头像-查看他人===
-[32mINFO    [0m root:multiMypage_man.py:2195 ===动态整个元素===
-[32mINFO    [0m root:multiMypage_man.py:2199 没有动态元素
-[32mINFO    [0m root:test_mypage_multi.py:2040 ===男群主上麦，查看他人，断言成功===
-[32mINFO    [0m root:multiMypage_woman.py:2195 ===动态整个元素===
-[32mINFO    [0m root:multiMypage_woman.py:2199 没有动态元素
-[32mINFO    [0m root:test_mypage_multi.py:2053 ===女成员上麦，查看他人，断言成功===

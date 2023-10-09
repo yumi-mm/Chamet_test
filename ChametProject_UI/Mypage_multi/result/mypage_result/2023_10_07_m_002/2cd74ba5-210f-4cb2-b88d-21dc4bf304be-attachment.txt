@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:968 ===留言-好友一对一-更多相册===
-[32mINFO    [0m root:test_mypage_message_multi.py:991 ===执行失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:993 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 12_48_03_留言-好友一对一-更多相册.png

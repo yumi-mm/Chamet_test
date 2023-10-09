@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3436 ===我的页面-设置-版本===
-[32mINFO    [0m root:test_mypage_multi.py:3442 ===断言成功===

@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1462 ===留言-群聊消息-上麦用户头像-查看他人===
-[32mINFO    [0m root:test_mypage_message_multi.py:1499 ===执行失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:1501 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 12_51_36_留言-群聊消息-上麦用户头像-查看他人.png

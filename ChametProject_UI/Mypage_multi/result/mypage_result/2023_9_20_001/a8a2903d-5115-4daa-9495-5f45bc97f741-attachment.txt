@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3333 ===我的页面-设置-清除缓存===
-[32mINFO    [0m root:test_mypage_multi.py:3348 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:3350 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/我的页面-设置-清除缓存_2023-09-21 11_19_07.png

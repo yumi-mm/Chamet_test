@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1794 ===我的邀请-男-问号按钮===
-[32mINFO    [0m root:test_mypage_multi.py:1815 ===执行失败===

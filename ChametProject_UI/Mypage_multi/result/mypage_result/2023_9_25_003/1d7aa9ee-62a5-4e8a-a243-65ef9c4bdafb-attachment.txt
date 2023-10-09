@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1460 ====我的任务-女-未完成奖励'===
-[32mINFO    [0m root:test_mypage_multi.py:1480 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:1482 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-09-25 17_49_04_我的任务-女-未完成奖励.png

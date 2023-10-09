@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1888 ===我的邀请-周排行===
-[32mINFO    [0m root:test_mypage_multi.py:1907 ===执行失败===

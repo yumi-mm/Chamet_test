@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:4956 ===我的余额-历史详情===
-[32mINFO    [0m root:test_mypage_multi.py:4965 ===断言成功===

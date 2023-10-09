@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2473 ===我的简介-定位切换===
-[32mINFO    [0m root:test_mypage_multi.py:2477 ===我的简介-定位有显示===
-[32mINFO    [0m root:test_mypage_multi.py:2490 ===我的简介-定位有具体定位，为隐藏===
-[32mINFO    [0m root:test_mypage_multi.py:2497 ===断言成功===

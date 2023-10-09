@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:689 ===我的页面-女-去签到-跳转页面===
-[32mINFO    [0m root:test_mypage_multi.py:717 ===断言失败===
-[32mINFO    [0m root:test_mypage_multi.py:719 截图成功，图片为D:\chamet_mypage_multi_testProject-8.18\common../../screenshots/my_page/我的页面-女-去签到-跳转页面_2023-08-21 17_20_09.png

@@ -1,7 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1244 ===留言-群聊消息-搜索表情===
-[32mINFO    [0m root:multiMypage_man.py:1866 ===准备发送表情===
-[32mINFO    [0m root:multiMypage_man.py:1872 ===发送google表情===
-[32mINFO    [0m root:multiMypage_man.py:1890 ===发送成功===
-[32mINFO    [0m root:multiMypage_man.py:1901 ===断言成功，为自己发的消息===
-[32mINFO    [0m root:test_mypage_message_multi.py:1249 ===断言成功，成功发送google表情===
-[32mINFO    [0m root:test_mypage_message_multi.py:1253 ===断言成功，收到google表情消息===

@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1081 ====我的任务-男-现在做任务按钮'===
-[32mINFO    [0m root:test_mypage_multi.py:1096 ===断言失败===
-[32mINFO    [0m root:test_mypage_multi.py:1098 截图成功，图片为D:\chamet_mypage_multi_testProject-9.5\common../../screenshots/my_page/我的任务-男-现在做任务按钮_2023-09-06 16_28_37.png

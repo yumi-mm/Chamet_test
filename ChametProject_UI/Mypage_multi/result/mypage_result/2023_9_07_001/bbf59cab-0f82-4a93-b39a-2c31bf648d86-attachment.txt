@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:613 ===我的页面-男-去签到-跳转页面===
-[32mINFO    [0m root:test_mypage_multi.py:628 断言成功

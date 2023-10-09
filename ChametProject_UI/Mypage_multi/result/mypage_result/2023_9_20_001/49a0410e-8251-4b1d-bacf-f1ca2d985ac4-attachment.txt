@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3382 ===我的页面-设置-登出按钮===
-[32mINFO    [0m root:test_mypage_multi.py:3400 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:3402 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/我的页面-设置-登出按钮_2023-09-21 11_19_24.png

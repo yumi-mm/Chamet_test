@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:841 ===我的等级-男-立即充值===
-[32mINFO    [0m root:multiMypage_man.py:2715 click vip_level_level_goback already

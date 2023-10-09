@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:4280 ===我的简介-定位===
-[32mINFO    [0m root:multiMypage_man.py:3156 no myProfile_Location_Text3
-[32mINFO    [0m root:test_mypage_multi.py:4290 ===断言失败===
-[32mINFO    [0m root:test_mypage_multi.py:4292 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/我的简介-定位_2023-08-17 17_08_10.png

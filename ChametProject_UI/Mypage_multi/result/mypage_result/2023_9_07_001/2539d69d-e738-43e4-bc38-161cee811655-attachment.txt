@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2093 ===我的简介-头像-编辑===
-[32mINFO    [0m root:multiMypage_man.py:1385 权限弹窗，是否允许？
-[32mINFO    [0m root:multiMypage_man.py:1409 权限弹窗，是否允许？
-[32mINFO    [0m root:multiMypage_man.py:1422 权限弹窗，是否允许？
-[32mINFO    [0m root:test_mypage_multi.py:2107 ===断言成功===

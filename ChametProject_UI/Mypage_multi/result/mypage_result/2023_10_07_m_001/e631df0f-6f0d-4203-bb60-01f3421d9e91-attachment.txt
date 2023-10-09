@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:602 ===留言-陌生人留言返回===
-[32mINFO    [0m root:test_mypage_message_multi.py:610 ===返回-断言成功===

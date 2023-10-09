@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2609 ===留言-群聊消息-移除成员===
-[32mINFO    [0m root:test_mypage_multi.py:2617 ===群主-断言完成===
-[32mINFO    [0m root:test_mypage_multi.py:2640 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:2642 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/留言-群聊消息-移除成员_2023-08-17 16_50_41.png

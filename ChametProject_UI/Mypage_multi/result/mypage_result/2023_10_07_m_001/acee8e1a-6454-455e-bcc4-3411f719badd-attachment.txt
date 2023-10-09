@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1925 ===留言-群聊消息-群组介绍===
-[32mINFO    [0m root:test_mypage_message_multi.py:1939 ===群主-断言成功===
-[32mINFO    [0m root:test_mypage_message_multi.py:1944 ===群成员-断言成功===

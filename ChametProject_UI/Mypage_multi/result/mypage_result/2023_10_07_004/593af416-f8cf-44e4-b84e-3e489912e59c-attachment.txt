@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1415 ===我的任务-女-有奖励红点或积分及未领取和领取奖励===
-[32mINFO    [0m root:multiMypage_woman.py:2786 显示积分
-[32mINFO    [0m root:test_mypage_multi.py:1444 ===我的任务-具体积分===
-[32mINFO    [0m root:test_mypage_multi.py:1452 ===断言成功===

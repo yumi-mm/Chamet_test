@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:459 ===留言-陌生人留言-更多翻译===
-[32mINFO    [0m root:test_mypage_message_multi.py:477 ===断言失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:479 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/留言-陌生人留言-更多翻译_2023-09-15 17_45_30.png

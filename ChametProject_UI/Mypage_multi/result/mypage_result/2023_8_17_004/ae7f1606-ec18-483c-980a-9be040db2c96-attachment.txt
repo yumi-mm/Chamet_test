@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:467 ===我的页面-朋友===
-[32mINFO    [0m root:test_mypage_multi.py:478 有朋友，断言成功

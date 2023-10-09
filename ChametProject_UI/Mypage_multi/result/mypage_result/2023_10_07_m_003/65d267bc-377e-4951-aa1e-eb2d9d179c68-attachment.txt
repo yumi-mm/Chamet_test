@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:446 ===留言-陌生人留言-更多翻译===
-[32mINFO    [0m root:test_mypage_message_multi.py:461 ===断言成功===

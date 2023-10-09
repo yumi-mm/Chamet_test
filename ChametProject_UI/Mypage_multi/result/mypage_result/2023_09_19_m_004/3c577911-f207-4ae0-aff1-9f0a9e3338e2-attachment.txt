@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1798 ===留言-群聊消息-更多-动态-大图模式===
-[32mINFO    [0m root:test_mypage_message_multi.py:1824 ===执行失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:1826 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/留言-群聊消息-更多-动态-大图模式_2023-09-19 14_20_04.png

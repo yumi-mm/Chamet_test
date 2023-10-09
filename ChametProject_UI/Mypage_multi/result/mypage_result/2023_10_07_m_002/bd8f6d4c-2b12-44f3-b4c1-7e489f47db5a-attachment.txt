@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:816 ===留言-好友一对一-更多视频通话===
-[32mINFO    [0m root:test_mypage_message_multi.py:823 ===拨打语言聊天===
-[32mINFO    [0m root:multiMypage_man.py:1447 114权限弹窗，是否允许？
-[32mINFO    [0m root:multiMypage_man.py:2389 ===用户在线===
-[32mINFO    [0m root:test_mypage_message_multi.py:837 ===执行失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:839 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 12_47_18_留言-好友一对一-更多视频通话.png

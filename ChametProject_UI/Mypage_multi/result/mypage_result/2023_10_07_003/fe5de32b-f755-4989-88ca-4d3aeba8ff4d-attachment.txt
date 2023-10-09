@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:377 ===我的页面-关注===
-[32mINFO    [0m root:test_mypage_multi.py:388 有关注，断言成功

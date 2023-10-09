@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:109 ===我的页面-顶部空白区域===
-[32mINFO    [0m root:test_mypage_multi.py:116 断言成功

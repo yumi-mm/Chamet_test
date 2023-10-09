@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1273 ====我的任务-男-每日任务'===
-[32mINFO    [0m root:test_mypage_multi.py:1275 ====检查每日任务===
-[1m[31mERROR   [0m root:test_mypage_multi.py:1280 ===断言成功===

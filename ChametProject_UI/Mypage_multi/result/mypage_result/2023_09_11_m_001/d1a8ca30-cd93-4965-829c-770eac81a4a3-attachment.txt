@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1180 ===留言-群聊消息-发言===
-[32mINFO    [0m root:test_mypage_message_multi.py:1197 ===执行失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:1199 截图成功，图片为D:\chamet_mypage_multi_testProject-9.6\common../../screenshots/my_page/留言-群聊消息-发言_2023-09-11 11_05_24.png

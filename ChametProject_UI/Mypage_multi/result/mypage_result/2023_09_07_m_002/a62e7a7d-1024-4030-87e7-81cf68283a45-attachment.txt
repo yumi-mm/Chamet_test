@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:177 ===留言-chamet客服===
-[32mINFO    [0m root:test_mypage_message_multi.py:187 断言成功

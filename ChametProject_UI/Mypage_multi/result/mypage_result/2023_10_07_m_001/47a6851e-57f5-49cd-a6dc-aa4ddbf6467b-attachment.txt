@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1168 ===留言-群聊消息未读数===
-[32mINFO    [0m root:multiMypage_man.py:2622 ===一对一列表-第三排未读数元素元素有无===
-[32mINFO    [0m root:multiMypage_man.py:2626 no messages_User_userContentUnreadDot
-[32mINFO    [0m root:test_mypage_message_multi.py:1174 ===断言成功===

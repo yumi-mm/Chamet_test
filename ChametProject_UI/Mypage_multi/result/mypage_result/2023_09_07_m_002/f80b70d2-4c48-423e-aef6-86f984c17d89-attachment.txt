@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:2070 ===留言-群聊消息-返回===
-[32mINFO    [0m root:test_mypage_message_multi.py:2078 ===返回-断言成功===

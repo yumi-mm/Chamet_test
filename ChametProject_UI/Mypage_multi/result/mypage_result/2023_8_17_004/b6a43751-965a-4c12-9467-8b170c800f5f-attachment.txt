@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2456 ===留言-群聊消息-群组名===
-[32mINFO    [0m root:test_mypage_multi.py:2461 ===群主-断言成功===
-[32mINFO    [0m root:test_mypage_multi.py:2464 ===群成员-断言成功===

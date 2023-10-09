@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3499 ====我的任务-女-签到入口'===
-[32mINFO    [0m root:test_mypage_multi.py:3510 ===断言成功===

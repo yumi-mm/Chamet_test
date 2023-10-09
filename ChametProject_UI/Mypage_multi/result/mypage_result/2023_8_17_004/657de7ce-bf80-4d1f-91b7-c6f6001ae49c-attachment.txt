@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1942 ===留言-群聊消息-上麦用户头像-查看自己===
-[32mINFO    [0m root:test_mypage_multi.py:1956 ===男群主上麦，查看自己，断言成功===
-[32mINFO    [0m root:test_mypage_multi.py:1967 ===女成员上麦，查看自己，断言成功===

@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1144 ====我的任务-男-通行证历史'===
-[32mINFO    [0m root:test_mypage_multi.py:1150 ===有充值月卡，有记录===
-[32mINFO    [0m root:test_mypage_multi.py:1155 ===断言成功===

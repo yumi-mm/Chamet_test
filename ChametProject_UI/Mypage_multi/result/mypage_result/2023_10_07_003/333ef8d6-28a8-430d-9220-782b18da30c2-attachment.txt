@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1693 ===我的打招呼-女-已通过真人检测===
-[32mINFO    [0m root:test_mypage_multi.py:1713 ===我的打招呼-已通过真人检测===
-[32mINFO    [0m root:test_mypage_multi.py:1732 ===没有已通过的打招呼消息===
-[32mINFO    [0m root:test_mypage_multi.py:1734 ===断言成功===

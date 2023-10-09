@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1427 ===留言-群聊消息-麦位表情===
-[32mINFO    [0m root:test_mypage_message_multi.py:1435 ===男群主麦位表情，断言成功===
-[32mINFO    [0m root:test_mypage_message_multi.py:1441 ===女成员麦位表情，断言成功===

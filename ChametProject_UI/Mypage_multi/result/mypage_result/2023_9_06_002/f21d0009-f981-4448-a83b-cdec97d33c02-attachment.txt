@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1971 ===我的打招呼-女-已通过真人检测===
-[32mINFO    [0m root:test_mypage_multi.py:1987 ===我的打招呼-已通过真人检测===
-[32mINFO    [0m root:test_mypage_multi.py:1996 ===页面有增加按钮，有已通过的打招呼消息===
-[32mINFO    [0m root:multiMypage_woman.py:3290 有3级等级限制，已点击取消按钮
-[32mINFO    [0m root:test_mypage_multi.py:2008 ===断言成功===

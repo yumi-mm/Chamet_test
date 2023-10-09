@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2709 ===我的余额-推荐充值===
-[32mINFO    [0m root:test_mypage_multi.py:2713 ===档位个数-断言成功===
-[32mINFO    [0m root:test_mypage_multi.py:2721 ===更换按钮-断言成功===
-[32mINFO    [0m root:test_mypage_multi.py:2742 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:2744 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-09-25 16_02_36_我的余额-推荐充值.png

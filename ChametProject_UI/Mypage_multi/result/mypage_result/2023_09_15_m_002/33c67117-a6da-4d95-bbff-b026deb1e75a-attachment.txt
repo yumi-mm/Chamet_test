@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:612 ===留言-陌生人留言返回===
-[32mINFO    [0m root:multiMypage_man.py:1558 ===留言用户-unread—元素有无===
-[32mINFO    [0m root:test_mypage_message_multi.py:622 ===断言失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:624 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/留言-陌生人留言返回_2023-09-15 16_06_24.png

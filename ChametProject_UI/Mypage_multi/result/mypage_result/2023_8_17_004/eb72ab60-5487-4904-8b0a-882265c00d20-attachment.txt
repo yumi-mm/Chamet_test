@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2652 ===留言-群聊消息-返回===
-[32mINFO    [0m root:test_mypage_multi.py:2668 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:2670 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/留言-群聊消息-返回_2023-08-17 16_50_44.png

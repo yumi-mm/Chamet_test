@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1517 ===留言-一对一-更多翻译===
-[32mINFO    [0m root:multiMypage_man.py:1551 ===chamet团队未读数元素有无===
-[32mINFO    [0m root:test_mypage_multi.py:1532 ===断言成功===

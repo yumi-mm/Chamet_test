@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:895 ===留言-陌生人留言-一对一更多个人主页===
-[32mINFO    [0m root:test_mypage_multi.py:908 ===返回-断言成功===

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1718 ===我的简介-入口===
-[32mINFO    [0m root:test_mypage_multi.py:1722 ===男-进入简介-断言成功===
-[32mINFO    [0m root:test_mypage_multi.py:1734 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:1736 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-09-25 15_34_36_我的简介-入口.png

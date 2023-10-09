@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3066 ===我的任务--男-兑换奖励按钮===
-[32mINFO    [0m root:test_mypage_multi.py:3075 ===断言成功===

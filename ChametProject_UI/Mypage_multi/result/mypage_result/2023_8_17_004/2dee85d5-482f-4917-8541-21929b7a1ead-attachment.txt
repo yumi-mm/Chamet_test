@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:4919 ===我的页面-设置-APP语言===
-[32mINFO    [0m root:test_mypage_multi.py:4939 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:4941 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/我的页面-设置-APP语言_2023-08-17 17_11_46.png

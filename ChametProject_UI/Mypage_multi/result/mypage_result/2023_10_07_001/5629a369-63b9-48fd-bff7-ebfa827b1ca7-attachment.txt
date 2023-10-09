@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:514 ===我的页面-朋友列表===
-[32mINFO    [0m root:test_mypage_multi.py:534 断言成功

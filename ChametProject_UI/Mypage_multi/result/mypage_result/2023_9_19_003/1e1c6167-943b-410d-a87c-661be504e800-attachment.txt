@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1961 ===我的简介-入口===
-[32mINFO    [0m root:test_mypage_multi.py:1977 ===执行失败===

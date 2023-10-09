@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3792 ===我的邀请-邀请列表===
-[32mINFO    [0m root:test_mypage_multi.py:3815 ===执行失败===

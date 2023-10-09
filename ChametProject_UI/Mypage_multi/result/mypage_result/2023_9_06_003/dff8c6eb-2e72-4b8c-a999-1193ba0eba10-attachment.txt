@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2468 ===我的简介-定位切换===
-[32mINFO    [0m root:test_mypage_multi.py:2510 ===执行失败===

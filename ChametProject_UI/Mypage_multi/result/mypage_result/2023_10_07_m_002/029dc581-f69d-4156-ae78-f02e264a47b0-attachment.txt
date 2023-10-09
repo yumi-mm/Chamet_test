@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1033 ===留言-好友一对一-更多视频聊天===
-[32mINFO    [0m root:test_mypage_message_multi.py:1044 ===执行失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:1046 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 12_48_21_留言-好友一对一-更多视频聊天.png

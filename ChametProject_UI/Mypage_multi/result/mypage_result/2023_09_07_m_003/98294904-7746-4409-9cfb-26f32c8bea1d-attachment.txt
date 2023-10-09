@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1719 ===留言-群聊消息-更多-动态-更多详情页===
-[32mINFO    [0m root:test_mypage_message_multi.py:1722 ===留言-有群聊消息，在群聊页面===
-[32mINFO    [0m root:multiMypage_man.py:2215 ===动态整个元素===
-[32mINFO    [0m root:test_mypage_message_multi.py:1736 ===没有动态元素===

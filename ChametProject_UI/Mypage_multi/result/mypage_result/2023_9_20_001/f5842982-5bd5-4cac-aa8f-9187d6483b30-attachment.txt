@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:711 ===我的页面-女-去签到-跳转页面===
-[32mINFO    [0m root:multiMypage_woman.py:1280 no MyTasks_rewards_TaskCompletePopoverOkBtn
-[32mINFO    [0m root:test_mypage_multi.py:740 断言成功

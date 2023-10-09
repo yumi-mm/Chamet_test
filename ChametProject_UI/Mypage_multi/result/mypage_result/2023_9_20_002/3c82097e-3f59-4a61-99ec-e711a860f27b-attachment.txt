@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:449 ===我的页面-关注头像===
-[32mINFO    [0m root:test_mypage_multi.py:452 ===我的页面-关注头像人数不为0===
-[32mINFO    [0m root:test_mypage_multi.py:461 断言成功

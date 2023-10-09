@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1581 ====我的任务-女-每日任务'===
-[32mINFO    [0m root:test_mypage_multi.py:1583 ====检查每日任务===
-[32mINFO    [0m root:test_mypage_multi.py:1597 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:1599 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-09-25 17_49_47_我的任务-女-每日任务.png

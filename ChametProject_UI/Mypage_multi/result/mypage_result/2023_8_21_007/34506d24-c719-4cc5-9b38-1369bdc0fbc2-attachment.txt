@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3844 ===我的邀请-周排行===
-[32mINFO    [0m root:test_mypage_multi.py:3855 ===断言成功===

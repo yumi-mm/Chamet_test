@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1270 ===留言-群聊消息-语音消息===
-[32mINFO    [0m root:test_mypage_message_multi.py:1287 ===执行失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:1289 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/留言-群聊消息-语音消息_2023-09-15 17_52_25.png

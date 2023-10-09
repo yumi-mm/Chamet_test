@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3270 ===我的任务-女-有奖励红点或积分及未领取和领取奖励===
-[32mINFO    [0m root:multiMypage_woman.py:1020 no tab_mine_btn
-[32mINFO    [0m root:multiMypage_woman.py:2702 没有显示积分，显示新奖励
-[32mINFO    [0m root:test_mypage_multi.py:3313 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:3315 截图成功，图片为D:\chamet_mypage_multi_testProject-8.15.2\common../../screenshots/my_page/我的任务-女-有奖励红点或积分及未领取和领取奖励_2023-08-17 17_03_19.png

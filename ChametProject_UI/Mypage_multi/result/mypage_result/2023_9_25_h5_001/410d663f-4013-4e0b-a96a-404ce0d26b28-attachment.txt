@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mpage_h5.py:321 ===我的背包-入口跳转===
-[32mINFO    [0m root:test_mpage_h5.py:341 ===执行失败===

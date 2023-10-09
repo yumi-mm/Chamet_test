@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2693 ===我的余额-Google档位===
-[32mINFO    [0m root:test_mypage_multi.py:2705 ===断言成功===

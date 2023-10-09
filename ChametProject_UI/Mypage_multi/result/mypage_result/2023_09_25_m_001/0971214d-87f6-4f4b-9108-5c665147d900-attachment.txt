@@ -1,9 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1955 ===留言-群聊消息-管理群组===
-[32mINFO    [0m root:test_mypage_message_multi.py:1960 ===模式内容-断言完成===
-[32mINFO    [0m root:test_mypage_message_multi.py:1965 ===群组所有权转让-断言完成===
-[32mINFO    [0m root:test_mypage_message_multi.py:1970 ===群管理员-断言完成===
-[32mINFO    [0m root:test_mypage_message_multi.py:1976 ===解散群组-断言完成===
-[32mINFO    [0m root:test_mypage_message_multi.py:1977 ===群主-断言完成===
-[32mINFO    [0m root:multiMypage_woman.py:2253 ===动态整个元素===
-[32mINFO    [0m root:multiMypage_woman.py:2257 no messages_Group_MoreGroupMana_ele
-[32mINFO    [0m root:test_mypage_message_multi.py:1979 ===群成员-断言成功===

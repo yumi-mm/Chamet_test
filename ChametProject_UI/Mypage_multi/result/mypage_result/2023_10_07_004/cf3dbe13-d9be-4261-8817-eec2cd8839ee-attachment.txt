@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1092 ====我的任务-男-未完成奖励'===
-[32mINFO    [0m root:test_mypage_multi.py:1096 ===未完成奖励'===
-[32mINFO    [0m root:test_mypage_multi.py:1106 ===断言成功===

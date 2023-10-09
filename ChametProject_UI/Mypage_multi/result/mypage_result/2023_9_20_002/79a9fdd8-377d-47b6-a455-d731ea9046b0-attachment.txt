@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3205 ===我的页面-设置-用户协议===
-[32mINFO    [0m root:test_mypage_multi.py:3216 ===断言成功===

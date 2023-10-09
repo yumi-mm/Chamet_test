@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:928 ===留言-陌生人留言-一对一个人浮层送礼滑动===
-[32mINFO    [0m root:multiMypage_man.py:1533 送礼浮层左右滑动
-[32mINFO    [0m root:test_mypage_multi.py:935 ===断言成功===

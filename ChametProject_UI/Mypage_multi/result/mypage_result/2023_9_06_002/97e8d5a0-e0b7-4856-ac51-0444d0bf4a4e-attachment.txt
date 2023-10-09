@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1591 ====我的任务-女-Top Offers入口'===
-[32mINFO    [0m root:multiMypage_woman.py:2810 no MyTasks_tasks_TopOffersEntryText
-[32mINFO    [0m root:test_mypage_multi.py:1597 ===断言成功===

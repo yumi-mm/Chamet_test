@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3613 ====我的任务-女-开通月卡'===
-[32mINFO    [0m root:multiMypage_woman.py:2820 no MyTasks_rewards_TopUpMonthCard
-[1m[31mERROR   [0m root:test_mypage_multi.py:3620 ===断言成功===

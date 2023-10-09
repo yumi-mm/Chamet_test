@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1147 ===我的任务--男-兑换奖励按钮===
-[32mINFO    [0m root:multiMypage_man.py:1090 no tab_mine_btn
-[32mINFO    [0m root:test_mypage_multi.py:1160 ===断言成功===

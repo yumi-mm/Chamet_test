@@ -1,6 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1774 ===我的简介-头像-编辑===
-[32mINFO    [0m root:multiMypage_man.py:1423 权限弹窗，是否允许？
-[32mINFO    [0m root:multiMypage_man.py:1447 114权限弹窗，是否允许？
-[32mINFO    [0m root:multiMypage_man.py:1460 114权限弹窗，是否允许？
-[32mINFO    [0m root:test_mypage_multi.py:1796 ===执行失败===
-[32mINFO    [0m root:test_mypage_multi.py:1798 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 16_06_21_我的简介-头像-编辑.png

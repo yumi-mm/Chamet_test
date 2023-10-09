@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3461 ====我的任务-女-通行证历史'===
-[32mINFO    [0m root:multiMypage_woman.py:2739 no MyTasks_tab_pointsMonthlyHistory
-[32mINFO    [0m root:test_mypage_multi.py:3465 ===断言成功===

@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1884 ===我的简介-女-头像-编辑===
-[32mINFO    [0m root:multiMypage_woman.py:1391 权限弹窗，是否允许？
-[32mINFO    [0m root:multiMypage_woman.py:3296 我的简介——女用户头像更改审核弹窗已点击
-[32mINFO    [0m root:multiMypage_woman.py:3291 没有——我的简介——女用户头像更改审核弹窗
-[32mINFO    [0m root:test_mypage_multi.py:1907 ===断言成功===

@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1684 ===留言-群聊消息-更多按钮===
-[32mINFO    [0m root:test_mypage_message_multi.py:1690 ===更多跳转详情页成功===
-[32mINFO    [0m root:multiMypage_man.py:1749 ===群聊上麦人头像元素有无===
-[32mINFO    [0m root:test_mypage_message_multi.py:1695 ===头像跳转个人主页成功===
-[32mINFO    [0m root:test_mypage_message_multi.py:1700 ===用户数据正常===

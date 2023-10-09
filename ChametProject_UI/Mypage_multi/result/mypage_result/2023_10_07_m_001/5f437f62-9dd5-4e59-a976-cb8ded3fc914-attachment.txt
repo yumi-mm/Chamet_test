@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:1840 ===留言-群聊消息-群组类型===
-[32mINFO    [0m root:test_mypage_message_multi.py:1847 ===返回-断言成功===

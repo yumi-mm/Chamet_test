@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3655 ===我的背包-入口跳转===
-[32mINFO    [0m root:test_mypage_multi.py:3661 ===男用户入口跳转成功===
-[32mINFO    [0m root:test_mypage_multi.py:3666 ===男用户入口跳转成功===

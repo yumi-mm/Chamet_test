@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2302 ===我的简介-第二语言显示和切换===
-[32mINFO    [0m root:test_mypage_multi.py:2306 ===我的简介-第二语言有显示===
-[32mINFO    [0m root:test_mypage_multi.py:2318 ===是马来语，开始切换印度尼西亚语===
-[32mINFO    [0m root:test_mypage_multi.py:2324 ===断言成功===

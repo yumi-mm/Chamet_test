@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:1750 ===我的简介-入口===
-[32mINFO    [0m root:test_mypage_multi.py:1754 ===男-进入简介-断言成功===
-[32mINFO    [0m root:test_mypage_multi.py:1758 ===女-进入简介-断言成功===

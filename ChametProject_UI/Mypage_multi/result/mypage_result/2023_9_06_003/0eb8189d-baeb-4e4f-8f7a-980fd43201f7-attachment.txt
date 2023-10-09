@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3296 ===我的页面-设置-关于我们===
-[32mINFO    [0m root:test_mypage_multi.py:3310 ===执行失败===

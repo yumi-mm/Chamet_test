@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:2313 ===我的简介-昵称-修改===
-[32mINFO    [0m root:test_mypage_multi.py:2338 ===执行失败===

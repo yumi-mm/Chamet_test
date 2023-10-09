@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mpage_h5.py:108 ===我的收入-入口跳转===
-[32mINFO    [0m root:test_mpage_h5.py:121 ===男用户断言成功===
-[32mINFO    [0m root:test_mpage_h5.py:134 ===女用户断言成功===

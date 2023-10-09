@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:418 ===留言-陌生人留言-搜索表情===
-[32mINFO    [0m root:multiMypage_man.py:1658 ===准备发送表情===
-[32mINFO    [0m root:test_mypage_message_multi.py:435 ===执行失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:437 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-10-07 12_44_30_留言-陌生人留言-搜索表情.png

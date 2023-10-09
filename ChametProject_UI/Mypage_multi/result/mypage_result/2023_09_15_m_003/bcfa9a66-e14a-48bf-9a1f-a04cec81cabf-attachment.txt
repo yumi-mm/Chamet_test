@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:613 ===留言-陌生人留言返回===
-[32mINFO    [0m root:multiMypage_man.py:1558 ===留言用户-unread—元素有无===
-[32mINFO    [0m root:multiMypage_man.py:1562 no messages_Stranger_userListUnread
-[32mINFO    [0m root:test_mypage_message_multi.py:620 ===返回-断言成功===

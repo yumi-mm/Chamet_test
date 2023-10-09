@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:159 ===留言-chamet团队===
-[32mINFO    [0m root:test_mypage_message_multi.py:171 ===留言-chamet团队有消息===
-[32mINFO    [0m root:test_mypage_message_multi.py:175 断言成功

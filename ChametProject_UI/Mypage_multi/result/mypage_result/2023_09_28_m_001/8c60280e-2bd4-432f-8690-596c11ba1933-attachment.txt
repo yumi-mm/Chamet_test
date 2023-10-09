@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_mypage_message_multi.py:361 ===留言-陌生人留言-一对一输入框===
-[32mINFO    [0m root:test_mypage_message_multi.py:376 ===断言失败===
-[32mINFO    [0m root:test_mypage_message_multi.py:378 截图成功，图片为D:\chamet_mypage_multi_testProject-9.15\common../../screenshots/my_page/2023-09-28 10_59_00_留言-陌生人留言-一对一输入框.png
