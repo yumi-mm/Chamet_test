@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:4915 ===我的余额-充值档位===
-[32mINFO    [0m root:test_mypage_multi.py:4927 ===执行失败===

@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:3387 ====我的任务-女-未完成奖励'===
-[31m[1mERROR   [0m root:test_mypage_multi.py:3391 ===女生===
-[32mINFO    [0m root:test_mypage_multi.py:3392 ===待解锁奖励'===
-[32mINFO    [0m root:test_mypage_multi.py:3399 ===断言成功===

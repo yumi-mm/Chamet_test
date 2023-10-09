@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_mypage_multi.py:689 ===我的页面-女-去签到-跳转页面===
-[32mINFO    [0m root:test_mypage_multi.py:723 ===执行失败===
