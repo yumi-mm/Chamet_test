@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3059 ===用例137：主播端更换交友房背景===
-[32mINFO    [0m root:test_10party_mult.py:3066 ===断言成功，成功更换交友房背景===

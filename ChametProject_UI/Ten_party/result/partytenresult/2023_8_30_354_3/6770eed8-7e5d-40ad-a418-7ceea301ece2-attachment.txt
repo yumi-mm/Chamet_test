@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2080 ===用例92：主播私聊界面发送相机照片===
-[32mINFO    [0m root:multparty_ten_anchor.py:622 ===打开相机===
-[32mINFO    [0m root:multparty_ten_anchor.py:626 ===拍照发送===
-[32mINFO    [0m root:multparty_ten_anchor.py:539 ===断言成功，为自己发的消息===
-[32mINFO    [0m root:test_10party_mult.py:2085 ===断言成功，主播发送相机照片成功===

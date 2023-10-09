@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2153 ===用例97：主播私聊界面发拨打语音聊天===
-[32mINFO    [0m root:multparty_ten_anchor.py:633 ===拨打视频聊天===
-[32mINFO    [0m root:multparty_ten_anchor.py:640 ===查看是否余额不足===
-[32mINFO    [0m root:multparty_ten_anchor.py:644 ===余额足够===
-[32mINFO    [0m root:multparty_ten_anchor.py:633 ===拨打视频聊天===

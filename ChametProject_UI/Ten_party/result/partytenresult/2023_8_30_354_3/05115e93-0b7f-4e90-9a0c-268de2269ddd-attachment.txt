@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3269 ===用例144：观众端打开幸运数字游戏===
-[32mINFO    [0m root:multparty_ten_audience.py:1418 ===进入游戏页面===
-[32mINFO    [0m root:multparty_ten_audience.py:1437 ===进入幸运数字===
-[32mINFO    [0m root:test_10party_mult.py:3274 ===断言成功，打开幸运数字游戏===

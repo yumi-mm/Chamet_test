@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3601 ===用例158：观众端进入其他交友房===
-[32mINFO    [0m root:test_10party_mult.py:3607 ===断言成功===

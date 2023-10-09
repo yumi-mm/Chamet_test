@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2069 ===用例93：观众检查是否收到相机照片===
-[32mINFO    [0m root:test_10party_mult.py:2074 ===断言成功，观众成功收到相机照片===

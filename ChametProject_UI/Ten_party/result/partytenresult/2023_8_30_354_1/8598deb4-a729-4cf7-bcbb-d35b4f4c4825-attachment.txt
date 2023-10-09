@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1082 ===用例48：观众端申请上麦(通过点击交友位)===
-[32mINFO    [0m root:multparty_ten_audience.py:193 ===点击交友位===
-[32mINFO    [0m root:multparty_ten_audience.py:196 ===申请成为嘉宾===
-[32mINFO    [0m root:test_10party_mult.py:1086 ===断言成功，申请上麦成功===

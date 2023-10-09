@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2353 ===用例105：观众检查私信接收===
-[32mINFO    [0m root:multparty_ten_audience.py:784 ===获取观众聊天区文本消息===
-[32mINFO    [0m root:test_10party_mult.py:2357 ===断言成功,收到主播发的私聊消息===

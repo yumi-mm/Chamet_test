@@ -1,5 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3164 ===用例141：主播端打开幸运数字游戏===
-[32mINFO    [0m root:multparty_ten_anchor.py:1001 ===进入游戏页面===
-[32mINFO    [0m root:multparty_ten_anchor.py:1017 ===进入幸运数字===
-[32mINFO    [0m root:test_10party_mult.py:3177 ===执行失败===
-[32mINFO    [0m root:test_10party_mult.py:3179 截图成功，图片为C:\Users\pgk bqt\PycharmProjects\github_Chamet\ChametProject_UI\Ten_party\common../../screenshots/party_ten/party_ten_2023-08-30 16_37_04.png

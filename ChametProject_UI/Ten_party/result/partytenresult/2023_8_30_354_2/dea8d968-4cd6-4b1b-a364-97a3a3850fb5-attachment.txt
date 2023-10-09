@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:1863 ===用例83：主播查看是否收到Facebook表情===
-[32mINFO    [0m root:test_10party_mult.py:1868 ===断言成功，主播成功收到Facebook表情===

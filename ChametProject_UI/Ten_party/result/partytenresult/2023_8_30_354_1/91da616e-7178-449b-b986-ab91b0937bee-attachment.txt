@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:3216 ===用例143：观众端打开赛车游戏===
-[32mINFO    [0m root:multparty_ten_audience.py:1394 ===进入赛车游戏===
-[32mINFO    [0m root:test_10party_mult.py:3220 ===断言成功，打开Chamet赛车游戏===

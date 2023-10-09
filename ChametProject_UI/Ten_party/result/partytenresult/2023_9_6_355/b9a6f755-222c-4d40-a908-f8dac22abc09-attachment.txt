@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2422 ===用例108：主播端进入群聊页面===
-[32mINFO    [0m root:multparty_ten_anchor.py:708 ===查看群聊列表===
-[32mINFO    [0m root:multparty_ten_anchor.py:717 ===进入群聊页面===
-[32mINFO    [0m root:test_10party_mult.py:2434 ===断言成功，主播进入群聊页面===

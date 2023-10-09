@@ -1,3 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:220 ===用例9：交友房封面包含内容--游戏押注金额===
-[32mINFO    [0m root:multparty_ten_audience.py:249 ===有交友房===
-[32mINFO    [0m root:test_10party_mult.py:227 ===断言成功，交友房封面存在游戏押注金额===

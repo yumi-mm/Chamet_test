@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:690 ===用例31：主播不可给自己送礼===
-[32mINFO    [0m root:test_10party_mult.py:695 ===断言成功===

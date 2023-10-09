@@ -1,2 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:2912 ===用例131：主播端群聊页面发送钻石包快速感谢语，观众端检查===
-[32mINFO    [0m root:test_10party_mult.py:2919 ===断言成功,观众成功收到主播发送的感谢语===

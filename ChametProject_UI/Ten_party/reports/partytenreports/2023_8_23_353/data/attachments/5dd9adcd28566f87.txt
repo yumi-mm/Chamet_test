@@ -1,4 +1,0 @@
-[32mINFO    [0m root:test_10party_mult.py:560 ===用例25：主播端发送文字正常向前滚动===
-[32mINFO    [0m root:multparty_ten_anchor.py:155 ===主播端发言===
-[32mINFO    [0m root:multparty_ten_anchor.py:169 ===消息内容===
-[32mINFO    [0m root:test_10party_mult.py:566 ===断言成功===
