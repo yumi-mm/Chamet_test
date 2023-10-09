@@ -1,2 +1,0 @@
-- {'api':'POST /getImpactRank','apiName':'直播间冲榜列表','method':'post','url':'/live/getImpactRank','headers':0}
-- {'caseName':'直播间冲榜列表', 'data': {"pageNo":1,"pageSize":1,"type":1}}

@@ -1,2 +1,0 @@
-- {'api':'POST /sendgift','apiName':'送礼接口（直播间、交友房）','method':'post','url':'/gift/liveRoom/sendgift','headers':0}
-- {'caseName':'送礼接口（房主送观众）', 'data': {"bizCode": null,"count": 1,"ctype":"2","energy_consume": 777,"getterIds": "20113007,","giftid": 3666,"souceType": 2}}

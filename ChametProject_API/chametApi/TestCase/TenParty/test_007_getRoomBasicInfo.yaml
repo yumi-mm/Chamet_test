@@ -1,2 +1,0 @@
-- {'api':'POST /getRoomBasicInfo','apiName':'直播间基本信息','method':'post','url':'/live/getRoomBasicInfo','headers':0}
-- {'caseName':'直播间基本信息', 'data': {"bizCode":null}}

@@ -1,3 +1,0 @@
-- {'api':'POST /micStatusMessage','apiName':'用户语言状态','method':'post','url':'/live/user/micStatusMessage','headers':0}
-- {'caseName':'用户语言状态（在说话）', 'data': {"bizCode":null,"status":1}}
-- {'caseName':'用户语言状态（未在说话）', 'data': {"bizCode":null,"status":0}}

@@ -1,2 +1,0 @@
-- {'api':'POST /getPartyNearbyRank','apiName':'交友房Nearby榜单','method':'post','url':'/live/user/getPartyNearbyRank','headers':0}
-- {'caseName':'交友房Nearby榜单', 'data': {"pageNo":1,"pageSize":1}}

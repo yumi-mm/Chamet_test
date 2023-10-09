@@ -1,2 +1,0 @@
-- {'api':'POST /notifyCountDown','apiName':'房主通知倒计时','method':'post','url':'/live/host/notifyCountDown','headers':0}
-- {'caseName':'房主通知倒计时', 'data': {"bizCode":null,"toUserId":20113007,"surplusSeconds":5}}

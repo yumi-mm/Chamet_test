@@ -1,2 +1,0 @@
-- {'api':'POST /cancelVideoChat','apiName':'取消拨打','method':'post','url':'/videoChat/callSameTime/cancelVideoChat','headers':0}
-- {'caseName':'取消拨打', 'data': {"cancelAll":1,"touserid":2000004,"sid":null,"cancelType":0}}

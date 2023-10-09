@@ -1,2 +1,0 @@
-- {'api':'POST /getLiveContributeRankSort','apiName':'获取直播间贡献榜排名','method':'post','url':'/live/user/getLiveContributeRankSort','headers':0}
-- {'caseName':'获取直播间贡献榜排名', 'data': {"bizCode":null}}

@@ -1,2 +1,0 @@
-- {'api':'POST /getRewardBoxTime','apiName':'获取奖励宝箱时间(新版宝箱)','method':'post','url':'/live/box/getRewardBoxTime','headers':0}
-- {'caseName':'获取奖励宝箱时间(新版宝箱)', 'data': {"bizCode":null}}

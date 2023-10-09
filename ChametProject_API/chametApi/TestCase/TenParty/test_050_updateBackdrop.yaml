@@ -1,2 +1,0 @@
-- {'api':'POST /updateBackdrop','apiName':'更换交友房背景','method':'post','url':'/live/backdrop/updateBackdrop','headers':0}
-- {'caseName':'更换交友房背景', 'data': {"backdropId":1669370553026,"avType":2}}

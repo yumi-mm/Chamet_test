@@ -1,2 +1,0 @@
-- {'api':'POST getRoomStatisticInfo','apiName':'获取直播间统计信息','method':'post','url':'/live/getRoomStatisticInfo','headers':0}
-- {'caseName':'获取直播间统计信息', 'data': {"bizCode":null}}

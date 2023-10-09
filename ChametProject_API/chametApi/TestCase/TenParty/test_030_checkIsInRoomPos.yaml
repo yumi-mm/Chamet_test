@@ -1,2 +1,0 @@
-- {'api':'POST /checkIsInRoomPos','apiName':'校验用户是否在直播间麦位','method':'post','url':'/live/user/checkIsInRoomPos','headers':0}
-- {'caseName':'校验用户是否在直播间麦位', 'data': {"toUserId":20113007}}

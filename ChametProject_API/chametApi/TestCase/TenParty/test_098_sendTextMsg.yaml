@@ -1,2 +1,0 @@
-- {'api':'POST /sendTextMsg','apiName':'发送私聊文本消息','method':'post','url':'/privateChat/sendTextMsg','headers':0}
-- {'caseName':'发送私聊文本消息', 'data': {"apptype": 21,"channel": "101","content":  "hello","ctype":"2","touserid": 2000004,"translateContent": "","scene":1}}

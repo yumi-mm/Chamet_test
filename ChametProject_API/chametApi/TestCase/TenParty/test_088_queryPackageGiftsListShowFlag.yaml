@@ -1,2 +1,0 @@
-- {'api':'POST /queryPackageGiftsListShowFlag','apiName':'背包礼物栏目显示接口','method':'post','url':'/giftListConfig/queryPackageGiftsListShowFlag','headers':0}
-- {'caseName':'背包礼物栏目显示接口', 'data': {"souceType":2}}

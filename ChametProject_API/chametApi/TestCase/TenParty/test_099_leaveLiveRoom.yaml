@@ -1,2 +1,0 @@
-- {'api':'POST /leaveLiveRoom','apiName':'离开直播间（离开房间）','method':'post','url':'/live/leaveLiveRoom','headers':0}
-- {'caseName':'离开直播间（离开房间）', 'data': {"bizCode":null,"endCode":5,"scene":0}}

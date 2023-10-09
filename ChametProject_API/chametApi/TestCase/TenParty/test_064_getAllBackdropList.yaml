@@ -1,2 +1,0 @@
-- {'api':'POST /getAllBackdropList','apiName':'获取交友房背景列表','method':'post','url':'/live/backdrop/getAllBackdropList','headers':0}
-- {'caseName':'获取交友房背景列表', 'data': {"avType":2}}

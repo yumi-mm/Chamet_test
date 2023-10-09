@@ -1,2 +1,0 @@
-- {'api':'POST /applyToBeGuest','apiName':'申请上麦位（申请第一排交友位）','method':'post','url':'/live/user/applyToBeGuest','headers':0}
-- {'caseName':'申请上麦位（申请第一排交友位）', 'data': {"bizCode":null,"isAllowBeTaken":1,"beTakenLimitLevel":0,"isOpenCamera":0,"position":3}}

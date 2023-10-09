@@ -1,2 +1,0 @@
-- {'api':'POST /refuseInvite','apiName':'拒绝上麦邀请','method':'post','url':'/live/user/refuseInvite','headers':0}
-- {'caseName':'拒绝上麦邀请', 'data': {"bizCode":null}}
